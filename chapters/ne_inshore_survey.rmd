@@ -31,7 +31,7 @@ Each survey shows trends by aggregate group.
 
 ```{r plot_ne_inshore_surveyNE}
 # Plot indicator
-ggplotObject <- ecodata::plot_ne_inshore_survey(report='NewEngland')
+ggplotObject <- ecodata::plot_ne_inshore_survey(report='NewEngland',n=10)
 ggplotObject
 ```
 

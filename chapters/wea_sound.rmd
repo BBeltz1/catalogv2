@@ -1,0 +1,75 @@
+# Ambient sound levels SNE wind energy areas {#wea_sound}
+
+**Description**: Annual decidecade sound pressure levels from Southern New England Wind Energy Areas
+
+**Indicator family**: 
+
+
+
+
+**Contributor(s)**: Sofie M. Van Parijs, Annamaria I. DeAngelis , Tyler Aldrich, Rochelle Gordon, Amanda Holdman , Jessica A. McCordic, Xavier Mouy, Timothy J. Rowell, Sara Tennant, Annabel Westell and Genevieve E. Davis
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Decidecade sound pressure levels show the distribution of acoustic energy across frequencies. Peaks in sound levels within particular decidecade frequency bins indicate louder sounds at those frequencies, with frequencies below 1000 Hz typically representing contributions from baleen whales, vessel traffic, and soniferous fishes.
+
+## Key Results and Visualizations
+By comparing the distribution of ambient sound across frequencies, we can assess any temporal changes within sites and spatial patterns across sites. These data provide a representation of approximately 2 years of baseline ambient sound metrics prior to the construction of offshore wind turbines in Southern New England. Sources of sound above ambient background noise were largely below 1 kHz.
+
+
+## Indicator statistics 
+Spatial scale: Third octave level metrics are provided from 7 sites throughout the Southern New England Wind Energy Areas, with recording locations primarily on Cox’s Ledge and Nantucket Shoals.
+
+Temporal scale: Annual
+
+**Synthesis Theme**:
+
+
+
+
+```{r autostats_wea_sound}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Long-term time series of ambient sound metrics may provide a rapid indicator of changes in the soundscape, including increasing anthropogenic noise, shifting species ranges, phenological changes, or increased storm activity.
+
+## Get the data
+
+**Point of contact**: [Jessica McCordic (jessica.mccordic@noaa.gov); Sofie Van Parijs (sofie.vanparijs@noaa.gov)](mailto:Jessica McCordic (jessica.mccordic@noaa.gov); Sofie Van Parijs (sofie.vanparijs@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::wea_sound`
+
+**Variable definitions**
+
+Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1.
+
+```{r vars_wea_sound}
+# Pull all var names
+vars <- ecodata::wea_sound |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/wea_sound.html>
+

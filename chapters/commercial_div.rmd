@@ -28,19 +28,19 @@ Commercial fishery fleet count and fleet diversity have been stable over time in
 
 ```{r plot_commercial_divMidAtlanticFleetcount}
 # Plot indicator
-ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet count')
+ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet count',n=10)
 ggplotObject
 ```
 
 ```{r plot_commercial_divMidAtlanticFleetdiversityinrevenue}
 # Plot indicator
-ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet diversity in revenue')
+ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Fleet diversity in revenue',n=10)
 ggplotObject
 ```
 
 ```{r plot_commercial_divMidAtlanticPermitrevenuespeciesdiversity}
 # Plot indicator
-ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Permit revenue species diversity')
+ggplotObject <- ecodata::plot_commercial_div(report= 'MidAtlantic', varName= 'Permit revenue species diversity',n=10)
 ggplotObject
 ```
 
@@ -48,19 +48,19 @@ ggplotObject
 
 ```{r plot_commercial_divNewEnglandFleetcount}
 # Plot indicator
-ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet count')
+ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet count',n=10)
 ggplotObject
 ```
 
 ```{r plot_commercial_divNewEnglandFleetdiversityinrevenue}
 # Plot indicator
-ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet diversity in revenue')
+ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Fleet diversity in revenue',n=10)
 ggplotObject
 ```
 
 ```{r plot_commercial_divNewEnglandPermitrevenuespeciesdiversity}
 # Plot indicator
-ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Permit revenue species diversity')
+ggplotObject <- ecodata::plot_commercial_div(report= 'NewEngland', varName= 'Permit revenue species diversity',n=10)
 ggplotObject
 ```
 
@@ -95,7 +95,8 @@ In the Mid-Atlantic, stability in commercial fleet diversity metrics suggests st
 **Variable definitions**
 
 1) Name: Permit revenue species diversity; Definition: Diversity of revenue across species averaged across permits; Units: effective Shannon.  
-2) Name: Fleet diversity in revenue; Definition: Diversity of revenue across fleet segments; Units: effective Shannon. 3) Name: Fleet count; Definition: Number of active fleets; Units: number of fleets.
+2) Name: Fleet diversity in revenue; Definition: Diversity of revenue across fleet segments; Units: effective Shannon. 
+3) Name: Fleet count; Definition: Number of active fleets; Units: number of fleets.
 
 ```{r vars_commercial_div}
 # Pull all var names

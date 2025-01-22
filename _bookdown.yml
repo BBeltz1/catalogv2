@@ -83,7 +83,7 @@ rmd_files:
     -   "chapters/abc_acl.rmd"
     -   "chapters/bennet.rmd"
     -   "chapters/stock_status.rmd"
-    -   "chapters/engagement.rmd"
+#    -   "chapters/engagement.rmd"
     -   "chapters/aquaculture.rmd"
     -   "chapters/ocean_acidification.rmd"
     -   "chapters/wind_dev_speed.rmd"

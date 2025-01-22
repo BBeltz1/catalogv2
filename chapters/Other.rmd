@@ -1,0 +1,73 @@
+# TBD {#Other}
+
+**Description**: Synthesis of the 2023 Gulf of Maine _Tripos muelleri_ bloom.
+
+**Indicator family**: 
+
+- [X] Oceanographic
+- [X] Habitat
+- [X] Lower trophic levels
+
+
+**Contributor(s)**: Kimberly Hyde
+Chris Melrose
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+In 2023, there was a wide-spread, long-duration phytoplankton bloom of the dinoflagellate _Tripos muelleri_. The bloom resulted in record high (since 1998) [chlorophyll concentrations](https://noaa-edab.github.io/catalog/chl_pp.html) that were up to ten times greater than the long-term average (1998-2023). The bloom was observed throughout the Gulf of Maine from March to August and extended onto Georges Bank and the northern Mid-Atlantic Bight (Fig. ). The bloom severely reduced water clarity, impacting harpoon fishing and likely affecting visual predators. Blooms of [large phytoplankton](https://noaa-edab.github.io/catalog/phyto_size.html) species such as diatoms (20-200 µm) are a primary source of energy to the system. However, despite the size of Tripos (100-200 µm), initial observations indicate that the bloom was not grazed, nor did it sink to the bottom. The specific drivers of the bloom and implications to the food web are still under investigation.
+
+## Key Results and Visualizations
+* Description of the satellite imagery
+* Addition of the CPR data
+
+
+## Indicator statistics 
+Spatial scale: Gulf of Maine, Georges Bank and northern Mid-Atlantic Bight
+
+Temporal scale: Spring-Summer 2023
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
+
+```{r autostats_Other}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Under investigation...
+
+## Get the data
+
+**Point of contact**: [Kimberly Hyde - kimberly.hyde@noaa.gov](mailto:Kimberly Hyde - kimberly.hyde@noaa.gov){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+Chlorophyll concentration (mg m^-3) Chlorophyll anomaly (ratio) 
+Tripos Continuous Plankton Recorder index (unitless)
+
+
+No Data
+
+**Indicator Category**:
+
+- [X] Extensive analysis, not yet published
+- [X] Database pull with analysis
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+

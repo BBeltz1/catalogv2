@@ -1,13 +1,13 @@
-# Highly Migratory Species POP Catch Per Unit Effort {#hms_cpue}
+# Atlantic Highly Migratory Species Pelagic Observer Program CPUE {#hms_cpue}
 
-**Description**: CPUE from pelagic observer program (POP) observed hauls, presented as number of fish per haul, is provided for the northeast (i.e., the Northeast Coastal and Mid-Atlantic Bight fishing areas) by year/species from 1992-2022.
+**Description**: CPUE from pelagic observer program (POP) observed hauls, presented as number of fish per haul, is provided for the northeast (i.e., the Northeast Coastal and Mid-Atlantic Bight fishing areas) by year/species from 1992-2023.
 
 **Indicator family**: 
 
 - [X] Megafauna
 
 
-**Contributor(s)**: Jennifer Cudney, Tobey Curtis
+**Contributor(s)**: Jennifer Cudney, Tobey Curtis, Daniel Daye
 
 **Affiliations**: HMS
 
@@ -19,7 +19,7 @@ library(ecodata)
 The Pelagic Observer Program (POP) is operated out of the Southeast Fisheries Science Center, but provides observers in all regions (including the high seas) where U.S. flagged and HMS-permitted vessels fish under regulations for the HMS pelagic longline fishery. Data from the POP is collected during trips on pelagic longline vessels that are generally targeting swordfish, and yellowfin and bigeye tunas. Once a set is retrieved, information like the length, dressed weight, sex, and tag number of each individual fish is recorded. There have been times and areas where the agency has required 100-percent coverage over specific times or areas such as during bluefin tuna spawning time period in the Gulf of Mexico for a number of years and in the Mid-Atlantic Bight. Between 2017 and 2021, observer coverage for the entire pelagic longline fleet (i.e., from Maine to Texas, and the U.S. Caribbean and high seas) ranged from 9 to 13 percent of total overall reported sets.
 
 ## Key Results and Visualizations
-TBD; data may not be correctly displayed in graphs.
+Observer CPUE data collected for shark management groups, Atlantic tunas, and Atlantic billfish between 1992-2023 are shown for Mid-Atlantic and New England regions.
 
 ### MidAtlantic
 
@@ -51,9 +51,9 @@ ggplotObject
 
 
 ## Indicator statistics 
-Spatial scale: Data are extracted from the MAB and NEC fishing areas (see "Fishing Areas" figure)
+Spatial scale: Data are extracted from the MAB and NEC fishing areas
 
-Temporal scale: 1992-2022, Annual
+Temporal scale: 1992-2023, Annual
 
 **Synthesis Theme**:
 
@@ -87,7 +87,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull
+- [X] Database pull with analysis
 
 
 ## Public Availability
@@ -96,7 +96,7 @@ Source data are NOT publicly available.
 
 ## Accessibility and Constraints
 
-Pelagic observer data is considered confidential data, and must be screened to ensure that data meet requirements for "rule of three" at the set and vessel level before they can be distributed. Do not publish raw data.
+Pelagic observer data is considered confidential data, and must be screened to ensure that data meet requirements for "rule of three" at the set and vessel level before they can be distributed.
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/hms_cpue.html>

@@ -25,7 +25,7 @@ _No response_
 
 ```{r plot_slopewaterNE}
 # Plot indicator
-ggplotObject <- ecodata::plot_slopewater(report='NewEngland')
+ggplotObject <- ecodata::plot_slopewater(report='NewEngland',n=10)
 ggplotObject
 ```
 

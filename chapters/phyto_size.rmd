@@ -27,30 +27,6 @@ On Georges Bank, the early winter bloom was most likely associated with diatoms,
 
 In the Gulf of Maine, the early winter bloom was most likely associated with diatoms, however the record high microplankton fraction from April through August can be attributed to the dinoflagellate Tripos muelleri.
 
-### MAB
-
-```{r plot_phyto_sizeMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_phyto_size(report='MidAtlantic')
-ggplotObject
-```
-
-### GB
-
-```{r plot_phyto_sizeNEGB}
-# Plot indicator
-ggplotObject <- ecodata::plot_phyto_size(report='NewEngland',EPU='GB')
-ggplotObject
-```
-
-### GOM
-
-```{r plot_phyto_sizeNEGOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_phyto_size(report='NewEngland',EPU='GOM')
-ggplotObject
-```
-
 
 ## Indicator statistics 
 Spatial scale: By EPU and gridded for the entire shelf
