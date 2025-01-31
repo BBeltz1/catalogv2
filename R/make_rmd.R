@@ -16,6 +16,10 @@ make_rmd <- function(listobject, n = 10){
   #filename <- gsub("\\s+","_",indicator_name)
   filename <- listobject$indicatorname
   
+  tsl<-30
+  try(tsl<-length(unique(eval(parse(text=paste0("ecodata::",listobject$indicatorname,"$Time"))))))
+  if(tsl<30){n=tsl}
+  
   # create rmd with name of indicator
   con <- file(here::here("chapters",paste0(filename,".rmd")),open="w")
      
