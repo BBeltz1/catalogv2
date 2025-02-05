@@ -31,77 +31,125 @@ There is high interannual variability of the seasonal phytoplankton cycle.  At t
 
 ### MidAtlantic
 
-```{r plot_chl_ppMidAtlanticchlweekly}
+
+```{r plot_chl_ppMidAtlanticchlweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'chl' ,plottype= 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'chl', plottype = 'weekly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppMidAtlanticchlmonthly}
+
+```{r plot_chl_ppMidAtlanticchlmonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'chl' ,plottype= 'monthly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'chl', plottype = 'monthly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppMidAtlanticchlanomaly}
+
+```{r plot_chl_ppMidAtlanticppweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'chl' ,plottype= 'anomaly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'pp', plottype = 'weekly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppMidAtlanticppweekly}
+
+```{r plot_chl_ppMidAtlanticppmonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'pp' ,plottype= 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'pp', plottype = 'monthly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppMidAtlanticppmonthly}
+
+```{r plot_chl_ppMidAtlanticsizeweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'pp' ,plottype= 'monthly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'size', plottype = 'weekly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppMidAtlanticppanomaly}
+
+```{r plot_chl_ppMidAtlanticsizemonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', varName= 'pp' ,plottype= 'anomaly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'MidAtlantic', EPU = 'MAB', varName= 'size', plottype = 'monthly',n=10)
 ggplotObject
 ```
 
 ### NewEngland
 
-```{r plot_chl_ppNewEnglandchlweekly}
+
+```{r plot_chl_ppNewEnglandchlweeklyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'chl' ,plottype= 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'chl', plottype = 'weekly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppNewEnglandchlmonthly}
+```{r plot_chl_ppNewEnglandchlweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'chl' ,plottype= 'monthly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'chl', plottype = 'weekly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppNewEnglandchlanomaly}
+
+```{r plot_chl_ppNewEnglandchlmonthlyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'chl' ,plottype= 'anomaly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'chl', plottype = 'monthly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppNewEnglandppweekly}
+```{r plot_chl_ppNewEnglandchlmonthlyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'pp' ,plottype= 'weekly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'chl', plottype = 'monthly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppNewEnglandppmonthly}
+
+```{r plot_chl_ppNewEnglandppweeklyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'pp' ,plottype= 'monthly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'pp', plottype = 'weekly',n=10)
 ggplotObject
 ```
 
-```{r plot_chl_ppNewEnglandppanomaly}
+```{r plot_chl_ppNewEnglandppweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', varName= 'pp' ,plottype= 'anomaly',n=10)
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'pp', plottype = 'weekly',n=10)
+ggplotObject
+```
+
+
+```{r plot_chl_ppNewEnglandppmonthlyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'pp', plottype = 'monthly',n=10)
+ggplotObject
+```
+
+```{r plot_chl_ppNewEnglandppmonthlyGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'pp', plottype = 'monthly',n=10)
+ggplotObject
+```
+
+
+```{r plot_chl_ppNewEnglandsizeweeklyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'size', plottype = 'weekly',n=10)
+ggplotObject
+```
+
+```{r plot_chl_ppNewEnglandsizeweeklyGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'size', plottype = 'weekly',n=10)
+ggplotObject
+```
+
+
+```{r plot_chl_ppNewEnglandsizemonthlyGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GB', varName= 'size', plottype = 'monthly',n=10)
+ggplotObject
+```
+
+```{r plot_chl_ppNewEnglandsizemonthlyGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_chl_pp(report= 'NewEngland', EPU = 'GOM', varName= 'size', plottype = 'monthly',n=10)
 ggplotObject
 ```
 

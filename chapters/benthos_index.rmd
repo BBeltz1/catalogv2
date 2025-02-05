@@ -35,15 +35,15 @@ Eastward and Northward components of the Center of Gravity, along with the Cente
 
 ### MidAtlantic
 
-```{r plot_benthos_indexMidAtlanticMicrobenthosindex}
+```{r plot_benthos_indexMidAtlanticMegabenthosindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report= 'MidAtlantic', varName= 'Microbenthos' ,plottype= 'index',n=10)
+ggplotObject <- ecodata::plot_benthos_index(report= 'MidAtlantic', varName= 'Megabenthos' ,plottype= 'index',n=10)
 ggplotObject
 ```
 
-```{r plot_benthos_indexMidAtlanticMicrobenthoscog}
+```{r plot_benthos_indexMidAtlanticMegabenthoscog}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report= 'MidAtlantic', varName= 'Microbenthos' ,plottype= 'cog',n=10)
+ggplotObject <- ecodata::plot_benthos_index(report= 'MidAtlantic', varName= 'Megabenthos' ,plottype= 'cog',n=10)
 ggplotObject
 ```
 
@@ -61,15 +61,15 @@ ggplotObject
 
 ### NewEngland
 
-```{r plot_benthos_indexNewEnglandMicrobenthosindex}
+```{r plot_benthos_indexNewEnglandMegabenthosindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report= 'NewEngland', varName= 'Microbenthos' ,plottype= 'index',n=10)
+ggplotObject <- ecodata::plot_benthos_index(report= 'NewEngland', varName= 'Megabenthos' ,plottype= 'index',n=10)
 ggplotObject
 ```
 
-```{r plot_benthos_indexNewEnglandMicrobenthoscog}
+```{r plot_benthos_indexNewEnglandMegabenthoscog}
 # Plot indicator
-ggplotObject <- ecodata::plot_benthos_index(report= 'NewEngland', varName= 'Microbenthos' ,plottype= 'cog',n=10)
+ggplotObject <- ecodata::plot_benthos_index(report= 'NewEngland', varName= 'Megabenthos' ,plottype= 'cog',n=10)
 ggplotObject
 ```
 
