@@ -77,6 +77,7 @@ rmd_files:
     -   "chapters/timing_shifts.rmd"
     -   "chapters/observation_synthesis.rmd"
     -   "chapters/ocean_acidification.rmd"
+    -   "chapters/gom_acidification.rmd"
 #
 #
 # ######################## ECONOMIC ##################
