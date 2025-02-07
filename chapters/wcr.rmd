@@ -24,7 +24,7 @@ Prior to 2000, an average of 18 warm core rings were formed by the Gulf Stream o
 
 ```{r plot_wcrMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_wcr(report='MidAtlantic')
+ggplotObject <- ecodata::plot_wcr(report='MidAtlantic',n=10)
 ggplotObject
 ```
 

@@ -56,7 +56,7 @@ Temporal scale: N/A
 ```
 
 ## Implications
-We changed species groupings in response to comments over the years. The table shows feeding guilds used in the 2024 report.
+We changed species groupings in response to comments over the years. The table shows feeding guilds used in the 2024-2025 reports.  In 2025 an FMP column was added in response to Council requests.
 
 ## Get the data
 
@@ -66,9 +66,12 @@ We changed species groupings in response to comments over the years. The table s
 
 **Variable definitions**
 
-1. SOE.24 = Feeding guild definitions for State of the Ecosystem report (2024) 2. MAFMC = Mid Atlantic Fishery Management Council - list of managed species by feeding guild 
-3. NEFMC = New England Fishery Management Council - list of managed species by feeding guild 4. Joint = Jointly managed species by feeding guild 
-5. State or Other = Species managed by other bodies listed by feeding guild
+1. SOE.24 = Feeding guild definitions for State of the Ecosystem report (2024-2025) 
+2. MAFMC = Mid Atlantic Fishery Management Council - list of managed species by feeding guild 
+3. NEFMC = New England Fishery Management Council - list of managed species by feeding guild 
+4. Joint = Jointly managed species by feeding guild 
+5. State or Other = Species managed by other bodies listed by feeding guild 
+6. FMP = Fishery Management Plan for Council managed species
 
 **Indicator Category**:
 

@@ -1,6 +1,6 @@
 # Highly Migratory Species Landings {#hms_landings}
 
-**Description**: Aggregated Atlantic highly migratory species landings data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2022.
+**Description**: Aggregated Atlantic HMS landings data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2023.
 
 **Indicator family**: 
 
@@ -16,10 +16,10 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-HMS landings and approximate value of landings are presented separately as an indicator, and are combined in several datasets presented in the SOE report (e.g., total commercial landings as discussed under “Seafood Production” and total commercial revenue as presented under “Commercial Profits”).
+This indicator provides a comprehensive summary of commercial landings information for HMS fisheries that target or retain tunas, swordfish, and sharks. These data can be evaluated independently, and can also be included in overall estimates of commercial fisheries landings in the northeast region.
 
 ## Key Results and Visualizations
-TBD - recommend including a version of the plots or tables generated in the Technical Document / code that is linked. Pending finalization of the dataset for this year's report.
+Data are provided to SOE editors to generate the visualizations.
 
 ### MidAtlantic
 
@@ -65,8 +65,8 @@ Temporal scale: Annual
 ```
 
 ## Implications
-TBD – pending finalization of dataset for 2024 report
-
+HMS landings data are summarized and presented in the annual HMS Stock Assessment and Fishery Evaluation (SAFE) report.
+
 In 2021 the International Commission for the Conservation of Atlantic Tunas (ICCAT) finalized recommendations for a two-year retention ban for shortfin mako (ICCAT Rec. 21-09), which will also affect total overall landings of pelagic sharks in coming years.
 
 ## Get the data
@@ -98,7 +98,7 @@ Source data are NOT publicly available.
 
 ## Accessibility and Constraints
 
-Data that has been properly screened to meet data standards and confidentiality are publicly available via the Fisheries of the United States (FUS) landings portal. Canadian landings information, which are included in this analysis, are not included in the FUS portal (https://www.fisheries.noaa.gov/national/sustainable-fisheries/commercial-fisheries-landings). Data should be aggregated to protect data confidentiality (raw data are lumped by year and species). Please email jennifer.cudney@noaa.gov for further information and queries of source data.
+Confidential data may be released in “any aggregate or summary form which does not directly or indirectly disclose the identity or business of any person who submits such information” (Magnuson-Stevens Act § 402(b)(3); 16 U.S.C. 1881a(b)(3)). NOAA Fisheries presents such information only if it can be aggregated or summarized at a temporal and/or spatial level to maintain confidentiality of individuals, businesses, and related business information. Data that has been properly screened to meet data standards and confidentiality are publicly available via the Fisheries of the United States (FUS) landings portal. Canadian landings information, which are included in this analysis, are not included in the FUS portal (https://www.fisheries.noaa.gov/national/sustainable-fisheries/commercial-fisheries-landings). Data should be aggregated to protect data confidentiality (raw data are lumped by year and species). Data were included in the final summary unless there were 2 or less dealers involved in the landings, 2 or less vessels, or if any one dealer or vessel purchased/landed more than 2/3 of the total amount for that data unit. Please email jennifer.cudney@noaa.gov for further information and queries of source data.
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/hms_landings.html>

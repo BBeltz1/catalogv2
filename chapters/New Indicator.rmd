@@ -1,6 +1,6 @@
-# Zooplankton Indices {#New Indicator}
+# Zooplankton Center of Gravity {#New Indicator}
 
-**Description**: Model-based abundance indices for zooplankton groups sampled by NEFSC surveys
+**Description**: Model-based annual center of gravity indices for zooplankton groups sampled by NEFSC surveys
 
 **Indicator family**: 
 
@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Zooplankton are primary consumers in marine ecosystems that transfer energy from phytoplankton to fish, marine mammals, and birds. The Northeast Fisheries Science Center has conducted [zooplankton surveys](https://www.fisheries.noaa.gov/inport/item/9286) since the 1970s. Spatially explicit indices of abundance for several zooplankton groups were estimated using spatio-temporal modeling. 
+Zooplankton are primary consumers in marine ecosystems that transfer energy from phytoplankton to fish, marine mammals, and birds. The Northeast Fisheries Science Center has conducted [zooplankton surveys](https://www.fisheries.noaa.gov/inport/item/9286) since the 1970s. Spatially explicit indices of abundance for several zooplankton groups were estimated using spatio-temporal modeling.
 
-The groups include: 
+The groups include:
 
 **Copepods**
 
@@ -35,15 +35,11 @@ The groups include:
 **Zooplankton volume**
 
 ## Key Results and Visualizations
-Large and small copepod groups are mainly fluctuating without trend in both spring and fall across the EPUs. However, a significant decrease in small copeopods was apparent in the MAB during fall. Similarly, zooplankton volume is fluctuating without long term trends over time.
-
-Euphausiids, in contrast, show increasing trends over time in all regions during fall, and in the MAB during spring.
-
-**ADD ANY CHANGED RESULTS WHEN SHORT TERM TREND PLOTS ARE IMPLEMENTED**
+Small copepods in fall are trending northeast similar to forage fish and aggregated survey species. Small copepods in spring are trending north. Large copepods in fall are trending west, similar to benthos. No significant change for Calfin, Euphausiids, or Zooplankton volume center of gravity over time.
 
 
 ## Indicator statistics 
-Spatial scale: by EPU and full shelf
+Spatial scale: Full shelf
 
 Temporal scale: Spring (January-June), Fall (July-December)
 
@@ -57,21 +53,17 @@ Temporal scale: Spring (January-June), Fall (July-December)
 ```
 
 ## Implications
-Fluctuations in zooplankton community composition can affect both the consumption of phytoplanlton vs the export of energy to the benthos, as well as the availability of prey for zooplankton feeding forage fish, marine mammals, and seabirds. 
-
-The relative dominance of large and small copepods in Northeast US ecosystems has been liked to changes in fish productivity  [@perretti_regime_2017; @Morse2017].
+Distribution shifts for zooplankton may result in mismatches with zooplankton feeding fish, marine mammal, and seabirds.
 
 ## Get the data
 
-**Point of contact**: [Sarah Gaichas, Sarah.Gaichas@noaa.gov](mailto:Sarah Gaichas, Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: [Sarah Gaichas Sarah.Gaichas@noaa.gov](mailto:Sarah Gaichas Sarah.Gaichas@noaa.gov){.email}
 
 **ecodata name**: No dataset
 
 **Variable definitions**
 
-Naming key * *Calanus finmarchicus* (calfin_100m3) = “calfin” , * Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL”, 
-* Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” and 
-* Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”.   Variables **TO BE ADDED ONCE DATA IN ECODATA, NOT ALL DATASETS COULD BE READ INTO FORM**
+Waiting until we aggregate the datasets, if formatted similarly to forage and benthos, the cog data will be part of the zooplankton indices dataset
 
 
 No Data

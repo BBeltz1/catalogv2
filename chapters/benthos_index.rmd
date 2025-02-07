@@ -33,6 +33,58 @@ Variables plotted are Fall Macrobenthos or Megabenthos Biomass Estimate and Spri
 
 Eastward and Northward components of the Center of Gravity, along with the Center of Gravity SE are plotted for Fall and Spring Macrobenthos or Megabenthos Biomass.
 
+### MidAtlantic
+
+```{r plot_benthos_indexMidAtlanticMegabenthosindex}
+# Plot indicator
+ggplotObject <- ecodata::plot_benthos_index(report= 'MidAtlantic', varName= 'Megabenthos' ,plottype= 'index',n=10)
+ggplotObject
+```
+
+```{r plot_benthos_indexMidAtlanticMegabenthoscog}
+# Plot indicator
+ggplotObject <- ecodata::plot_benthos_index(report= 'MidAtlantic', varName= 'Megabenthos' ,plottype= 'cog',n=10)
+ggplotObject
+```
+
+```{r plot_benthos_indexMidAtlanticMacrobenthosindex}
+# Plot indicator
+ggplotObject <- ecodata::plot_benthos_index(report= 'MidAtlantic', varName= 'Macrobenthos' ,plottype= 'index',n=10)
+ggplotObject
+```
+
+```{r plot_benthos_indexMidAtlanticMacrobenthoscog}
+# Plot indicator
+ggplotObject <- ecodata::plot_benthos_index(report= 'MidAtlantic', varName= 'Macrobenthos' ,plottype= 'cog',n=10)
+ggplotObject
+```
+
+### NewEngland
+
+```{r plot_benthos_indexNewEnglandMegabenthosindex}
+# Plot indicator
+ggplotObject <- ecodata::plot_benthos_index(report= 'NewEngland', varName= 'Megabenthos' ,plottype= 'index',n=10)
+ggplotObject
+```
+
+```{r plot_benthos_indexNewEnglandMegabenthoscog}
+# Plot indicator
+ggplotObject <- ecodata::plot_benthos_index(report= 'NewEngland', varName= 'Megabenthos' ,plottype= 'cog',n=10)
+ggplotObject
+```
+
+```{r plot_benthos_indexNewEnglandMacrobenthosindex}
+# Plot indicator
+ggplotObject <- ecodata::plot_benthos_index(report= 'NewEngland', varName= 'Macrobenthos' ,plottype= 'index',n=10)
+ggplotObject
+```
+
+```{r plot_benthos_indexNewEnglandMacrobenthoscog}
+# Plot indicator
+ggplotObject <- ecodata::plot_benthos_index(report= 'NewEngland', varName= 'Macrobenthos' ,plottype= 'cog',n=10)
+ggplotObject
+```
+
 
 ## Indicator statistics 
 Spatial scale: by EPU and full shelf
@@ -57,7 +109,7 @@ Center of gravity indicators show no long term trends for Megabenthos. In contra
 
 **Point of contact**: [Sarah Gaichas (Sarah.Gaichas@noaa.gov)](mailto:Sarah Gaichas (Sarah.Gaichas@noaa.gov)){.email}
 
-**ecodata name**: No dataset
+**ecodata name**: `ecodata::benthos_index`
 
 **Variable definitions**
 
@@ -86,9 +138,14 @@ Spring Eastward Megabenthos Center of Gravity SE = standard error of average eas
 Spring Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 1-6, units kilometers 
 Spring Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 1-6, units kilometers
 
+```{r vars_benthos_index}
+# Pull all var names
+vars <- ecodata::benthos_index |>
+   dplyr::select(Var, Units) |>
+   dplyr::distinct()
 
-No Data
-
+DT::datatable(vars)
+```
 **Indicator Category**:
 
 - [X] Extensive analysis, not yet published
@@ -101,4 +158,7 @@ Source data are publicly available. All data and code available on GitHub at htt
 ## Accessibility and Constraints
 
 _No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/benthos_index.html>
 

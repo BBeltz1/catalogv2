@@ -22,12 +22,6 @@ Many deep water benthic and demersal exhibit thermal preferences for metabolic, 
 ## Key Results and Visualizations
 Maps of full NE shelf with cells shading gradient showing number of days exceeding temperature thresholds. For 15C threshold, much of the southern MAB experienced >100 days, as well as along the shelf break and around Nantucket Shoals. In 2023, only the southern and/or shallow portion of the MAB exceeded the 24C threshold.
 
-```{r plot_thermal_habitat_griddedMAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_gridded(report='MidAtlantic')
-ggplotObject
-```
-
 
 ## Indicator statistics 
 Spatial scale: full shelf
@@ -54,8 +48,11 @@ Using a high resolution bottom temperature product allows for localized heat str
 
 **Variable definitions**
 
-Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature) and PSY (CMEM’s PSY global forecast bottom temperature) min.depth: minimum of depth band max.depth: maximum of depth band 
-temp.threshold: cutoff temperature for thermal area calculations (all areas greater than or equal to this temperature) longitude: longitude of cell center point latitude: latitude of cell center point 
+Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature) and PSY (CMEM’s PSY global forecast bottom temperature) 
+min.depth: minimum of depth band max.depth: maximum of depth band 
+temp.threshold: cutoff temperature for thermal area calculations (all areas greater than or equal to this temperature) 
+longitude: longitude of cell center point 
+latitude: latitude of cell center point 
 Ndays: number of days exceeding temp.threshold
 
 ```{r vars_thermal_habitat_gridded}
