@@ -21,7 +21,7 @@ Passive acoustic monitoring (PAM) is a non-invasive method that provides continu
 This indicator examined the weekly acoustic presence of eight cetacean species summarized across two years. This summary allows for an improved understanding of how frequently each of the species/family were acoustically active and whether they exhibit seasonal patterns in their activity within the region. This data serves as a baseline summary prior to construction of the southern New England Offshore Wind Energy Areas and full description of the research is available in Van Parijs et al. (2023).
 
 ## Key Results and Visualizations
-![all_cetacean_aveageWeekly_Across_4sites(NS01-02_COX01-02)_v4](https://github.com/user-attachments/assets/e3602f2a-a991-40c7-8511-110f878ec393)
+![all_cetacean_aveageWeekly_Across_4sites(NS01-02_COX01-02)_v4](https://github.com/user-attachments/assets/e3602f2a-a991-40c7-8511-110f878ec393){width=100%}
 
 
 ## Indicator statistics 
