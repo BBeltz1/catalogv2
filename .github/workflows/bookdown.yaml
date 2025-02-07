@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - operation_phoenix
+      - dev
   pull_request:
     branches:
       - master
