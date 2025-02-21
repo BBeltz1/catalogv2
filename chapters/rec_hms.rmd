@@ -19,13 +19,13 @@ library(ecodata)
 Recreational shark landings pulled from the MRIP database
 
 ## Key Results and Visualizations
-Recreational landings of sharks are plotted. Sharks are categorized as large coastal, pelagic, prohibited and small coastal.
+Recreational landings of sharks are plotted. Sharks are categorized as large coastal, prohibited and small coastal.
 
 ### MAB
 
 ```{r plot_rec_hmsMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_rec_hms(report='MidAtlantic')
+ggplotObject <- ecodata::plot_rec_hms(report='MidAtlantic',n=10)
 ggplotObject
 ```
 
@@ -33,7 +33,7 @@ ggplotObject
 
 ```{r plot_rec_hmsNE}
 # Plot indicator
-ggplotObject <- ecodata::plot_rec_hms(report='NewEngland')
+ggplotObject <- ecodata::plot_rec_hms(report='NewEngland',n=10)
 ggplotObject
 ```
 

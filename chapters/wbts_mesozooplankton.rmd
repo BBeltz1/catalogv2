@@ -1,6 +1,6 @@
 # Mesozooplankton Biomass at Wilkinson Basin {#wbts_mesozooplankton}
 
-**Description**: Mesozooplankton biomass at the Wilkinson Basin Time Series Station (WBTS): 2005-2022
+**Description**: Mesozooplankton biomass at the Wilkinson Basin Time Series Station (WBTS): 2005-2024
 
 **Indicator family**: 
 
@@ -25,7 +25,7 @@ Planktonic copepods typically constituted the great majority of catch of the ver
 
 The annual cycle of mesozooplankton biomass (Fig. 1A) reflects the predominance of C. finmarchicus in the Gulf of Maine mesozooplankton community. At the WBTS station, the lowest biomass (1.52 g/m2: 2012 GAM fit) on March 18th occurs within a day of the nadir in C. finmarchicus abundance.  The biomass peak (14.6  g m-2: 2012 GAM fit) occurs on August 6th. High biomass is sustained throughout the late summer by the increasing proportion of the larger and heavier C. finmarchicus stage C5 as well as increased abundance of smaller zooplankton and invertebrate predators (Runge et al. 2023).
 
-Longer term trends in mesozooplankton biomass at the WBTS station mirror the seasonal trends in C. finmarchicus abundance, with significant declines of 64% in fall and 79% in winter between 2005 and 2015 (Fig 1D). By 2023, however, there is evidence for stabilization and a partial rebound in both abundance and biomass, although biomass is still down 65-67% in fall and winter. . The estimated mean contribution of C. finmarchicus stages C1-C6 to the total mesozooplankton biomass ranges among years from 40-80% in winter to 50-60% in spring and summer (Runge et al, 2023).
+Longer term trends in mesozooplankton biomass at the WBTS station mirror the seasonal trends in C. finmarchicus abundance, with significant declines of 64% in fall and 79% in winter between 2005 and 2015 (Fig 1D). By 2023, however, there is evidence for stabilization and a partial rebound in both abundance and biomass, although biomass is still down 65-67% in fall and winter. The estimated mean contribution of C. finmarchicus stages C1-C6 to the total mesozooplankton biomass ranges among years from 40-80% in winter to 50-60% in spring and summer (Runge et al, 2023).
 
 
 ## Indicator statistics 

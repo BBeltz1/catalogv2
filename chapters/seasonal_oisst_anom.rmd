@@ -17,10 +17,10 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Sea surface temperature can be used as a proxy for overall thermal conditions in the system. Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. To These data extend from 1981 to present. Anomalies are calculate by subtracting the long-term mean temperature is calculated from 1982-2010 for each season, from the seasonal-annual mean SST.
+Sea surface temperature can be used as a proxy for overall thermal conditions in the system. Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. These data extend from 1981 to present. Anomalies are calculated by subtracting the long-term mean temperature from 1990-2010 for each season, from the seasonal-annual mean SST.
 
 ## Key Results and Visualizations
-Since 1982, SST has been increasing in all seasons in all three EPUs. 2023 was the warmest winter SST in the GOM and MAB on record. All record warmest seasonal SST years have occurred on or after 2012. 2023 also saw relatively cooler summer temperatures in GB and the GOM and fall temperatures in all regions.
+Since 1982, SST has been increasing in all seasons in all three EPUs. 2023 was the warmest winter SST in the GOM and GB on record. All record warmest seasonal SST years have occurred on or after 2012. 2023 also saw relatively cooler summer temperatures in GB and the GOM and fall temperatures in all regions.
 
 ### MAB
 

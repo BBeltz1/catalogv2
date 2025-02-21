@@ -16,19 +16,14 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-This indicator shows seasonal sea surface temperature anomalies from a regional ocean model for the Northwest Atlantic based on the Modular Ocean Model Version 6 (NWA MOM6).  The model is at roughly 1/12 a degree horizontal resolution with data from 1993-2019 from a hindcast simulation which has no data assimilation.  Investigating the ability of this model to reproduce key indicators can help us to develop confidence in the model, as well as learn where improvements can be made.
+This indicator shows seasonal sea surface temperature anomalies from a regional ocean model for the Northwest Atlantic based on the Modular Ocean Model Version 6 (NWA MOM6).  The model is at roughly 1/12 a degree horizontal resolution with data from 1993-2019 from a hindcast simulation, which has no data assimilation.  Investigating the ability of this model to reproduce key indicators can help us to develop confidence in the model as well as learn where improvements can be made.
 
-This indicator also shows 10-year forecasts of annual sea surface temperature anomalies from the decadal forecast of the MOM6 Northwest Atlantic regional ocean model. 
- Understanding how temperatures might change in the future can help us anticipate potential shifts in marine communities.
+This indicator also shows 10-year forecasts of annual sea surface temperature anomalies from the decadal forecast of the MOM6 Northwest Atlantic regional ocean model. Understanding how temperatures might change in the future can help us anticipate potential shifts in marine communities.
 
 ## Key Results and Visualizations
 Here we show seasonal sea surface temperature anomalies in the Mid Atlantic Bight (MAB), Georges Bank (GB) and Gulf of Maine (GOM) EPUs.  Data from 1993 through 2019 are from NWA MOM6 (Ross et al., 2023) with a base period for the climatology of 1993 through 2010.  We do not compare these anomalies to those from observed OISST as the base period for that dataset is 1982-2010.  
 
-We also show the 10-year forecast for annual sea surface temperature anomalies in the MAB, GB, and GOM.  This forecast is from the decadal forecast of NWA MOM6 (Koul et al., 2024) which was initialized in 2022 and ran for 10 years.  The forecast indicates a stagnation in surface temperature warming over the next ten years.  Retrospective forecasts, where a forecast is initiated in the past and output is compared to observations, have shown that the NWA MOM6 decadal forecast is able to correctly predict periods of temperature stability and rapid warming in this region (Koul et al., 2024).
-
-Ross AC, Stock CA, Adcroft A,  Curchitser E,  Harrison MJ, Hallberg R, Hedstrom K, Zadeh N, Alexander M,  Chen W, Drenkard EJ, Pontavice H du, Dussin R, Gomez F, John JG, Kang D, Lavoie D, Resplandy L, Roobaert A, Saba V, Shin S-I, Siedlecki S, Simkins J.  A high-resolution physical–biogeochemical model for marine resource applications in the northwest Atlantic (MOM6-COBALT-NWA12 v1.0). Geoscientific Model Development.  2023;16: 6943–6985. https://doi.org/10.5194/gmd-16-6943-2023
-
-Koul V, Ross AC, Stock C, Zhang L, Delworth T, Wittenberg A. A Predicted Pause in the Rapid Warming of the Northwest Atlantic Shelf in the Coming Decade. Geophysical Research Letters.  2024;51: e2024GL110946. https://doi.org/10.1029/2024GL110946.
+We also show the 10-year forecast for annual sea surface temperature anomalies in the MAB, GB, and GOM.  This forecast is from the decadal forecast of NWA MOM6 (Koul et al., 2024), which was initialized in 2022 and ran for 10 years.  The forecast indicates a stagnation in surface temperature warming over the next ten years.  Retrospective forecasts, where a forecast is initiated in the past and output is compared to observations, have shown that the NWA MOM6 decadal forecast is able to correctly predict periods of temperature stability and rapid warming in this region (Koul et al., 2024).
 
 
 ## Indicator statistics 
@@ -46,7 +41,7 @@ Temporal scale: Winter (January, February, March), Spring (April, May, June), Su
 ```
 
 ## Implications
-Sea surface temperature is important for many marine species that have specific thermal preferences and tolerances.  When a region becomes too warm or cool a species may respond in many ways including by shifting its range or changing its behavior.  Understanding how surface temperature may vary in the future can help us anticipate changes to marine communities and living marine resources.
+Sea surface temperature is important for many marine species that have specific thermal preferences and tolerances.  When a region becomes too warm or cool, a species may respond in many ways including by shifting its range or changing its behavior.  Understanding how surface temperature may vary in the future can help us anticipate changes to marine communities and living marine resources.
 
 ## Get the data
 

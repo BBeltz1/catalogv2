@@ -1,6 +1,6 @@
 # Community Social Vulnerability Indicators (CSVI) {#engagement}
 
-**Description**: The data presented here are 2022 community social vulnerability indicators in top commercial and top recreational communities in Mid-Atlantic and New England regions, respectively.
+**Description**: The data presented here are 2022 community social vulnerability indicators in top commercial and top recreational communities in Mid-Atlantic and New England regions.
 
 **Indicator family**: 
 
@@ -25,7 +25,7 @@ Social vulnerability indicators measure social factors that shape a community’
 For this report, we selected the top ten communities with the highest engagement scores, the top ten communities with the highest population relative engagement scores, and focused on three socio-demographic indicators within the CSVI toolset (poverty, personal disruption, population composition). Sometimes, a community will appear on both lists (i.e., top ten highest engagement AND population relative engagement scores) such that the total report top communities will sum to less than 20. Here we apply the same selection standard for top fishing communities for both sectors using 2022 data, and again examine several CSVIs in this updated set of communities.
 
 ## Key Results and Visualizations
-65.2.0.1 Mid Atlantic
+#### Mid Atlantic
 
 In 2022, several communities stood out as having a particularly high engagement in commercial fishing including Cape May, NJ; Reedville, VA; and Montauk, NY. Additionally, Barnegat Light, NJ is much more engaged in commercial fishing relative to its population size when compared to other communities in the Mid-Atlantic. Cape May, NJ also ranked medium on the population composition index (calculated based on proportions of non-white, non-English speaking, and younger populations), suggesting that this important commercial fishing community may be more vulnerable to change in the future. Several other top ranked commercial fishing communities have socio-demographic concerns that could predispose these places to increased impacts including Little Creek, DE; Hampton, VA; Newport News, VA; Bronx/City Island, NY; Quinby, VA; Point Pleasant Beach, NJ; and Hampton Bays/Shinnecock, NY.
 
@@ -33,7 +33,7 @@ Barnegat Light, NJ also stood out as being much more engaged in recreational fis
 
 Several communities ranked in the top communities for both commercial and recreational indices; Montauk, NY, Cape May, Barnegat Light, NJ: and Point Pleasant Beach, NJ; meaning these communities may be impacted simultaneously (to a greater degree than others) by commercial and recreational regulatory and ecosystem changes.  
 
-65.2.0.2 New England
+#### New England
 
 In 2022, New Bedford, MA stands out as having a particularly high engagement in commercial fishing, while Frenchboro, ME is much more engaged in commercial fishing relative to its population size when compared to other communities in the Northeast. Of particular concern among top commercial fishing communities are New Bedford and Boston, MA as they both have medium or higher scores for all three socio-demographic indicators, while Port Clyde-Tenants Harbor, ME ranked medium for two of the three indicators. Swans Island, ME - another top ranked commercial fishing community -ranked medium on the personal disruption index suggesting that circumstances affecting family life like unemployment or educational level may result in increased vulnerability.
 
@@ -151,8 +151,7 @@ These indicators provide a snapshot of the presence of socio-demographic concern
 6) EJ Rating: environmental justice categorical rankings. 
 7) Personal Disruption Index: personal disruption factor score. 
 8) Population Composition Index: population composition factor score. 
-9) Poverty Index: poverty index factor score. 
-10) 1 std: 1 standard deviation. 
+9) Poverty Index: poverty index factor score. 10) 1 std: 1 standard deviation. 
 11) 0.5 std: 0.5 standard deviation.
 
 ```{r vars_engagement}

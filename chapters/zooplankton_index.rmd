@@ -18,11 +18,11 @@ library(ecodata)
 ## Introduction to Indicator
 Zooplankton are primary consumers in marine ecosystems that transfer energy from phytoplankton to fish, marine mammals, and birds. The Northeast Fisheries Science Center has conducted [zooplankton surveys](https://www.fisheries.noaa.gov/inport/item/9286) since the 1970s. Spatially explicit indices of abundance for several zooplankton groups were estimated using spatio-temporal modeling. 
 
-The groups include: 
+The zooplankton groups in the model include: 
 
 **Copepods**
 
-* _Calanus finmarchicus_, = Large copeopds SOE (used in small-large index)
+* _Calanus finmarchicus_, = Large copepods SOE (used in small-large index)
 
 * Large copepods ALL: _Calanus finmarchicus_, _Metridia lucens_, _Calanus minor_, _Eucalanus_ spp., _Calanus_ spp.
 
@@ -36,7 +36,7 @@ The groups include:
 
 ## Key Results and Visualizations
 **Abundance**
-Large and small copepod groups are mainly fluctuating without trend in both spring and fall across the EPUs. However, a significant decrease in small copeopods was apparent in the MAB during fall. Similarly, zooplankton volume is fluctuating without long term trends over time.
+Large and small copepod groups are mainly fluctuating without trend in both spring and fall across the EPUs. However, a significant decrease in small copepods was apparent in the MAB during fall. Similarly, zooplankton volume is fluctuating without long term trends over time.
 
 Euphausiids, in contrast, show increasing trends over time in all regions during fall, and in the MAB during spring.
 
@@ -223,13 +223,10 @@ Distribution shifts for zooplankton may result in mismatches with zooplankton fe
 
 **Variable definitions**
 
-Naming key 
-* *Calanus finmarchicus* (calfin_100m3) = “calfin” , 
+Naming key * *Calanus finmarchicus* (calfin_100m3) = “calfin” , 
 * Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL”, 
 * Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” and 
-* Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”.  
- Variables 
-**TO BE ADDED ONCE DATA IN ECODATA, NOT ALL DATASETS COULD BE READ INTO FORM**
+* Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”.
 
 ```{r vars_zooplankton_index}
 # Pull all var names

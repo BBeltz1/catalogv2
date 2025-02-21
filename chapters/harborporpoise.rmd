@@ -19,7 +19,7 @@ library(ecodata)
 Marine mammals including harbor porpoise are protected under the Marine Mammal Protection Act (MMPA). The goal of the MMPA is to obtain and maintain optimum sustainable populations of marine mammals and to ensure they continue to function as significant elements of marine ecosystems. Protected species management objectives include managing bycatch to remain below potential biological removal (PBR) thresholds, recovering endangered populations, and monitoring unusual mortality events. Here we report estimated bycatch and PBR thresholds for harbor porpoise in the Northeast U.S., which are subject to a Take Reduction Team under the Marine Mammal Protection Act.
 
 ## Key Results and Visualizations
-The total estimated bycatch from all U.S. North Atlantic commercial fisheries is plotted by year (Fig. x). In 2022, a total of 133 harbor porpoise were estimated to have been bycaught from 6 fisheries (including bottom gillnets, drift gillnets, bottom trawls, midwater trawls, pair trawls, and pelagic longline). Harbor porpoise bycatch estimates have been below PBR thresholds since 2010, thus meeting current management objectives (Fig. x). Earlier, however, bycatch was above PBR.
+The total estimated bycatch from all U.S. North Atlantic commercial fisheries is plotted by year. In 2022, a total of 133 harbor porpoise were estimated to have been bycaught from 6 fisheries (including bottom gillnets, drift gillnets, bottom trawls, midwater trawls, pair trawls, and pelagic longline). Harbor porpoise bycatch estimates have been below PBR thresholds since 2010, thus meeting current management objectives. Earlier, however, bycatch was above PBR.
 
 ```{r plot_harborporpoiseMAB}
 # Plot indicator
@@ -31,7 +31,7 @@ ggplotObject
 ## Indicator statistics 
 Spatial scale: US waters from North Carolina to Canada, from the U.S. coastline to the U.S. exclusive economic zone 200 nautical miles offshore, thus including all EPUs, the full shelf and beyond.
 
-Temporal scale: Annual from 1990 to 2022.
+Temporal scale: Annual from 1990 to 2023.
 
 **Synthesis Theme**:
 
@@ -43,7 +43,7 @@ Temporal scale: Annual from 1990 to 2022.
 ```
 
 ## Implications
-A bycatch reduction plan developed by the Take Reduction Team was needed to reduce the bycatch of harbor porpoises starting in 1997 (https://www.fisheries.noaa.gov/new-england-mid-atlantic/marine-mammal-protection/harbor-porpoise-take-reduction-plan; Fig. x). The reduction in harbor porpoise bycatch since 2010 is probably related not only to the Take Reduction Team’s bycatch mitigation plan but also to a corresponding decrease in gillnet fishing effort and to seasonal shifts of harbor porpoise that appear to be related to climate changes (see Fig xx).
+A bycatch reduction plan developed by the Take Reduction Team was needed to reduce the bycatch of harbor porpoises starting in 1997 (https://www.fisheries.noaa.gov/new-england-mid-atlantic/marine-mammal-protection/harbor-porpoise-take-reduction-plan; Fig. x). The reduction in harbor porpoise bycatch since 2010 is probably related not only to the Take Reduction Team’s bycatch mitigation plan but also to a corresponding decrease in gillnet fishing effort and to seasonal shifts of harbor porpoise that appear to be related to climate changes.
 
 ## Get the data
 

@@ -18,10 +18,10 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Aquaculture can produce seafood as well as other products. Here we summarize available data on aquaculture production from Northeast US states.
+Aquaculture can produce seafood as well as other products. Here we summarize available data on aquaculture production from the Northeast US.
 
 ## Key Results and Visualizations
-Overall oyster production is increasing and production per area is also improving.  Aquaculture reporting is state specific and because of this can be difficult to collate in a meaningful way. However, this is improving year to year as aquaculture increases across the coast. The data included here only holds oyster numbers at this time.
+Overall, oyster production is increasing and production per area is also improving.  Aquaculture reporting is state specific, which can make it difficult to collate in a meaningful way. However, this is improving year to year as aquaculture increases across the coast. The data included here only includes oyster numbers at this time.
 
 ```{r plot_aquacultureMAB}
 # Plot indicator
@@ -55,9 +55,8 @@ Aquaculture production contributes to overall seafood production in the Northeas
 
 **Variable definitions**
 
-Pieces: number of oysters produced (all regions)                 
-Shellfish lease Acres: area used for shellfish production (New England states only), acres 
- 
+Pieces: number of oysters produced (all regions)                 
+Shellfish lease Acres: area used for shellfish production (New England states only), acres  
 Production/Acre: Pieces divided by Shellfish lease acres (New England states only)
 
 ```{r vars_aquaculture}
