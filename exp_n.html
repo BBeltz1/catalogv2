@@ -88,7 +88,7 @@
 <li><a class="" href="mab_inshore_survey.html"><span class="header-section-number">11</span> Inshore Survey (Mid Atlantic)</a></li>
 <li><a class="" href="mass_inshore_survey.html"><span class="header-section-number">12</span> Inshore Survey (Massachusetts)</a></li>
 <li><a class="" href="ne_inshore_survey.html"><span class="header-section-number">13</span> Inshore Survey (New England)</a></li>
-<li><a class="" href="osw_survey_impact.html"><span class="header-section-number">14</span> Survey Impacts from Offshore Wind Development</a></li>
+<li><a class="" href="osw_survey_impact.html"><span class="header-section-number">14</span> Survey Impacts from Offshore Energy Development</a></li>
 <li><a class="" href="condition.html"><span class="header-section-number">15</span> Relative condition</a></li>
 <li><a class="" href="finfish_traits.html"><span class="header-section-number">16</span> NE Shelf Functional Trait Indicators</a></li>
 <li><a class="" href="habitat_diversity.html"><span class="header-section-number">17</span> Species Richness</a></li>
@@ -178,14 +178,14 @@
 <h2>
 <span class="header-section-number">21.1</span> Introduction to Indicator<a class="anchor" aria-label="anchor" href="#introduction-to-indicator-20"><i class="fas fa-link"></i></a>
 </h2>
-<p>Diversity estimates have been developed to understand whether the overall structure of the ecosystem has remained stable or is changing. There are a large number of diversity indices that can be used to measure diversity; for the purposes of the State of the Ecosystem report we report on the expected number of species in a sample size (E(S<sub>n</sub>)). These “rarefied” samples allow for comparisons between sample sites with varying number of species present. The estimate of (E(S<sub>n</sub>) is less biased than other diversity indices which usually increase with sample size. It also has a more meaningful biological interpretation than other indices. For example, if a predator eats 10 random individuals,</p>
-<p>E(S<sub>n</sub>) will predict the number of species consumed.</p>
+<p>Diversity estimates have been developed to understand whether the overall structure of the ecosystem has remained stable or is changing. There are a large number of diversity indices that can be used to measure diversity; for the purposes of the State of the Ecosystem report we report on the expected number of species in a sample size (E(S<sub>n</sub>)). These “rarefied” samples allow for comparisons between sample sites with varying number of species present. The estimate of (E(S<sub>n</sub>) is less biased than other diversity indices which usually increase with sample size. It also has a more meaningful biological interpretation than other indices. For example, if a predator eats 10 random individuals,<br>
+E(S<sub>n</sub>) will predict the number of species consumed.</p>
 </div>
 <div id="key-results-and-visualizations-20" class="section level2" number="21.2">
 <h2>
 <span class="header-section-number">21.2</span> Key Results and Visualizations<a class="anchor" aria-label="anchor" href="#key-results-and-visualizations-20"><i class="fas fa-link"></i></a>
 </h2>
-<p>Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability to correct for species composition, the time series is broken into Albatross and Bigelow stanzas. The only apparent trend in the data is from the Albatross time period in the Gulf of Maine.</p>
+<p>Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability to correct for species composition, the time series is broken into Albatross and Bigelow stanzas. There is an apparent trend in the data from the Albatross time period in the Gulf of Maine. There is a declining trend in the Mid-Atlantic data from the spring Bigelow period.</p>
 <div id="midatlantic-8" class="section level3" number="21.2.1">
 <h3>
 <span class="header-section-number">21.2.1</span> MidAtlantic<a class="anchor" aria-label="anchor" href="#midatlantic-8"><i class="fas fa-link"></i></a>
@@ -218,7 +218,7 @@
 <h2>
 <span class="header-section-number">21.4</span> Implications<a class="anchor" aria-label="anchor" href="#implications-20"><i class="fas fa-link"></i></a>
 </h2>
-<p>Diversity is used as a proxy for stability. Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management <span class="citation">[<a href="#ref-friedland_changes_2020">18</a>]</span>. This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse. Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored.</p>
+<p>Diversity is used as a proxy for stability. Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management <span class="citation">[<a href="#ref-friedland_changes_2020">18</a>]</span>. This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse. Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored. Recent declining adult diversity in the Mid-Atlantic should also be closely monitored for management implications.</p>
 </div>
 <div id="get-the-data-20" class="section level2" number="21.5">
 <h2>
@@ -228,11 +228,12 @@
 <p><strong>ecodata name</strong>: <code><a href="https://rdrr.io/pkg/ecodata/man/exp_n.html">ecodata::exp_n</a></code></p>
 <p><strong>Variable definitions</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Name: Season Region Expected Number of Species - Vessel; Definition: The expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow. For example “FALL GB Expected Number of Species - Albatross”; Units: n species per 1000 ind.</p></li>
-<li><p>Name: Season Region Expected Number of Species Standard Deviation - Vessel; Definition: The variance around the expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow. For example “FALL GB Expected Number of Species Standard Deviation - Albatross”; Units: n species per 1000 ind.</p></li>
+<li>Name: Season Region Expected Number of Species - Vessel; Definition: The expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow. For example “FALL GB Expected Number of Species - Albatross”; Units: n species per 1000 ind.<br>
+</li>
+<li>Name: Season Region Expected Number of Species Standard Deviation - Vessel; Definition: The variance around the expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow. For example “FALL GB Expected Number of Species Standard Deviation - Albatross”; Units: n species per 1000 ind.</li>
 </ol>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-f8a3072944c4d44fcd3e" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-f8a3072944c4d44fcd3e">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"],["AlbatrossSD-FALL","AlbatrossSD-FALL","AlbatrossSD-SPRING","AlbatrossSD-SPRING","BigelowSD-FALL","BigelowSD-FALL","BigelowSD-SPRING","BigelowSD-SPRING","Albatross-FALL","Albatross-FALL","Albatross-SPRING","Albatross-SPRING","Bigelow-FALL","Bigelow-FALL","Bigelow-SPRING","Bigelow-SPRING"],["n species per 1000 ind",null,null,"n species per 1000 ind",null,"n species per 1000 ind",null,"n species per 1000 ind","n species per 1000 ind",null,null,"n species per 1000 ind",null,"n species per 1000 ind",null,"n species per 1000 ind"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-237eac53aaa4b4d19be5" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-237eac53aaa4b4d19be5">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"],["AlbatrossSD-FALL","AlbatrossSD-FALL","AlbatrossSD-SPRING","AlbatrossSD-SPRING","BigelowSD-FALL","BigelowSD-FALL","BigelowSD-SPRING","BigelowSD-SPRING","Albatross-FALL","Albatross-FALL","Albatross-SPRING","Albatross-SPRING","Bigelow-FALL","Bigelow-FALL","Bigelow-SPRING","Bigelow-SPRING"],["n species per 1000 ind",null,null,"n species per 1000 ind",null,"n species per 1000 ind",null,"n species per 1000 ind","n species per 1000 ind",null,null,"n species per 1000 ind",null,"n species per 1000 ind",null,"n species per 1000 ind"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
 <ul class="task-list">
 <li><label><input type="checkbox" checked>Database pull with analysis</label></li>
 </ul>
@@ -297,7 +298,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 12 February 2025.</p>
+    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 24 February 2025.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
