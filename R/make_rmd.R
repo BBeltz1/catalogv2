@@ -270,8 +270,6 @@ make_rmd <- function(listobject, n = 10){
             for (atype in at$plottype) {
               avarws <- gsub("\\s", "", avar)  # remove whitespace from name
               # create varName plots
-              # cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,atype,"}"),append=T,fill=T,file=con)
-              # cat("# Plot indicator",append=T,fill=T,file=con)
               
               if (any(tolower(functionArgs) == "epu")) {
                 if (tolower(arep) == "newengland") {
@@ -296,6 +294,11 @@ make_rmd <- function(listobject, n = 10){
 
                 
               } else {
+                cat("",append=T,fill=T,file=con) # add space
+                cat(paste0("```{r plot_",listobject$indicatorname,arep,avarws,atype,"}"),append=T,fill=T,file=con)
+                cat("# Plot indicator",append=T,fill=T,file=con)
+                
+                
                 if(isn) {
                   cat(paste0("ggplotObject <- ecodata::plot_",listobject$indicatorname,"(report= '",arep,"', varName= '",avar,"', plottype = '",atype,"',n=",n,")"),append=T,fill=T,file=con)
                 } else {

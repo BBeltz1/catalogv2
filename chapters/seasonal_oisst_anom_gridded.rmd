@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Sea surface temperature can be used as a proxy for overall thermal conditions in the system. Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. To These data extend from 1981 to present. Anomalies are calculate by subtracting the long-term mean temperature is calculated from 1982-2010 for each season, from the seasonal-annual mean SST. Gridded anomalies are presented on a map for each year.
+Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. To These data extend from 1981 to present. Anomalies are calculate by subtracting the long-term mean temperature is calculated from 1982-2010 for each season, from the seasonal-annual mean SST. Gridded anomalies are presented on a map for each year.
 
 ## Key Results and Visualizations
 Despite record setting ocean temperatures in 2023, the Northeast US shelf had both warm and cool sea surface temperature anomalies in each season.

@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Transition dates are defned as the day of the year when surface temperatures changeover from cool to warm conditions in the spring and back to cool conditions in the fall.
+Transition dates are defined as the day of the year when surface temperatures changeover from cool to warm conditions in the spring and back to cool conditions in the fall.
 
 ## Key Results and Visualizations
 Ocean summer length in Mid-Atlantic: the annual total number of days between the spring thermal transition date and the fall thermal transition date. The transition dates are defined as the day of the year when surface temperatures changeover from cool to warm conditions in the spring and back to cool conditions in the fall.
@@ -75,7 +75,7 @@ Prolonged fall temperatures have been linked to the increased number of cold-stu
 
 **Variable definitions**
 
-1. falltrans 2. sprtrans 3. maxday
+1. falltrans 2. sprtrans 3. maxday
 
 ```{r vars_trans_dates}
 # Pull all var names

@@ -1,12 +1,6 @@
 # Inshore Survey (New England) {#ne_inshore_survey}
 
-**Description**: Biomass time series for aggregate species groups from *three* inshore bottom trawl surveys conducted throughout the NE US:
-
-- NEAMAP (mab_inshore_survey) from Cape Hatteras to RI
-
-- MA Inshore in MA state waters (mass_inshore_survey)
-
-- ME/NH Inshore in ME and NH state waters (ne_inshore_survey)
+**Description**: Biomass time series for aggregate species groups from the Maine/New Hampshire inshore bottom trawl surveys conducted in Maine and New Hampshire state waters.
 
 **Indicator family**: 
 
@@ -22,7 +16,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Indicators from these inshore surveys are analagous to those produced by the NEFSC trawl survey in the `aggregate_biomass` indicator dataset
+Indicators from these inshore surveys are analogous to those produced by the NEFSC trawl survey in the [aggregate survey biomass](https://noaa-edab.github.io/catalog/aggregate_biomass.html) indicator dataset.
 
 ## Key Results and Visualizations
 Each survey shows trends by aggregate group.
@@ -51,7 +45,7 @@ Temporal scale: Spring and Fall
 ```
 
 ## Implications
-Some trends match the NEFSC survey, some dont. This is driven by different species availability to surveys in time and space as well as the surveys sampling different habitats. Nearshore habitats are important to fish and fisheries so we monitor them as as well as trends from the larger EPUs.
+The trends in the Maine/New Hampshire inshore survey vary compared to the NEFSC survey. This is driven by different species availability to surveys in time and space as well as the surveys sampling different habitats. Nearshore habitats are important to fish and fisheries so we monitor them as as well as trends from the larger EPUs.
 
 ## Get the data
 
