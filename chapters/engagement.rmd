@@ -143,16 +143,10 @@ These indicators provide a snapshot of the presence of socio-demographic concern
 
 **Variable definitions**
 
-1) Name: Community Name: name of the community. 
-2) Commercial Engagement Index: commercial engagement factor score. 
-3) Commercial Relative Engagement Index: commercial relative engagement factor score. 
-4) Recreational Engagement Score: recreational engagement factor score. 
-5) Recreational Relative Engagement Index: recreational relative engagement factor score. 
-6) EJ Rating: environmental justice categorical rankings. 
-7) Personal Disruption Index: personal disruption factor score. 
-8) Population Composition Index: population composition factor score. 
-9) Poverty Index: poverty index factor score. 10) 1 std: 1 standard deviation. 
-11) 0.5 std: 0.5 standard deviation.
+1) Name: Community Name: name of the community. 2) Commercial Engagement Index: commercial engagement factor score. 3) Commercial Relative Engagement Index: commercial relative engagement factor score. 
+4) Recreational Engagement Score: recreational engagement factor score. 5) Recreational Relative Engagement Index: recreational relative engagement factor score. 
+6) Social vulnerabilities: categorical rankings of social vulnerability. 7) Personal Disruption Index: personal disruption factor score. 
+8) Population Composition Index: population composition factor score. 9) Poverty Index: poverty index factor score. 10) 1 std: 1 standard deviation. 11) 0.5 std: 0.5 standard deviation.
 
 ```{r vars_engagement}
 # Pull all var names

@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years. Sampling methods are described in Anderson et al. 2005. In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.
+Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years. Sampling methods are described in Anderson et al. 2005 [@anderson_identification_2005]. In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.
 
 ## Key Results and Visualizations
 Visualizations of the data include an annual time series plot of estimated cyst abundance, and a time series of maps depicting the spatial and temporal variability in the Gulf of Maine.  Results are plotted as estimated total numbers of cells (10 to the 16th power) in Eastern Gulf of Maine (east of Penobscot Bay), Western Gulf of Maine (west of Penobscot Bay), Bay of Fundy, and entire Gulf of Maine.
@@ -65,7 +65,7 @@ Temporal scale: Cyst are sampled in the fall and winter months, and reported ann
 ```
 
 ## Implications
-The annual fall surveys of Alexandrium cyst distribution and abundance in the Gulf of Maine provide data needed to predict bloom events in the following year. Other key variables in the predictive models include currents, nutrients, temperature, and salinity dynamics at multiple spatial and temporal scales (Li et al. 2020). After strong cyst deposition  events in 2005 and 2009, the time series suggest lower overall cyst abundance through 2023. The cyst abundance in the 2023 survey was relatively low, and a low to moderate bloom year was predicted for 2024 (Li et al. 2024).  Bloom  events and shellfishery closures usually occur somewhere in any given year. Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial (Jin and Hoagland 2008). Impacts to offshore shellfisheries can occur as well, for example surf clam and ocean quahog on Georges Bank 1988-1990 (Anderson et al. 1997).
+The annual fall surveys of Alexandrium cyst distribution and abundance in the Gulf of Maine provide data needed to predict bloom events in the following year. Other key variables in the predictive models include currents, nutrients, temperature, and salinity dynamics at multiple spatial and temporal scales [@li_dynamics_2020]. After strong cyst deposition  events in 2005 and 2009, the time series suggest lower overall cyst abundance through 2023. The cyst abundance in the 2023 survey was relatively low, and a low to moderate bloom year was predicted for 2024 (Li et al. 2024).  Bloom events and shellfishery closures usually occur somewhere in any given year. Economic impacts to inshore shellfisheries (mussels, softshell clams, quahogs) can be substantial [@jin_value_2008]. Impacts to offshore shellfisheries can occur as well, for example surf clam and ocean quahog on Georges Bank 1988-1990 [@anderson_bloom_1997].
 
 ## Get the data
 
@@ -79,10 +79,8 @@ Alexandrium: 1) Name: Year; Definition: Calendar year; Units: Integer.
 2) Name: West_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Western Gulf of Maine; Units: Decimal number. 
 3) Name: East_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Eastern Gulf of Maine; Units: Decimal number. 
 4) Name: Bay_of_Fundy; Definition: Estimated total numbers of cells (x10 to the 16th power) in Bay of Fundy; Units: Decimal number. 
-5) Name: Gulf_of Maine_All; Definition: Estimated total numbers of cells (x10 to the 16th power) in entire Gulf of Maine; Units: Decimal number. 
- PSP: 1) Year; Definition: calendar year; Units: yyyy. 
-2) Name: State; Definition: MA, NH, or ME ; Units: categories. 
-3) Name: N_Rows; Definition: Number of sample events represented; Units: integer.  
+5) Name: Gulf_of Maine_All; Definition: Estimated total numbers of cells (x10 to the 16th power) in entire Gulf of Maine; Units: Decimal number.  PSP: 1) Year; Definition: calendar year; Units: yyyy. 
+2) Name: State; Definition: MA, NH, or ME ; Units: categories. 3) Name: N_Rows; Definition: Number of sample events represented; Units: integer.  
 4) Name: PSP_Exceed_Threshold_Pct; Definition: Percentage of samples exceeding PSP threshold; Units: decimal number, 0-100.
 
 ```{r vars_habs}

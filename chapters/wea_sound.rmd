@@ -7,7 +7,7 @@
 
 
 
-**Contributor(s)**: Sofie M. Van Parijs, Annamaria I. DeAngelis , Tyler Aldrich, Rochelle Gordon, Amanda Holdman , Jessica A. McCordic, Xavier Mouy, Timothy J. Rowell, Sara Tennant, Annabel Westell and Genevieve E. Davis
+**Contributor(s)**: Sofie M. Van Parijs, Annamaria I. DeAngelis , Tyler Aldrich, Rochelle Gordon, Amanda Holdman , Xavier Mouy, Timothy J. Rowell, Sara Tennant, Annabel Westell and Genevieve E. Davis
 
 **Affiliations**: NEFSC
 
@@ -41,7 +41,7 @@ Long-term time series of ambient sound metrics may provide a rapid indicator of 
 
 ## Get the data
 
-**Point of contact**: [Jessica McCordic (jessica.mccordic@noaa.gov); Sofie Van Parijs (sofie.vanparijs@noaa.gov)](mailto:Jessica McCordic (jessica.mccordic@noaa.gov); Sofie Van Parijs (sofie.vanparijs@noaa.gov)){.email}
+**Point of contact**: [Sofie Van Parijs (sofie.vanparijs@noaa.gov); SOE Leads (nefsc.soe.leads@noaa.gov)](mailto:Sofie Van Parijs (sofie.vanparijs@noaa.gov); SOE Leads (nefsc.soe.leads@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::wea_sound`
 
