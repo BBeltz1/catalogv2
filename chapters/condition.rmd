@@ -7,7 +7,7 @@
 - [X] Megafauna
 
 
-**Contributor(s)**: Laurel Smith
+**Contributor(s)**: NOAA EDAB
 
 **Affiliations**: NEFSC
 
@@ -80,14 +80,13 @@ These changes in condition have direct implications for stock assessments, catch
 
 ## Get the data
 
-**Point of contact**: [Laurel.smith@noaa.gov](mailto:Laurel.smith@noaa.gov){.email}
+**Point of contact**: [nefsc.soe.leads@noaa.gov](mailto:nefsc.soe.leads@noaa.gov){.email}
 
 **ecodata name**: `ecodata::condition`
 
 **Variable definitions**
 
-Species: common name for fish species  EPU: Ecological Production Unit YEAR: year of condition data 
-MeanCond: annual mean by EPU and species of relative condition (unitless)
+Species: common name for fish species  EPU: Ecological Production Unit YEAR: year of condition data MeanCond: annual mean by EPU and species of relative condition (unitless)
 
 ```{r vars_condition}
 # Pull all var names

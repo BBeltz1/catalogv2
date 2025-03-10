@@ -7,7 +7,7 @@
 - [X] Megafauna
 
 
-**Contributor(s)**: Stephanie Wood; Elizabeth Josephson
+**Contributor(s)**: Stephanie Wood
 
 **Affiliations**: NEFSC
 
@@ -50,7 +50,7 @@ These high rates of increase in gray seal pups born at US pupping sites provide 
 
 ## Get the data
 
-**Point of contact**: [Stephanie Wood (Stephanie.Wood@noaa.gov), Elizabeth Josephson (elizabeth.josephson@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)](mailto:Stephanie Wood (Stephanie.Wood@noaa.gov), Elizabeth Josephson (elizabeth.josephson@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)){.email}
+**Point of contact**: [Stephanie Wood (Stephanie.Wood@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)](mailto:Stephanie Wood (Stephanie.Wood@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::seal_pups`
 

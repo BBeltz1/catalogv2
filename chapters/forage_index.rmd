@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The amount of forage fish available in the ecosystem combined with the energy content of the forage species determines the amount of energy potentially available to predators in the ecosystem. Changes in the forage base could pose a risk to managed and protected species production. This spatially-explicit forage index estimated the combined biomass of 21 forage species using stomach contents information from 22 predatory fish species collected on bottom trawl surveys. 
+The amount of forage fish available in the ecosystem combined with the energy content of the forage species determines the amount of energy potentially available to predators in the ecosystem. Changes in the forage base could pose a risk to managed and protected species production. Spatially explicit indices of abundance for several forage species were estimated using spatio-temporal modeling (VAST, @thorson_comparing_2017; @thorson_guidance_2019). This spatially-explicit forage index estimated the combined biomass of 21 forage species using stomach contents information from 22 predatory fish species collected on bottom trawl surveys. 
 
 In addition to an index of forage abundance in each EPU, the coastwide center of gravity for the combined forage biomass was estimated. Consistent movement of the center of gravity towards the north or east indicates a distribution shift for combined forage fish.
 

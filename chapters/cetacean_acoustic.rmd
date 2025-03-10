@@ -7,7 +7,7 @@
 - [X] Megafauna
 
 
-**Contributor(s)**: Sofie Van Parijs, Annamaria DeAngelis, Tyler Aldrich, Rochelle Gordon, Amanda Holdman, Jessica McCordic, Xavier Mouy, Tim Rowell, Sara Tennant, Annabel Westell, and Genevieve Davis
+**Contributor(s)**: Sofie Van Parijs, Annamaria DeAngelis, Tyler Aldrich, Rochelle Gordon, Amanda Holdman, Xavier Mouy, Tim Rowell, Sara Tennant, Annabel Westell, and Genevieve Davis
 
 **Affiliations**: NEFSC
 
@@ -18,7 +18,7 @@ library(ecodata)
 ## Introduction to Indicator
 Passive acoustic monitoring (PAM) is a non-invasive method that provides continuous sampling effort in areas that are otherwise difficult to observe species presence and provides information on multiple species simultaneously. PAM allows for understanding trends in species distribution, habitat use, cumulative impacts and risk mitigation, and evaluating potential behavioral and distributional changes resulting from climate change or anthropogenic activity. 
 
-This indicator examined the weekly acoustic presence of eight cetacean species summarized across two years. This summary allows for an improved understanding of how frequently each of the species/family were acoustically active and whether they exhibit seasonal patterns in their activity within the region. This data serves as a baseline summary prior to construction of the southern New England Offshore Wind Energy Areas and full description of the research is available in Van Parijs et al. (2023).
+This indicator examined the weekly acoustic presence of eight cetacean species summarized across two years. This summary allows for an improved understanding of how frequently each of the species/family were acoustically active and whether they exhibit seasonal patterns in their activity within the region. This data serves as a baseline summary prior to construction of the southern New England Offshore Wind Energy Areas and full description of the research is available in Van Parijs et al. 2023[@vanparijs_establishing_2023].
 
 ## Key Results and Visualizations
 ![Figure 1](https://github.com/user-attachments/assets/e3602f2a-a991-40c7-8511-110f878ec393){width=100%}

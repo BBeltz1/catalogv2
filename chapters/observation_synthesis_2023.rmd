@@ -1,4 +1,4 @@
-# 2023 Observation Synthesis {#observation_synthesis}
+# 2023 Observation Synthesis {#observation_synthesis_2023}
 
 **Description**: Synthesis of multiple anomalous and extreme conditions observed in 2023 that should be noted and considered in future analyses.
 
@@ -48,6 +48,14 @@ A wide-spread, long-duration phytoplankton bloom of the dinoflagellate Tripos mu
 
 In Chesapeake Bay, hypoxia conditions were the lowest on record (since 1995), creating more suitable habitat for multiple fin fish and benthic species. Cooler Chesapeake Bay water temperatures paired with low hypoxia in the summer suggest conditions that season were favorable for striped bass. Cooler summer temperatures also support juvenile summer flounder growth.  However, warmer winter and spring water temperatures in the Chesapeake Bay, along with other environmental factors (such as low flow), may have played a role in low production of juvenile striped bass in 2023. Higher-than-average salinity across the Bay was likely driven by low precipitation and increased the area of available habitat for species such as croaker, spot, menhaden, and red drum, while restricting habitat area for invasive blue catfish.
 
+#### Summer 2023 multi-stressor event in the Mid-Atlantic
+
+From August-September 2023, much of the bottom water sampled from Sandy Hook, New Jersey south to Tuckerton, New Jersey and from nearshore (15 meter water depth) to deeper depths (60 meter water depth), exhibited dissolved oxygen concentrations less than 5 mg/L and pH values less than 7.75. Coast-wide, hypoxic levels of dissolved oxygen (concentrations < 3 mg/L) were observed at shallower, more inshore locations. Some of these locations were shallow enough to be observed in glider ru40, but much of these hypoxic levels were observed in a shallow glider (ru28, with a 50 m depth capacity) deployed at the same time. In addition to low pH measured in bottom waters by glider ru39, which is indicative of ocean acidification, aragonite saturation state (Omega) was calculated to be < 1 in several locations. Normal, more optimal levels in seawater typically include dissolved oxygen concentrations > 7 mg/liter, pH of ~8.1, and aragonite saturation states > 3.
+
+During the time when low dissolved oxygen and pH/aragonite saturation state were observed, numerous mortalities of fish, lobsters and crabs within the sampling area were reported. The mortalities were observed in bottom waters primarily off the coast of Monmouth and Ocean Counties and included the Mud Hole, as far east as Lillian wreck, and southward in Sea Girt and Axel Carlson Reefs and the surrounding areas. Mortalities were reported for American lobsters, Jonah crab, Atlantic rock crab, spider crabs, black sea bass, and tautog not only in pots where trapped organisms would not have been able to escape poor conditions, but also on the open bottom. This observation suggests that if low dissolved oxygen and/or pH were indeed the culprit for these reported mortalities, the area may have been extensive enough that they could not escape in time.
+
+Healthy dissolved oxygen, pH, and aragonite saturation state levels were restored in bottom waters temporarily during the offshore passage of Hurricane Lee around 09/16, and for the remainder of the sampling after a strong hybrid storm that started on 09/24 and drove the eventual fall water column turnover on 09/26.
+
 
 ## Indicator statistics 
 Spatial scale: NES
@@ -59,7 +67,7 @@ Temporal scale: 2023
 - [X] Multiple System Drivers
 
 
-```{r autostats_observation_synthesis}
+```{r autostats_observation_synthesis_2023}
 # Either from Contributor or ecodata
 ```
 

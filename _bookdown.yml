@@ -75,7 +75,8 @@ rmd_files:
     -   "chapters/heatwave.rmd"
     -   "chapters/heatwave_year.rmd"
     -   "chapters/timing_shifts.rmd"
-    -   "chapters/observation_synthesis.rmd"
+    -   "chapters/observation_synthesis_2023.rmd"
+    -   "chapters/observation_synthesis_2024.rmd"
     -   "chapters/ocean_acidification.rmd"
     -   "chapters/gom_acidification.rmd"
 #
