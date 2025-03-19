@@ -30,41 +30,41 @@ Thresholds based on regional estimates of primary productivity, are not yet avai
 
 ### MidAtlantic
 
-```{r plot_pprMidAtlanticppregional}
+```{r plot_pprMidAtlanticppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'pp' ,threshold= 'regional')
+ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'pp' ,threshold= 'global')
 ggplotObject
 ```
 
-```{r plot_pprMidAtlanticfogartyregional}
+```{r plot_pprMidAtlanticfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'fogarty' ,threshold= 'regional')
+ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'fogarty' ,threshold= 'global')
 ggplotObject
 ```
 
-```{r plot_pprMidAtlanticrytherregional}
+```{r plot_pprMidAtlanticrytherglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'ryther' ,threshold= 'regional')
+ggplotObject <- ecodata::plot_ppr(report= 'MidAtlantic', varName= 'ryther' ,threshold= 'global')
 ggplotObject
 ```
 
 ### NewEngland
 
-```{r plot_pprNewEnglandppregional}
+```{r plot_pprNewEnglandppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'pp' ,threshold= 'regional')
+ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'pp' ,threshold= 'global')
 ggplotObject
 ```
 
-```{r plot_pprNewEnglandfogartyregional}
+```{r plot_pprNewEnglandfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'fogarty' ,threshold= 'regional')
+ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'fogarty' ,threshold= 'global')
 ggplotObject
 ```
 
-```{r plot_pprNewEnglandrytherregional}
+```{r plot_pprNewEnglandrytherglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'ryther' ,threshold= 'regional')
+ggplotObject <- ecodata::plot_ppr(report= 'NewEngland', varName= 'ryther' ,threshold= 'global')
 ggplotObject
 ```
 
@@ -96,7 +96,9 @@ There is insufficient evidence to determine whether ecosystem overfishing in occ
 
 **Variable definitions**
 
-1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 3. PP; Primary Production; mtC region^-1 year^-1
+1. Ryther; The Ryther index; mt km^-2 y^-1 
+2. Fogarty; The Fogarty Index; Parts per thousand 0/00 
+3. PP; Primary Production; mtC region^-1 year^-1
 
 ```{r vars_ppr}
 # Pull all var names
