@@ -486,6 +486,8 @@ accessibility-and-constraints-51
 thermal_habitat_gridded
 introduction-to-indicator-52
 key-results-and-visualizations-52
+mab-10
+ne-7
 indicator-statistics-52
 implications-52
 get-the-data-52
@@ -494,7 +496,7 @@ accessibility-and-constraints-52
 ch_bay_sal
 introduction-to-indicator-53
 key-results-and-visualizations-53
-mab-10
+mab-11
 indicator-statistics-53
 implications-53
 get-the-data-53
@@ -503,7 +505,7 @@ accessibility-and-constraints-53
 ch_bay_temp
 introduction-to-indicator-54
 key-results-and-visualizations-54
-mab-11
+mab-12
 indicator-statistics-54
 implications-54
 get-the-data-54
@@ -637,8 +639,8 @@ accessibility-and-constraints-67
 rec_hms
 introduction-to-indicator-68
 key-results-and-visualizations-68
-mab-12
-ne-7
+mab-13
+ne-8
 indicator-statistics-68
 implications-68
 get-the-data-68
@@ -667,8 +669,8 @@ accessibility-and-constraints-70
 stock_status
 introduction-to-indicator-71
 key-results-and-visualizations-71
-mab-13
-ne-8
+mab-14
+ne-9
 indicator-statistics-71
 implications-71
 get-the-data-71
@@ -715,8 +717,8 @@ accessibility-and-constraints-75
 wind_port
 introduction-to-indicator-76
 key-results-and-visualizations-76
-mab-14
-ne-9
+mab-15
+ne-10
 indicator-statistics-76
 implications-76
 get-the-data-76
