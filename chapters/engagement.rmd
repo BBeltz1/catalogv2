@@ -43,9 +43,15 @@ Narragansett/Point Judith, RI ranked as a top community for both commercial and 
 
 ### MidAtlantic
 
-```{r plot_engagementMidAtlanticCommercialEJ}
+```{r plot_engagementMidAtlanticCommercialplot}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'EJ')
+ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'plot')
+ggplotObject
+```
+
+```{r plot_engagementMidAtlanticCommercialSocial}
+# Plot indicator
+ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'Social')
 ggplotObject
 ```
 
@@ -61,9 +67,15 @@ ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commer
 ggplotObject
 ```
 
-```{r plot_engagementMidAtlanticRecreationalEJ}
+```{r plot_engagementMidAtlanticRecreationalplot}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'EJ')
+ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'plot')
+ggplotObject
+```
+
+```{r plot_engagementMidAtlanticRecreationalSocial}
+# Plot indicator
+ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'Social')
 ggplotObject
 ```
 
@@ -81,9 +93,15 @@ ggplotObject
 
 ### NewEngland
 
-```{r plot_engagementNewEnglandCommercialEJ}
+```{r plot_engagementNewEnglandCommercialplot}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'EJ')
+ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'plot')
+ggplotObject
+```
+
+```{r plot_engagementNewEnglandCommercialSocial}
+# Plot indicator
+ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'Social')
 ggplotObject
 ```
 
@@ -99,9 +117,15 @@ ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commerc
 ggplotObject
 ```
 
-```{r plot_engagementNewEnglandRecreationalEJ}
+```{r plot_engagementNewEnglandRecreationalplot}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'EJ')
+ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'plot')
+ggplotObject
+```
+
+```{r plot_engagementNewEnglandRecreationalSocial}
+# Plot indicator
+ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'Social')
 ggplotObject
 ```
 
@@ -143,10 +167,16 @@ These indicators provide a snapshot of the presence of socio-demographic concern
 
 **Variable definitions**
 
-1) Name: Community Name: name of the community. 2) Commercial Engagement Index: commercial engagement factor score. 3) Commercial Relative Engagement Index: commercial relative engagement factor score. 
-4) Recreational Engagement Score: recreational engagement factor score. 5) Recreational Relative Engagement Index: recreational relative engagement factor score. 
-6) Social vulnerabilities: categorical rankings of social vulnerability. 7) Personal Disruption Index: personal disruption factor score. 
-8) Population Composition Index: population composition factor score. 9) Poverty Index: poverty index factor score. 10) 1 std: 1 standard deviation. 11) 0.5 std: 0.5 standard deviation.
+1) Name: Community Name: name of the community. 
+2) Commercial Engagement Index: commercial engagement factor score. 
+3) Commercial Relative Engagement Index: commercial relative engagement factor score. 
+4) Recreational Engagement Score: recreational engagement factor score. 
+5) Recreational Relative Engagement Index: recreational relative engagement factor score. 
+6) Social vulnerabilities: categorical rankings of social vulnerability. 
+7) Personal Disruption Index: personal disruption factor score. 
+8) Population Composition Index: population composition factor score. 
+9) Poverty Index: poverty index factor score. 10) 1 std: 1 standard deviation. 
+11) 0.5 std: 0.5 standard deviation.
 
 ```{r vars_engagement}
 # Pull all var names
