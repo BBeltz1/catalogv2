@@ -19,28 +19,13 @@ library(ecodata)
 
 
 ## Key Results and Visualizations
-The seasonal cycle of phytoplankton biomass typically includes peaks during the winter-spring and fall seasons and minimums during the summer months, however exact bloom timing varies by region. Primary productivity, increases during bloom periods due to increased biomass, but peaks during the summer months when daylight and temperatures are greatest. In 2024, concentrations of chlorophyll _a_ (a proxy for biomass) were above average during the winter-spring and fall bloom periods in all regions (figure 2.2.1). There was no evidence of a repeat of the widespread _Tripos muelleri_ bloom [add link to the 2023 highlights catalog] observed in 2023 (ADD REFERENCE TO THE 2023 NE Report). There was, however, an atypical localized coccolithophore bloom [once available, add link to the coccolithophore section of the 2024 highlights catalog] south of Long Island, New York in late June to early July. 
+The seasonal cycle of phytoplankton biomass typically includes peaks during the winter-spring and fall seasons and minimums during the summer months, however exact bloom timing varies by region. Primary productivity, increases during bloom periods due to increased biomass, but peaks during the summer months when daylight and temperatures are greatest. In 2024, concentrations of chlorophyll _a_ (a proxy for biomass) were above average during the winter-spring and fall bloom periods in all regions. There was no evidence of a repeat of the widespread _Tripos muelleri_ [bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2023.html) observed in [2023](https://doi.org/10.25923/f8xc-hj17). There was, however, an atypical localized [coccolithophore bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2024.html#key-results-and-visualizations-61) south of Long Island, New York in late June to early July.
 
-[INSERT MAB, GB and GOM 2024 chlorophyll plots as Figure 2.2.1]
+Mid-Atlantic primary production peaked in early summer in 2024 and was above average in late fall, which is attributed to the above average late fall bloom. Georges Bank fall productivity was also above average due to the abnormally large fall phytoplankton bloom. Conversely, the Gulf of Maine spring bloom accounted for the largest above average spike in that region. 
 
-[Caption: 2024 weekly median chlorophyll a concentrations (green line) for the Mid-Atlantic, Georges Bank and Gulf of Maine ecoregions. The black line is the climatological mean (1998-2020) and the shaded region represents ???] 
+The seasonal cycles of phytoplankton size distribution are typically dominated by larger-celled microplankton (> 20 um) during the winter-spring and fall bloom periods, while smaller-celled nanoplankton (0.2-20 um) dominate during the warmer summer months. The smallest phytoplankton group, picoplankton (<0.2 um), represent the smallest fraction of the phytoplankton community in the region. Phytoplankton size class distributions were near average for most of the year, except during the early fall bloom. The 2024 phytoplankton size class distribution was near the seasonal climatology in all regions except during the above average phytoplankton bloom periods.
 
-Mid-Atlantic primary production peaked in early summer in 2024 and was above average in late fall, which is attributed to the above average late fall bloom (figures 2.2.2a). Georges Bank fall productivity was also above average due to the abnormally large fall phytoplankton bloom (figure 2.2.2b). Conversely, the Gulf of Maine spring bloom accounted for the largest above average spike in that region (figure 2.2.2c).
-
-[INSERT MAB, GB and GOM 2024 PP plots as Figure 2.2.2]
-
-[Caption: 2024 weekly median primary productivity (green line) for the Mid-Atlantic, Georges Bank and Gulf of Maine ecoregions. The black line is the climatological mean (1998-2020) and the shaded region represents ???] 
-
-The seasonal cycles of phytoplankton size distribution are typically dominated by larger-celled microplankton (> 20 um) during the winter-spring and fall bloom periods, while smaller-celled nanoplankton (0.2-20 um) dominate during the warmer summer months. The smallest phytoplankton group, picoplankton (<0.2 um), represent the smallest fraction of the phytoplankton community in the region. Phytoplankton size class distributions were near average for most of the year, except during the early fall bloom. The 2024 phytoplankton size class distribution was near the seasonal climatology in all regions except during the above average phytoplankton bloom periods (figure 2.2.3).
-
-[INSERT MAB, GB and GOM 2024 PSC plots as figure 2.2.3]
-
-[Caption: The climatological (1998-2020) and 2024 seasonal cycle of phytoplankton size class percent composition. The green, orange, and purple shaded regions represents the weekly climatological percent composition of microplankton (phytoplankton greater than 20 um), nanoplankton (phytoplankton between 0.2 and 20 um) and picoplankton (phytoplankton less than 0.2 um) respectively. The solid green and orange lines are the 2024 weekly mean percent microplankton and nanoplankton respectively. 
-
-
-
-
-There is high interannual variability of the seasonal phytoplankton cycle.  At the monthly scale, MAB chlorophyll and primary production are increasing during January and there has been a decrease in September chlorophyll, likely due to extension of the [summer stratification](https://noaa-edab.github.io/catalog/transition-dates.html) and delayed fall turnover. Fall and winter chlorophyll and primary production are increasing on Georges Bank and Gulf of Maine.
+There is high interannual variability of the seasonal phytoplankton cycle. At the monthly scale, MAB chlorophyll and primary production are increasing during January, suggesting that the fall bloom period is extending into early winter. The significant decrease in MAB chlorophyll in September chlorophyll is likely related to warmer temperatures persisting into early fall and increased nutrient limitation. Fall and winter chlorophyll and primary production are increasing on Georges Bank and Gulf of Maine.
 
 ### MidAtlantic
 
@@ -170,7 +155,7 @@ ggplotObject
 ## Indicator statistics 
 Spatial scale: By EPU and gridded for the entire shelf
 
-Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to current year)
+Temporal scale: Daily, weekly, monthly, annual, climatology (1998 to 2020)
 
 **Synthesis Theme**:
 
