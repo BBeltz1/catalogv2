@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Lower trophic levels
+- [X] Lower trophic levels
 
 
 **Contributor(s)**: Ryan Morse, Kevin Friedland, Harvey Walsh, Mike Jones
@@ -19,13 +19,13 @@ library(ecodata)
 Zooplankton represent a critical trophic link from primary producers to fish in marine ecosystems. Trends in zooplankton community diversity may indicate changes in trophic stability over time.
 
 ## Key Results and Visualizations
-Zooplankton diversity is increasing in the Mid-Atlantic and on Georges Bank, but shows no trend in the Gulf of Maine. There is no vessel correction for this metric, so indices collected aboard the research vessel Albatross IV (up to 2008) and the research vessel Henry B. Bigelow (2009 - Present) are calculated separately (Fig. ).
+Zooplankton diversity is increasing in the Mid-Atlantic and on Georges Bank, but shows no trend in the Gulf of Maine. There is no vessel correction for this metric, so indices collected aboard the research vessel Albatross IV (up to 2008) and the research vessel Henry B. Bigelow (2009 - Present) are calculated separately.
 
 ### MAB
 
 ```{r plot_zoo_diversityMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_diversity(report='MidAtlantic')
+ggplotObject <- ecodata::plot_zoo_diversity(report='MidAtlantic',n=10)
 ggplotObject
 ```
 
@@ -33,7 +33,7 @@ ggplotObject
 
 ```{r plot_zoo_diversityNE}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_diversity(report='NewEngland')
+ggplotObject <- ecodata::plot_zoo_diversity(report='NewEngland',n=10)
 ggplotObject
 ```
 
@@ -45,7 +45,7 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_zoo_diversity}
@@ -77,10 +77,10 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Published Methods
-- [X] Extensive analysis, not yet published
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+- [X] Published Methods
+- [X] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [X] Database pull with analysis
 
 
 ## Public Availability

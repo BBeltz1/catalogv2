@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Megafauna
+- [X] Megafauna
 
 
 **Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
@@ -20,19 +20,19 @@ Diversity estimates have been developed to understand whether the overall struct
 E(S<sub>n</sub>) will predict the number of species consumed.
 
 ## Key Results and Visualizations
-Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability to correct for species composition, the time series is broken into Albatross and Bigelow stanzas.  The only apparent trend in the data is from the Albatross time period in the Gulf of Maine.
+Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability to correct for species composition, the time series is broken into Albatross and Bigelow stanzas. There is an apparent trend in the data from the Albatross time period in the Gulf of Maine. There is a declining trend in the Mid-Atlantic data from the spring Bigelow period.
 
 ### MidAtlantic
 
 ```{r plot_exp_nMidAtlanticfall}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'fall')
+ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'fall',n=10)
 ggplotObject
 ```
 
 ```{r plot_exp_nMidAtlanticspring}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'spring')
+ggplotObject <- ecodata::plot_exp_n(report= 'MidAtlantic', varName= 'spring',n=10)
 ggplotObject
 ```
 
@@ -40,13 +40,13 @@ ggplotObject
 
 ```{r plot_exp_nNewEnglandfall}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'fall')
+ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'fall',n=10)
 ggplotObject
 ```
 
 ```{r plot_exp_nNewEnglandspring}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'spring')
+ggplotObject <- ecodata::plot_exp_n(report= 'NewEngland', varName= 'spring',n=10)
 ggplotObject
 ```
 
@@ -58,9 +58,9 @@ Temporal scale: Spring (March-May) and Fall (September-November)
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
 
 
 ```{r autostats_exp_n}
@@ -68,7 +68,7 @@ Temporal scale: Spring (March-May) and Fall (September-November)
 ```
 
 ## Implications
-Diversity is used as a proxy for stability.  Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management [@friedland_changes_2020].  This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse.  Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored.
+Diversity is used as a proxy for stability. Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management [@friedland_changes_2020]. This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse. Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored. Recent declining adult diversity in the Mid-Atlantic should also be closely monitored for management implications.
 
 ## Get the data
 
@@ -78,7 +78,7 @@ Diversity is used as a proxy for stability.  Changes in ecological diversity ove
 
 **Variable definitions**
 
-1) Name: Season Region Expected Number of Species - Vessel; Definition: The expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow.  For example "FALL GB Expected Number of Species - Albatross"; Units: n species per 1000 ind.  
+1) Name: Season Region Expected Number of Species - Vessel; Definition: The expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow.  For example "FALL GB Expected Number of Species - Albatross"; Units: n species per 1000 ind.  
 2) Name: Season Region Expected Number of Species Standard Deviation - Vessel; Definition: The variance around the expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow.  For example "FALL GB Expected Number of Species Standard Deviation - Albatross"; Units: n species per 1000 ind.
 
 ```{r vars_exp_n}
@@ -91,7 +91,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull with analysis
+- [X] Database pull with analysis
 
 
 ## Public Availability

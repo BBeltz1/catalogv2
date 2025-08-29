@@ -4,7 +4,7 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
+- [X] Oceanographic
 
 
 **Contributor(s)**: Charles Pellerin
@@ -16,10 +16,10 @@ knitr::opts_chunk$set(echo = F)
 library(ecodata)
 ```
 ## Introduction to Indicator
-The indicator is the Water Temperature and the Water Salinity.
+Temperature data from the Chesapeake Bay Interpretive Buoy System (CBIBS) are used to monitor water conditions and identify conditions capable of impacting the Chesapeake Bay marine ecosystem.
 
 ## Key Results and Visualizations
-The key results are the state of the water temperature and the salinity
+Surface water temperatures at Gooses Reef show a distinct seasonal pattern. The 2024 daily temperature averages closely align with the historical averages throughout the year. However, 2024 daily temperature averages were above the historical averages during the Spring and mid Fall.
 
 ### MAB
 
@@ -37,7 +37,7 @@ Temporal scale: Annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
+- [X] Multiple System Drivers
 
 
 ```{r autostats_ch_bay_temp}
@@ -45,7 +45,9 @@ Temporal scale: Annual
 ```
 
 ## Implications
-The changes in the temperature and salinity have implications in the habitat
+Since 2007, the Chesapeake Bay Interpretive Buoy System (CBIBS) has provided invaluable, high-quality water quality data, underscoring the critical need for continuous monitoring of key parameters. The system has consistently collected robust data on meteorological, water quality and oceanographic parameters. While the system experienced maintenance challenges inherent in complex observational systems deployed in dynamic marine environments, the vast majority of the data collected is reliable and paints a picture of ongoing changes in Chesapeake Bay. This publicly available resource provides a high degree of confidence for Chesapeake Bay stakeholders, and is a vital tool for informing evidence-based environmental management decisions. The long-term nature of the CBIBS dataset allows for the detection of long-term trends in water column habitat and the assessment of restoration efforts.  
+
+Surface water temperatures during 2024 were mostly at or above historical averages across all sites, with notably above average temperatures during spring and summer months, and greater instances of at or below historical average temperatures towards the end of the year. The above average temperatures observed in the spring and summer months, may have had important effects on key living resources, such as striped bass, oysters, and other fish species within Chesapeake Bay. Above average temperatures could lead to decreases in the area of suitable habitat, disruptions in migration patterns, increased stress and mortality of aquatic species, and other negative impacts on key living resources within the Chesapeake Bay. Specifically, water temperatures above 82.4°F exceed suitable habitat thresholds for striped bass from about mid-July to mid-August at all buoy locations where data was available. Water temperatures coupled with [low dissolved oxygen](https://www.vims.edu/newsandevents/topstories/2024/2024-dead-zone-report-card.php) during spring and summer exacerbate impacts on habitat suitability for striped bass, blue crabs and other species. A number of anglers reported good catches of red drum during the summer. During this summer’s routine sampling at Poplar Island, NOAA Chesapeake Bay Office scientists recorded the highest number of red drum since monitoring began in 1995. This may indicate habitat conditions in the lower and upper Bay are conducive to red drum. This may be related to rising water temperatures linked to climate change as well as conservation measures implemented by management agencies. However, there are few new studies focused on understanding these changes.
 
 ## Get the data
 
@@ -67,7 +69,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Database pull
+- [X] Database pull
 
 
 ## Public Availability
