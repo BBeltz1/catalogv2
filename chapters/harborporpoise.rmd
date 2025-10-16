@@ -7,7 +7,7 @@
 - [X] Megafauna
 
 
-**Contributor(s)**: Debra Palka, Kristin Precoda, Marjorie Lyssikatos, Kimberly Murray
+**Contributor(s)**: Debra Palka, Kristin Precoda
 
 **Affiliations**: NEFSC
 
@@ -19,7 +19,7 @@ library(ecodata)
 Marine mammals including harbor porpoise are protected under the Marine Mammal Protection Act (MMPA). The goal of the MMPA is to obtain and maintain optimum sustainable populations of marine mammals and to ensure they continue to function as significant elements of marine ecosystems. Protected species management objectives include managing bycatch to remain below potential biological removal (PBR) thresholds, recovering endangered populations, and monitoring unusual mortality events. Here we report estimated bycatch and PBR thresholds for harbor porpoise in the Northeast U.S., which are subject to a Take Reduction Team under the Marine Mammal Protection Act.
 
 ## Key Results and Visualizations
-The total estimated bycatch from all U.S. North Atlantic commercial fisheries is plotted by year. In 2022, a total of 133 harbor porpoise were estimated to have been bycaught from 6 fisheries (including bottom gillnets, drift gillnets, bottom trawls, midwater trawls, pair trawls, and pelagic longline). Harbor porpoise bycatch estimates have been below PBR thresholds since 2010, thus meeting current management objectives. Earlier, however, bycatch was above PBR.
+The total estimated bycatch from all U.S. North Atlantic commercial fisheries is plotted by year. In 2023, a total of 62 harbor porpoise were estimated to have been bycaught from 6 fisheries (including bottom gillnets, drift gillnets, bottom trawls, midwater trawls, pair trawls, and pelagic longline). Harbor porpoise bycatch estimates have been below PBR thresholds since 2010, thus meeting current a management objectives (Fig. x). Earlier, however, bycatch was above PBR.
 
 ```{r plot_harborporpoiseMAB}
 # Plot indicator
@@ -47,15 +47,17 @@ A bycatch reduction plan developed by the Take Reduction Team was needed to redu
 
 ## Get the data
 
-**Point of contact**: [Debra Palka (debra.palka@noaa.gov); Kristin Precoda (kristin.precoda@noaa.gov)](mailto:Debra Palka (debra.palka@noaa.gov); Kristin Precoda (kristin.precoda@noaa.gov)){.email}
+**Point of contact**: [Debra Palka (debra.palka@noaa.gov)](mailto:Debra Palka (debra.palka@noaa.gov)){.email}
 
 **ecodata name**: `ecodata::harborporpoise`
 
 **Variable definitions**
 
-1) pbr = Potential Biological Removal level. Unit = n (number of animals) 2) totalest1y = Total bycatch estimate over all gear types per year  
-3) totalest5y = Total bycatch estimate over all gear types as a 5-year running average 4) total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
-5) total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
+1. pbr = Potential Biological Removal level. Unit = n (number of animals) 
+2. totalest1y = Total bycatch estimate over all gear types per year 
+3. totalest5y = Total bycatch estimate over all gear types as a 5-year running average 
+4. total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
+5. total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
 
 ```{r vars_harborporpoise}
 # Pull all var names
@@ -76,7 +78,7 @@ Source data are publicly available.
 
 ## Accessibility and Constraints
 
-_No response_
+Source data are available in public [stock assessment reports](https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-stock-assessment-reports-region) and [CRDs](https://www.fisheries.noaa.gov/new-england-mid-atlantic/science-data/northeast-fisheries-science-center-publications).
 
 **tech-doc link**
 <https://noaa-edab.github.io/tech-doc/harborporpoise.html>
