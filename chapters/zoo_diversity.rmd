@@ -7,7 +7,7 @@
 - [X] Lower trophic levels
 
 
-**Contributor(s)**: Ryan Morse, Kevin Friedland, Harvey Walsh, Mike Jones
+**Contributor(s)**: Harvey Walsh, Ryan Morse, Kevin Friedland, Mike Jones
 
 **Affiliations**: NEFSC
 
@@ -59,7 +59,7 @@ While still showing an overall increasing trend, the GB zooplankton community de
 
 ## Get the data
 
-**Point of contact**: [Ryan Morse, ryan.morse@noaa.gov; Harvey Walsh, harvey.walsh@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov](mailto:Ryan Morse, ryan.morse@noaa.gov; Harvey Walsh, harvey.walsh@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov){.email}
+**Point of contact**: [Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov](mailto:Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov; Kevin Friedland, kevin.friedland@noaa.gov){.email}
 
 **ecodata name**: `ecodata::zoo_diversity`
 

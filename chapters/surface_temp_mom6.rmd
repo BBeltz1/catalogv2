@@ -52,7 +52,8 @@ Sea surface temperature is important for many marine species that have specific 
 **Variable definitions**
 
 1) Time: Year; Season: 1 - Winter starting from month 1 (Jan, Feb, Mar), 4 - Spring starting from month 4 (Apr, May, Jun), 7 - Summer starting from month 7 (Jul, Aug, Sep), 10 - Fall starting from month 10 (Oct, Nov, Dec); Value: Sea Surface Temperature Anomaly value; EPU: Mid Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); Unit: degrees C 
- 2) Time: Year; Val: Annual Sea Surface Temperature Anomaly; EPU: Mid Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); e_member: ensemble member, 1-10 or ensemble mean; Unit: degrees C
+ 
+2) Time: Year; Val: Annual Sea Surface Temperature Anomaly; EPU: Mid Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM); e_member: ensemble member, 1-10 or ensemble mean; Unit: degrees C
 
 ```{r vars_surface_temp_mom6}
 # Pull all var names
