@@ -7,7 +7,7 @@
 <title>40 Bottom temperature - Seasonal Anomaly | Northeast US Ecosystem Indicator Catalog</title>
 <meta name="author" content="Northeast Fisheries Science Center">
 <meta name="description" content="Description: The data presented here are seasonal bottom temperature anomalies. This includes seasonal bottom temperature anomalies by each EPU on the Northeast Continental Shelf from...">
-<meta name="generator" content="bookdown 0.44 with bs4_book()">
+<meta name="generator" content="bookdown 0.45 with bs4_book()">
 <meta property="og:title" content="40 Bottom temperature - Seasonal Anomaly | Northeast US Ecosystem Indicator Catalog">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://noaa-edab.github.io/catalog/bottom_temp_model_anom.html">
@@ -20,7 +20,7 @@
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 <script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script><link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-<script src="libs/datatables-binding-0.33/datatables.js"></script><link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<script src="libs/datatables-binding-0.34.0/datatables.js"></script><link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
 <link href="libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
 <script src="libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script><link href="libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
 <script src="libs/crosstalk-1.2.2/js/crosstalk.min.js"></script><link href="libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
@@ -190,7 +190,7 @@
 <p><strong>GLORYS, ROMS and PSY</strong>
 Time series plots for seasonal bottom temperature anomaly for each EPU shows a long-term warming trend. PSY forecasted data also included for comparison and indicates varying skill in predicting regional bottom temperature.</p>
 <p><strong>MOM6</strong>
-Here we show the seasonal temperature anomalies in the Mid Atlantic Bight (MAB), Georges Bank (GB) and Gulf of Maine (GOM) EPUs. Data from 1959 through 1992 are from the biased corrected ROMS dataset (<span class="citation">[<a href="#ref-dupontavice_ocean_2022">71</a>]</span>). Data from 1993 through 2019 are from MOM6 (<span class="citation">[<a href="#ref-ross_high-resolution_2023">72</a>]</span>), and 1993 through 2023 are from GLORYS12 reanalysis (<span class="citation">[<a href="#ref-jean-michel_copernicus_2021">73</a>]</span>). For the anomaly plots the climatology period is 1990 through 2020.</p>
+Here we show the seasonal temperature anomalies in the Mid Atlantic Bight (MAB), Georges Bank (GB) and Gulf of Maine (GOM) EPUs. Data from 1959 through 1992 are from the biased corrected ROMS dataset (<span class="citation">[<a href="#ref-dupontavice_ocean_2022">67</a>]</span>). Data from 1993 through 2019 are from MOM6 (<span class="citation">[<a href="#ref-ross_high-resolution_2023">68</a>]</span>), and 1993 through 2023 are from GLORYS12 reanalysis (<span class="citation">[<a href="#ref-jean-michel_copernicus_2021">69</a>]</span>). For the anomaly plots the climatology period is 1990 through 2020.</p>
 <p>The MOM6 model hindcast does a good job at reproducing seasonal bottom temperature anomalies calculated from GLORYS12 reanalysis data. Because the 1959 through 1992 ROMS was biased corrected using the GLORYS12 dataset, calculating seasonal climatologies using primarily MOM6 data introduces a new, different bias. The differing ability of the model to accurately reproduce bottom temperature during different seasons also likely contributes to the discrepancies between the two time series in the annual bottom temperature plots.</p>
 <div id="midatlantic-17" class="section level3" number="40.2.1">
 <h3>
@@ -239,11 +239,13 @@ Here we show the seasonal temperature anomalies in the Mid Atlantic Bight (MAB),
 <p><strong>Point of contact</strong>: <a href="mailto:joseph.caracappa@noaa.gov;%20laura.gruenburg@noaa.gov" class="email">joseph.caracappa@noaa.gov; laura.gruenburg@noaa.gov</a></p>
 <p><strong>ecodata name</strong>: <code><a href="https://noaa-edab.github.io/ecodata/reference/bottom_temp_model_anom.html">ecodata::bottom_temp_model_anom</a></code></p>
 <p><strong>Variable definitions</strong></p>
-<p>Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) Subarea: EPU name
-Source: ROMS (bias-corrected ROMS-NWA bottom temperature <span class="citation">[<a href="#ref-dupontavice_ocean_2022">71</a>]</span>), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature)
-bt_temp : mean bottom temperature for each year/season across entire EPU ref_bt: bottom temperature climatology for season/EPU based on 1990-2020</p>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-4f8f2c7b61995569fdbd" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-4f8f2c7b61995569fdbd">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10"],["Annual_Bottom Temp","Fall_Bottom Temp Anomaly","Spring_Bottom Temp Anomaly","Summer_Bottom Temp Anomaly","Winter_Bottom Temp Anomaly","Winter_Bottom Temp Anomaly","Spring_Bottom Temp Anomaly","Summer_Bottom Temp Anomaly","Fall_Bottom Temp Anomaly","Annual_Bottom Temp"],["degree C","degree C","degree C","degree C","degree C","degrees C","degrees C","degrees C","degrees C","degrees C"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<p>Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December)
+Subarea: EPU name
+Source: ROMS (bias-corrected ROMS-NWA bottom temperature <span class="citation">[<a href="#ref-dupontavice_ocean_2022">67</a>]</span>), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature)
+bt_temp : mean bottom temperature for each year/season across entire EPU
+ref_bt: bottom temperature climatology for season/EPU based on 1990-2020</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3c4d24f6071583bfa80d" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3c4d24f6071583bfa80d">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10"],["Annual_Bottom Temp","Fall_Bottom Temp Anomaly","Spring_Bottom Temp Anomaly","Summer_Bottom Temp Anomaly","Winter_Bottom Temp Anomaly","Winter_Bottom Temp Anomaly","Spring_Bottom Temp Anomaly","Summer_Bottom Temp Anomaly","Fall_Bottom Temp Anomaly","Annual_Bottom Temp"],["degree C","degree C","degree C","degree C","degree C","degrees C","degrees C","degrees C","degrees C","degrees C"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
 <ul class="task-list">
 <li><p><label><input type="checkbox" checked>Syntheses of published information</label></p></li>
 <li><p><label><input type="checkbox" checked>Database pull with analysis</label></p></li>
@@ -268,16 +270,16 @@ bt_temp : mean bottom temperature for each year/season across entire EPU ref_bt:
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body">
 <div id="ref-dupontavice_ocean_2022" class="csl-entry">
-<div class="csl-left-margin">71. </div>
+<div class="csl-left-margin">67. </div>
 <div class="csl-right-inline">Pontavice H du, Miller TJ, Stock BC, Chen Z, Saba VS. Ocean model-based covariates improve a marine fish stock assessment when observations are limited. Hidalgo M, editor. ICES Journal of Marine Science. 2022;79: 1259–1273. doi:<a href="https://doi.org/10.1093/icesjms/fsac050">10.1093/icesjms/fsac050</a>
 </div>
 </div>
 <div id="ref-ross_high-resolution_2023" class="csl-entry">
-<div class="csl-left-margin">72. </div>
+<div class="csl-left-margin">68. </div>
 <div class="csl-right-inline">Ross AC, Stock CA, Adcroft A, Curchitser E, Hallberg R, Harrison MJ, et al. A high-resolution physical-biogeochemical model for marine resource applications in the northwest <span>Atlantic</span> (<span>MOM6</span>-<span>COBALT</span>-<span>NWA12</span> v1. 0). Geoscientific Model Development Discussions. 2023;2023: 1–65. </div>
 </div>
 <div id="ref-jean-michel_copernicus_2021" class="csl-entry">
-<div class="csl-left-margin">73. </div>
+<div class="csl-left-margin">69. </div>
 <div class="csl-right-inline">Jean-Michel L, Eric G, Romain B-B, Gilles G, Angélique M, Marie D, et al. The <span>Copernicus</span> global 1/12 oceanic and sea ice <span>GLORYS12</span> reanalysis. Frontiers in Earth Science. 2021;9: 698876. </div>
 </div>
 </div>
@@ -317,7 +319,7 @@ bt_temp : mean bottom temperature for each year/season across entire EPU ref_bt:
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 29 August 2025.</p>
+    <p>"<strong>Northeast US Ecosystem Indicator Catalog</strong>" was written by Northeast Fisheries Science Center. It was last built on 23 October 2025.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
