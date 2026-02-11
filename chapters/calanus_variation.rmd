@@ -66,7 +66,8 @@ During all seasons between 2005-2023 there were significant multiannual trends i
 
 **Variable definitions**
 
-Name: Calanus finmarchicus abundance_WBTS station  Definition: number of Calanus finmarchicus stages C3-C6 m^-2
+Name: Calanus finmarchicus abundance_WBTS station  
+Definition: number of Calanus finmarchicus stages C3-C6 m^-2
 
 
 No Data
