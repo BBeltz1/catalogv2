@@ -25,7 +25,7 @@ Overall, oyster production has generally increased and production per area has a
 
 ```{r plot_aquacultureMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_aquaculture(report='MidAtlantic')
+ggplotObject <- ecodata::plot_aquaculture(report='MidAtlantic',n=10)
 ggplotObject
 ```
 
@@ -55,7 +55,10 @@ Aquaculture production contributes to overall seafood production in the Northeas
 
 **Variable definitions**
 
-Pieces: number of oysters produced (all regions)                 Shellfish lease Acres: area used for shellfish production (New England states only), acres  
+Pieces: number of oysters produced (all regions)                
+ 
+Shellfish lease Acres: area used for shellfish production (New England states only), acres 
+ 
 Production/Acre: Pieces divided by Shellfish lease acres (New England states only)
 
 ```{r vars_aquaculture}
