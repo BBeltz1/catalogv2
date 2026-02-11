@@ -55,7 +55,9 @@ The warm water during the 2024 winter (Dec 2023 – Feb 2024) was likely favorab
 
 **Variable definitions**
 
-1) sst: sea surface temperature 2023, Celsius 2) sst_climatol: sea surface temperature climatology 2007-2022, Celsius 3) sst_anomaly: sea surface temperature anomaly 2023 minus 2007-2022, Celsius
+1) sst: sea surface temperature 2023, Celsius 
+2) sst_climatol: sea surface temperature climatology 2007-2022, Celsius 
+3) sst_anomaly: sea surface temperature anomaly 2023 minus 2007-2022, Celsius
 
 ```{r vars_ches_bay_sst}
 # Pull all var names
