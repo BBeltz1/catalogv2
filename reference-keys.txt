@@ -688,7 +688,7 @@ implications-72
 get-the-data-72
 public-availability-72
 accessibility-and-constraints-72
-community_climate_vulnerability
+community_risks
 introduction-to-indicator-73
 key-results-and-visualizations-73
 midatlantic-30
