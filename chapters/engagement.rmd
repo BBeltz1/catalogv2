@@ -43,101 +43,29 @@ Narragansett/Point Judith, RI ranked as a top community for both commercial and 
 
 ### MidAtlantic
 
-```{r plot_engagementMidAtlanticCommercialplot}
+```{r plot_engagementMidAtlanticCommercial}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'plot')
+ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial')
 ggplotObject
 ```
 
-```{r plot_engagementMidAtlanticCommercialSocial}
+```{r plot_engagementMidAtlanticRecreational}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'Social')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticCommercialEconomic}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'Economic')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticCommercialGentrification}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Commercial' ,plottype= 'Gentrification')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticRecreationalplot}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'plot')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticRecreationalSocial}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'Social')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticRecreationalEconomic}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'Economic')
-ggplotObject
-```
-
-```{r plot_engagementMidAtlanticRecreationalGentrification}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational' ,plottype= 'Gentrification')
+ggplotObject <- ecodata::plot_engagement(report= 'MidAtlantic', varName= 'Recreational')
 ggplotObject
 ```
 
 ### NewEngland
 
-```{r plot_engagementNewEnglandCommercialplot}
+```{r plot_engagementNewEnglandCommercial}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'plot')
+ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial')
 ggplotObject
 ```
 
-```{r plot_engagementNewEnglandCommercialSocial}
+```{r plot_engagementNewEnglandRecreational}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'Social')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandCommercialEconomic}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'Economic')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandCommercialGentrification}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Commercial' ,plottype= 'Gentrification')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandRecreationalplot}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'plot')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandRecreationalSocial}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'Social')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandRecreationalEconomic}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'Economic')
-ggplotObject
-```
-
-```{r plot_engagementNewEnglandRecreationalGentrification}
-# Plot indicator
-ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational' ,plottype= 'Gentrification')
+ggplotObject <- ecodata::plot_engagement(report= 'NewEngland', varName= 'Recreational')
 ggplotObject
 ```
 
@@ -175,7 +103,8 @@ These indicators provide a snapshot of the presence of socio-demographic concern
 6) Social vulnerabilities: categorical rankings of social vulnerability. 
 7) Personal Disruption Index: personal disruption factor score. 
 8) Population Composition Index: population composition factor score. 
-9) Poverty Index: poverty index factor score. 10) 1 std: 1 standard deviation. 
+9) Poverty Index: poverty index factor score. 
+10) 1 std: 1 standard deviation. 
 11) 0.5 std: 0.5 standard deviation.
 
 ```{r vars_engagement}

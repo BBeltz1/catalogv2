@@ -41,23 +41,9 @@ ggplotObject
 ```
 
 
-```{r plot_bottom_temp_model_anomMidAtlanticseasonalMOM6MAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'MidAtlantic', EPU = 'MAB', varName= 'seasonal', plottype = 'MOM6',n=10)
-ggplotObject
-```
-
-
 ```{r plot_bottom_temp_model_anomMidAtlanticannualGLORYSMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'MidAtlantic', EPU = 'MAB', varName= 'annual', plottype = 'GLORYS',n=10)
-ggplotObject
-```
-
-
-```{r plot_bottom_temp_model_anomMidAtlanticannualMOM6MAB}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'MidAtlantic', EPU = 'MAB', varName= 'annual', plottype = 'MOM6',n=10)
 ggplotObject
 ```
 
@@ -77,19 +63,6 @@ ggplotObject
 ```
 
 
-```{r plot_bottom_temp_model_anomNewEnglandseasonalMOM6GB}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GB', varName= 'seasonal', plottype = 'MOM6',n=10)
-ggplotObject
-```
-
-```{r plot_bottom_temp_model_anomNewEnglandseasonalMOM6GOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GOM', varName= 'seasonal', plottype = 'MOM6',n=10)
-ggplotObject
-```
-
-
 ```{r plot_bottom_temp_model_anomNewEnglandannualGLORYSGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GB', varName= 'annual', plottype = 'GLORYS',n=10)
@@ -99,19 +72,6 @@ ggplotObject
 ```{r plot_bottom_temp_model_anomNewEnglandannualGLORYSGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GOM', varName= 'annual', plottype = 'GLORYS',n=10)
-ggplotObject
-```
-
-
-```{r plot_bottom_temp_model_anomNewEnglandannualMOM6GB}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GB', varName= 'annual', plottype = 'MOM6',n=10)
-ggplotObject
-```
-
-```{r plot_bottom_temp_model_anomNewEnglandannualMOM6GOM}
-# Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(report= 'NewEngland', EPU = 'GOM', varName= 'annual', plottype = 'MOM6',n=10)
 ggplotObject
 ```
 

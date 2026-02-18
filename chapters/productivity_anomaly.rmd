@@ -25,41 +25,85 @@ The small fish per large fish anomaly indicator, derived from NEFSC bottom trawl
 
 ### MidAtlantic
 
-```{r plot_productivity_anomalyMidAtlanticanomalyMAB}
+
+```{r plot_productivity_anomalyMidAtlanticanomalyregionMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'anomaly' ,EPU= 'MAB')
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', EPU = 'MAB', varName= 'anomaly', plottype = 'region')
 ggplotObject
 ```
 
-```{r plot_productivity_anomalyMidAtlanticassessmentMAB}
+
+```{r plot_productivity_anomalyMidAtlanticanomalycouncilMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', varName= 'assessment' ,EPU= 'MAB')
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', EPU = 'MAB', varName= 'anomaly', plottype = 'council')
+ggplotObject
+```
+
+
+```{r plot_productivity_anomalyMidAtlanticassessmentregionMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', EPU = 'MAB', varName= 'assessment', plottype = 'region')
+ggplotObject
+```
+
+
+```{r plot_productivity_anomalyMidAtlanticassessmentcouncilMAB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', EPU = 'MAB', varName= 'assessment', plottype = 'council')
 ggplotObject
 ```
 
 ### NewEngland
 
-```{r plot_productivity_anomalyNewEnglandanomalyGB}
+
+```{r plot_productivity_anomalyNewEnglandanomalyregionGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'anomaly' ,EPU= 'GB')
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GB', varName= 'anomaly', plottype = 'region')
 ggplotObject
 ```
 
-```{r plot_productivity_anomalyNewEnglandanomalyGOM}
+```{r plot_productivity_anomalyNewEnglandanomalyregionGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'anomaly' ,EPU= 'GOM')
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GOM', varName= 'anomaly', plottype = 'region')
 ggplotObject
 ```
 
-```{r plot_productivity_anomalyNewEnglandassessmentGB}
+
+```{r plot_productivity_anomalyNewEnglandanomalycouncilGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'assessment' ,EPU= 'GB')
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GB', varName= 'anomaly', plottype = 'council')
 ggplotObject
 ```
 
-```{r plot_productivity_anomalyNewEnglandassessmentGOM}
+```{r plot_productivity_anomalyNewEnglandanomalycouncilGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', varName= 'assessment' ,EPU= 'GOM')
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GOM', varName= 'anomaly', plottype = 'council')
+ggplotObject
+```
+
+
+```{r plot_productivity_anomalyNewEnglandassessmentregionGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GB', varName= 'assessment', plottype = 'region')
+ggplotObject
+```
+
+```{r plot_productivity_anomalyNewEnglandassessmentregionGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GOM', varName= 'assessment', plottype = 'region')
+ggplotObject
+```
+
+
+```{r plot_productivity_anomalyNewEnglandassessmentcouncilGB}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GB', varName= 'assessment', plottype = 'council')
+ggplotObject
+```
+
+```{r plot_productivity_anomalyNewEnglandassessmentcouncilGOM}
+# Plot indicator
+ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GOM', varName= 'assessment', plottype = 'council')
 ggplotObject
 ```
 
@@ -89,7 +133,8 @@ The apparent decline in productivity across multiple managed species in the MAB,
 
 **Variable definitions**
 
-Variable names are organized using this format: [region] stock name - variable type and source  
+Variable names are organized using this format: 
+[region] stock name - variable type and source  
 Variables ending with "_Survey" are survey derived recruits/spawner anomalies 
 Variables ending with "-Assessment" are assessment derived quantities 
 Survey stock names are in ALL CAPS 
