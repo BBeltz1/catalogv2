@@ -4,10 +4,8 @@
 
 **Indicator family**: 
 
-- [X] Oceanographic
-
-- [X] Habitat
-
+- [X] Oceanographic
+- [X] Habitat
 
 
 **Contributor(s)**: Joe Caracappa
@@ -24,19 +22,15 @@ Many deep water benthic and demersal species exhibit thermal preferences for met
 ## Key Results and Visualizations
 Maps of full NE shelf with cells shading gradient showing number of days exceeding temperature thresholds. For 15C threshold, much of the southern MAB, the shelf break and Nantucket Shoals experienced >100 days. In 2023, only the southern and/or shallow portion of the MAB exceeded the 24C threshold.
 
-### MAB
-
-```{r plot_thermal_habitat_griddedMAB}
+```{r plot_thermal_habitat_griddedMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_gridded(report='MidAtlantic')
+ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'MidAtlantic')
 ggplotObject
 ```
 
-### NE
-
-```{r plot_thermal_habitat_griddedNE}
+```{r plot_thermal_habitat_griddedNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_gridded(report='NewEngland')
+ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'NewEngland')
 ggplotObject
 ```
 
@@ -48,8 +42,7 @@ Temporal scale: annual
 
 **Synthesis Theme**:
 
-- [X] Multiple System Drivers
-
+- [X] Multiple System Drivers
 
 
 ```{r autostats_thermal_habitat_gridded}
@@ -83,8 +76,7 @@ DT::datatable(vars)
 ```
 **Indicator Category**:
 
-- [X] Extensive analysis, not yet published
-
+- [X] Extensive analysis, not yet published
 
 
 ## Public Availability
