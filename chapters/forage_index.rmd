@@ -23,31 +23,27 @@ In addition to an index of forage abundance in each EPU, the coastwide center of
 ## Key Results and Visualizations
 Variables plotted are Fall Forage Fish Biomass Estimate and Spring Forage Fish Biomass Estimate with error bands from Fall Forage Fish Biomass Estimate SE and Spring Forage Fish Biomass Estimate SE, respectively. Time series were extended back to 1982 and forward to 2023 in this update, but this did not change the trends reported previously for 1982-2022.
 
-### MidAtlantic
-
 ```{r plot_forage_indexMidAtlanticindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report= 'MidAtlantic', varName= 'index',n=10)
+ggplotObject <- ecodata::plot_forage_index(report = 'MidAtlantic', varName = 'index', n = 10)
+ggplotObject
+```
+
+```{r plot_forage_indexNewEnglandindex}
+# Plot indicator
+ggplotObject <- ecodata::plot_forage_index(report = 'NewEngland', varName = 'index', n = 10)
 ggplotObject
 ```
 
 ```{r plot_forage_indexMidAtlanticcog}
 # Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report= 'MidAtlantic', varName= 'cog',n=10)
-ggplotObject
-```
-
-### NewEngland
-
-```{r plot_forage_indexNewEnglandindex}
-# Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report= 'NewEngland', varName= 'index',n=10)
+ggplotObject <- ecodata::plot_forage_index(report = 'MidAtlantic', varName = 'cog', n = 10)
 ggplotObject
 ```
 
 ```{r plot_forage_indexNewEnglandcog}
 # Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report= 'NewEngland', varName= 'cog',n=10)
+ggplotObject <- ecodata::plot_forage_index(report = 'NewEngland', varName = 'cog', n = 10)
 ggplotObject
 ```
 
