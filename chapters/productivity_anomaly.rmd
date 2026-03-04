@@ -23,87 +23,75 @@ These indicators are based on the work of Perretti [@perretti_regime_2017]. We u
 ## Key Results and Visualizations
 The small fish per large fish anomaly indicator, derived from NEFSC bottom trawl survey data, shows that productivity has been declining in the Mid-Atlantic region since 2003.  A similar analysis based on stock assessment model outputs (recruitment per spawning stock biomass anomaly) for stocks primarily inhabiting the Mid-Atlantic region also shows a decline in productivity. The indicators show great variability in the Gulf of Maine and Georges Bank, with both regions being below average for much of the past decade.
 
-### MidAtlantic
-
-
-```{r plot_productivity_anomalyMidAtlanticanomalyregionMAB}
+```{r plot_productivity_anomalyMidAtlanticanomalyMABregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', EPU = 'MAB', varName= 'anomaly', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'anomaly', EPU = 'MAB', plottype = 'region')
 ggplotObject
 ```
 
-
-```{r plot_productivity_anomalyMidAtlanticanomalycouncilMAB}
+```{r plot_productivity_anomalyMidAtlanticassessmentMABregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', EPU = 'MAB', varName= 'anomaly', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'assessment', EPU = 'MAB', plottype = 'region')
 ggplotObject
 ```
 
-
-```{r plot_productivity_anomalyMidAtlanticassessmentregionMAB}
+```{r plot_productivity_anomalyNewEnglandanomalyGBregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', EPU = 'MAB', varName= 'assessment', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GB', plottype = 'region')
 ggplotObject
 ```
 
-
-```{r plot_productivity_anomalyMidAtlanticassessmentcouncilMAB}
+```{r plot_productivity_anomalyNewEnglandassessmentGBregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'MidAtlantic', EPU = 'MAB', varName= 'assessment', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GB', plottype = 'region')
 ggplotObject
 ```
 
-### NewEngland
-
-
-```{r plot_productivity_anomalyNewEnglandanomalyregionGB}
+```{r plot_productivity_anomalyNewEnglandanomalyGOMregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GB', varName= 'anomaly', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GOM', plottype = 'region')
 ggplotObject
 ```
 
-```{r plot_productivity_anomalyNewEnglandanomalyregionGOM}
+```{r plot_productivity_anomalyNewEnglandassessmentGOMregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GOM', varName= 'anomaly', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GOM', plottype = 'region')
 ggplotObject
 ```
 
-
-```{r plot_productivity_anomalyNewEnglandanomalycouncilGB}
+```{r plot_productivity_anomalyMidAtlanticanomalyMABcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GB', varName= 'anomaly', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'anomaly', EPU = 'MAB', plottype = 'council')
 ggplotObject
 ```
 
-```{r plot_productivity_anomalyNewEnglandanomalycouncilGOM}
+```{r plot_productivity_anomalyMidAtlanticassessmentMABcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GOM', varName= 'anomaly', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'assessment', EPU = 'MAB', plottype = 'council')
 ggplotObject
 ```
 
-
-```{r plot_productivity_anomalyNewEnglandassessmentregionGB}
+```{r plot_productivity_anomalyNewEnglandanomalyGBcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GB', varName= 'assessment', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GB', plottype = 'council')
 ggplotObject
 ```
 
-```{r plot_productivity_anomalyNewEnglandassessmentregionGOM}
+```{r plot_productivity_anomalyNewEnglandassessmentGBcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GOM', varName= 'assessment', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GB', plottype = 'council')
 ggplotObject
 ```
 
-
-```{r plot_productivity_anomalyNewEnglandassessmentcouncilGB}
+```{r plot_productivity_anomalyNewEnglandanomalyGOMcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GB', varName= 'assessment', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GOM', plottype = 'council')
 ggplotObject
 ```
 
-```{r plot_productivity_anomalyNewEnglandassessmentcouncilGOM}
+```{r plot_productivity_anomalyNewEnglandassessmentGOMcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report= 'NewEngland', EPU = 'GOM', varName= 'assessment', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GOM', plottype = 'council')
 ggplotObject
 ```
 
@@ -133,8 +121,7 @@ The apparent decline in productivity across multiple managed species in the MAB,
 
 **Variable definitions**
 
-Variable names are organized using this format: 
-[region] stock name - variable type and source  
+Variable names are organized using this format: [region] stock name - variable type and source  
 Variables ending with "_Survey" are survey derived recruits/spawner anomalies 
 Variables ending with "-Assessment" are assessment derived quantities 
 Survey stock names are in ALL CAPS 
