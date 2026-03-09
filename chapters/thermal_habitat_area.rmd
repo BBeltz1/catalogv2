@@ -22,27 +22,21 @@ See "Thermal Habitat Persistence" for cell-based calculations. Many deep water b
 ## Key Results and Visualizations
 For each EPU, bottom temperature data were separated by depth bin (0-25m; 25m-100m; and >100m), as well as temperature threshold (>15C , >24C), and the proportion of each EPU exceeding these thresholds was calculated on a daily basis from 1993 to 2024. Time series of each year's proportional area show an increasing proportion of the MAB and GB mid-depths have experienced high temperatures in recent years. The 24C threshold is rarely seen in GB and GOM.
 
-### MAB
-
-```{r plot_thermal_habitat_areaMAB}
+```{r plot_thermal_habitat_areaMABMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_area(report='MidAtlantic')
+ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'MAB', report = 'MidAtlantic')
 ggplotObject
 ```
 
-### GB
-
-```{r plot_thermal_habitat_areaNEGB}
+```{r plot_thermal_habitat_areaGBNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_area(report='NewEngland',EPU='GB')
+ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GB', report = 'NewEngland')
 ggplotObject
 ```
 
-### GOM
-
-```{r plot_thermal_habitat_areaNEGOM}
+```{r plot_thermal_habitat_areaGOMNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_area(report='NewEngland',EPU='GOM')
+ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GOM', report = 'NewEngland')
 ggplotObject
 ```
 
@@ -72,11 +66,10 @@ If a large proportion of species current habitat become thermally inhospitable, 
 
 **Variable definitions**
 
-Time: Date EPU: EPU name Depth: Depth category 
-Var: Temperature Category 
+Time: Date EPU: EPU name Depth: Depth category Var: Temperature Category 
 Value: Proportion of area above temp.threshold 
-Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  
-year: year Units: Proportion
+Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  year: year 
+Units: Proportion
 
 ```{r vars_thermal_habitat_area}
 # Pull all var names

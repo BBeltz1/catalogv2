@@ -24,19 +24,15 @@ We defined feeding guilds for fish and invertebrates captured by bottom trawl su
 ## Key Results and Visualizations
 Each management body (MAFMC, NEFSC, State etc) has its managed species associated with different feeding guilds. This data set shows which managed species for each management body are in which guilds.
 
-### MidAtlantic
-
 ```{r plot_species_groupingsMidAtlantic2024}
 # Plot indicator
-ggplotObject <- ecodata::plot_species_groupings(report= 'MidAtlantic', varName= '2024')
+ggplotObject <- ecodata::plot_species_groupings(report = 'MidAtlantic', varName = '2024')
 ggplotObject
 ```
 
-### NewEngland
-
 ```{r plot_species_groupingsNewEngland2024}
 # Plot indicator
-ggplotObject <- ecodata::plot_species_groupings(report= 'NewEngland', varName= '2024')
+ggplotObject <- ecodata::plot_species_groupings(report = 'NewEngland', varName = '2024')
 ggplotObject
 ```
 
