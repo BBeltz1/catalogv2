@@ -1,0 +1,67 @@
+# MOM6 Forecasts {#MOM6_forecasts}
+
+**Description**: Coming soon
+
+**Indicator family**: 
+
+
+
+
+**Contributor(s)**: Coming soon
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Coming soon
+
+## Key Results and Visualizations
+Coming soon
+
+
+## Indicator statistics 
+Spatial scale: Coming soon
+
+Temporal scale: Coming soon
+
+**Synthesis Theme**:
+
+
+
+
+```{r autostats_MOM6_forecasts}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Coming soon
+
+## Get the data
+
+**Point of contact**: [EDAB (edab.data@noaa.gov)](mailto:EDAB (edab.data@noaa.gov)){.email}
+
+**ecodata name**: No dataset
+
+**Variable definitions**
+
+Coming soon
+
+
+No Data
+
+**Indicator Category**:
+
+
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
