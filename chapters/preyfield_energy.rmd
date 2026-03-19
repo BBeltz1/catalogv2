@@ -1,0 +1,75 @@
+# Copepod Preyfield Energy Density {#preyfield_energy}
+
+**Description**: Coming soon
+
+**Indicator family**: 
+
+
+
+
+**Contributor(s)**: Coming soon
+
+**Affiliations**: NEFSC
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+## Introduction to Indicator
+Coming soon
+
+## Key Results and Visualizations
+Coming soon
+
+
+## Indicator statistics 
+Spatial scale: Coming soon
+
+Temporal scale: Coming soon
+
+**Synthesis Theme**:
+
+
+
+
+```{r autostats_preyfield_energy}
+# Either from Contributor or ecodata
+```
+
+## Implications
+Coming soon
+
+## Get the data
+
+**Point of contact**: [EDAB (edab.data@noaa.gov)](mailto:EDAB (edab.data@noaa.gov)){.email}
+
+**ecodata name**: `ecodata::preyfield_energy`
+
+**Variable definitions**
+
+Coming soon
+
+```{r vars_preyfield_energy}
+# Pull all var names
+vars <- ecodata::preyfield_energy |>
+   dplyr::select(Var) |>
+   dplyr::distinct()
+
+DT::datatable(vars)
+```
+**Indicator Category**:
+
+
+
+
+## Public Availability
+
+Source data are publicly available.
+
+## Accessibility and Constraints
+
+_No response_
+
+**tech-doc link**
+<https://noaa-edab.github.io/tech-doc/preyfield_energy.html>
+
