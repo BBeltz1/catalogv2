@@ -80,10 +80,6 @@ rmd_files:
     -   "chapters/cold_spell.rmd"
     -   "chapters/timing_shifts.rmd"
     -   "chapters/MOM6_forecasts.rmd"
-    -   "chapters/observation_synthesis_2023.rmd"
-    -   "chapters/observation_synthesis_2024.rmd"
-    -   "chapters/observation_synthesis_2025.rmd"
-    -   "chapters/fishing_observations_2024.rmd"
     -   "chapters/ocean_acidification.rmd"
     -   "chapters/gom_acidification.rmd"
 #
@@ -108,6 +104,14 @@ rmd_files:
     -   "chapters/wind_dev_speed.rmd"
     -   "chapters/wind_port.rmd"
     -   "chapters/wind_revenue.rmd"
+#
+#
+# #################### OBSERVATIONS ##################
+    -   "chapters/sectionHeaders/observations.rmd"
+    -   "chapters/observation_synthesis_2023.rmd"
+    -   "chapters/observation_synthesis_2024.rmd"
+    -   "chapters/observation_synthesis_2025.rmd"
+    -   "chapters/fishing_observations_2024.rmd"
 
     -   "chapters/glossary.Rmd"
     -   "chapters/references.Rmd"
