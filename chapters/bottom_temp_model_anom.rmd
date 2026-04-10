@@ -9,7 +9,7 @@
 
 **Contributor(s)**: Joseph Caracappa, Vincent Saba, Zhuomin Chen, Laura Gruenburg, Andrew Ross
 
-**Affiliations**: NEFSC
+**Affiliations**: NEFSC, GFDL
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
