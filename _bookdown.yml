@@ -80,6 +80,7 @@ rmd_files:
     -   "chapters/cold_spell.rmd"
     -   "chapters/timing_shifts.rmd"
     -   "chapters/MOM6_forecasts.rmd"
+    -   "chapters/dissolved_oxygen.rmd"
     -   "chapters/ocean_acidification.rmd"
     -   "chapters/gom_acidification.rmd"
 #
