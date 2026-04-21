@@ -12,8 +12,8 @@ biblio-style: apalike
 csl: plos.csl
 always_allow_html: true
 link-citations: true
-github-repo: NOAA-EDAB/catalog
-url: https://noaa-edab.github.io/catalog/
+github-repo: BBeltz1/catalogv2
+url: https://bbeltz1.github.io/catalogv2/
 description: "This catalogue holds information on available datasets and indicators."
 ---
 

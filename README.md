@@ -1,8 +1,9 @@
 
-# [Northeast US Ecosystem Indicator Catalog](https://noaa-edab.github.io/catalog/)
+# [Northeast US Ecosystem Indicator Catalog](https://bbeltz1.github.io/catalogv2/)
 
-[![build-book](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/bookdown.yaml)
-[![gitleaks](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml/badge.svg)](https://github.com/NOAA-EDAB/catalog/actions/workflows/secretScan.yml)
+[![build-book](https://github.com/BBeltz1/catalogv2/actions/workflows/bookdown.yaml/badge.svg)](https://github.com/BBeltz1/catalogv2/actions/workflows/bookdown.yaml)
+[![gitleaks](https://github.com/BBeltz1/catalogv2/actions/workflows/secretScan.yml/badge.svg)](https://github.com/BBeltz1/catalogv2/actions/workflows/secretScan.yml)
+[![Run PR Checks](https://github.com/BBeltz1/catalogv2/actions/workflows/verify_pr.yml/badge.svg)](https://github.com/BBeltz1/catalogv2/actions/workflows/verify_pr.yml)
 
 Catalog of indicators used in the State of the Ecosystem reports and
 other ecosystem assessment products.
