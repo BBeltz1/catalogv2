@@ -32,10 +32,11 @@ make_rmd <- function(listobject, n = 10){
   cat(paste0("# ",listobject$dataname," {#",listobject$indicatorname,"}"),append=T,fill=T,file=con)    
   cat("",append=T,fill=T,file=con) # add space
 
-  ### CHUNK TO LOAD ECODATA
+  ### Chunk to load packages
   cat("```{r echo=FALSE}",append=T,fill=T,file=con)
   cat("knitr::opts_chunk$set(echo = F)",append=T,fill=T,file=con)
   cat("library(ecodata)",append=T,fill=T,file=con)
+  cat("library(downloadthis)",append=T,fill=T,file=con)
   cat("```",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
 
