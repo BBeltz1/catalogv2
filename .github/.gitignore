@@ -1,1 +1,11 @@
 *.html
+*.Rproj
+*.Rproj.user
+*.Rhistory
+*.RData
+*.Ruserdata
+
+# local files/folders
+_book/
+_bookdown_files/
+catalog_files/
