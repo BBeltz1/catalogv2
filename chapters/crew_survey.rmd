@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The data set presented here covers three waves of survey questions and responses pertaining to commercial crew and hired captains’ health, well-being, satisfaction, and demographics for the entire Northeast region from 2012, 2018, and 2023/24.
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: Kiera Morrill, Matthew Cutler
 
 **Affiliations**: NEFSC
+
+```{r download_crew_survey}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::crew_survey,
+output_name = 'crew_survey',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 This data was collected using a mixed-methods and intercept-style approach across three waves of the survey, 2012, 2018, and 2023. The data was conducted among ports throughout the Northeast coast with survey questions focused on fishers’ health, well-being, and livelihood. Risks identified in this study reflect broader systemic challenges related to low entry numbers and the rising average age of crew known as the “graying of the fleet,” major shifts in fisheries activity, and key findings of job-related satisfaction to a participants’ Basic Needs, Self-Actualization, and Social and Psychological health. Results from this research expose the relationship of these and other related threats as they emerge alongside waterfront development, gentrification, climate change related hazards, and shifting fish populations.
@@ -61,16 +76,11 @@ Managers and policy makers have a responsibility to consider the effects of mana
 
 **Variable definitions**
 
-1) Name: survey_wave; Definition: which iteration the survey was implemented.  
-2) Name: primary_port; Definition: main port for participant to fish from.  
-3) Name: fishery_category; Definition: what is their main fishery.  
-4) Name: age_category; Definition: age of survey participant.  
-5) Name: education_combined; Defined: a combination of participant’s education attainment.  
-6) Name: race; Defined: participants’ self-described race.  
-7) Name: hispanic; Definition: yes or no.  
-7) Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.  
-8) Name: health_insurance; Definition: does the participant have health insurance or not.  
-9) Name: marital_status; Definition: are they married or not.  
+1) Name: survey_wave; Definition: which iteration the survey was implemented.  2) Name: primary_port; Definition: main port for participant to fish from.  
+3) Name: fishery_category; Definition: what is their main fishery.  4) Name: age_category; Definition: age of survey participant.  
+5) Name: education_combined; Defined: a combination of participant’s education attainment.  6) Name: race; Defined: participants’ self-described race.  
+7) Name: hispanic; Definition: yes or no.  7) Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.  
+8) Name: health_insurance; Definition: does the participant have health insurance or not.  9) Name: marital_status; Definition: are they married or not.  
 10) Name: years_in_commercial_fishing_categorical; Definition: a participant’s time spent in commercial fishing.  
 11) Name: owner_operator_status; Definition: is the participant an owner of a vessel of which they operate a business.  
 12) Name: position_on_current_vessel; Definition: what position do they hold.  

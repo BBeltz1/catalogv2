@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The data presented here are the locations of the center of core habitat for cetaceans by season as documented in 2010 versus 2017.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Sam Chavez, Debra Palka
 
 **Affiliations**: NEFSC
+
+```{r download_cetacean_dist}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::cetacean_dist,
+output_name = 'cetacean_dist',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Marine species are being affected by global climate changes, and in most cases the documented responses include distribution shifts from their historical habitat. In addition, human-caused drivers such as the noise and physical disturbances from oil and gas exploration, fishing, boat traffic and infrastructure such as offshore renewable energy developments, as well as other maritime activities could also result in shifts. [@chavez-rosales_detection_2022] used Northwest Atlantic cetacean location data collected in its changing environment to investigate if their habitats are changing, and if so, to what extent.
@@ -64,10 +79,7 @@ Shifting species distributions alter both species interactions and fishery inter
 
 **Variable definitions**
 
-1) Time=time period of centroid location.  
-2) species=cetacean species.  3) season.  
-4) wlat=latitude of centroid.  
-5) wlon=longitude of centroid.
+1) Time=time period of centroid location.  2) species=cetacean species.  3) season.  4) wlat=latitude of centroid.  5) wlon=longitude of centroid.
 
 ```{r vars_cetacean_dist}
 # Pull all var names

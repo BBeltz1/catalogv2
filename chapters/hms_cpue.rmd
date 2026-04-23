@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: CPUE from pelagic observer program (POP) observed hauls, presented as number of fish per haul, by year and species from 1992-2024.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Tobey Curtis, Daniel Daye, Jennifer Cudney
 
 **Affiliations**: HMS
+
+```{r download_hms_cpue}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::hms_cpue,
+output_name = 'hms_cpue',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 The Pelagic Observer Program (POP) is operated out of the Southeast Fisheries Science Center, but provides observers in all regions (including the high seas) where U.S. flagged and HMS-permitted vessels fish under regulations for the HMS pelagic longline fishery. Data from the POP is collected during trips on pelagic longline vessels that are generally targeting swordfish, and yellowfin and bigeye tunas. Once a set is retrieved, information like the length, dressed weight, sex, and tag number of each individual fish is recorded by trained observers. Between 2018 and 2022, observer coverage for the entire pelagic longline fleet (i.e., from Maine to Texas, and the U.S. Caribbean and high seas) ranged from 9 to 13 percent of total overall reported sets.

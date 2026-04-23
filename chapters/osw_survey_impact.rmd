@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Offshore energy development is expected to have several impacts on federal and state surveys.

@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Synthesis of Chesapeake Bay 2023 habitat conditions with implications for managed species

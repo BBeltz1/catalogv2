@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Passive acoustic monitoring (PAM) simultaneously captures the biological, anthropogenic, climatological, and geological sounds occurring in an area. PAM provides continuous sampling effort in areas that are otherwise difficult to access, resulting in long-term, robust datasets. Ambient sound (soundscape) metrics show the distribution of acoustic energy across frequencies. Peaks in sound levels within particular frequency bins indicate louder sounds at those frequencies, with frequencies below 1000 Hz typically representing contributions from baleen whales, vessel traffic, and noise-generating fishes. Therefore, soundscapes can be used as an indicator of ecosystem health and to identify changes to sound sources, which could be indicative of changes in phenology, species distributions, storm activity, and human activity.
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: Renea Briner, Amanda Holdman, Genevieve Davis, Rhett Finley, Sophie Ferguson, Leila Hatch, Samara Haver, Jessica McCordic, Xavier Mouy, Anita Murray, Maricarmen Serna, Anne Smith, Erin Summers, Lindsey Transue, Christopher Tremblay, Annabel Westell, Rebecca Vanhoeck,  Sofie Van Parijs, Isabella Garfield, Joel Bell, Amy Engelhaupt
 
 **Affiliations**: NEFSC
+
+```{r download_wea_sound}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::wea_sound,
+output_name = 'wea_sound',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 This indicator examines hybrid millidecade sound pressure levels. In the Gulf of Maine, data were collected across four and a half years (2020-2024) and nine recording sites. In the Mid-Atlantic Bight, data were collected across two years (2022-2024) and nine recording sites. The metrics allow for an improved understanding of the dominant sound sources and whether these sound sources exhibited spatial or seasonal patterns in their activity within the region. A full description is in preparation for publication.

@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Synthesis of noteworthy observations reported in 2025 across the Northeast U.S. region that should be recorded and considered in future analyses.

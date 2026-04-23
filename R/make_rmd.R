@@ -32,10 +32,11 @@ make_rmd <- function(listobject, n = 10){
   cat(paste0("# ",listobject$dataname," {#",listobject$indicatorname,"}"),append=T,fill=T,file=con)    
   cat("",append=T,fill=T,file=con) # add space
 
-  ### CHUNK TO LOAD ECODATA
+  ### Chunk to load packages
   cat("```{r echo=FALSE}",append=T,fill=T,file=con)
   cat("knitr::opts_chunk$set(echo = F)",append=T,fill=T,file=con)
   cat("library(ecodata)",append=T,fill=T,file=con)
+  cat("library(downloadthis)",append=T,fill=T,file=con)
   cat("```",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
 
@@ -51,6 +52,38 @@ make_rmd <- function(listobject, n = 10){
   cat(paste0("**Affiliations**: ",listobject$affiliations),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
    
+  ### Download dataset button
+  if (page_type == "ecodata"){
+    # Open and name code chunk
+    cat(paste0("```{r download_", listobject$indicatorname, "}"),append=T,fill=T,file=con)
+    # Write header to .Rmd  
+    cat("# Download dataset from ecodata",append=T,fill=T,file=con)
+    # Call download_this function
+    cat("downloadthis::download_this(",append=T,fill=T,file=con)
+    # Paste ecodata dataset name
+    cat(paste0("ecodata::", listobject$indicatorname, ","),append=T,fill=T,file=con)
+    # Name output file using ecodata dataset name
+    cat(paste0("output_name = '", listobject$indicatorname, "',"),append=T,fill=T,file=con)
+    # Set output extension to .csv
+    cat("output_extension = '.csv',",append=T,fill=T,file=con)
+    # Define button label
+    cat("button_label = 'Download dataset from `ecodata`',",append=T,fill=T,file=con)
+    # Define button type
+    cat("button_type = 'default',",append=T,fill=T,file=con)
+    # Toggle on icon
+    cat("has_icon = TRUE,",append=T,fill=T,file=con)
+    # Define which icon to use
+    cat("icon = 'fa fa-save',",append=T,fill=T,file=con)
+    # Define button class
+    cat("class = 'hvr-sweep-to-left',",append=T,fill=T,file=con)
+    # Set output mode to csv2
+    cat("csv2 = F)",append=T,fill=T,file=con)
+    # Close code chunk
+    cat("```",append=T,fill=T,file=con)
+    # Add space after code chunk
+    cat("",append=T,fill=T,file=con)
+  }
+
   ### DESCRIPTION OF INDICATOR
   cat("## Introduction to Indicator",append=T,fill=T,file=con)
   cat(listobject$whatsthis,append=T,fill=T,file=con)

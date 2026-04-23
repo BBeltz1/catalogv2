@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Synthesis of noteworthy observations reported in 2024 across the Northeast U.S region. To report a noteworthy observation please contact: northeast.ecosystem.highlights@noaa.gov

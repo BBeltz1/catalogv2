@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The data presented here are changes in revenue ($ real) split into a price indicator and a volume indicator. The sum of the price and the volume indicator is equal to the revenue change relative to a base year, which is 1982.
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: John Walden, Geret DePiper, Sean Lucey
 
 **Affiliations**: NEFSC
+
+```{r download_bennet}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::bennet,
+output_name = 'bennet',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 The Bennet (1920) indicator (BI) was first used to show how a change in social welfare could be decomposed into a sum of a price and quantity change indicator (@cross_value_2009). It is called an indicator because it is based on differences in value between time periods, rather than ratios, which are referred to as indices. The BI is the indicator equivalent of the more popular Fisher index (@balk_assumption-free_2010), and has been used to examine revenue changes in Swedish pharmacies, productivity change in U.S. railroads (@lim_profit_2009), and dividend changes in banking operations @grifell-tatje_decomposing_2004. An attractive feature of the BI is that the overall indicator is equal to the sum of its subcomponents @balk_assumption-free_2010. This allows us to examine whether increasing (decreasing) volumes, increasing (decreasing) prices, or some combination of the two is responsible for revenue change between time periods. The volume and price indicators can be further decomposed allowing us to examine the extent to which changing quantities or prices of each output is driving revenue change. 

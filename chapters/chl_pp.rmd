@@ -1,5 +1,11 @@
 # Phytoplankton {#chl_pp}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
 **Description**: Satellite derived phytoplankton data including chlorophyll concentration, primary production, and phytoplankton size class for the Northeast Continental Shelf and ecological production units.
 
 **Indicator family**: 
@@ -11,10 +17,20 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+```{r download_chl_pp}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::chl_pp,
+output_name = 'chl_pp',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
 ```
+
 ## Introduction to Indicator
 Phytoplankton are key biological regulators of the structure and function of most marine ecosystems. They are the foundation of the marine food web and are the primary food source for zooplankton and filter feeders such as shellfish. Numerous environmental and oceanographic factors interact to drive the abundance, composition, spatial distribution, seasonal timing and productivity of phytoplankton. Satellite derived measurements of chlorophyll, the dominant photosynthetic pigment in phytoplankton, are used to estimate total phytoplankton biomass. Phytoplankton growth depends on the availability of carbon dioxide, sunlight and nutrients and their growth rates can be influenced by water temperature, water depth, wind, and grazing pressure.  Primary productivity is a measure of the amount of carbon produced by phytoplankton. The size structure of the phytoplankton community influences important biogeochemical and ecological processes, including transfer of energy through the marine food web.
 

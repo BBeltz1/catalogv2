@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The data presented here are seasonal sea surface temperature anomalies for the period 1993-2019 from the MOM6 hindcast ocean model for the Northwest Atlantic.  Also shown here are 10-year forecasts of sea surface temperature anomalies (2023-2033) from the MOM6 decadal forecast ocean model for the Northwest Atlantic.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Laura Gruenburg, Vimal Koul
 
 **Affiliations**: NEFSC
+
+```{r download_surface_temp_mom6}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::surface_temp_mom6,
+output_name = 'surface_temp_mom6',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 This indicator shows seasonal sea surface temperature anomalies from a regional ocean model for the Northwest Atlantic based on the Modular Ocean Model Version 6 (NWA MOM6).  The model is at roughly 1/12 a degree horizontal resolution with data from 1993-2019 from a hindcast simulation, which has no data assimilation.  Investigating the ability of this model to reproduce key indicators can help us to develop confidence in the model as well as learn where improvements can be made.

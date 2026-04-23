@@ -1,5 +1,11 @@
 # Gray Seal Pups {#seal_pups}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
 **Description**: The data presented here are counts of gray seal pups at 4 U.S. haulout sites from 1988 to 2021.
 
 **Indicator family**: 
@@ -11,10 +17,20 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+```{r download_seal_pups}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::seal_pups,
+output_name = 'seal_pups',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
 ```
+
 ## Introduction to Indicator
 Gray seals were extirpated from the northeast U.S. coast by the mid-20th century due to local and statewide bounty systems [@andrews_gray_1967;  @lelli_seal_2009]. Since the late 1980s, ground and aerial surveys have documented the recovery and recolonization of pupping sites in northeast U.S. waters [@wood_gray_2022]. This recovery is due in large part to the protection provided by the Marine Mammal Protection Act (MMPA) of 1972.
 

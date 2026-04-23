@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Aggregate biomass from Northeast Fisheries Science Center (NEFSC) bottom trawl survey.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
 
 **Affiliations**: NEFSC
+
+```{r download_aggregate_biomass}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::aggregate_biomass,
+output_name = 'aggregate_biomass',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 The NEFSC has been conducting bi-annual bottom trawl surveys along the Northeast US Continental Shelf for over 60 years.  The survey is conducted in the spring and fall of each year.  The fall survey began in 1964 and the spring in 1967.  The survey is designed as a stratified random survey.  We have calculated stratified means with sets of survey strata that closely align with our Ecosystem Production Unit boundaries.  Species are aggregated into feeding guilds in order to gauge the relative stability and health of the system.

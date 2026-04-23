@@ -1,5 +1,11 @@
 # Slopewater Proportions {#slopewater}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
 **Description**: This index gives the relative proportions of watermass type observed in the deep Northeast Channel (150-200 m water depth).
 
 **Indicator family**: 
@@ -11,10 +17,20 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+```{r download_slopewater}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::slopewater,
+output_name = 'slopewater',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
 ```
+
 ## Introduction to Indicator
 Temperature and salinity measurements are examined to assess the composition of the waters entering the Gulf of Maine through the deep Northeast Channel. The analysis closely follows the methodology described by @mountain_labrador_2012. This method assumes that the waters flowing into the Northeast Channel between 150 and 200 meters depth are composed of slope waters, originating offshore of the continental shelf, and shelf waters, originating on the continental shelf south of Nova Scotia.
 

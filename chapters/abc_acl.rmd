@@ -1,5 +1,11 @@
 # ABC or ACL for Managed Stocks {#abc_acl}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
 **Description**: Mid-Atlantic Council catch limits (e.g., ABC or ACL) and associated total catch estimate by year for each species and sector (commercial or recreational, as appropriate).
 
 **Indicator family**: 
@@ -12,10 +18,20 @@
 
 **Affiliations**: MAFMC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+```{r download_abc_acl}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::abc_acl,
+output_name = 'abc_acl',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
 ```
+
 ## Introduction to Indicator
 The ratio of total estimates catch (landings and dead discards) compared to the specified catch limit, either the Acceptable Biological Catch (ABC) or the Annual Catch Limit (ACL) by species and sector (e.g., commercial or recreational, if appropriate). This ratio can provide an understanding of management control to constrain total catch below the acceptable/specified limits through different management tools (e.g., trip limits, seasons, gear requirements etc.). Ratios above one can be an indicator of poor management control and/or uncertainties, or indicative that the catch limits in place are constraining on the fishery. Ratios below one could indicate greater management control and/or fewer uncertainties or that their may be other factors (e.g., markets, price, availability) may be limiting a sectors ability to reach its catch limits.
 

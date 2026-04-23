@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Calculates the proportion of each EPU that exceeds temperature thresholds as a daily time series from 1993 – 2024
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: Joe Caracappa
 
 **Affiliations**: NEFSC
+
+```{r download_thermal_habitat_area}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::thermal_habitat_area,
+output_name = 'thermal_habitat_area',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 See "Thermal Habitat Persistence" for cell-based calculations. Many deep water benthic and demersal species exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal preferences may impair these processes. Two temperature thresholds (15 and 24 degrees C) were chosen based on cutoff points where demersal species are less commonly found. Thermal habitat area is calculated by identifying 1/12 degree cells within a given EPU that are greater than or equal to the temperature threshold then taking the sum of all cell areas. Data from 1993-01-01 to 2024-09-10 were obtained from the CMEMS' GLORYS12V1 global reanalysis product.
@@ -67,11 +82,8 @@ If a large proportion of species current habitat become thermally inhospitable, 
 
 **Variable definitions**
 
-Time: Date EPU: EPU name Depth: Depth category 
-Var: Temperature Category 
-Value: Proportion of area above temp.threshold 
-Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  
-year: year Units: Proportion
+Time: Date EPU: EPU name Depth: Depth category Var: Temperature Category Value: Proportion of area above temp.threshold 
+Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  year: year Units: Proportion
 
 ```{r vars_thermal_habitat_area}
 # Pull all var names

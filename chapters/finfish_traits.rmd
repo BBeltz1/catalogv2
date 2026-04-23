@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: These data represent estimates of trait distributions for key functional traits amongst finfish species at each EPU on the Northeast Continental Shelf.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Bart DiFiore, Kathy Mills, Scott Large
 
 **Affiliations**: Massachusetts
+
+```{r download_finfish_traits}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::finfish_traits,
+output_name = 'finfish_traits',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Functional traits, such as length at maturity, asymptotic body size, or fecundity, offer a means to synthesize change across complex, diverse communities while avoiding the pitfalls of examining change in any given species. In general, ecological theory predicts that if many species play similar roles in an ecosystem, known as high functional redundancy, then the loss of any one species will be compensated by the prevalence of functionally similar species, allowing for greater stability and resilience at the ecosystem level. Therefore, monitoring changes in functional trait distributions can provide a means of assessing ecosystem-scale resilience. 
@@ -187,21 +202,14 @@ At the EPU scale, there was little evidence for long-term linear trends in trait
 
 **Variable definitions**
 
-**Grouping variables** 
-- region: Categorical variable for either the whole NE shelf or each of the four EPU's. 
-- est_year: Year at which the values were estimated.  
-- season: Season for which the values were estimated. Only spring and fall are represented. 
- **CWM Trait values** 
+**Grouping variables** - region: Categorical variable for either the whole NE shelf or each of the four EPU's. 
+- est_year: Year at which the values were estimated.  - season: Season for which the values were estimated. Only spring and fall are represented.  
+**CWM Trait values** 
 Each of the following variables are community weighted mean (CWM) estimates for the particular trait at either the scale of the EPU and the whole NE Shelf. In all cases, a species is represented by a single trait value. For instance, all cod fish in the data set are assigned a common trophic level that is invariant with body size, time, season, etc. This data represents *inter*specific variation in traits, and does not account for *intra*specific variation. Please see methods for where we sourced trait estimates. 
-- trophic_level: Trophic level 
-- offspring_size: Average estimated size of offspring (mm) 
-- age_maturity: Average estimated age at 50% maturity (years). 
-- length_maturity: Average estimated length at 50% maturity (cm). 
-- fecundity: Average number of offspring produced per spawning adult.  
-- l_inf: Infinite length parameter for the species Von Bertalanffy growth equation. 
-- k: Growth parameter for the species Von Bertalanffy growth equation. 
-- max_obs_length: Maximum observed length recorded in FishBase or related databases. 
- **CWM Trait Ordinations**  
+- trophic_level: Trophic level - offspring_size: Average estimated size of offspring (mm) - age_maturity: Average estimated age at 50% maturity (years). 
+- length_maturity: Average estimated length at 50% maturity (cm). - fecundity: Average number of offspring produced per spawning adult.  
+- l_inf: Infinite length parameter for the species Von Bertalanffy growth equation. - k: Growth parameter for the species Von Bertalanffy growth equation. 
+- max_obs_length: Maximum observed length recorded in FishBase or related databases.  **CWM Trait Ordinations**  
 - PC1: CWM for the first principle component axis that explains ~61% of the variance. Due to trait loading we consider this axis representative of "Pace of Life".  
 - PC2: CWM for the second principle component axis that explains ~19% of the variance. Due to trait loading we consider this axis representative of "Fecundity" and/or reproductive investment.  
 - PC3: CWM for the third principle component axis that explains ~9% of the variance. The only trait that loads strongly on this axis is trophic level. However, species do not appear to sort strongly by trophic position along this axis and we do not recommend that users consider this reflective of changes in trophic position without further consideration.

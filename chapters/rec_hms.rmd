@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Recreational shark landings estimates by management group (large coastal, small coastal, prohibited, pelagic) in numbers of sharks (x1000) by year.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Jennifer Cudney (OSF/HMS), Cliff Hutt (OSF/HMS)
 
 **Affiliations**: NEFSC
+
+```{r download_rec_hms}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::rec_hms,
+output_name = 'rec_hms',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 These indicators track HMS recreational landings estimates for four management groups of sharks. Data come from two sources - MRIP (large coastal, small coastal, and prohibited sharks) and LPS (pelagic sharks). These data are extrapolated estimates of catch based on average catch rates calculated from program survey data and estimates of total fishing effort. 
@@ -64,8 +79,7 @@ The number of recreationally landed large coastal sharks has declined since recr
 
 **Variable definitions**
 
-Year = estimates of shark landings are calculated on a yearly basis. 
-Data Columns = MRIP and LPS landings data (# sharks x 1000) are summarized by region. 
+Year = estimates of shark landings are calculated on a yearly basis. Data Columns = MRIP and LPS landings data (# sharks x 1000) are summarized by region. 
  Large Coastal = summed MRIP estimates of annual landings of large coastal sharks, which include blacktip, bull, hammerheads (scalloped, great, and smooth), lemon, nurse, sandbar, silky, spinner, and tiger sharks. 
 Small Coastal = summed MRIP estimates of annual landings of large coastal sharks, which include blacknose, finetooth, Atlantic sharpnose, and bonnethead sharks. 
 Prohibited = summed MRIP estimates of annual landings of prohibited sharks, which include Atlantic angel, basking, bigeye sand tiger, bigeye sixgill, bigeye thresher, bignose, Caribbean reef, Caribbean sharpnose, dusky, Galapagos, longfin mako, narrowtooth, night, oceanic whitetip, sand tiger, sevengill, shortfin mako, sixgill, smalltail, whale and white sharks.  

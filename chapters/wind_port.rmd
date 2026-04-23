@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Percent of port-level revenue from wind lease areas and Community Social Vulnerability Indicators
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: Angela Silva, Doug Christel, Benjamin Galuardi, Nicole Morgan, Bobby Murphy, Abigail Tyrell
 
 **Affiliations**: NEFSC
+
+```{r download_wind_port}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::wind_port,
+output_name = 'wind_port',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 This indicator describes fishing revenue that can be attributed to areas leased for offshore wind development. The fishing footprint model ([@benjamin_visualizing_2018], [@depiper_statistically_2014]) is used to allocate trip-level revenue to wind lease areas. These trips are aggregated by port to determine the port-level revenue derived from wind lease areas. Further information is available on the [NOAA website](https://www.fisheries.noaa.gov/resource/data/socioeconomic-impacts-atlantic-offshore-wind-development). For this indicator, wind lease areas are assessed as two groups, leases under construction or fully developed, and leases where construction has not yet begun. This distinction has been added to better illustrate which ports may be subject to potential near-term impacts of offshore wind infrastructure.
@@ -75,10 +90,8 @@ Offshore wind presents a new use of the ocean which is a permanent long term cha
 
 **Variable definitions**
 
-perc_MIN: minimum percent of port revenue derived from wind lease areas 
-perc_MAX: maximum percent of port revenue derived from wind lease areas 
-perc_AVG: average percent of port revenue derived from wind lease areas 
-MaxVal: maximum amount of revenue derived from wind lease areas (2024$) 
+perc_MIN: minimum percent of port revenue derived from wind lease areas perc_MAX: maximum percent of port revenue derived from wind lease areas 
+perc_AVG: average percent of port revenue derived from wind lease areas MaxVal: maximum amount of revenue derived from wind lease areas (2024$) 
 EJ: 1 = community scored Med-High or higher in at least one of the vulnerability indicators that address social vulnerability concerns (i.e., Poverty, Population Composition, Personal Disruption); 0 = community did not score Med-High or higher in at least one of the vulnerability indicators that address social vulnerability concerns 
 Gentrification: 1 = community scored Med-High or higher in one or more gentrification pressure indicators (i.e., Housing Disruption, Retiree Migration, Urban Sprawl); 0 = community did not score Med-High or higher in one or more gentrification pressure indicators 
 lease_status: 3 categories, whether the leases areas assessed were "All leases", "Leases, construction not in progress", or "Leases, construction in progress or complete"

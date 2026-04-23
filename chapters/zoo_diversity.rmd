@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Effective Shannon diversity calculated using 42 zooplankton taxa collected from EcoMon cruises
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Harvey Walsh, Ryan Morse, Kevin Friedland, Mike Jones
 
 **Affiliations**: NEFSC
+
+```{r download_zoo_diversity}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::zoo_diversity,
+output_name = 'zoo_diversity',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Zooplankton represent a critical trophic link from primary producers to fish in marine ecosystems. Trends in zooplankton community diversity may indicate changes in trophic stability over time.

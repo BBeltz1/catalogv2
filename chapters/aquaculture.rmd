@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Oyster production: number of oysters harvested from aquaculture.
@@ -17,6 +18,20 @@ library(ecodata)
 **Contributor(s)**: Christopher Schillaci, Maine DMR, NH DES, MA DMF, RI CRMC, MD DNR
 
 **Affiliations**: NOAA
+
+```{r download_aquaculture}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::aquaculture,
+output_name = 'aquaculture',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Aquaculture can produce seafood as well as other products. Here we summarize available data on aquaculture production from the Northeast US.
@@ -62,10 +77,7 @@ Aquaculture production contributes to overall seafood production in the Northeas
 
 **Variable definitions**
 
-Pieces: number of oysters produced (all regions)                
- 
-Shellfish lease Acres: area used for shellfish production (New England states only), acres 
- 
+Pieces: number of oysters produced (all regions)                 Shellfish lease Acres: area used for shellfish production (New England states only), acres  
 Production/Acre: Pieces divided by Shellfish lease acres (New England states only)
 
 ```{r vars_aquaculture}

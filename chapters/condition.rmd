@@ -1,5 +1,11 @@
 # Relative condition {#condition}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
 **Description**: NEFSC fall bottom trawl survey relative condition
 
 **Indicator family**: 
@@ -11,10 +17,20 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+```{r download_condition}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::condition,
+output_name = 'condition',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
 ```
+
 ## Introduction to Indicator
 The health and well being of individual fish can be related to body shape condition indices (i.e., weight at a given length) such as relative condition index, which is the ratio of observed weight to predicted weight based on length [@le_cren_length-weight_1951]. Heavier and fatter fish at a given length have higher relative condition which is expected to improve growth, reproductive output, and survival.
 
@@ -80,7 +96,8 @@ These changes in condition have direct implications for stock assessments, catch
 
 **Variable definitions**
 
-Species: common name for fish species  EPU: Ecological Production Unit YEAR: year of condition data MeanCond: annual mean by EPU and species of relative condition (unitless)
+Species: common name for fish species  EPU: Ecological Production Unit YEAR: year of condition data 
+MeanCond: annual mean by EPU and species of relative condition (unitless)
 
 ```{r vars_condition}
 # Pull all var names

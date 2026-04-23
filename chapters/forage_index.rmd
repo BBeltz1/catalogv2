@@ -1,5 +1,11 @@
 # Forage Fish Index {#forage_index}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
 **Description**: Aggregate forage fish biomass index from fish stomach contents
 
 **Indicator family**: 
@@ -11,10 +17,20 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+```{r download_forage_index}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::forage_index,
+output_name = 'forage_index',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
 ```
+
 ## Introduction to Indicator
 The amount of forage fish available in the ecosystem combined with the energy content of the forage species determines the amount of energy potentially available to predators in the ecosystem. Changes in the forage base could pose a risk to managed and protected species production. Spatially explicit indices of abundance for several forage species were estimated using spatio-temporal modeling (VAST, @thorson_comparing_2017; @thorson_guidance_2019). This spatially-explicit forage index estimated the combined biomass of 21 forage species using stomach contents information from 22 predatory fish species collected on bottom trawl surveys. 
 
