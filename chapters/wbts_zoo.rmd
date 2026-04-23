@@ -1,5 +1,10 @@
 # Western GOM Sentinel Zooplankton Indicators {#wbts_zoo}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The data presented here is from the NERACOOS-MBON Wilkinson Basin Time Series (WBTS) station. Runge et al. 2025 [@runge_zooplankton_2025] analysis initially included observations from 2005 up through March of 2023, this update follows the same methods and now includes observations up to November 2025.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: UMS
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Mesozooplankton (predominantly copepods) graze on phytoplankton and smaller zooplankton and serve as the foundation of production for higher trophic levels. In deeper waters of the Gulf of Maine (>100 m), the net-captured mesozooplankton biomass is dominated by the planktonic copepod, *Calanus finmarchicus*, a signature species of the subarctic ecosystem spanning the North Atlantic between the Gulf of Maine in the south and west to the Norwegian and Barents Seas in the north and east. Supremely adapted to the seasonality of the subarctic North Atlantic, the lipid-rich older stages of mesozooplankton nourish and influence condition of forage fish such as Atlantic herring, sand lance and Atlantic mackerel, as well as serve as the primary prey for the critically endangered North Atlantic right whale, whose fecundity is dependent on sufficient availability of *C. finmarchicus* in late spring through fall.
 

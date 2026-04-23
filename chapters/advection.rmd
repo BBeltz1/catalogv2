@@ -1,5 +1,10 @@
 # Advection {#advection}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The advection data is an integrated mass transport through transects along the shelf break
 
 **Indicator family**: 
@@ -12,10 +17,6 @@
 
 **Affiliations**: NMFS
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Advection is important to the retention of larval fish on the Northeast U.S. Continental Shelf.
 
@@ -98,8 +99,13 @@ Different fish species inhabit different depth ranges of the water column for sp
 
 **Variable definitions**
 
-1) Year  2) Month  3) Var: Transport in the top 15m  4) Value: Transport in the top 15m  5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  7) Var: Transport 40m to sea floor  
-8) Value: Transport 40m to sea floor  9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  10) Units: 10^6 m^3/s
+1) Year  2) Month  3) Var: Transport in the top 15m  
+4) Value: Transport in the top 15m  
+5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  
+7) Var: Transport 40m to sea floor  
+8) Value: Transport 40m to sea floor  
+9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  
+10) Units: 10^6 m^3/s
 
 ```{r vars_advection}
 # Pull all var names

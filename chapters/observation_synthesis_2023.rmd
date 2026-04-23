@@ -1,5 +1,10 @@
 # 2023 Observation Synthesis {#observation_synthesis_2023}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Synthesis of multiple anomalous and extreme conditions observed in 2023 that should be noted and considered in future analyses.
 
 **Indicator family**: 
@@ -13,10 +18,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Multiple anomalous conditions and extreme events were observed in 2023 that could have brief local effects and/or widespread long-term ecosystem, fishery and management implications. This section intends to provide a record of these observations, the implications they may have for other ecosystem processes, and a reflection on how they fit into our understanding of the ecosystem. Many of these observations are being actively studied but should be noted and considered in future analyses and management decisions.
 

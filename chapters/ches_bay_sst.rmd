@@ -1,5 +1,10 @@
 # Chesapeake Bay Seasonal Sea Surface Temperature Anomaly {#ches_bay_sst}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Chesapeake Bay Seasonal Sea Surface Temperature Anomaly
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: University of Maryland, Cooperative Institute for Satellite Earth System Studies, NOAA Chesapeake Bay Office
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Seasonal spatial anomaly maps represent the difference between a seasonal average sea surface temperature (SST) and a long-term average SST for that season. For the Chesapeake Bay, the long-term average is derived from the SST time series from 2007 to the year immediately prior to the current year (max(Year) - 1). This reference period serves as a benchmark for comparing current observations. Hence, the anomaly represents the degree to which the current seasonal average departs from historical average, either colder or warmer, indicating whether the current temperature conditions may be favorable or unfavorable for marine species.
 
@@ -63,7 +64,8 @@ Surface water temperatures exceeded suitable temperatures for juvenile summer fl
 
 **Variable definitions**
 
-1) sst: sea surface temperature 2025, Celsius  2) sst_climatol: sea surface temperature climatology 2007-2024, Celsius  
+1) sst: sea surface temperature 2025, Celsius  
+2) sst_climatol: sea surface temperature climatology 2007-2024, Celsius  
 3) sst_anomaly: sea surface temperature anomaly 2025 minus 2007-2024, Celsius
 
 ```{r vars_ches_bay_sst}

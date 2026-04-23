@@ -1,5 +1,10 @@
 # Dissolved Oxygen {#dissolved_oxygen}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Coming soon
 
 **Indicator family**: 
@@ -12,10 +17,6 @@
 
 **Affiliations**: Coming soon
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Coming soon
 

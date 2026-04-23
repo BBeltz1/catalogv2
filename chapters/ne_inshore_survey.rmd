@@ -1,5 +1,10 @@
 # Inshore Survey (New England) {#ne_inshore_survey}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The data presented here represent the biomass time series for aggregate species groups from the Maine/New Hampshire inshore bottom trawl surveys conducted in Maine and New Hampshire state waters.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: Maine
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Each species caught on the survey are organized into trophic groups including, "piscivore", "benthivore", "planktivore" and "benthos" for each spring and fall survey. The aggregate weight of each trophic group is calculated for each tow, and then stratified mean biomass (kg/tow) is calculated. The survey is stratified by both region and depth, and the stratified mean is weighted based on the size (area in km^2) of each region-depth strata to ensure representative averages. More information on survey strata can be found [here](https://www.maine.gov/dmr/science/ecology-environment/inshore-trawl-survey/general-information).
 
@@ -59,8 +60,10 @@ Indices for each trophic group have varied over time but have, for the most part
 
 **Variable definitions**
 
-1)	Name: Apex Predator; Definition: Stratified mean biomass of apex predators; Units: kg tow^-1 2)	Name: Benthivore; Definition: Stratified mean biomass of benthivores; Units: kg tow^-1 
-3)	Name: Benthos; Definition: Stratified mean biomass of benthos species; Units: kg tow^-1 4)	Name: Piscivore; Definition: Stratified mean biomass of piscivores; Units: kg tow^-1 
+1)	Name: Apex Predator; Definition: Stratified mean biomass of apex predators; Units: kg tow^-1 
+2)	Name: Benthivore; Definition: Stratified mean biomass of benthivores; Units: kg tow^-1 
+3)	Name: Benthos; Definition: Stratified mean biomass of benthos species; Units: kg tow^-1 
+4)	Name: Piscivore; Definition: Stratified mean biomass of piscivores; Units: kg tow^-1 
 5)	Name: Planktivore; Definition: Stratified mean biomass of planktivores; Units: kg tow^-1 
 6)	Name: Other; Definition: Stratified mean biomass of species that did not fit into the other five categories; Units: kg tow^-1
 

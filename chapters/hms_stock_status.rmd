@@ -1,5 +1,10 @@
 # Atlantic Highly Migratory Species Stock Status {#hms_stock_status}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Summary of stock assessment results for each assessed HMS species as of December 2023.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 This section summarizes Highly Migratory Species Stock Status as it is presented in the most recent Atlantic Highly Migratory Species Stock Assessment and Fishery Evaluation (SAFE) report (2024-2025). Stock assessments for Atlantic HMS are completed through one of three processes. Most Atlantic HMS stocks that are managed internationally under the authority of the MSA and ATCA (tunas, billfish, swordfish, some pelagic sharks) are assessed by the International Commission for the Conservation of Atlantic Tunas’ Standing Committee on Research and Statistics (ICCAT SCRS). Sharks managed domestically under the MSA are assessed through the SouthEast Data Assessment and Review (SEDAR) process. Sharks may also be assessed through an independent stock assessment is completed by a third party and approved for use in management by NOAA Fisheries (“external assessments”). Most HMS assessments are completed through either the ICCAT or SEDAR process.  Separate tables summarize thresholds and stock status for all species or stocks assessed through these pathways (and for which the results have been accepted for use in management), and provide information on the timing of upcoming assessments.
 
@@ -63,12 +64,17 @@ This summarizes information in the HMS SAFE Report, which itself is intended to 
 
 **Variable definitions**
 
-1. Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  2. Bmsy = biomass at maximum sustainable yield  
+1. Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  
+2. Bmsy = biomass at maximum sustainable yield  
 3. Threshold = the threshold identified in respective assessments to indicate status (e.g., overfished, not overfished, overfishing is occurring, overfishing is not occurring) 
-4. Stock status,  5. Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  
-6. Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  7. Stock = the name of the stock assessed  
-8. Last Assessment Year = the year in which the latest assessment was finalized  9. Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  
-10. Notes = additional information.  11. Shark Stock = the name of the stock assessed
+4. Stock status,  
+5. Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  
+6. Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  
+7. Stock = the name of the stock assessed  
+8. Last Assessment Year = the year in which the latest assessment was finalized  
+9. Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  
+10. Notes = additional information.  
+11. Shark Stock = the name of the stock assessed
 
 ```{r vars_hms_stock_status}
 # Pull all var names

@@ -1,5 +1,10 @@
 # Transition Dates {#trans_dates}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The date that cool winter conditions transition to warm stratified summer conditions.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Transition dates are defined as the day of the year when surface temperatures changeover from cool to warm conditions in the spring and back to cool conditions in the fall.
 
@@ -71,7 +72,8 @@ Prolonged fall temperatures have been linked to the increased number of cold-stu
 
 **Variable definitions**
 
-1. falltrans: fall transition day 2. sprtrans: spring transition day 3. maxday: max sst day
+1. falltrans: fall transition day 
+2. sprtrans: spring transition day 3. maxday: max sst day
 
 ```{r vars_trans_dates}
 # Pull all var names

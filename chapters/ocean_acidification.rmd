@@ -1,5 +1,10 @@
 # Ocean Acidification and Other Stressors {#ocean_acidification}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Maps and variability of regional carbonate chemistry and other oceanographic properties
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: Rutgers University, Bermuda Institute of Ocean Sciences – Arizona State University
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Ocean acidification (OA) has caused measured declines in global ocean pH and is projected to continue declining by up to 0.30 pH units over the course of the 21st century if high carbon dioxide emissions continue [@portner_ocean_2019]. OA also changes the availability of minerals required by organisms to form calcified structures such as shells and other structures. Calcifying conditions in seawater can be determined by measuring aragonite saturation state (ΩArag or omega), the tendency of a common type of calcium carbonate, aragonite, to form or dissolve. When ΩArag is less than 1, shells and other calcium carbonate structures begin to dissolve. Typical surface ocean ΩArag is 2-4, but extremes can be <1 or >5. As the ocean absorbs carbon dioxide, both pH and ΩArag decrease and can cause organisms to respond with reduced survival, calcification rates, growth, and reproduction, as well as impaired development, and/or changes in energy allocation (reviewed in @kroeker_impacts_2013, @saba_recommended_2019). However, sensitivity levels vary, and some organisms exhibit negative responses to calcification and other processes when ΩArag is as low as 3.
 
@@ -110,7 +111,10 @@ The updated datasets this year provided the seasonal evaluation of available car
 
 **Variable definitions**
 
-1. depth_interpolated meters 2. temperature degrees Celsius 3. chlorophyll_a µg L-1 4. oxygen_concentration_shifted_mgL mg L-1 5. pH_shifted 6. aragonite_saturation_state
+1. depth_interpolated meters 2. temperature degrees Celsius 
+3. chlorophyll_a µg L-1 
+4. oxygen_concentration_shifted_mgL mg L-1 5. pH_shifted 
+6. aragonite_saturation_state
 
 
 No Data

@@ -1,5 +1,10 @@
 # Timing shifts: Risks to Seasonal Management {#timing_shifts}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Shifts in the timing of life-cycle events are a risk to meeting seasonal and temporal management objectives.
 
 **Indicator family**: 
@@ -14,10 +19,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Changes in phenology, the seasonal timing of recurring life-cycle events, are a primary indicator of species responses to climate change @staudinger_its_2019. Observed phenological changes on the Northeast Shelf include shifts in [spawning](https://noaa-edab.github.io/catalog/spawn_timing.html), migration @crear_climate-influenced_2023, prey availability, and seasonal phytoplankton bloom timing. Changes in the timing of physical drivers such as the onset of stratification and fall turnover timing directly and indirectly affect life-cycle events. The phenological responses are often species-specific and vary depending on the primary environmental driver @staudinger_its_2019.
 

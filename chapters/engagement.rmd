@@ -1,5 +1,10 @@
 # Community Social Vulnerability Indicators (CSVI) {#engagement}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The data here consist of two sources; 1) Port Commercial Fishing Activity Indicator scores which is comprised of commercial fishing landings and permit data from 2007 through 2024 summarized to indicate port-level activity in commercial fishing. 2) Community Social Vulnerability Indicators (CSVI) generated from 2023 American Community Survey 5-yr estimates Dataset in the U.S. Census American Community Survey (ACS) for coastal communities at the Census Designated Place or County Subdivision level.
 
 Note, the Mid-Atlantic analysis for the PCFA Indicator does not include data from North Carolina (NC) given delays in receiving data from the Southeast region. NC ports land a significant portion of fish from Southeast managed species and thus, we elected to not include NC to avoid the risk of underestimation.
@@ -14,10 +19,6 @@ Note, the Mid-Atlantic analysis for the PCFA Indicator does not include data fro
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 We report the top ten ports with the highest relative participation in commercial fishing for 2024 and each top port’s history of relative participation (2007-2024). This is a new indicator named the ‘Port Commercial Fishing Activity (PCFA) Indicator’ and is an adaptation of the previous fishing engagement indicator from the CSVIs. The new PCFA indicator provides a relative metric of the activity of a specific port in commercial fishing and utilizes the same data sources as previously included in the CSVI engagement indicator; the number of commercial fishing permits, the number of permitted dealers, the pounds of landed fish, and the value of landed fish. Instead of conducting an annual Principal Components Analysis, this new indicator method simply normalizes each column of data (across all years) using a min-max scaling approach (range = 0 – 1) and then takes the mean of each column to create a composite average score for each port by year. Note, the value of landed fish data is first normalized by year to account for inflation over time. The PCFA analysis is conducted for each region (MA and NE) separately such that scores are comparable within region only.
 
@@ -81,15 +82,19 @@ By integrating the Community Social Vulnerability Indicators, we highlight munic
 
 **Variable definitions**
 
-1.	Community: name of the municipality identified as a community in the CSVIs. 2.	personal_disruption_rank: CSVI personal disruption factor score ranking. Low, moderate, moderate high, high 
+1.	Community: name of the municipality identified as a community in the CSVIs. 
+2.	personal_disruption_rank: CSVI personal disruption factor score ranking. Low, moderate, moderate high, high 
 3.	pop_composition_rank: CSVI population composition factor score ranking. Low, moderate, moderate high, high 
 4.	poverty_rank: CSVI poverty factor score ranking. Low, moderate, moderate high, high 
 5.	labor_force_str_rank: CSVI labor force structure factor score ranking. Low, moderate, moderate high, high 
 6.	housing_characteristics_rank: CSVI housing characteristics factor score ranking. Low, moderate, moderate high, high 
 7.	housing_disrupt__rank: CSVI housing disruption factor score ranking. Low, moderate, moderate high, high 
 8.	retiree_migration_rank: CSVI retiree migration factor score ranking. Low, moderate, moderate high, high 
-9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 10.	PORT_NAME: fishing data port name 11.	STATE_ABB: fishing data port state abbreviation 
-12.	place_id: fishing data port and state abbreviation combined 13.	YEAR: the year of fishing data 
+9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 
+10.	PORT_NAME: fishing data port name 
+11.	STATE_ABB: fishing data port state abbreviation 
+12.	place_id: fishing data port and state abbreviation combined 
+13.	YEAR: the year of fishing data 
 14.	fishing_mean_score: composite Port Commercial Fishing Activity Indicator score (range between 0 and 1)
 
 ```{r vars_engagement}

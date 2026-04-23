@@ -1,5 +1,10 @@
 # Benthic Invertebrate Indices {#benthos_index}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Aggregate macrobenthos and megabenthos invertebrate indices from fish stomach contents
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Benthic invertebrates provide supporting ecosystem services as important prey for many economically important fish species on the Northeast US shelf.  Changes to the benthic invertebrate forage base could have important implications for regional food webs. However, we lack direct measurements of benthic invertebrate biomass for most unexploited taxa. Spatially explicit indices of abundance for benthos groups were estimated using spatio-temporal modeling (VAST, @thorson_comparing_2017; @thorson_guidance_2019).
 
