@@ -1,5 +1,10 @@
 # Trends in effective area swept and revenue per km2 by EPU and gear {#effective_sweptarea}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Data presented here represent a summary of total area swept derived from VTR information, e.g. gear type, gear sweep, vessel size, number of tows, etc. and represents a complete census of commercial fishing trips reported by dealers, either from VTR or imputed data.  Assumptions about the effect on habitat by gear components (sweeps, cables, doors, dredges, traps, gillnets, and longlines) are made and documented.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: NEFMC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Effective swept area is a measure of the force of the gear on bottom habitat, including the effects of the net sweep, dredge width, trawl cables, and trawl doors.  Trends reflect the total amount of effort reported for trips reported by dealers and on vessel trip reports.  Due to the nature of the gear, the duration of tows, and amount of vessels fishing, otter trawls have the largest amount of area swept.
 

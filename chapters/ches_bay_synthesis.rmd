@@ -1,5 +1,10 @@
 # Chesapeake Bay 2023 Synthesis {#ches_bay_synthesis}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Synthesis of Chesapeake Bay 2023 habitat conditions with implications for managed species
 
 **Indicator family**: 
@@ -12,10 +17,6 @@
 
 **Affiliations**: NCBO
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Chesapeake Bay is the largest estuary in the US, providing important spawning, nursery, and feeding habitat for many managed species in the Northeast US. The combination of seasonal water temperature, precipitation, salinity, and oxygen conditions in Chesapeake Bay can represent favorable or unfavorable habitat for managed species. Each species responds differently, leading to changes in populations and communities within the Bay.
 

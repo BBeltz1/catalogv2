@@ -1,5 +1,10 @@
 # Gray Seal Bycatch {#grayseal}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The data presented here are time series of the species specific estimates of bycatch from U.S. North Atlantic commercial fisheries.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Gray seals, like all marine mammals, are protected under the Marine Mammal Protection Act (MMPA). The goal of the MMPA is to obtain and maintain optimum sustainable populations (OSP) of marine mammals, because they were recognized as significant functioning elements of marine ecosystems. To help prevent populations from falling below their OSP levels, managers set limits on the level of incidental mortality and serious injury occurring in commercial fisheries, and also monitor unusual mortality events (UMEs). We report on levels of gray seal incidental mortality in commercial fisheries over time relative to the limits set on this mortality, otherwise known as the Potential Biological Removal (PBR) level. Gray seals use both U.S. and Canadian waters and their abundance and PBR on a range-wide basis should take into account portions of the population that are in U.S. as well as Canadian waters.
 
@@ -59,8 +60,10 @@ Under the MMPA, if bycatch exceeds PBR levels, Take Reduction Teams may be conve
 
 **Variable definitions**
 
-1) pbr = Potential Biological Removal level. Unit = n (number of animals) 2) totalest1y = Total bycatch of 1 year annual estimate. Unit = n (number of animals) 
-3) totalest5y = Total bycatch of 5 year running average estimate. Unit = n (number of animals) 4) total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
+1) pbr = Potential Biological Removal level. Unit = n (number of animals) 
+2) totalest1y = Total bycatch of 1 year annual estimate. Unit = n (number of animals) 
+3) totalest5y = Total bycatch of 5 year running average estimate. Unit = n (number of animals) 
+4) total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
 5) total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
 
 ```{r vars_grayseal}

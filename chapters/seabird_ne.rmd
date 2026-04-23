@@ -1,5 +1,10 @@
 # Seabird diet and productivity - New England {#seabird_ne}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Common tern annual diet and productivity at seven Gulf of Maine colonies managed by the National Audubon Society’s Seabird Restoration Program
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: National Audubon Society
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Seabird breeding colonies in the Gulf of Maine (GOM) are monitored and managed to promote recovery of formerly harvested seabird species. Common terns are well-monitored and are considered good nearshore ecosystem indicators due to their wide distribution and generalist diet. Common terns breed on islands throughout the Gulf of Maine, feeding on a wide range of invertebrates and fish including Atlantic herring, juvenile (mainly white) hakes, and sand lance. As surface feeding birds, terns are sensitive to vertical distribution of prey as well as nearshore conditions in general, with a foraging distance of 10-20 km from a nesting colony.
 

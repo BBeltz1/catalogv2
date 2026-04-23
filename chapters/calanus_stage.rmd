@@ -1,5 +1,10 @@
 # Calanus stage abundance anomaly {#calanus_stage}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The data presented here are average annual abundance anomalies for different life stages of the copepod Calanus finmarcicus. Abundance anomaly data are presented for total, adult, and copepodite stages C1-C5. Also presented here are annual anomalies of surface and bottom salinity and temperature collected in situ.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Calanus finmarchicus is a dominant large-bodied copepod and serves as an important link between phytoplankton and higher trophic levels. In the Gulf of Maine, fluctuations in Calanus abundance have been linked to recruitment failures in commercial fish species (Perretti et al 2017), changes in fish condition (Smith et al. in prep), and distribution of right whales (Sorochan et al 2019). Here we present annual abundance anomalies of Calanus for copepodite life stages C1-C5, for mature adult copepods, and total abundance, along with in situ temperature and salinity at both surface and bottom.
 

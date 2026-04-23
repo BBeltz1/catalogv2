@@ -1,5 +1,10 @@
 # Communities at Sea Indicators {#communities_at_sea}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The following information was developed using the Communities at Sea (CaS) database developed at Rutgers University. CaS is derived from Vessel Trip Reports and Permit data for the period 1996-2023.
 
 **Indicator family**: 
@@ -12,10 +17,6 @@
 
 **Affiliations**: Rutgers, NEFMC SSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 The following information was developed using the Communities at Sea (CaS) database developed at Rutgers University. CaS is derived from Vessel Trip Reports and Permit data for the period 1996-2023. The basic unit of analysis available through CaS are peer groups of vessels that are active in the same port and share the same general gear type. In the case of groundfish trawlers, vessel length is also considered. For each port, CaS computes the presence of (3 or more) active vessels grouped by: dredge, gillnet, groundfish/trawl less than 65 feet, groundfish/trawl greater than 65 feet, lobster, longline, other pots and traps, midwater seine, and shrimp trawl gear types. The aggregate activity of these peer groups of vessels (aka communities) inform a variety of indices indicating community change, precarity, and adaptive capacity.
 

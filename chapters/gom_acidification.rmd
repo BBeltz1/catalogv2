@@ -1,5 +1,10 @@
 # Gulf of Maine Weekly pCO2 and Omega-a {#gom_acidification}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The presented data are weekly averages of the partial pressure of carbon dioxide (pCO2) and the saturation state of calcium carbonate as aragonite (Omega-a), measured by the Gulf of Maine coastal buoy cooperatively operated by NOAA’s Pacific Marine Ecological Laboratory (PMEL) and the University of New Hampshire’s Ocean Process Analysis Laboratory. The buoy is located at 43.02 degrees North and 70.54 degrees West. pCO2 was measured directly, while Omega-a was calculated from observed pCO2, water temperature, salinity, and total alkalinity (modeled from temperature, salinity and month, similar to McGarry et al. 2021[@mcgarry_multiple_2021]). The weekly averages from 2025 are depicted against the climatological bounds from observations at this site between 2006-2024.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: UNH
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 The pCO2 represents the partial pressure of carbon dioxide resulting from the combination of water mass mixing, air-sea exchange, and biogeochemical processes.  Omega-a represents the saturation of calcium carbonate, an important mineral for many shell-building marine species and commonly-sed indicator of ocean acidification condition.
 
@@ -52,7 +53,8 @@ Ocean acidification conditions were pronounced for extended periods early and la
 
 **Variable definitions**
 
-1) pCO2; Definition: partial pressure of carbon dioxide; Units: microatmospheres 2)Omega-a; Definition: Saturation state of calcium carbonate as aragonite; Units: unitless
+1) pCO2; Definition: partial pressure of carbon dioxide; Units: microatmospheres 
+2)Omega-a; Definition: Saturation state of calcium carbonate as aragonite; Units: unitless
 
 
 No Data

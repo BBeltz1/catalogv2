@@ -1,5 +1,10 @@
 # Survey Impacts from Offshore Energy Development {#osw_survey_impact}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Offshore energy development is expected to have several impacts on federal and state surveys.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: GARFO
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Proceed as though this were a short summary of a typical introduction section in a paper.
 

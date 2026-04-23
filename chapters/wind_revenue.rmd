@@ -1,5 +1,10 @@
 # Fishery Impacts from Offshore Wind Development {#wind_revenue}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The data presented here are annual fishery landings and ex-vessel revenues of species managed by the New England and Mid-Atlantic Fishery Management Councils by vessels issued a NMFS Greater Atlantic Regional Fisheries Office permit when fishing in offshore wind projects that are operational or currently under construction (Coastal Virginia Offshore Wind, Sunrise Wind, Revolution Wind, Vineyard Wind 1, South Fork Wind, and Empire Wind).
 
 **Indicator family**: 
@@ -12,10 +17,6 @@
 
 **Affiliations**: GARFO
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Historic fishery landings and revenue from trips that occurred within operational offshore wind projects and those under construction may be displaced and future fishing effort, landings, and revenue may change (increase or decrease) due to the presence of structures, construction and maintenance operations, and changes to species composition and distribution affected by project infrastructure and operations.  These data highlight the scale and potential fisheries, gear types, and ports that may be affected by changes to historic fishing patterns as a result of offshore wind projects.
 
@@ -97,7 +98,8 @@ The figures generally depict periodic fluctuations in fishery landings and reven
 **Variable definitions**
 
 1) Managed species; Definition: Fishery species managed by the New England and Mid-Atlantic Fishery Management Councils or the Atlantic States Marine Fisheries Commission 
-2) Year; Definition: Calendar year in which fishery landings occurred  3) Landings; Definition: Weight of each species landed, as reported in dealer reports; Units: pounds 
+2) Year; Definition: Calendar year in which fishery landings occurred  
+3) Landings; Definition: Weight of each species landed, as reported in dealer reports; Units: pounds 
 4) Revenue; Definition: Total amount paid to the vessel for each species landed; Units: 2022 dollars 
 5) Percent GARFO Landings; Definition: Proportion of landings of each managed species from within existing/proposed offshore wind lease areas relative to the total landings of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage 
 6) Percent GARFO Revenue; Definition: Proportion of revenue of each managed species from within existing/proposed offshore wind lease areas relative to the total revenue of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage

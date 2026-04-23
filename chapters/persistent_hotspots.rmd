@@ -1,5 +1,10 @@
 # Persistent annual hotspots {#persistent_hotspots}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Integrated persistent annual hotspots derived from at-sea observations of seabirds, cetaceans and sea turtles collected on systematic ship and aerial surveys
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: BOEM
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Locations of high densities through time of seabirds, marine mammals, and sea turtles
 

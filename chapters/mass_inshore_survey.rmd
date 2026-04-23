@@ -1,5 +1,10 @@
 # Inshore Survey (Massachusetts) {#mass_inshore_survey}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Biomass time series for aggregate species groups from the Massachusetts inshore bottom trawl surveys conducted in Massachusetts state waters.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Indicators from this inshore survey are analogous to those produced by the NEFSC trawl survey in the [aggregate survey biomass](https://noaa-edab.github.io/catalog/aggregate_biomass.html) indicator dataset.
 

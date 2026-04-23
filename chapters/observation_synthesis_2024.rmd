@@ -1,5 +1,10 @@
 # 2024 Observation Synthesis {#observation_synthesis_2024}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Synthesis of noteworthy observations reported in 2024 across the Northeast U.S region. To report a noteworthy observation please contact: northeast.ecosystem.highlights@noaa.gov
 
 **Indicator family**: 
@@ -14,10 +19,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 This synthesis intends to provide a record of noteworthy observations reported in 2024 across the Northeast U.S. region. Observations were solicited from contributors to the State of the Ecosystem reports, colleagues at the Northeast Fisheries Science Center, academic and management partners, and the fishing industry. In late 2024 an email account was set up so that anyone can provide observations to the SOE team: <northeast.ecosystem.highlights@noaa.gov>. Items selected for inclusion in the synthesis include observations that were at or near their respective time series record (high or low) or had a large departure from the recent trends, were reported by multiple contributors, affected fishing efforts, or were considered newsworthy. The observations included in the synthesis are not exhaustive and the full ecosystem and fisheries impacts are still to be determined. They should, however, be noted and considered in future analyses and management decisions.
 

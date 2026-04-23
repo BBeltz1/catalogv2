@@ -1,5 +1,10 @@
 # Harbor Porpoise Bycatch {#harborporpoise}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: The data presented here are a time series of estimates of harbor porpoise bycatch from U.S. North Atlantic commercial fisheries.
 
 **Indicator family**: 
@@ -11,10 +16,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Marine mammals including harbor porpoise are protected under the Marine Mammal Protection Act (MMPA). The goal of the MMPA is to obtain and maintain optimum sustainable populations of marine mammals and to ensure they continue to function as significant elements of marine ecosystems. Protected species management objectives include managing bycatch to remain below potential biological removal (PBR) thresholds, recovering endangered populations, and monitoring unusual mortality events. Here we report estimated bycatch and PBR thresholds for harbor porpoise in the Northeast U.S., which are subject to a Take Reduction Team under the Marine Mammal Protection Act.
 
@@ -59,8 +60,10 @@ A bycatch reduction plan developed by the Take Reduction Team was needed to redu
 
 **Variable definitions**
 
-1. pbr = Potential Biological Removal level. Unit = n (number of animals) 2. totalest1y = Total bycatch estimate over all gear types per year 
-3. totalest5y = Total bycatch estimate over all gear types as a 5-year running average 4. total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
+1. pbr = Potential Biological Removal level. Unit = n (number of animals) 
+2. totalest1y = Total bycatch estimate over all gear types per year 
+3. totalest5y = Total bycatch estimate over all gear types as a 5-year running average 
+4. total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
 5. total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
 
 ```{r vars_harborporpoise}

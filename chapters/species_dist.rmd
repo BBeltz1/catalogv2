@@ -1,5 +1,10 @@
 # Species Distribution Indicators {#species_dist}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+```
+
 **Description**: Species mean depth, along-shelf distance, and distance to coastline
 
 **Indicator family**: 
@@ -12,10 +17,6 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
-```
 ## Introduction to Indicator
 Distribution shifts for a suite of 48 commercially or ecologically important fish species were evaluated using center of gravity metrics based on NEFSC bottom trawl survey data.
 
@@ -90,7 +91,8 @@ Long-term oceanographic projections forecast a temporary pause in warming over t
 
 **Variable definitions**
 
-"along-shelf distance"  "depth"                 "distance to coast"     "Latitude"              "Longitude"
+"along-shelf distance"  "depth"                 
+"distance to coast"     "Latitude"              "Longitude"
 
 ```{r vars_species_dist}
 # Pull all var names
