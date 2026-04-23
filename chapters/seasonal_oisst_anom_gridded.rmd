@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Mapped seasonal sea surface temperature anomaly
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: Brandon Beltz, Abigail Tyrell
 
 **Affiliations**: NEFSC
+
+```{r download_seasonal_oisst_anom_gridded}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::seasonal_oisst_anom_gridded,
+output_name = 'seasonal_oisst_anom_gridded',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. These data extend from 1981 to present. Anomalies are calculated by subtracting the seasonal long-term mean temperature (1982-2010) from the mean SST by year and season. Gridded anomalies are presented on a map for each year.

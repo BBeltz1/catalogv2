@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The following information was developed using the Communities at Sea (CaS) database developed at Rutgers University. CaS is derived from Vessel Trip Reports and Permit data for the period 1996-2023.

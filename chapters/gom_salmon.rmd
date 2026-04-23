@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The data presented here are time series of documented Atlantic salmon returns to Gulf of Maine rivers since 1972 and return rates for two sea winter returns from hatchery smolt stocking in the Penobscot River during the same time frame.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: John Kocik, James Hawkes, Tim Sheehan. and Justin Stevens
 
 **Affiliations**: NEFSC
+
+```{r download_gom_salmon}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::gom_salmon,
+output_name = 'gom_salmon',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 U.S. Atlantic salmon historically ranged as far south as Long Island Sound but current populations are restricted to Maine. Populations south of Maine were extirpated in the 1800’s. The Gulf of Maine Atlantic Salmon Distinct Population Segment (GOM DPS) supported local commercial fisheries until a 1947 closure. Populations remained low (< 500) until the modern hatchery restoration programs started in the late 1960’s. Comprehensive monitoring started in 1972 and a key salmon indicator is estimated adult returns to monitored rivers of the Gulf of Maine. Stocking led to relatively rapid population rebuilding. However, a significant and persistent decrease in marine productivity of North American Atlantic salmon populations occurred around 1990, which impacted U.S. adult spawner abundance. Adult salmon typically return to freshwater to spawn after two winters at sea (2SW) with higher return rates than those spending one winter at sea (1SW) or longer. Most 2SW spawners are female hatchery-origin fish, making their return rate a crucial indicator of marine productivity. Return rates are calculated from known smolt stocking numbers and locations with adjustments for freshwater losses and counts of returning hatchery adults to the Penobscot River [@stevens_modeling_2019]. Together, abundance and return rates are key indicators of population status and marine productivity.

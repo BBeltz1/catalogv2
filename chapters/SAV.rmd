@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The data provided here are the 1984-2024 area distribution and percent coverage of submerged aquatic vegetation in the Chesapeake Bay and its tributaries that area measured and calculated from photo-interpreted aerial imagery taken during surveys conducted in the growing season.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Christoper J. Patrick, David J. Wilcox, Jennifer R. Whiting, Anna K. Kenne, Erica R. Blue, Matthew J. Smith
 
 **Affiliations**: VIMS
+
+```{r download_SAV}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::SAV,
+output_name = 'SAV',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Underwater grass beds are critical to the Chesapeake Bay ecosystem. They provide food and shelter to fish and wildlife, sequester carbon, add oxygen to the water, absorb nutrient pollution, reduce shoreline erosion and help suspended particles of sediment settle to the bottom. Because they are sensitive to pollution but quick to respond to improvements in water quality, underwater grass abundance is a good indicator of the Bay’s health. Before Europeans colonized the region, up to 600,000 acres of underwater grasses may have grown along the shorelines of the Bay and its tributaries. By the mid-1980s, nutrient and sediment pollution had weakened or eliminated many of these grass beds. While climate change, shoreline hardening and stressors that reduce water clarity will continue to impact our restoration success, many of these stressors can be managed with on-the-ground efforts to reduce pollution and research has shown that nutrient reductions made under the Chesapeake Bay Total Maximum Daily Load (Bay TMDL) have played a critical role in the overall underwater grass recovery documented since the Bay-wide aerial survey began in 1984.
@@ -68,8 +83,7 @@ The outlook toward achieving the outcome goal is off course. Significant increas
 
 **Variable definitions**
 
-1) Name: Year; Definition: SAV growing season; year 
-2) Name: Tidal Fresh Total; Definition: SAV area in the Tidal Fresh Zone; Units: acres 
+1) Name: Year; Definition: SAV growing season; year 2) Name: Tidal Fresh Total; Definition: SAV area in the Tidal Fresh Zone; Units: acres 
 3) Name: Oligohaline Total; Definition: SAV area in the Oligohaline Zone; Units: acres 
 4) Name: Mesohaline Total; Definition: SAV area in the Mesohaline Zone; Units: acres 
 5) Name: Polyhaline Total; Definition: SAV area in the Polyhaline Zone; Units: acres 

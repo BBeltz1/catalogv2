@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The information presented here were provided by members of the fishing community in response to the question "what unusual conditions or events did you observe during 2024?". Submissions were provided by 11 different fishermen ranging from Maine to Virginia.

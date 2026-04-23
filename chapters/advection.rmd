@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The advection data is an integrated mass transport through transects along the shelf break
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: Zhitao Yu and Laurel Smith
 
 **Affiliations**: NMFS
+
+```{r download_advection}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::advection,
+output_name = 'advection',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Advection is important to the retention of larval fish on the Northeast U.S. Continental Shelf.
@@ -99,12 +114,8 @@ Different fish species inhabit different depth ranges of the water column for sp
 
 **Variable definitions**
 
-1) Year  2) Month  3) Var: Transport in the top 15m  
-4) Value: Transport in the top 15m  
-5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  
-7) Var: Transport 40m to sea floor  
-8) Value: Transport 40m to sea floor  
-9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  
+1) Year  2) Month  3) Var: Transport in the top 15m  4) Value: Transport in the top 15m  5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  
+7) Var: Transport 40m to sea floor  8) Value: Transport 40m to sea floor  9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  
 10) Units: 10^6 m^3/s
 
 ```{r vars_advection}

@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Maturity information for groundfish is used to evaluate changes in spawning seasonality. Haddock and yellowtail flounder are included in this indicator.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Mark Wuenschel
 
 **Affiliations**: NEFSC
+
+```{r download_spawn_timing}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::spawn_timing,
+output_name = 'spawn_timing',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Spawning phenology, the annual timing of reproduction, determines when spawning occurs and is therefore important to understanding individual fish energetics and condition, as well as the timing and location of release of eggs. Fish undergo seasonal (annual) patterns of weight gain and loss related to spawning. In some extreme cases, gonad weight can be > 30% body weight, therefore estimates of fish condition based on fish weight can be influenced by reproductive state. Thus, shifts in survey timing and/or spawning seasonality over time could produce changes in calculated weight based condition indices.
@@ -172,13 +187,9 @@ The post spawning Yellowtail Flounder would be expected to have lower relative c
 
 **Variable definitions**
 
-Variable names follow the convention "SEASON_Species_STOCK_Variable" where Variable and Units are: 
-meanTEMP: mean sampled bottom temperature in degrees C 
-MF: number of mature females sampled 
-meanJDAY: mean julian day of year sampled 
-Developing: percent of mature females at developing (pre-spawning) stage 
-Ripe: percent of mature females at ripe (spawning) stage 
-Spent: percent of mature females at spent (immediately post-spawning) stage 
+Variable names follow the convention "SEASON_Species_STOCK_Variable" where Variable and Units are: meanTEMP: mean sampled bottom temperature in degrees C 
+MF: number of mature females sampled meanJDAY: mean julian day of year sampled Developing: percent of mature females at developing (pre-spawning) stage 
+Ripe: percent of mature females at ripe (spawning) stage Spent: percent of mature females at spent (immediately post-spawning) stage 
 Resting: percent of mature females at resting (non-spawning) stage
 
 ```{r vars_spawn_timing}

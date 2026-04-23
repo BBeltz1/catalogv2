@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Aggregated Atlantic Highly Migratory Species (HMS) landings and revenue data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2024.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Heather Baertlein, George Silva, Jackie Wilson, Jennifer Cudney
 
 **Affiliations**: NEFSC
+
+```{r download_hms_landings}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::hms_landings,
+output_name = 'hms_landings',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 There are 53 species managed under the Highly Migratory Species (HMS) Fishery Management Plan. Aggregated Atlantic HMS landings data of swordfish, sharks, bluefin tuna, and BAYS (bigeye, albacore, yellowfin, skipjack) tunas were prepared for the Fisheries of the United States (FUS) report,  were used for the Status of the Ecosystem report, spanning 2015-2024. FUS is considered to be the annual NOAA Fisheries yearbook of fisheries statistics. It provides a snapshot of data, primarily at the national level, on U.S. recreational catch and commercial fisheries landings and value. The FUS process has since been the vehicle used by HMS staff to QA/QC shark, swordfish,  the “BAYS” tunas (bigeye, albacore, yellowfin and skipjack), and bluefin tuna data for all future HMS Division products. Economic data produced for this report forms the basis for all economic data used in other reports or products. This indicator therefore provides the best comprehensive summary of commercial landings and revenue information for HMS fisheries that target or retain tunas, swordfish, and sharks. These data can be evaluated independently, and can also be included in overall estimates of commercial fisheries landings in the northeast region.
@@ -78,10 +93,8 @@ In 2021 the International Commission for the Conservation of Atlantic Tunas (ICC
 
 **Variable definitions**
 
-1. Year: data are summarized/aggregated by year.  
-2. EPU: region, “Mid-Atlantic Bight” or “New England”.  
-3. HMS_Group: Management group for HMS, as defined below in “Data Processing”.  
-4. Var_wt: description of data (HMS Revenue or HMS Landings).  
+1. Year: data are summarized/aggregated by year.  2. EPU: region, “Mid-Atlantic Bight” or “New England”.  
+3. HMS_Group: Management group for HMS, as defined below in “Data Processing”.  4. Var_wt: description of data (HMS Revenue or HMS Landings).  
 5. Units_WT: description of unit of measure for data (metric tons whole weight of landings, or U.S. dollars).  
 6. Value: Represents either metric tons of landings (round weight) or dollar value of landings by year and region.
 

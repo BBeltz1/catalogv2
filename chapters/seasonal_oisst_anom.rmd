@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Seasonal sea surface temperature anomaly
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: Brandon Beltz, Abigail Tyrell
 
 **Affiliations**: NEFSC
+
+```{r download_seasonal_oisst_anom}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::seasonal_oisst_anom,
+output_name = 'seasonal_oisst_anom',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Sea surface temperature can be used as a proxy for overall thermal conditions in the system. Data for sea surface anomalies were derived from the National Oceanographic and Atmospheric Administration optimum interpolation sea surface temperature high resolution data set (NOAA OISST V2). Mean seasonal-annual SST was calculated for each EPU. These data extend from 1981 to present. Anomalies are calculated by subtracting the long-term mean temperature from 1990-2010 for each season, from the seasonal-annual mean SST.

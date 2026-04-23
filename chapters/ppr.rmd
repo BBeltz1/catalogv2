@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Ecosystem overfishing is an ecological, and not legal, term that ultimately evaluates how much fish are caught in an ecosystem relative to how much can be produced. Several indices are used to evaluate ecosystem overfishing, the Ryther index, the Fogarty index, and primary production required.
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: Andrew Beet
 
 **Affiliations**: NEFSC
+
+```{r download_ppr}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::ppr,
+output_name = 'ppr',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 The Ryther index is defined as total catch per unit area in the ecosystem [@link_global_2019]. The units are mt km^-2 year^-1. It measures the total removal of fish biomass by area in a Large Marine Ecosystem relative to how much that entire ecosystem can produce.  In general terms, the lower the Ryther index, the less likely an ecosystem will be experiencing ecosystem overfishing.
@@ -93,9 +108,7 @@ There is insufficient evidence to determine whether ecosystem overfishing in occ
 
 **Variable definitions**
 
-1. Ryther; The Ryther index; mt km^-2 y^-1 
-2. Fogarty; The Fogarty Index; Parts per thousand 0/00 
-3. PP; Primary Production; mtC region^-1 year^-1
+1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 3. PP; Primary Production; mtC region^-1 year^-1
 
 ```{r vars_ppr}
 # Pull all var names

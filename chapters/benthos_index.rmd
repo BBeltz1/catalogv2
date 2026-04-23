@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Aggregate macrobenthos and megabenthos invertebrate indices from fish stomach contents
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Maxwell Grezlik, Sarah Gaichas, James Gartland, Brian E. Smith, Sarah Weisberg, Sean Lucey
 
 **Affiliations**: NEFSC
+
+```{r download_benthos_index}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::benthos_index,
+output_name = 'benthos_index',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Benthic invertebrates provide supporting ecosystem services as important prey for many economically important fish species on the Northeast US shelf.  Changes to the benthic invertebrate forage base could have important implications for regional food webs. However, we lack direct measurements of benthic invertebrate biomass for most unexploited taxa. Spatially explicit indices of abundance for benthos groups were estimated using spatio-temporal modeling (VAST, @thorson_comparing_2017; @thorson_guidance_2019).

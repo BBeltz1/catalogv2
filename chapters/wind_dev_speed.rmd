@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The footprint and timeline of offshore wind development in the Northeast by 2030
@@ -16,6 +17,20 @@ library(ecodata)
 **Contributor(s)**: Angela Silva
 
 **Affiliations**: NEFSC
+
+```{r download_wind_dev_speed}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::wind_dev_speed,
+output_name = 'wind_dev_speed',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 The data presented here is a timeline of proposed construction in the Northeast of offshore wind development projects to 2030. The lease area color corresponds to the year of proposed development. Project component data (e.g., number of foundations, cable miles, GW, and acreage for each project are described in the table). Areas currently under planning for additional lease areas are outlined in red and totals reflected in the bottom of the table. This information is up to date as of December 2023 and project statistics come from Appendix E3 of the Revolution Wind Final Environmental Impact Statement Table E-1. This indicator does not reflect potential changes to schedules from recently terminated Power Purchase Agreements for some projects (Ocean Wind 1 and 2, Empire Wind 2, and Skipjack Wind).

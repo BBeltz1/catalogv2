@@ -1,5 +1,11 @@
 # Right Whale Abundance {#narw}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
 **Description**: The data presented here are time series of the North Atlantic right whale population abundance estimates and calf abundance estimates.
 
 **Indicator family**: 
@@ -11,10 +17,20 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+```{r download_narw}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::narw,
+output_name = 'narw',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
 ```
+
 ## Introduction to Indicator
 Endangered North Atlantic right whales are approaching extinction.
 The latest population estimate for the beginning of 2024 indicates there were approximately 384 individuals remaining.
@@ -93,10 +109,10 @@ For all large whale UMEs, human interaction appears to have contributed to incre
 
 **Variable definitions**
 
-NARW Abundance 1) Year 2) lower95 = lower 95% confidence interval value in number of animals.  3) Median=median estimate of right whale abundance in number of animals.  
-4) Upper95= upper 95% confidence interval value in number of animals.   5) Mean= mean estimate of right whale abundance in number of animals.   
-6) SD=standard deviation of estimate of right whale abundance in number of animals.  NARW Calves 1) Year 
-2) Tot.Calves = total number of right whale calves born that year in number of animals.
+NARW Abundance 1) Year 2) lower95 = lower 95% confidence interval value in number of animals.  
+3) Median=median estimate of right whale abundance in number of animals.  4) Upper95= upper 95% confidence interval value in number of animals.   
+5) Mean= mean estimate of right whale abundance in number of animals.   6) SD=standard deviation of estimate of right whale abundance in number of animals.  
+NARW Calves 1) Year 2) Tot.Calves = total number of right whale calves born that year in number of animals.
 
 ```{r vars_narw}
 # Pull all var names

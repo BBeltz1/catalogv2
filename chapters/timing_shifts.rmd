@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: Shifts in the timing of life-cycle events are a risk to meeting seasonal and temporal management objectives.

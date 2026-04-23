@@ -3,6 +3,7 @@
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo = F)
 library(ecodata)
+library(downloadthis)
 ```
 
 **Description**: The data presented here represent the biomass time series for aggregate species groups from the Maine/New Hampshire inshore bottom trawl surveys conducted in Maine and New Hampshire state waters.
@@ -15,6 +16,20 @@ library(ecodata)
 **Contributor(s)**: Robyn Linner
 
 **Affiliations**: Maine
+
+```{r download_ne_inshore_survey}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::ne_inshore_survey,
+output_name = 'ne_inshore_survey',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
+```
 
 ## Introduction to Indicator
 Each species caught on the survey are organized into trophic groups including, "piscivore", "benthivore", "planktivore" and "benthos" for each spring and fall survey. The aggregate weight of each trophic group is calculated for each tow, and then stratified mean biomass (kg/tow) is calculated. The survey is stratified by both region and depth, and the stratified mean is weighted based on the size (area in km^2) of each region-depth strata to ensure representative averages. More information on survey strata can be found [here](https://www.maine.gov/dmr/science/ecology-environment/inshore-trawl-survey/general-information).

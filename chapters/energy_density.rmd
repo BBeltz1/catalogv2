@@ -1,5 +1,11 @@
 # Forage Fish Energy Density {#energy_density}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
 **Description**: The data presented here are the seasonal (Spring and Fall) energy density (kJ/g wet weight) for eight important forage species: alewife, Atlantic herring, silver hake, northern sand lance, Atlantic mackerel, butterfish, northern shortfin squid, and inshore longfin squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed at the Woods Hole Laboratory to estimate energy density.
 
 **Indicator family**: 
@@ -11,10 +17,20 @@
 
 **Affiliations**: NEFSC
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+```{r download_energy_density}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::energy_density,
+output_name = 'energy_density',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
 ```
+
 ## Introduction to Indicator
 The energy density of prey, in conjunction with its mass, indicates the total amount of energy passing from lower trophic levels to higher predators. Therefore, the value of forage species to upper trophic levels is a function of their energetic quality and biomass. Fish energy density can vary widely in response to changes in ecosystem productivity and shifting physiological demands, such as metabolic increases due to rising temperatures. Furthermore, energetic variability (often several-fold) can be particularly notable in species that have seasonal energetic cycles related to reproduction, migration, or ontogenetic shifts in energy storage.
 
@@ -66,8 +82,9 @@ It is important to note/caveat that some of the previous estimates of forage fis
 
 **Variable definitions**
 
-Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 2) Mean energy density (ED; kJ/g wet weight) 
-3) Mean catch per (representative) tow (kg) 4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
+Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 
+2) Mean energy density (ED; kJ/g wet weight) 3) Mean catch per (representative) tow (kg) 
+4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
 
 ```{r vars_energy_density}
 # Pull all var names

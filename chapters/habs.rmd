@@ -1,5 +1,11 @@
 # Harmful Algal Blooms {#habs}
 
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(ecodata)
+library(downloadthis)
+```
+
 **Description**: These data represent annual estimated abundance of Alexandrium catanella cysts in the Gulf of Maine from 2003 to 2023.
 
 **Indicator family**: 
@@ -11,10 +17,20 @@
 
 **Affiliations**: NOAA/NOS NCCOS Stressor Detection and Impacts Division, HAB Forecasting Branch
 
-```{r echo=FALSE}
-knitr::opts_chunk$set(echo = F)
-library(ecodata)
+```{r download_habs}
+# Download dataset from ecodata
+downloadthis::download_this(
+ecodata::habs,
+output_name = 'habs',
+output_extension = '.csv',
+button_label = 'Download dataset from `ecodata`',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F)
 ```
+
 ## Introduction to Indicator
 Alexandrium cysts in sediments of the Gulf of Maine have been monitored through a cooperative effort of NOAA, WHOI, and other partners for over twenty years. Sampling methods are described in Anderson et al. 2005 [@anderson_identification_2005]. In the annual survey cruises, samples are obtained with a Craib corer, and Alexandrium cysts are counted from the top 1- cm of sediment layer. Results are extrapolated to estimate overall cyst abundance in the eastern, western, and entire Gulf of Maine.
 
