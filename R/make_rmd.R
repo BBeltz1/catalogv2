@@ -17,6 +17,13 @@ make_rmd <- function(listobject, n = 10){
   #filename <- gsub("\\s+","_",indicator_name)
   filename <- listobject$indicatorname
   
+  # Define page type based on ecodata presence
+  if (exists(paste0(listobject$indicatorname))) {
+    page_type <- "ecodata"
+  } else {
+    page_type <- "independent"
+  }
+
   # create rmd with name of indicator
   con <- file(here::here("chapters",paste0(filename,".rmd")),open="w")
      
@@ -110,7 +117,6 @@ make_rmd <- function(listobject, n = 10){
   cat(listobject$implications,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  
   cat("## Get the data",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
@@ -118,13 +124,14 @@ make_rmd <- function(listobject, n = 10){
   cat(paste0("**Point of contact**: [",listobject$poc,"](mailto:",listobject$poc,"){.email}"),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  if (exists(paste0(listobject$indicatorname))) {
+  if (page_type == "ecodata") {
     cat(paste0("**ecodata name**: `ecodata::",listobject$indicatorname,"`"),append=T,fill=T,file=con)
     cat("",append=T,fill=T,file=con) # add space
   } else {
     cat(paste0("**ecodata name**: No dataset"),append=T,fill=T,file=con)
     cat("",append=T,fill=T,file=con)
   }
+
   ### VARIABLES FOUND IN DATA
   cat("**Variable definitions**",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
@@ -134,7 +141,7 @@ make_rmd <- function(listobject, n = 10){
   cat("",append=T,fill=T,file=con) # add space
 
   # check to see if data name exists. Some do not but need a catalog page
-  if (exists(paste0(listobject$indicatorname))) {  
+  if (page_type == "ecodata") {  
     # check to see if Var field exists
     if ("Var" %in% names(eval(parse(text=paste0("ecodata::",listobject$indicatorname))))) {
       # r code chunk to make table
@@ -172,7 +179,6 @@ make_rmd <- function(listobject, n = 10){
   }
   
   ### PUBLIC AVAILABILITY + ACCESSIBILITY
-  
   cat("## Public Availability",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(listobject$publicAvailability,append=T,fill=T,file=con)
@@ -183,9 +189,8 @@ make_rmd <- function(listobject, n = 10){
   cat(listobject$accessibility,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-
   # write catalog link if ecodata data is present
-  if (exists(paste0(listobject$indicatorname))) {
+  if (page_type == "ecodata") {
     cat("**tech-doc link**",append=T,fill=T,file=con)
     
     cat(paste0("<https://noaa-edab.github.io/tech-doc/",listobject$indicatorname,".html>"),append=T,fill=T,file=con)
