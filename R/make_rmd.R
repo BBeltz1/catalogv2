@@ -21,11 +21,18 @@ make_rmd <- function(listobject, n = 10){
   con <- file(here::here("chapters",paste0(filename,".rmd")),open="w")
      
   # start to create the Rmd
-  #cat(paste0("# ",stringr::str_to_title(indicator_name)),append=T,fill=T,file=con)  
-  ### DESCRIPTION, CONTRIBUTORS, AFFILIATION, FAMILY
+  ### PAGE TITLE
   cat(paste0("# ",listobject$dataname," {#",listobject$indicatorname,"}"),append=T,fill=T,file=con)    
-  #cat(paste0("# ",listobject$dataname),append=T,fill=T,file=con)    
   cat("",append=T,fill=T,file=con) # add space
+
+  ### CHUNK TO LOAD ECODATA
+  cat("```{r echo=FALSE}",append=T,fill=T,file=con)
+  cat("knitr::opts_chunk$set(echo = F)",append=T,fill=T,file=con)
+  cat("library(ecodata)",append=T,fill=T,file=con)
+  cat("```",append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+
+  ### DESCRIPTION, CONTRIBUTORS, AFFILIATION, FAMILY
   cat(paste0("**Description**: ",listobject$description),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat("**Indicator family**: ",append=T,fill=T,file=con)
@@ -36,13 +43,7 @@ make_rmd <- function(listobject, n = 10){
   cat("",append=T,fill=T,file=con) # add space
   cat(paste0("**Affiliations**: ",listobject$affiliations),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
-  
-  # chunk script
-  cat("```{r echo=FALSE}",append=T,fill=T,file=con)
-  cat("knitr::opts_chunk$set(echo = F)",append=T,fill=T,file=con)
-  cat("library(ecodata)",append=T,fill=T,file=con)
-  cat("```",append=T,fill=T,file=con)
-  
+   
   ### DESCRIPTION OF INDICATOR
   cat("## Introduction to Indicator",append=T,fill=T,file=con)
   cat(listobject$whatsthis,append=T,fill=T,file=con)
