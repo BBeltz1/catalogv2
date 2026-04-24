@@ -37,12 +37,14 @@ Gray seals, like all marine mammals, are protected under the Marine Mammal Prote
 ## Key Results and Visualizations
 For gray seals in U.S. waters, the total estimated annual bycatch and 5-year rolling mean with 95% confidence intervals from U.S. North Atlantic commercial fisheries is shown by year. Gear types include bottom gillnets, bottom trawls, midwater trawls, and pair trawls. The Potential Biological Removal (PBR) for the U.S. portion of the stock is indicated by the red reference line. The 5-year mean estimates of bycatch increased from 2000 to around 2012 and has showed inter-annual variability since. The U.S. PBR decreased in the draft 2024 SAR from 1512 to 756 in recognition of the unknowns in the stock structure, abundance, and rate of exchange between U.S. and Canadian waters. The annual and 5-year mean estimates are above the new U.S. PBR but far below the range-wide draft PBR of 12,052.
 
+**Mid-Atlantic**
 ```{r plot_graysealMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_grayseal(report = 'MidAtlantic')
 ggplotObject
 ```
 
+**New England**
 ```{r plot_graysealNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_grayseal(report = 'NewEngland')

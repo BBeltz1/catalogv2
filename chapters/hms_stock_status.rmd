@@ -41,12 +41,14 @@ Based on the thresholds identifying whether a stock is considered “overfished�
 
 Based on the thresholds identifying whether a stock is experiencing “overfishing” in the HMS FMP, overfishing is not occurring (or not likely occurring) for 19 species or stocks, overfishing is occurring for 5 species or stocks, and the status of 4 species or stocks is unknown.
 
+**Mid-Atlantic**
 ```{r plot_hms_stock_statusMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_stock_status(report = 'MidAtlantic')
 ggplotObject
 ```
 
+**New England**
 ```{r plot_hms_stock_statusNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_stock_status(report = 'NewEngland')
@@ -79,12 +81,16 @@ This summarizes information in the HMS SAFE Report, which itself is intended to 
 
 **Variable definitions**
 
-1. Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  2. Bmsy = biomass at maximum sustainable yield  
+1. Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  
+2. Bmsy = biomass at maximum sustainable yield  
 3. Threshold = the threshold identified in respective assessments to indicate status (e.g., overfished, not overfished, overfishing is occurring, overfishing is not occurring) 
-4. Stock status,  5. Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  
-6. Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  7. Stock = the name of the stock assessed  
+4. Stock status,  
+5. Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  
+6. Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  
+7. Stock = the name of the stock assessed  
 8. Last Assessment Year = the year in which the latest assessment was finalized  
-9. Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  10. Notes = additional information.  
+9. Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  
+10. Notes = additional information.  
 11. Shark Stock = the name of the stock assessed
 
 ```{r vars_hms_stock_status}

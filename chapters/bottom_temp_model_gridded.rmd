@@ -39,12 +39,14 @@ Bias-corrected ROMS-NWA between 1959 and 1992 which was regridded in the same 1/
 ## Key Results and Visualizations
 Maps of seasonal mean bottom temperature across NE shelf.
 
+**Mid-Atlantic**
 ```{r plot_bottom_temp_model_griddedMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'MidAtlantic')
 ggplotObject
 ```
 
+**New England**
 ```{r plot_bottom_temp_model_griddedNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'NewEngland')
@@ -77,7 +79,9 @@ Bottom temperature is a key environmental parameter in defining the habitat and 
 
 **Variable definitions**
 
-- Time: year - Lat: latitude - Lon: longitude - Variable: season - Value: bottom temperature (degrees Celcius)
+- Time: year - Lat: latitude - Lon: longitude 
+- Variable: season 
+- Value: bottom temperature (degrees Celcius)
 
 ```{r vars_bottom_temp_model_gridded}
 # Pull all var names

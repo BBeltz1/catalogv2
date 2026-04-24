@@ -59,24 +59,28 @@ In 2024, the Mid-Atlantic Bight did not experience any surface MHWs.
 Bottom MHWs
 In 2024, the Mid-Atlantic Bight did not experience any bottom MHWs. The strongest bottom MHW occurred in the fall of 1985.
 
+**Surface, Mid-Atlantic**
 ```{r plot_heatwaveSurfaceMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave(varName = 'Surface', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**Bottom, Mid-Atlantic**
 ```{r plot_heatwaveBottomMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave(varName = 'Bottom', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**Surface, New England**
 ```{r plot_heatwaveSurfaceNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave(varName = 'Surface', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
+**Bottom, New England**
 ```{r plot_heatwaveBottomNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave(varName = 'Bottom', report = 'NewEngland', n = 10)
@@ -109,7 +113,8 @@ Implications of MHWs on living marine resources in the U.S.NES are currently bei
 
 **Variable definitions**
 
-1. MHW maximum Intensity (detrended) = degrees C 2. MHW duration = days.
+1. MHW maximum Intensity (detrended) = degrees C 
+2. MHW duration = days.
 
 ```{r vars_heatwave}
 # Pull all var names

@@ -65,24 +65,28 @@ Bottom MHWs (Marine Heatwaves)
 
 There were no bottom MHWs observed in the Middle Atlantic Bight in 2025.
 
+**Mid-Atlantic, Surface**
 ```{r plot_heatwave_yearMidAtlanticSurface}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Surface')
 ggplotObject
 ```
 
+**New England, Surface**
 ```{r plot_heatwave_yearNewEnglandSurface}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Surface')
 ggplotObject
 ```
 
+**Mid-Atlantic, Bottom**
 ```{r plot_heatwave_yearMidAtlanticBottom}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Bottom')
 ggplotObject
 ```
 
+**New England, Bottom**
 ```{r plot_heatwave_yearNewEnglandBottom}
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Bottom')
@@ -115,7 +119,8 @@ Implications of MHWs on living marine resources in the U.S.NES are currently bei
 
 **Variable definitions**
 
-1) MHW maximum Intensity (detrended) = degrees C 2) MHW duration = days.
+1) MHW maximum Intensity (detrended) = degrees C 
+2) MHW duration = days.
 
 ```{r vars_heatwave_year}
 # Pull all var names

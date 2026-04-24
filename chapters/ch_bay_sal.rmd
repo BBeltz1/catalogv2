@@ -37,12 +37,14 @@ Salinity data from the Chesapeake Bay Interpretive Buoy System (CBIBS) are used 
 ## Key Results and Visualizations
 The salinity data, when compared to the 2010-2023 historical average reveals a distinct pattern. In 2024, Salinity observations are lower than the historical averages from February to October and higher than historical averages during the fall (around October to November). This variation in salinity is likely due to increased rain events and freshwater input during spring and early summer. Spring 2024 salinity observations exceeded historical minimum salinity values, and remained below average throughout the summer. In early Fall, 2024 averages surpassed historical averages.
 
+**Mid-Atlantic**
 ```{r plot_ch_bay_salMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_ch_bay_sal(report = 'MidAtlantic')
 ggplotObject
 ```
 
+**New England**
 ```{r plot_ch_bay_salNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_ch_bay_sal(report = 'NewEngland')

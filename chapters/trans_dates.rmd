@@ -37,24 +37,28 @@ Transition dates are defined as the day of the year when surface temperatures ch
 ## Key Results and Visualizations
 Ocean summer length in Mid-Atlantic: the annual total number of days between the spring thermal transition date and the fall thermal transition date. The transition dates are defined as the day of the year when surface temperatures changeover from cool to warm conditions in the spring and back to cool conditions in the fall.
 
+**timing, Mid-Atlantic**
 ```{r plot_trans_datestimingMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(varName = 'timing', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**length, Mid-Atlantic**
 ```{r plot_trans_dateslengthMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(varName = 'length', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**timing, New England**
 ```{r plot_trans_datestimingNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(varName = 'timing', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
+**length, New England**
 ```{r plot_trans_dateslengthNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_trans_dates(varName = 'length', report = 'NewEngland', n = 10)
@@ -87,7 +91,8 @@ Prolonged fall temperatures have been linked to the increased number of cold-stu
 
 **Variable definitions**
 
-1. falltrans: fall transition day 2. sprtrans: spring transition day 3. maxday: max sst day
+1. falltrans: fall transition day 
+2. sprtrans: spring transition day 3. maxday: max sst day
 
 ```{r vars_trans_dates}
 # Pull all var names

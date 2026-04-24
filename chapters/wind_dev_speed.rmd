@@ -40,12 +40,14 @@ The colored chart below also presents the offshore wind development timeline in 
 
 ![Speed of offshore wind development](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/Offshore_Wind_Development_V5_NicoleMucci.png){width=100%}
 
+**Mid-Atlantic**
 ```{r plot_wind_dev_speedMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_dev_speed(report = 'MidAtlantic')
 ggplotObject
 ```
 
+**New England**
 ```{r plot_wind_dev_speedNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_dev_speed(report = 'NewEngland')

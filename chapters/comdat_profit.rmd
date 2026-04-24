@@ -37,72 +37,84 @@ Coming soon
 ## Key Results and Visualizations
 Coming soon
 
+**all, Mid-Atlantic Bight**
 ```{r plot_comdat_profitallMidAtlanticMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'all', report = 'MidAtlantic', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**profit_index, Mid-Atlantic Bight**
 ```{r plot_comdat_profitprofit_indexMidAtlanticMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'profit_index', report = 'MidAtlantic', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**cost_index, Mid-Atlantic Bight**
 ```{r plot_comdat_profitcost_indexMidAtlanticMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'cost_index', report = 'MidAtlantic', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**revenue_index, Mid-Atlantic Bight**
 ```{r plot_comdat_profitrevenue_indexMidAtlanticMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'revenue_index', report = 'MidAtlantic', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**all, Georges Bank**
 ```{r plot_comdat_profitallNewEnglandGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'all', report = 'NewEngland', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**profit_index, Georges Bank**
 ```{r plot_comdat_profitprofit_indexNewEnglandGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'profit_index', report = 'NewEngland', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**cost_index, Georges Bank**
 ```{r plot_comdat_profitcost_indexNewEnglandGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'cost_index', report = 'NewEngland', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**revenue_index, Georges Bank**
 ```{r plot_comdat_profitrevenue_indexNewEnglandGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'revenue_index', report = 'NewEngland', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**all, Gulf of Maine**
 ```{r plot_comdat_profitallNewEnglandGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'all', report = 'NewEngland', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
+**profit_index, Gulf of Maine**
 ```{r plot_comdat_profitprofit_indexNewEnglandGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'profit_index', report = 'NewEngland', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
+**cost_index, Gulf of Maine**
 ```{r plot_comdat_profitcost_indexNewEnglandGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'cost_index', report = 'NewEngland', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
+**revenue_index, Gulf of Maine**
 ```{r plot_comdat_profitrevenue_indexNewEnglandGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'revenue_index', report = 'NewEngland', EPU = 'GOM', n = 10)

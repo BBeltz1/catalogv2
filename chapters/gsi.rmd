@@ -37,24 +37,28 @@ The T200-based Gulf Stream Index is calculated as the standardized first princip
 ## Key Results and Visualizations
 The Gulf Stream Index suggests that recent years (2021-2022) the GS almost maintains its relative northward shift relative to the long-term mean. Since Aug. 2023, the Gulf Stream is suggested to move southward, which is mainly due to its eastern part (east of 65°W). The Western Gulf Stream Index maintains its relative northward position during the past months since Aug. 2023.
 
+**Mid-Atlantic, gsi**
 ```{r plot_gsiMidAtlanticgsi}
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'gsi', n = 10)
 ggplotObject
 ```
 
+**New England, gsi**
 ```{r plot_gsiNewEnglandgsi}
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'gsi', n = 10)
 ggplotObject
 ```
 
+**Mid-Atlantic, westgsi**
 ```{r plot_gsiMidAtlanticwestgsi}
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'westgsi', n = 10)
 ggplotObject
 ```
 
+**New England, westgsi**
 ```{r plot_gsiNewEnglandwestgsi}
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'westgsi', n = 10)

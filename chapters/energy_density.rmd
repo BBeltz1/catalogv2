@@ -47,6 +47,7 @@ New in the 2026 SOE forage fish energy density indicator are split-panel bubble 
 
 ![Figure 3](https://github.com/NOAA-EDAB/ecodata/raw/pre-production/data-raw/workshop/images/SOE_2026_Figure_MAB.png){width=100%}
 
+**Mid-Atlantic**
 ```{r plot_energy_densityMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_energy_density(report = 'MidAtlantic')
@@ -82,8 +83,11 @@ It is important to note/caveat that some of the previous estimates of forage fis
 
 **Variable definitions**
 
-Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 
-2) Mean energy density (ED; kJ/g wet weight) 3) Mean catch per (representative) tow (kg) 
+Line plot:  1) By species-year-season: 
+2) Mean Energy Density (kJ/g)  Bubble Plot:  
+1) By species-year-season-EPU: 
+2) Mean energy density (ED; kJ/g wet weight) 
+3) Mean catch per (representative) tow (kg) 
 4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
 
 ```{r vars_energy_density}

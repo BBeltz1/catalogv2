@@ -355,12 +355,14 @@ pseudo_100m3 | 0.25 |   | mlucens_100m3 | 0.40
 
 </html>
 
+**Mid-Atlantic**
 ```{r plot_zoo_communityMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_zoo_community(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**New England**
 ```{r plot_zoo_communityNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_zoo_community(report = 'NewEngland', n = 10)

@@ -54,24 +54,28 @@ Since 2017, the total UME right whale mortalities includes 41 dead stranded whal
 Recent research suggests that many mortalities go unobserved and the true number of mortalities are about three times the count of the observed mortalities [@pace_cryptic_2021].
 The primary cause of death is "human interaction" from entanglements or vessel strikes.
 
+**adult, Mid-Atlantic**
 ```{r plot_narwadultMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**calf, Mid-Atlantic**
 ```{r plot_narwcalfMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**adult, New England**
 ```{r plot_narwadultNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
+**calf, New England**
 ```{r plot_narwcalfNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'NewEngland', n = 10)
@@ -109,10 +113,14 @@ For all large whale UMEs, human interaction appears to have contributed to incre
 
 **Variable definitions**
 
-NARW Abundance 1) Year 2) lower95 = lower 95% confidence interval value in number of animals.  
-3) Median=median estimate of right whale abundance in number of animals.  4) Upper95= upper 95% confidence interval value in number of animals.   
-5) Mean= mean estimate of right whale abundance in number of animals.   6) SD=standard deviation of estimate of right whale abundance in number of animals.  
-NARW Calves 1) Year 2) Tot.Calves = total number of right whale calves born that year in number of animals.
+NARW Abundance 1) Year 
+2) lower95 = lower 95% confidence interval value in number of animals.  
+3) Median=median estimate of right whale abundance in number of animals.  
+4) Upper95= upper 95% confidence interval value in number of animals.   
+5) Mean= mean estimate of right whale abundance in number of animals.   
+6) SD=standard deviation of estimate of right whale abundance in number of animals. 
+ NARW Calves 1) Year 
+2) Tot.Calves = total number of right whale calves born that year in number of animals.
 
 ```{r vars_narw}
 # Pull all var names

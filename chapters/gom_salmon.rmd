@@ -37,12 +37,14 @@ U.S. Atlantic salmon historically ranged as far south as Long Island Sound but c
 ## Key Results and Visualizations
 A significant and persistent decrease in marine productivity of North American Atlantic salmon populations occurred around 1990, which impacted U.S. adult spawner abundance. Since the GOM DPS was listed as Endangered under the ESA in 2000, primary threats remain marine survival, climate change, and dams. Abundance remains critically low and hatchery fish are the primary population component as indicated by adult counts at traps in large rivers and redd surveys in smaller coastal drainages (USASAC 2025). Atlantic salmon adult returns in 2024 were estimated at 1,517 with 91% of adults originating from hatchery supplementation and 86% returning to the Penobscot River from smolt stocking. Abundance remains critically low relative to recovery targets of 6,000 naturally-reared returns with only an estimated 131 natural returns. Return rate of Penobscot River hatchery origin 2SW salmon was 0.20%. While this rate is comparable to the decade average (0.16%), return rates are significantly lower than rates needed to meet recovery targets. Compared to metrics from 1970 to 1990, the last decade is less than 20% of that time period.
 
+**Mid-Atlantic**
 ```{r plot_gom_salmonMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_gom_salmon(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**New England**
 ```{r plot_gom_salmonNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_gom_salmon(report = 'NewEngland', n = 10)

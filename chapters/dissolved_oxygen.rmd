@@ -38,6 +38,7 @@ Coming soon
 ## Key Results and Visualizations
 Coming soon
 
+****
 ```{r plot_dissolved_oxygen}
 # Plot indicator
 ggplotObject <- ecodata::plot_dissolved_oxygen()
