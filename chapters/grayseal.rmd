@@ -42,6 +42,17 @@ For gray seals in U.S. waters, the total estimated annual bycatch and 5-year rol
 # Plot indicator
 ggplotObject <- ecodata::plot_grayseal(report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'graysealMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England**
@@ -49,6 +60,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_grayseal(report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'graysealNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -77,10 +99,7 @@ Under the MMPA, if bycatch exceeds PBR levels, Take Reduction Teams may be conve
 
 **Variable definitions**
 
-1) pbr = Potential Biological Removal level. Unit = n (number of animals) 
-2) totalest1y = Total bycatch of 1 year annual estimate. Unit = n (number of animals) 
-3) totalest5y = Total bycatch of 5 year running average estimate. Unit = n (number of animals) 
-4) total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
+1) pbr = Potential Biological Removal level. Unit = n (number of animals) 2) totalest1y = Total bycatch of 1 year annual estimate. Unit = n (number of animals) 3) totalest5y = Total bycatch of 5 year running average estimate. Unit = n (number of animals) 4) total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
 5) total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
 
 ```{r vars_grayseal}

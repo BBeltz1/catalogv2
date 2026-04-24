@@ -42,6 +42,17 @@ Abundance anomalies for Calanus finmarchicus adult and stage C5 copepodite in th
 # Plot indicator
 ggplotObject <- ecodata::plot_calanus_stage(report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'calanus_stageMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England**
@@ -49,6 +60,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_calanus_stage(report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'calanus_stageNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 

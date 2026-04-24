@@ -56,6 +56,17 @@ Preliminary General Additive Models show that for many species, temperature and 
 # Plot indicator
 ggplotObject <- ecodata::plot_condition(EPU = 'MAB', report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'conditionMABMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Georges Bank**
@@ -63,6 +74,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_condition(EPU = 'GB', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'conditionGBNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Gulf of Maine**
@@ -70,6 +92,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_condition(EPU = 'GOM', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'conditionGOMNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -99,10 +132,7 @@ These changes in condition have direct implications for stock assessments, catch
 
 **Variable definitions**
 
-Species: common name for fish species  
-EPU: Ecological Production Unit 
-YEAR: year of condition data 
-MeanCond: annual mean by EPU and species of relative condition (unitless)
+Species: common name for fish species  EPU: Ecological Production Unit YEAR: year of condition data MeanCond: annual mean by EPU and species of relative condition (unitless)
 
 ```{r vars_condition}
 # Pull all var names

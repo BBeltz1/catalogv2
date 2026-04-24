@@ -42,6 +42,17 @@ A significant and persistent decrease in marine productivity of North American A
 # Plot indicator
 ggplotObject <- ecodata::plot_gom_salmon(report = 'MidAtlantic', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'gom_salmonMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England**
@@ -49,6 +60,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_gom_salmon(report = 'NewEngland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'gom_salmonNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -77,8 +99,7 @@ Decreased productivity linked to a regime shift resulted in a cascading effect o
 
 **Variable definitions**
 
-1) Name: Number of Salmon Definition: Trap Counts or Redd-Based Estimate of Adult returns 
-2) Name: Percent Return Rate Definition: Total Adult Hatchery Return to Penobscot River divided by Estimated Post-Smolts entering ocean 2 years earlier
+1) Name: Number of Salmon Definition: Trap Counts or Redd-Based Estimate of Adult returns 2) Name: Percent Return Rate Definition: Total Adult Hatchery Return to Penobscot River divided by Estimated Post-Smolts entering ocean 2 years earlier
 
 ```{r vars_gom_salmon}
 # Pull all var names

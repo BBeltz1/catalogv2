@@ -44,6 +44,17 @@ Updates from previous year: An additional year of data (2024) has been added. Bl
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_cpuesharkMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **tuna, Mid-Atlantic**
@@ -51,6 +62,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_cpuetunaMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **shark, New England**
@@ -58,6 +80,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_cpuesharkNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **tuna, New England**
@@ -65,6 +98,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_cpuetunaNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -93,8 +137,7 @@ Pelagic observer data summarizes catch per unit effort information for a subset 
 
 **Variable definitions**
 
-1) Year: year in which observations were made. 
-2) CPUE per species or management group; total # fish caught / total # hauls; Includes Large Coastal Shark, Small Coastal Shark, Pelagic Shark, Prohibited Shark, Blue Marlin (BUM), Swordfish (SWO), White Marlin (WHM), Sailfish (SAI), Albacore Tuna (ALB), Skipjack Tuna (SKJ), Bigeye Tuna (BET), Bluefin Tuna (BFT), and Yellowfin Tuna (YFT).
+1) Year: year in which observations were made. 2) CPUE per species or management group; total # fish caught / total # hauls; Includes Large Coastal Shark, Small Coastal Shark, Pelagic Shark, Prohibited Shark, Blue Marlin (BUM), Swordfish (SWO), White Marlin (WHM), Sailfish (SAI), Albacore Tuna (ALB), Skipjack Tuna (SKJ), Bigeye Tuna (BET), Bluefin Tuna (BFT), and Yellowfin Tuna (YFT).
 
 ```{r vars_hms_cpue}
 # Pull all var names

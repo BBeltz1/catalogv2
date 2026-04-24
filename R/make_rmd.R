@@ -146,6 +146,29 @@ make_rmd <- function(listobject, n = 10){
     cat(paste0("ggplotObject <- ", plot_code_strings[i]),append=T,fill=T,file=con)
     # Print plot to .Rmd
     cat("ggplotObject",append=T,fill=T,file=con)
+    # Create button to download plotted data
+    ## Call download_this function
+    cat("try(downloadthis::download_this(",append=T,fill=T,file=con)
+    ## Paste ecodata dataset name
+    cat(paste0("ggplotObject$data,"),append=T,fill=T,file=con)
+    ## Name output file using ecodata dataset name
+    cat(paste0("output_name = '", listobject$indicatorname, chunk_name, "',"),append=T,fill=T,file=con)
+    ## Set output extension to .csv
+    cat("output_extension = '.csv',",append=T,fill=T,file=con)
+    ## Define button label
+    cat("button_label = 'Download the data plotted above',",append=T,fill=T,file=con)
+    ## Define button type
+    cat("button_type = 'default',",append=T,fill=T,file=con)
+    ## Toggle on icon
+    cat("has_icon = TRUE,",append=T,fill=T,file=con)
+    ## Define which icon to use
+    cat("icon = 'fa fa-save',",append=T,fill=T,file=con)
+    ## Define button class
+    cat("class = 'hvr-sweep-to-left',",append=T,fill=T,file=con)
+    ## Set output mode to csv2
+    cat("csv2 = F),",append=T,fill=T,file=con)
+    ##
+    cat("silent = TRUE)",append=T,fill=T,file=con)
     # Close code chunk
     cat("```",append=T,fill=T,file=con)
     # Add space after code chunk

@@ -42,6 +42,17 @@ The Gulf Stream Index suggests that recent years (2021-2022) the GS almost maint
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'gsi', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'gsiMidAtlanticgsi',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, gsi**
@@ -49,6 +60,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'gsi', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'gsiNewEnglandgsi',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, westgsi**
@@ -56,6 +78,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'westgsi', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'gsiMidAtlanticwestgsi',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, westgsi**
@@ -63,6 +96,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'westgsi', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'gsiNewEnglandwestgsi',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 

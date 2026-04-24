@@ -45,6 +45,17 @@ Each management body (MAFMC, NEFSC, State etc) has its managed species associate
 # Plot indicator
 ggplotObject <- ecodata::plot_species_groupings(report = 'MidAtlantic', varName = '2024')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'species_groupingsMidAtlantic2024',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, 2024**
@@ -52,6 +63,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_species_groupings(report = 'NewEngland', varName = '2024')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'species_groupingsNewEngland2024',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -82,11 +104,7 @@ We changed species groupings in response to comments over the years. The table s
 
 **Variable definitions**
 
-1. SOE.24 = Feeding guild definitions for State of the Ecosystem report (2024-2025) 
-2. MAFMC = Mid Atlantic Fishery Management Council - list of managed species by feeding guild 
-3. NEFMC = New England Fishery Management Council - list of managed species by feeding guild 
-4. Joint = Jointly managed species by feeding guild 
-5. State or Other = Species managed by other bodies listed by feeding guild 
+1. SOE.24 = Feeding guild definitions for State of the Ecosystem report (2024-2025) 2. MAFMC = Mid Atlantic Fishery Management Council - list of managed species by feeding guild 3. NEFMC = New England Fishery Management Council - list of managed species by feeding guild 4. Joint = Jointly managed species by feeding guild 5. State or Other = Species managed by other bodies listed by feeding guild 
 6. FMP = Fishery Management Plan for Council managed species
 
 **Indicator Category**:

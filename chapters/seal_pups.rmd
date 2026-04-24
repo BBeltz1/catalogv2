@@ -43,6 +43,17 @@ Mean rates of increase in the number of pups born at various times since 1988 at
 # Plot indicator
 ggplotObject <- ecodata::plot_seal_pups(report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seal_pupsMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England**
@@ -50,6 +61,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_seal_pups(report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seal_pupsNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 

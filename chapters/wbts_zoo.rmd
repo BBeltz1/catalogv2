@@ -129,9 +129,7 @@ A value of the NERACOOS time series is the timely provision of plankton indicato
 
 **Variable definitions**
 
-1) *Calanus finmarchicus* abundance WBTS station: number of *Calanus finmarchicus* stages C3-C6 m^-2^ 
-2) *Calanus finmarchicus* stage composition WBTS station: mean stage composition of *Calanus finmarchicus* stages C1-C6  
-3) Total mesozooplankton biomass WBTS station: total dry weight (g m^−2^) of  samples collected with 200-μm mesh vertical ring net tows
+1) *Calanus finmarchicus* abundance WBTS station: number of *Calanus finmarchicus* stages C3-C6 m^-2^ 2) *Calanus finmarchicus* stage composition WBTS station: mean stage composition of *Calanus finmarchicus* stages C1-C6  3) Total mesozooplankton biomass WBTS station: total dry weight (g m^−2^) of  samples collected with 200-μm mesh vertical ring net tows
 
 **Indicator Category**:
 

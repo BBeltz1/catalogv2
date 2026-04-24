@@ -43,6 +43,17 @@ Regional level analyses (maps); Community level analysis (community profiles)
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticoaSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, oaSum, propcomm**
@@ -50,6 +61,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandoaSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, tempSum, propcomm**
@@ -57,6 +79,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlantictempSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, tempSum, propcomm**
@@ -64,6 +97,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandtempSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, stckSum, propcomm**
@@ -71,6 +115,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticstckSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, stckSum, propcomm**
@@ -78,6 +133,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandstckSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, sensSum, propcomm**
@@ -85,6 +151,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticsensSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, sensSum, propcomm**
@@ -92,6 +169,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandsensSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, vulnSum, propcomm**
@@ -99,6 +187,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticvulnSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, vulnSum, propcomm**
@@ -106,6 +205,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'propcomm', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandvulnSumpropcomm',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, oaSum, regionrev**
@@ -113,6 +223,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticoaSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, oaSum, regionrev**
@@ -120,6 +241,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandoaSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, tempSum, regionrev**
@@ -127,6 +259,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlantictempSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, tempSum, regionrev**
@@ -134,6 +277,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandtempSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, stckSum, regionrev**
@@ -141,6 +295,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticstckSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, stckSum, regionrev**
@@ -148,6 +313,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandstckSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, sensSum, regionrev**
@@ -155,6 +331,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticsensSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, sensSum, regionrev**
@@ -162,6 +349,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandsensSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, vulnSum, regionrev**
@@ -169,6 +367,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticvulnSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, vulnSum, regionrev**
@@ -176,6 +385,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'regionrev', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandvulnSumregionrev',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, oaSum, regionland**
@@ -183,6 +403,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticoaSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, oaSum, regionland**
@@ -190,6 +421,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandoaSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, tempSum, regionland**
@@ -197,6 +439,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlantictempSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, tempSum, regionland**
@@ -204,6 +457,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandtempSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, stckSum, regionland**
@@ -211,6 +475,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticstckSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, stckSum, regionland**
@@ -218,6 +493,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandstckSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, sensSum, regionland**
@@ -225,6 +511,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticsensSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, sensSum, regionland**
@@ -232,6 +529,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandsensSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, vulnSum, regionland**
@@ -239,6 +547,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksMidAtlanticvulnSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, vulnSum, regionland**
@@ -246,6 +565,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'regionland', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'community_risksNewEnglandvulnSumregionland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 

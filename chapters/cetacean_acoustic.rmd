@@ -85,8 +85,7 @@ Highly Variable: Minke whale acoustic presence greatly varied by site and year, 
 
 **Variable definitions**
 
-1) Acoustic presence; Definition: At least 1 species-specific call was observed on a given day. For North Atlantic right whale acoustic presence is defined as 3 species-specific calls observed on a given day.  
-2) Weekly acoustic presence: Definition: median number of days of acoustic presence per calendar week across all data at four recording sites
+1) Acoustic presence; Definition: At least 1 species-specific call was observed on a given day. For North Atlantic right whale acoustic presence is defined as 3 species-specific calls observed on a given day.  2) Weekly acoustic presence: Definition: median number of days of acoustic presence per calendar week across all data at four recording sites
 
 ```{r vars_cetacean_acoustic}
 # Pull all var names

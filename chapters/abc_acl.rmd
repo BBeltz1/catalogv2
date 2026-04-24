@@ -45,6 +45,17 @@ High points in the catch divided by ABC/ACL are recreational black sea bass (up 
 # Plot indicator
 ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Stacked')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'abc_aclMidAtlanticStacked',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Stacked**
@@ -52,6 +63,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Stacked')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'abc_aclNewEnglandStacked',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Catch**
@@ -59,6 +81,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Catch')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'abc_aclMidAtlanticCatch',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Catch**
@@ -66,6 +99,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Catch')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'abc_aclNewEnglandCatch',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -96,8 +140,7 @@ Since 2012, the total catch limits in the Mid-Atlantic have fluctuated slightly 
 
 **Variable definitions**
 
-Catch - definition: total landings and dead discards; units - metric tons (MT) 
-Acceptable biological catch (ABC) - the annual catch level recommended for a stock or stock complex by the Scientific and Statistical Committee that could be equal to or less than the Overfishing Limit (OFL); units - metric tons (MT) 
+Catch - definition: total landings and dead discards; units - metric tons (MT) Acceptable biological catch (ABC) - the annual catch level recommended for a stock or stock complex by the Scientific and Statistical Committee that could be equal to or less than the Overfishing Limit (OFL); units - metric tons (MT) 
 Annual Catch Limit (ACL) - sector specific total catch limits which can be equal to or less than the ABC; units - metric tons (MT)
 
 ```{r vars_abc_acl}

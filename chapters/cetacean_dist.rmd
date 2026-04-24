@@ -45,6 +45,17 @@ For species that showed a clear displacement of the weighted centroid, the avera
 # Plot indicator
 ggplotObject <- ecodata::plot_cetacean_dist(report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'cetacean_distMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England**
@@ -52,6 +63,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_cetacean_dist(report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'cetacean_distNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -81,10 +103,7 @@ Shifting species distributions alter both species interactions and fishery inter
 
 **Variable definitions**
 
-1) Time=time period of centroid location.  
-2) species=cetacean species.  3) season.  
-4) wlat=latitude of centroid.  
-5) wlon=longitude of centroid.
+1) Time=time period of centroid location.  2) species=cetacean species.  3) season.  4) wlat=latitude of centroid.  5) wlon=longitude of centroid.
 
 ```{r vars_cetacean_dist}
 # Pull all var names

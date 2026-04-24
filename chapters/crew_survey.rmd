@@ -76,35 +76,16 @@ Managers and policy makers have a responsibility to consider the effects of mana
 
 **Variable definitions**
 
-1) Name: survey_wave; Definition: which iteration the survey was implemented.  
-2) Name: primary_port; Definition: main port for participant to fish from.  
-3) Name: fishery_category; Definition: what is their main fishery.  
-4) Name: age_category; Definition: age of survey participant.  
-5) Name: education_combined; Defined: a combination of participant’s education attainment.  
-6) Name: race; Defined: participants’ self-described race.  
-7) Name: hispanic; Definition: yes or no.  
-7) Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.  
-8) Name: health_insurance; Definition: does the participant have health insurance or not.  
-9) Name: marital_status; Definition: are they married or not.  
-10) Name: years_in_commercial_fishing_categorical; Definition: a participant’s time spent in commercial fishing.  
-11) Name: owner_operator_status; Definition: is the participant an owner of a vessel of which they operate a business.  
-12) Name: position_on_current_vessel; Definition: what position do they hold.  
-13) Name: your_actual_earnings; Definition: a participant’s level of satisfaction with their income earned in the fishing profession.  
-14) Name: predictability_of_earnings; Definition: a participant’s level of satisfaction with whether they can rely on expected earnings by an expected time.  
-15) Name: job_safety; Definition: a participant’s level of satisfaction with the risk or safety of their fishing job.  
-16) Name: time_away; Definition: a participant’s level of satisfaction with time spent away from their home while out fishing.  
-17) Name: physical_fatigue; Definition: how satisfied are participants with the general exhaustion they feel accumulates in this line of work.  
-18) Name: healthfulness; Definition: how satisfied is a participant with the impact this job has on their health.  
-19) Name: adventure; Definition: a participant’s satisfaction with the excitement and hazard of the job.  
-20) Name: challenge; Definition: a participant’s level of satisfaction with the difficulties related to the fishing profession.  
-21) Name: own_boss; Definition: this refers to a participant’s level of satisfaction with the opportunity to be their own boss.  
-22) Name: advise_young_enter_fishing; Definition:  would this participant suggest fishing as a career to a younger person.  
-23) Name: fish_again_if_life_lived_over; Definition: would the participant choose to be a fisher if they could live their life all over again.  
+1) Name: survey_wave; Definition: which iteration the survey was implemented.  2) Name: primary_port; Definition: main port for participant to fish from.  3) Name: fishery_category; Definition: what is their main fishery.  4) Name: age_category; Definition: age of survey participant.  5) Name: education_combined; Defined: a combination of participant’s education attainment.  
+6) Name: race; Defined: participants’ self-described race.  7) Name: hispanic; Definition: yes or no.  7) Name: income_5_cat; Definition: what their self-reported income is based on 5 category choices.  8) Name: health_insurance; Definition: does the participant have health insurance or not.  9) Name: marital_status; Definition: are they married or not.  
+10) Name: years_in_commercial_fishing_categorical; Definition: a participant’s time spent in commercial fishing.  11) Name: owner_operator_status; Definition: is the participant an owner of a vessel of which they operate a business.  12) Name: position_on_current_vessel; Definition: what position do they hold.  
+13) Name: your_actual_earnings; Definition: a participant’s level of satisfaction with their income earned in the fishing profession.  14) Name: predictability_of_earnings; Definition: a participant’s level of satisfaction with whether they can rely on expected earnings by an expected time.  
+15) Name: job_safety; Definition: a participant’s level of satisfaction with the risk or safety of their fishing job.  16) Name: time_away; Definition: a participant’s level of satisfaction with time spent away from their home while out fishing.  17) Name: physical_fatigue; Definition: how satisfied are participants with the general exhaustion they feel accumulates in this line of work.  
+18) Name: healthfulness; Definition: how satisfied is a participant with the impact this job has on their health.  19) Name: adventure; Definition: a participant’s satisfaction with the excitement and hazard of the job.  20) Name: challenge; Definition: a participant’s level of satisfaction with the difficulties related to the fishing profession.  
+21) Name: own_boss; Definition: this refers to a participant’s level of satisfaction with the opportunity to be their own boss.  22) Name: advise_young_enter_fishing; Definition:  would this participant suggest fishing as a career to a younger person.  23) Name: fish_again_if_life_lived_over; Definition: would the participant choose to be a fisher if they could live their life all over again.  
 24) Name: fishing_is_just_a_job; Definition: does this participant consider fishing to be profession only, or more likely a lifestyle. 25) Name: considered_leaving_industry; Definition: this refers to if the participant has left fishing to pursue other ventures or considered doing so.  
-26) Name: participated_in_fisheries_management; Definition: did the participant ever take part in advocacy or management in part by attending, contributing to, or publicly speak on management decisions.  
-27) Name: rules_regulations_change_quickly; Definition: does the participant agree or disagree that rules and regulations change rapidly.  
-28) Name: fines_are_fair; Definition: the participant’s opinion on whether or not fines related to fishing activity are fairly measured.  
-29) Name: regulations_too_restrictive; Definition: a participant’s opinion on whether or not regulations are appropriately strict.
+26) Name: participated_in_fisheries_management; Definition: did the participant ever take part in advocacy or management in part by attending, contributing to, or publicly speak on management decisions.  27) Name: rules_regulations_change_quickly; Definition: does the participant agree or disagree that rules and regulations change rapidly.  
+28) Name: fines_are_fair; Definition: the participant’s opinion on whether or not fines related to fishing activity are fairly measured.  29) Name: regulations_too_restrictive; Definition: a participant’s opinion on whether or not regulations are appropriately strict.
 
 ```{r vars_crew_survey}
 # Pull all var names

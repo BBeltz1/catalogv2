@@ -54,6 +54,17 @@ Eastward and Northward components of the Center of Gravity, along with the Cente
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Megabenthos', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexMidAtlanticMegabenthosindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Megabenthos, index**
@@ -61,6 +72,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Megabenthos', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexNewEnglandMegabenthosindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Macrobenthos, index**
@@ -68,6 +90,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Macrobenthos', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexMidAtlanticMacrobenthosindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Macrobenthos, index**
@@ -75,6 +108,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Macrobenthos', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexNewEnglandMacrobenthosindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Megabenthos, cog**
@@ -82,6 +126,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Megabenthos', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexMidAtlanticMegabenthoscog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Megabenthos, cog**
@@ -89,6 +144,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Megabenthos', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexNewEnglandMegabenthoscog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Macrobenthos, cog**
@@ -96,6 +162,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Macrobenthos', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexMidAtlanticMacrobenthoscog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Macrobenthos, cog**
@@ -103,6 +180,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Macrobenthos', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'benthos_indexNewEnglandMacrobenthoscog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -133,30 +221,17 @@ Center of gravity indicators show recent trends towards the north and east in sp
 
 **Variable definitions**
 
-1. Spring Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 1-6, units relative grams per stomach 
-2. Spring Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 1-6, units relative grams per stomach 
-3. Fall Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 7-12, units relative grams per stomach 
-4. Fall Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 7-12, units relative grams per stomach 
-5. Fall Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 7-12, units kilometers 
-6. Fall Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 7-12, units kilometers 
-7. Fall Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 7-12, units kilometers 
-8. Fall Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 7-12, units kilometers 
-9. Spring Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 1-6, units kilometers 
-10. Spring Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 1-6, units kilometers 
-11. Spring Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 1-6, units kilometers 
-12. Spring Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 1-6, units kilometers 
-13. Spring Megabenthos Biomass Estimate = aggregate megabenthos biomass months 1-6, units relative grams per stomach 
-14. Spring Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 1-6, units relative grams per stomach 
-15. Fall Megabenthos Biomass Estimate = aggregate megabenthos biomass months 7-12, units relative grams per stomach 
-16. Fall Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 7-12, units relative grams per stomach 
-17. Fall Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 7-12, units kilometers 
-18. Fall Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 7-12, units kilometers 
-19. Fall Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 7-12, units kilometers 
-20. Fall Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 7-12, units kilometers 
-21. Spring Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 1-6, units kilometers 
-22. Spring Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 1-6, units kilometers 
-23. Spring Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 1-6, units kilometers 
-24. Spring Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 1-6, units kilometers
+1. Spring Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 1-6, units relative grams per stomach 2. Spring Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 1-6, units relative grams per stomach 3. Fall Macrobenthos Biomass Estimate = aggregate macrobenthos biomass months 7-12, units relative grams per stomach 
+4. Fall Macrobenthos Biomass Estimate SE = standard error of aggregate macrobenthos biomass months 7-12, units relative grams per stomach 5. Fall Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 7-12, units kilometers 
+6. Fall Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 7-12, units kilometers 7. Fall Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 7-12, units kilometers 
+8. Fall Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 7-12, units kilometers 9. Spring Eastward Macrobenthos Center of Gravity = average eastward location of macrobenthos biomass months 1-6, units kilometers 
+10. Spring Eastward Macrobenthos Center of Gravity SE = standard error of average eastward location of macrobenthos biomass months 1-6, units kilometers 11. Spring Northward Macrobenthos Center of Gravity = average northward location of macrobenthos biomass months 1-6, units kilometers 
+12. Spring Northward Macrobenthos Center of Gravity SE = standard error of average northward location of macrobenthos biomass months 1-6, units kilometers 13. Spring Megabenthos Biomass Estimate = aggregate megabenthos biomass months 1-6, units relative grams per stomach 
+14. Spring Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 1-6, units relative grams per stomach 15. Fall Megabenthos Biomass Estimate = aggregate megabenthos biomass months 7-12, units relative grams per stomach 16. Fall Megabenthos Biomass Estimate SE = standard error of aggregate megabenthos biomass months 7-12, units relative grams per stomach 
+17. Fall Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 7-12, units kilometers 18. Fall Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 7-12, units kilometers 
+19. Fall Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 7-12, units kilometers 20. Fall Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 7-12, units kilometers 
+21. Spring Eastward Megabenthos Center of Gravity = average eastward location of megabenthos biomass months 1-6, units kilometers 22. Spring Eastward Megabenthos Center of Gravity SE = standard error of average eastward location of megabenthos biomass months 1-6, units kilometers 
+23. Spring Northward Megabenthos Center of Gravity = average northward location of megabenthos biomass months 1-6, units kilometers 24. Spring Northward Megabenthos Center of Gravity SE = standard error of average northward location of megabenthos biomass months 1-6, units kilometers
 
 ```{r vars_benthos_index}
 # Pull all var names

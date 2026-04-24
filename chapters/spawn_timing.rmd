@@ -76,6 +76,17 @@ The multinomial model indicated significant effects of bottom temperature, week 
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Resting', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingMidAtlanticResting',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Resting**
@@ -83,6 +94,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Resting', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingNewEnglandResting',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Ripe**
@@ -90,6 +112,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Ripe', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingMidAtlanticRipe',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Ripe**
@@ -97,6 +130,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Ripe', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingNewEnglandRipe',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Spent**
@@ -104,6 +148,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Spent', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingMidAtlanticSpent',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Spent**
@@ -111,6 +166,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Spent', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingNewEnglandSpent',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Developing**
@@ -118,6 +184,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Developing', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingMidAtlanticDeveloping',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Developing**
@@ -125,6 +202,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Developing', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingNewEnglandDeveloping',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, MF**
@@ -132,6 +220,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'MF', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingMidAtlanticMF',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, MF**
@@ -139,6 +238,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'MF', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingNewEnglandMF',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, meanTEMP**
@@ -146,6 +256,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'meanTEMP', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingMidAtlanticmeanTEMP',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, meanTEMP**
@@ -153,6 +274,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'meanTEMP', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingNewEnglandmeanTEMP',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, meanJDAY**
@@ -160,6 +292,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'meanJDAY', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingMidAtlanticmeanJDAY',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, meanJDAY**
@@ -167,6 +310,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'meanJDAY', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'spawn_timingNewEnglandmeanJDAY',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -201,14 +355,8 @@ The post spawning Yellowtail Flounder would be expected to have lower relative c
 
 **Variable definitions**
 
-Variable names follow the convention "SEASON_Species_STOCK_Variable" where Variable and Units are: 
-meanTEMP: mean sampled bottom temperature in degrees C 
-MF: number of mature females sampled 
-meanJDAY: mean julian day of year sampled 
-Developing: percent of mature females at developing (pre-spawning) stage 
-Ripe: percent of mature females at ripe (spawning) stage 
-Spent: percent of mature females at spent (immediately post-spawning) stage 
-Resting: percent of mature females at resting (non-spawning) stage
+Variable names follow the convention "SEASON_Species_STOCK_Variable" where Variable and Units are: meanTEMP: mean sampled bottom temperature in degrees C MF: number of mature females sampled meanJDAY: mean julian day of year sampled Developing: percent of mature females at developing (pre-spawning) stage Ripe: percent of mature females at ripe (spawning) stage 
+Spent: percent of mature females at spent (immediately post-spawning) stage Resting: percent of mature females at resting (non-spawning) stage
 
 ```{r vars_spawn_timing}
 # Pull all var names

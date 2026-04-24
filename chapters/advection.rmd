@@ -43,6 +43,17 @@ Advection indices are presented monthly (March-June) by three depth ranges (less
 # Plot indicator
 ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '3', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'advectionMidAtlantic3',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, 3**
@@ -50,6 +61,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '3', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'advectionNewEngland3',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, 4**
@@ -57,6 +79,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '4', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'advectionMidAtlantic4',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, 4**
@@ -64,6 +97,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '4', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'advectionNewEngland4',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, 5**
@@ -71,6 +115,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '5', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'advectionMidAtlantic5',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, 5**
@@ -78,6 +133,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '5', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'advectionNewEngland5',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, 6**
@@ -85,6 +151,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '6', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'advectionMidAtlantic6',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, 6**
@@ -92,6 +169,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '6', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'advectionNewEngland6',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -122,13 +210,7 @@ Different fish species inhabit different depth ranges of the water column for sp
 
 **Variable definitions**
 
-1) Year  2) Month  3) Var: Transport in the top 15m  
-4) Value: Transport in the top 15m  
-5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  
-7) Var: Transport 40m to sea floor  
-8) Value: Transport 40m to sea floor  
-9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  
-10) Units: 10^6 m^3/s
+1) Year  2) Month  3) Var: Transport in the top 15m  4) Value: Transport in the top 15m  5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  7) Var: Transport 40m to sea floor  8) Value: Transport 40m to sea floor  9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  10) Units: 10^6 m^3/s
 
 ```{r vars_advection}
 # Pull all var names
