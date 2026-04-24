@@ -160,6 +160,32 @@
 <p>The indicator provides an integrated measure of Chesapeake Bay’s water quality condition (Figure 1). In 2021-2023, 29.4% of all tidal water segment-DU-criterion combinations are estimated to have met or exceeded applicable water quality criteria thresholds.</p>
 <p><strong>Mid-Atlantic</strong>
 <img src="catalog_files/figure-html/plot_ches_bay_wqMidAtlantic-1.png" alt="" width="672"></p>
+<button class="btn btn-default hvr-sweep-to-left" has_icon="TRUE" onclick="
+    async function downloadFile(event) {
+      event.preventDefault();
+      try {
+        const response = await fetch('data:text/csv;base64,VGltZSxWYXIsVmFsdWUsRVBVLFVuaXRzCjE5ODUsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDI2LjUyNjQyMTg3LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjE5ODYsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDI3LjE2ODQyMzI0LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjE5ODcsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDI2LjA5MTU2MSxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoxOTg4LGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzMC4xMDQ2NzIyNixNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoxOTg5LGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwyNi4zNzY5NjUwNSxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoxOTkwLGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwyOS4zMjg3NzExOSxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoxOTkxLGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwyOS43OTY4OTk0LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjE5OTIsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDMxLjc4ODAyNDY2LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjE5OTMsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDMwLjc3MzI4Mzc3LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjE5OTQsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDMyLjcwOTcwMjIzLE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjE5OTUsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDM2LjUwMzk4MzE3LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjE5OTYsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDMzLjg3Mzc2NzUxLE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjE5OTcsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDM2Ljg2ODI0NDQsTUFCLCJlc3RpbWF0ZWQgYXR0YWlubWVudCwgcGVyY2VudCIKMTk5OCxjaGVzYXBlYWtlIGJheSB3YXRlciBxdWFsaXR5IGF0dGFpbm1lbnQsMzMuNTQ0MjQsTUFCLCJlc3RpbWF0ZWQgYXR0YWlubWVudCwgcGVyY2VudCIKMTk5OSxjaGVzYXBlYWtlIGJheSB3YXRlciBxdWFsaXR5IGF0dGFpbm1lbnQsMzYuODM1MTQ2OTUsTUFCLCJlc3RpbWF0ZWQgYXR0YWlubWVudCwgcGVyY2VudCIKMjAwMCxjaGVzYXBlYWtlIGJheSB3YXRlciBxdWFsaXR5IGF0dGFpbm1lbnQsMzcuMTU4NDYzMTksTUFCLCJlc3RpbWF0ZWQgYXR0YWlubWVudCwgcGVyY2VudCIKMjAwMSxjaGVzYXBlYWtlIGJheSB3YXRlciBxdWFsaXR5IGF0dGFpbm1lbnQsMzYuMTc1MjQ3NjEsTUFCLCJlc3RpbWF0ZWQgYXR0YWlubWVudCwgcGVyY2VudCIKMjAwMixjaGVzYXBlYWtlIGJheSB3YXRlciBxdWFsaXR5IGF0dGFpbm1lbnQsMzUuNzE4MTEzOCxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDAzLGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzMi43MTcxOTA4NSxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDA0LGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzMi40MjQ0Nzk3OSxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDA1LGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzMy45MTIyNjk4NSxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDA2LGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzOC41Mjg1NDc1MixNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDA3LGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzNy40NDk0OTIzNixNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDA4LGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzOS41MTAzODk2NyxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDA5LGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzMy4xODE3ODM4NixNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDEwLGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzMC45OTMzNTYwOCxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDExLGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwyNy42MDk3NzMzNSxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDEyLGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzMy45NDI0NTIzOCxNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDEzLGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCwzOC4wNjAyODczNixNQUIsImVzdGltYXRlZCBhdHRhaW5tZW50LCBwZXJjZW50IgoyMDE0LGNoZXNhcGVha2UgYmF5IHdhdGVyIHF1YWxpdHkgYXR0YWlubWVudCw0MC4wMDg2ODI2LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjIwMTUsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDQyLjE2NTU3Mjg1LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjIwMTYsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDM4LjE1ODk2MzQyLE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjIwMTcsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDMyLjk4NDk2MTA3LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjIwMTgsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDI4Ljg4NTgyNDMzLE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjIwMTksY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDI4LjA2MDc4NDY0LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjIwMjAsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDI5LjgxMzU0MTExLE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCjIwMjEsY2hlc2FwZWFrZSBiYXkgd2F0ZXIgcXVhbGl0eSBhdHRhaW5tZW50LDI5LjM2MDAzOTk5LE1BQiwiZXN0aW1hdGVkIGF0dGFpbm1lbnQsIHBlcmNlbnQiCg==');
+        if (!response.ok) throw new Error('Network response failed');
+        const blob = await response.blob();
+        const blobUrl = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = 'ches_bay_wqMidAtlantic.csv';
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.dispatchEvent(new MouseEvent('click'));
+        document.body.removeChild(a);
+        setTimeout(() =&gt; {
+          window.URL.revokeObjectURL(blobUrl);
+        }, 100);
+        return false;
+      } catch (error) {
+        console.error('Download failed:', error);
+        alert('Download failed. Please try again.');
+      }
+    }
+    downloadFile(event);
+  "><i class="fa fa-save"></i> Download the data plotted above</button>
 <p><strong>New England</strong></p>
 <pre><code>#&gt; [1] "This indicator is only present in the `MidAtlantic` report"</code></pre>
 </div>
@@ -190,19 +216,11 @@
 <p><strong>ecodata name</strong>: <code><a href="https://noaa-edab.github.io/ecodata/reference/ches_bay_wq.html">ecodata::ches_bay_wq</a></code></p>
 <p><strong>Variable definitions</strong></p>
 <ol style="list-style-type: decimal">
-<li>Period: Assessment period</li>
-<li>Year One: Starting year of the assessment period</li>
-<li>Year Two: Ending year of the assessment period</li>
-<li>Total: The overall attainment indicator</li>
-<li>MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use</li>
-<li>OW-DO: Estimated attainment of the dissolved oxygen criterion for the open water designated use</li>
-<li>DW-DO: Estimated attainment of the dissolved oxygen criterion for the deep water designated use</li>
-<li>DC-DO: Estimated attainment of the dissolved oxygen criterion for the deep channel designated use</li>
-<li>OW-CHLA: Estimated attainment of the chlorophyll-a criterion</li>
-<li>SW-Clarity/SAV: Estimated attainment of the bay grasses / water clarity criterion for the shallow water designated use</li>
+<li>Period: Assessment period 2. Year One: Starting year of the assessment period 3. Year Two: Ending year of the assessment period 4. Total: The overall attainment indicator 5. MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 6. OW-DO: Estimated attainment of the dissolved oxygen criterion for the open water designated use</li>
+<li>DW-DO: Estimated attainment of the dissolved oxygen criterion for the deep water designated use 8. DC-DO: Estimated attainment of the dissolved oxygen criterion for the deep channel designated use 9. OW-CHLA: Estimated attainment of the chlorophyll-a criterion 10. SW-Clarity/SAV: Estimated attainment of the bay grasses / water clarity criterion for the shallow water designated use</li>
 </ol>
-<div class="datatables html-widget html-fill-item" id="htmlwidget-34d994058ad7529f98b4" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-34d994058ad7529f98b4">{"x":{"filter":"none","vertical":false,"data":[["1"],["chesapeake bay water quality attainment"],["estimated attainment, percent"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-25cb5499a8fc8f9893d2" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-25cb5499a8fc8f9893d2">{"x":{"filter":"none","vertical":false,"data":[["1"],["chesapeake bay water quality attainment"],["estimated attainment, percent"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Var<\/th>\n      <th>Units<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Var","targets":1},{"name":"Units","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script><p><strong>Indicator Category</strong>:</p>
 <ul class="task-list">
 <li><label><input type="checkbox" checked>Database pull with analysis</label></li>
 </ul>
