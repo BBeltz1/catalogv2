@@ -101,15 +101,43 @@ make_rmd <- function(listobject, n = 10){
     plot_code_strings <- ecodata::create_all_plots(ecodata_name = listobject$indicatorname, write_only = T, n = 10)
 
     # Iterate over each element in the 'plot_code_strings' list
-    # to generate a code chunk for each unique variation of the plot function
+    # to generate a string for each unique variation of the plot function
     for (i in 1:length(plot_code_strings)){
-    # Create code chunk name
-    # Extract argument values from 'plot_code_strings' to use in chunk name
+    # Extract argument values from 'plot_code_strings' to use in chunk name and plot header
     argument_value_strings <- regmatches(plot_code_strings[i], gregexpr("'[^']+'", plot_code_strings[i]))
+      
+    # Create code chunk name
     # Remove quotations and join 'argument_value_strings' into a single chunk name
     chunk_name <- paste0(gsub("'", "", unlist(argument_value_strings)), collapse = "")
+      
+    # Create plot header
+    ## Remove quotations, join 'argument_value_strings' and separate with a comma
+    plot_header <- paste0(gsub("'", "", unlist(argument_value_strings)), collapse = ",")
+    ## Exclude MidAtlantic if MAB is present
+    if (grepl("MAB", plot_header)){
+      plot_header <- gsub("MidAtlantic", "", plot_header)
+    }
+    ## Exclude NewEngland if GB or GOM are present
+    if (grepl("GB|GOM", plot_header)){
+      plot_header <- gsub("NewEngland", "", plot_header)
+    }
+    ## Clean up plot header string
+    ### Remove unused commas from plot header
+    plot_header <- gsub("^,", "", plot_header) # Remove leading comma
+    plot_header <- gsub(",$", "", plot_header) # Remove trailing comma
+    plot_header <- gsub(",,", ",", plot_header) # Remove double comma
+    ### Add space after all commas
+    plot_header <- gsub(",", ", ", plot_header)
+    ## Replace `ecodata` syntax with proper naming
+    plot_header <- gsub("MAB", "Mid-Atlantic Bight", plot_header) # Explicitly write EPU name
+    plot_header <- gsub("GB", "Georges Bank", plot_header) # Explicitly write EPU name
+    plot_header <- gsub("GOM", "Gulf of Maine", plot_header) # Explicitly write EPU name
+    plot_header <- gsub("MidAtlantic", "Mid-Atlantic", plot_header) # Explicitly write region name
+    plot_header <- gsub("NewEngland", "New England", plot_header) # Explicitly write region name
 
     # Write plot function code chunk
+    # Create plot header
+    cat(paste0("**", plot_header, "**"),append=T,fill=T,file=con)
     # Open and name code chunk
     cat(paste0("```{r plot_", listobject$indicatorname, chunk_name, "}"),append=T,fill=T,file=con)
     # Write header to .Rmd  
