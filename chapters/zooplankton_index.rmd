@@ -65,6 +65,17 @@ Small copepods in fall are trending northeast similar to forage fish and aggrega
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Calfin', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticCalfinindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Calfin, index**
@@ -72,6 +83,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Calfin', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandCalfinindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Euph, index**
@@ -79,6 +101,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Euph', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticEuphindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Euph, index**
@@ -86,6 +119,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Euph', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandEuphindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Smallcopesoe, index**
@@ -93,6 +137,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Smallcopesoe', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticSmallcopesoeindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Smallcopesoe, index**
@@ -100,6 +155,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Smallcopesoe', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandSmallcopesoeindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Lgcopeall, index**
@@ -107,6 +173,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Lgcopeall', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticLgcopeallindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Lgcopeall, index**
@@ -114,6 +191,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Lgcopeall', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandLgcopeallindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Zoopvol, index**
@@ -121,6 +209,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Zoopvol', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticZoopvolindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Zoopvol, index**
@@ -128,6 +227,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Zoopvol', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandZoopvolindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Smallcopeall, index**
@@ -135,6 +245,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Smallcopeall', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticSmallcopeallindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Smallcopeall, index**
@@ -142,6 +263,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Smallcopeall', plottype = 'index', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandSmallcopeallindex',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Calfin, cog**
@@ -149,6 +281,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Calfin', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticCalfincog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Calfin, cog**
@@ -156,6 +299,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Calfin', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandCalfincog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Euph, cog**
@@ -163,6 +317,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Euph', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticEuphcog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Euph, cog**
@@ -170,6 +335,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Euph', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandEuphcog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Smallcopesoe, cog**
@@ -177,6 +353,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Smallcopesoe', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticSmallcopesoecog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Smallcopesoe, cog**
@@ -184,6 +371,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Smallcopesoe', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandSmallcopesoecog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Lgcopeall, cog**
@@ -191,6 +389,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Lgcopeall', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticLgcopeallcog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Lgcopeall, cog**
@@ -198,6 +407,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Lgcopeall', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandLgcopeallcog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Zoopvol, cog**
@@ -205,6 +425,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Zoopvol', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticZoopvolcog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Zoopvol, cog**
@@ -212,6 +443,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Zoopvol', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandZoopvolcog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Smallcopeall, cog**
@@ -219,6 +461,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'MidAtlantic', varName = 'Smallcopeall', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexMidAtlanticSmallcopeallcog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Smallcopeall, cog**
@@ -226,6 +479,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_zooplankton_index(report = 'NewEngland', varName = 'Smallcopeall', plottype = 'cog', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'zooplankton_indexNewEnglandSmallcopeallcog',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -258,10 +522,7 @@ Distribution shifts for zooplankton may result in mismatches with zooplankton fe
 
 **Variable definitions**
 
-Naming key:  
-1) *Calanus finmarchicus* (calfin_100m3) = “calfin” 
-2) Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL” 
-3) Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” 
+Naming key:  1) *Calanus finmarchicus* (calfin_100m3) = “calfin” 2) Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL” 3) Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” 
 4) Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”
 
 ```{r vars_zooplankton_index}

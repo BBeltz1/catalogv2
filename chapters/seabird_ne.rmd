@@ -42,6 +42,17 @@ GOM common tern average productivity (fledglings per nest) across 7 colonies has
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'diversity', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seabird_neMidAtlanticdiversity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, diversity**
@@ -49,6 +60,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'diversity', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seabird_neNewEnglanddiversity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, productivity**
@@ -56,6 +78,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'productivity', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seabird_neMidAtlanticproductivity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, productivity**
@@ -63,6 +96,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'productivity', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seabird_neNewEnglandproductivity',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, prey**
@@ -70,6 +114,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'prey', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seabird_neMidAtlanticprey',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, prey**
@@ -77,6 +132,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'prey', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seabird_neNewEnglandprey',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 

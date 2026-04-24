@@ -42,6 +42,17 @@ Visualizations of the data include an annual time series plot of estimated cyst 
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(varName = 'Alexandrium', report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'habsAlexandriumMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **PSP, Mid-Atlantic**
@@ -49,6 +60,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(varName = 'PSP', report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'habsPSPMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Alexandrium, New England**
@@ -56,6 +78,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(varName = 'Alexandrium', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'habsAlexandriumNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **PSP, New England**
@@ -63,6 +96,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_habs(varName = 'PSP', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'habsPSPNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -91,16 +135,9 @@ The annual fall surveys of Alexandrium cyst distribution and abundance in the Gu
 
 **Variable definitions**
 
-Alexandrium:  
-1. Name: Year; Definition: Calendar year; Units: Integer. 
-2. Name: West_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Western Gulf of Maine; Units: Decimal number. 
-3. Name: East_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Eastern Gulf of Maine; Units: Decimal number. 
-4. Name: Bay_of_Fundy; Definition: Estimated total numbers of cells (x10 to the 16th power) in Bay of Fundy; Units: Decimal number. 
-5. Name: Gulf_of Maine_All; Definition: Estimated total numbers of cells (x10 to the 16th power) in entire Gulf of Maine; Units: Decimal number. 
- PSP:  1. Year; Definition: calendar year; Units: yyyy. 
-2. Name: State; Definition: MA, NH, or ME ; Units: categories. 
-3. Name: N_Rows; Definition: Number of sample events represented; Units: integer.  
-4. Name: PSP_Exceed_Threshold_Pct; Definition: Percentage of samples exceeding PSP threshold; Units: decimal number, 0-100.
+Alexandrium:  1. Name: Year; Definition: Calendar year; Units: Integer. 2. Name: West_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Western Gulf of Maine; Units: Decimal number. 3. Name: East_Gulf_of Maine; Definition: Estimated total numbers of cells (x10 to the 16th power) in Eastern Gulf of Maine; Units: Decimal number. 
+4. Name: Bay_of_Fundy; Definition: Estimated total numbers of cells (x10 to the 16th power) in Bay of Fundy; Units: Decimal number. 5. Name: Gulf_of Maine_All; Definition: Estimated total numbers of cells (x10 to the 16th power) in entire Gulf of Maine; Units: Decimal number.  PSP:  1. Year; Definition: calendar year; Units: yyyy. 2. Name: State; Definition: MA, NH, or ME ; Units: categories. 
+3. Name: N_Rows; Definition: Number of sample events represented; Units: integer.  4. Name: PSP_Exceed_Threshold_Pct; Definition: Percentage of samples exceeding PSP threshold; Units: decimal number, 0-100.
 
 ```{r vars_habs}
 # Pull all var names

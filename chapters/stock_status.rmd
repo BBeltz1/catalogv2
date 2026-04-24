@@ -47,6 +47,17 @@ Single species management objectives (1. maintaining biomass above minimum thres
 # Plot indicator
 ggplotObject <- ecodata::plot_stock_status(report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'stock_statusMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England**
@@ -54,6 +65,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_stock_status(report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'stock_statusNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -86,16 +108,8 @@ In New England, stock status and associated management constraints are likely co
 
 **Variable definitions**
 
-Variables in `ecodata::stock_status`  
-**Stock:**  Name of stock   
-**Last assessment:** Most recent assessment year for stock status 
- 
-**Council:** "MAFMC" (Mid Atlantic Fishery Management Council), "NEFMC" (New England Fishery Management Council), or "Both" 
- 
-**Code:**  Short stock name for plotting corresponding to **Stock** 
-       
-**Var:**  "F.Fmsy" (Current year fishing mortality F relative to F<sub>MSY</sub>) "B.Bmsy" (Current year biomass B relative to B<sub>MSY</sub>) 
-       **Value:** Decimal value of Var  **Units:** Unitless
+Variables in `ecodata::stock_status`  **Stock:**  Name of stock   **Last assessment:** Most recent assessment year for stock status  **Council:** "MAFMC" (Mid Atlantic Fishery Management Council), "NEFMC" (New England Fishery Management Council), or "Both"  **Code:**  Short stock name for plotting corresponding to **Stock**        
+**Var:**  "F.Fmsy" (Current year fishing mortality F relative to F<sub>MSY</sub>) "B.Bmsy" (Current year biomass B relative to B<sub>MSY</sub>)        **Value:** Decimal value of Var  **Units:** Unitless
 
 ```{r vars_stock_status}
 # Pull all var names

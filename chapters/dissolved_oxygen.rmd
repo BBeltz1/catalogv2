@@ -43,6 +43,17 @@ Coming soon
 # Plot indicator
 ggplotObject <- ecodata::plot_dissolved_oxygen()
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'dissolved_oxygen',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 

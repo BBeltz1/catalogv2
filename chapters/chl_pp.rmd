@@ -54,6 +54,17 @@ Concentrations of chlorophyll _a_ (a proxy for biomass) were above average durin
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'weekly', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticchlweeklyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **pp, weekly, Mid-Atlantic Bight**
@@ -61,6 +72,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'weekly', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticppweeklyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **size, weekly, Mid-Atlantic Bight**
@@ -68,6 +90,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'weekly', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticsizeweeklyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **chl, monthly, Mid-Atlantic Bight**
@@ -75,6 +108,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'monthly', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticchlmonthlyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **pp, monthly, Mid-Atlantic Bight**
@@ -82,6 +126,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'monthly', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticppmonthlyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **size, monthly, Mid-Atlantic Bight**
@@ -89,6 +144,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'monthly', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppMidAtlanticsizemonthlyMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **chl, weekly, Georges Bank**
@@ -96,6 +162,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandchlweeklyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **pp, weekly, Georges Bank**
@@ -103,6 +180,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandppweeklyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **size, weekly, Georges Bank**
@@ -110,6 +198,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandsizeweeklyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **chl, monthly, Georges Bank**
@@ -117,6 +216,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandchlmonthlyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **pp, monthly, Georges Bank**
@@ -124,6 +234,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandppmonthlyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **size, monthly, Georges Bank**
@@ -131,6 +252,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandsizemonthlyGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **chl, weekly, Gulf of Maine**
@@ -138,6 +270,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandchlweeklyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **pp, weekly, Gulf of Maine**
@@ -145,6 +288,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandppweeklyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **size, weekly, Gulf of Maine**
@@ -152,6 +306,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandsizeweeklyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **chl, monthly, Gulf of Maine**
@@ -159,6 +324,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandchlmonthlyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **pp, monthly, Gulf of Maine**
@@ -166,6 +342,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandppmonthlyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **size, monthly, Gulf of Maine**
@@ -173,6 +360,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'chl_ppNewEnglandsizemonthlyGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -201,14 +399,9 @@ Phytoplankton abundance, productivity, diversity, cell size, phenology, and carb
 
 **Variable definitions**
 
-1) Chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters; mg m^-3 
-2) Chlorophyll anomaly; Ratio of chlorophyll _a_ concentration to the long-term (1998 to present year) climatology; unitless (ratio) 
-3) Primary productivity; Daily net primary production of biomass expressed as carbon per unit volume in seawater per day; gCarbon m^-2 d^-1 
-4) Primary productivity anomaly;  Ratio of net primary production to the long-term (1998 to present year) climatology; unitless (ratio) 
-5) Microplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the microplankton (20-200 µm) fraction; mg m^-3 
-6) Nanoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the nanoplankton (2-20 µm) fraction; mg m^-3 
-7) Picoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the picoplankton (0.2-2 µm) fraction; mg m^-3 
-8) Annual summed primary production - TBD
+1) Chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters; mg m^-3 2) Chlorophyll anomaly; Ratio of chlorophyll _a_ concentration to the long-term (1998 to present year) climatology; unitless (ratio) 3) Primary productivity; Daily net primary production of biomass expressed as carbon per unit volume in seawater per day; gCarbon m^-2 d^-1 
+4) Primary productivity anomaly;  Ratio of net primary production to the long-term (1998 to present year) climatology; unitless (ratio) 5) Microplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the microplankton (20-200 µm) fraction; mg m^-3 
+6) Nanoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the nanoplankton (2-20 µm) fraction; mg m^-3 7) Picoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the picoplankton (0.2-2 µm) fraction; mg m^-3 8) Annual summed primary production - TBD
 
 ```{r vars_chl_pp}
 # Pull all var names

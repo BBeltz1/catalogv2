@@ -44,6 +44,17 @@ Maps of seasonal mean bottom temperature across NE shelf.
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_model_griddedMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England**
@@ -51,6 +62,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bottom_temp_model_griddedNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -79,9 +101,7 @@ Bottom temperature is a key environmental parameter in defining the habitat and 
 
 **Variable definitions**
 
-- Time: year - Lat: latitude - Lon: longitude 
-- Variable: season 
-- Value: bottom temperature (degrees Celcius)
+- Time: year - Lat: latitude - Lon: longitude - Variable: season - Value: bottom temperature (degrees Celcius)
 
 ```{r vars_bottom_temp_model_gridded}
 # Pull all var names

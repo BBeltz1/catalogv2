@@ -70,6 +70,17 @@ There were no bottom MHWs observed in the Middle Atlantic Bight in 2025.
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Surface')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'heatwave_yearMidAtlanticSurface',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Surface**
@@ -77,6 +88,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Surface')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'heatwave_yearNewEnglandSurface',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, Bottom**
@@ -84,6 +106,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report = 'MidAtlantic', varName = 'Bottom')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'heatwave_yearMidAtlanticBottom',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, Bottom**
@@ -91,6 +124,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_heatwave_year(report = 'NewEngland', varName = 'Bottom')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'heatwave_yearNewEnglandBottom',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -119,8 +163,7 @@ Implications of MHWs on living marine resources in the U.S.NES are currently bei
 
 **Variable definitions**
 
-1) MHW maximum Intensity (detrended) = degrees C 
-2) MHW duration = days.
+1) MHW maximum Intensity (detrended) = degrees C 2) MHW duration = days.
 
 ```{r vars_heatwave_year}
 # Pull all var names

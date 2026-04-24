@@ -49,6 +49,17 @@ In the Mid-Atlantic region prices were higher than 1982 levels with the exceptio
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report = 'MidAtlantic', varName = 'guild', EPU = 'MAB')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bennetMidAtlanticguildMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **total, Mid-Atlantic Bight**
@@ -56,6 +67,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report = 'MidAtlantic', varName = 'total', EPU = 'MAB')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bennetMidAtlantictotalMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **total_guild, Mid-Atlantic Bight**
@@ -63,6 +85,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report = 'MidAtlantic', varName = 'total_guild', EPU = 'MAB')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bennetMidAtlantictotal_guildMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **guild, Georges Bank**
@@ -70,6 +103,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'guild', EPU = 'GB')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bennetNewEnglandguildGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **total, Georges Bank**
@@ -77,6 +121,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'total', EPU = 'GB')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bennetNewEnglandtotalGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **total_guild, Georges Bank**
@@ -84,6 +139,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'total_guild', EPU = 'GB')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bennetNewEnglandtotal_guildGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **guild, Gulf of Maine**
@@ -91,6 +157,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'guild', EPU = 'GOM')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bennetNewEnglandguildGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **total, Gulf of Maine**
@@ -98,6 +175,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'total', EPU = 'GOM')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bennetNewEnglandtotalGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **total_guild, Gulf of Maine**
@@ -105,6 +193,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_bennet(report = 'NewEngland', varName = 'total_guild', EPU = 'GOM')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'bennetNewEnglandtotal_guildGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -138,8 +237,7 @@ Although the Mid-Atlantic region showed declining revenue trends since 2016, rev
 
 **Variable definitions**
 
-1) Volume Indicator (VI): Change in Revenue compared to the base time period in deflated dollars attributed to changes in landings for harvested species (volumes). 
-2) Price Indicator (PI): Change in Revenue compared to the base time period in deflated dollars attributed to changes in prices for species harvested. 
+1) Volume Indicator (VI): Change in Revenue compared to the base time period in deflated dollars attributed to changes in landings for harvested species (volumes). 2) Price Indicator (PI): Change in Revenue compared to the base time period in deflated dollars attributed to changes in prices for species harvested. 
 3) Bennet Indicator (BI): The Sum of a Volume Indicator (VI) and Price Indicator (PI) in inflation adjusted dollars, which is equal to the change in revenue.
 
 ```{r vars_bennet}

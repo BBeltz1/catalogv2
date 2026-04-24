@@ -43,6 +43,17 @@ Figures illustrate annual fishery landings and revenue trends from trips operati
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'facets', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuelandingMidAtlanticfacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **value, Mid-Atlantic, facets**
@@ -50,6 +61,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'facets', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuevalueMidAtlanticfacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **landing, New England, facets**
@@ -57,6 +79,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'facets', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuelandingNewEnglandfacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **value, New England, facets**
@@ -64,6 +97,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'facets', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuevalueNewEnglandfacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **landing, Mid-Atlantic, nofacets**
@@ -71,6 +115,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'nofacets', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuelandingMidAtlanticnofacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **value, Mid-Atlantic, nofacets**
@@ -78,6 +133,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'nofacets', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuevalueMidAtlanticnofacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **landing, New England, nofacets**
@@ -85,6 +151,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'nofacets', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuelandingNewEnglandnofacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **value, New England, nofacets**
@@ -92,6 +169,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'nofacets', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'wind_revenuevalueNewEnglandnofacets',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -120,11 +208,8 @@ The figures generally depict periodic fluctuations in fishery landings and reven
 
 **Variable definitions**
 
-1) Managed species; Definition: Fishery species managed by the New England and Mid-Atlantic Fishery Management Councils or the Atlantic States Marine Fisheries Commission 
-2) Year; Definition: Calendar year in which fishery landings occurred  
-3) Landings; Definition: Weight of each species landed, as reported in dealer reports; Units: pounds 
-4) Revenue; Definition: Total amount paid to the vessel for each species landed; Units: 2022 dollars 
-5) Percent GARFO Landings; Definition: Proportion of landings of each managed species from within existing/proposed offshore wind lease areas relative to the total landings of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage 
+1) Managed species; Definition: Fishery species managed by the New England and Mid-Atlantic Fishery Management Councils or the Atlantic States Marine Fisheries Commission 2) Year; Definition: Calendar year in which fishery landings occurred  3) Landings; Definition: Weight of each species landed, as reported in dealer reports; Units: pounds 
+4) Revenue; Definition: Total amount paid to the vessel for each species landed; Units: 2022 dollars 5) Percent GARFO Landings; Definition: Proportion of landings of each managed species from within existing/proposed offshore wind lease areas relative to the total landings of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage 
 6) Percent GARFO Revenue; Definition: Proportion of revenue of each managed species from within existing/proposed offshore wind lease areas relative to the total revenue of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage
 
 ```{r vars_wind_revenue}

@@ -49,6 +49,17 @@ Thresholds based on regional estimates of primary productivity, are not yet avai
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'pp', threshold = 'global')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticppglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, pp, global**
@@ -56,6 +67,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'pp', threshold = 'global')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandppglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, fogarty, global**
@@ -63,6 +85,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'fogarty', threshold = 'global')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticfogartyglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, fogarty, global**
@@ -70,6 +103,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'fogarty', threshold = 'global')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandfogartyglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Mid-Atlantic, ryther, global**
@@ -77,6 +121,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'ryther', threshold = 'global')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticrytherglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England, ryther, global**
@@ -84,6 +139,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'ryther', threshold = 'global')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandrytherglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -114,9 +180,7 @@ There is insufficient evidence to determine whether ecosystem overfishing in occ
 
 **Variable definitions**
 
-1. Ryther; The Ryther index; mt km^-2 y^-1 
-2. Fogarty; The Fogarty Index; Parts per thousand 0/00 
-3. PP; Primary Production; mtC region^-1 year^-1
+1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 3. PP; Primary Production; mtC region^-1 year^-1
 
 ```{r vars_ppr}
 # Pull all var names

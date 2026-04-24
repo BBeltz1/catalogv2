@@ -43,6 +43,17 @@ Despite record setting ocean temperatures in 2023, the Northeast US shelf had bo
 # Plot indicator
 ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seasonal_oisst_anom_griddedMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **New England**
@@ -50,6 +61,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'seasonal_oisst_anom_griddedNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 

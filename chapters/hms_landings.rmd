@@ -46,6 +46,17 @@ In the New England region (Massachusetts to Maine, and Canada), the species or m
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_landingsLandingsMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Revenue, Mid-Atlantic**
@@ -53,6 +64,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_landingsRevenueMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Landings, New England**
@@ -60,6 +82,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_landingsLandingsNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Revenue, New England**
@@ -67,6 +100,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'hms_landingsRevenueNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -97,11 +141,7 @@ In 2021 the International Commission for the Conservation of Atlantic Tunas (ICC
 
 **Variable definitions**
 
-1. Year: data are summarized/aggregated by year.  
-2. EPU: region, “Mid-Atlantic Bight” or “New England”.  
-3. HMS_Group: Management group for HMS, as defined below in “Data Processing”.  
-4. Var_wt: description of data (HMS Revenue or HMS Landings).  
-5. Units_WT: description of unit of measure for data (metric tons whole weight of landings, or U.S. dollars).  
+1. Year: data are summarized/aggregated by year.  2. EPU: region, “Mid-Atlantic Bight” or “New England”.  3. HMS_Group: Management group for HMS, as defined below in “Data Processing”.  4. Var_wt: description of data (HMS Revenue or HMS Landings).  5. Units_WT: description of unit of measure for data (metric tons whole weight of landings, or U.S. dollars).  
 6. Value: Represents either metric tons of landings (round weight) or dollar value of landings by year and region.
 
 ```{r vars_hms_landings}

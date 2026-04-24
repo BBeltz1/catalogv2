@@ -42,6 +42,17 @@ Coming soon
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'all', report = 'MidAtlantic', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitallMidAtlanticMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **profit_index, Mid-Atlantic Bight**
@@ -49,6 +60,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'profit_index', report = 'MidAtlantic', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitprofit_indexMidAtlanticMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **cost_index, Mid-Atlantic Bight**
@@ -56,6 +78,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'cost_index', report = 'MidAtlantic', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitcost_indexMidAtlanticMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **revenue_index, Mid-Atlantic Bight**
@@ -63,6 +96,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'revenue_index', report = 'MidAtlantic', EPU = 'MAB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitrevenue_indexMidAtlanticMAB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **all, Georges Bank**
@@ -70,6 +114,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'all', report = 'NewEngland', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitallNewEnglandGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **profit_index, Georges Bank**
@@ -77,6 +132,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'profit_index', report = 'NewEngland', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitprofit_indexNewEnglandGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **cost_index, Georges Bank**
@@ -84,6 +150,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'cost_index', report = 'NewEngland', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitcost_indexNewEnglandGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **revenue_index, Georges Bank**
@@ -91,6 +168,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'revenue_index', report = 'NewEngland', EPU = 'GB', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitrevenue_indexNewEnglandGB',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **all, Gulf of Maine**
@@ -98,6 +186,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'all', report = 'NewEngland', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitallNewEnglandGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **profit_index, Gulf of Maine**
@@ -105,6 +204,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'profit_index', report = 'NewEngland', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitprofit_indexNewEnglandGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **cost_index, Gulf of Maine**
@@ -112,6 +222,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'cost_index', report = 'NewEngland', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitcost_indexNewEnglandGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **revenue_index, Gulf of Maine**
@@ -119,6 +240,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_comdat_profit(varName = 'revenue_index', report = 'NewEngland', EPU = 'GOM', n = 10)
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'comdat_profitrevenue_indexNewEnglandGOM',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 

@@ -43,6 +43,17 @@ For each EPU, bottom temperature data were separated by depth bin (0-25m; 25m-10
 # Plot indicator
 ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'MAB', report = 'MidAtlantic')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'thermal_habitat_areaMABMidAtlantic',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Georges Bank**
@@ -50,6 +61,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GB', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'thermal_habitat_areaGBNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 **Gulf of Maine**
@@ -57,6 +79,17 @@ ggplotObject
 # Plot indicator
 ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GOM', report = 'NewEngland')
 ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'thermal_habitat_areaGOMNewEngland',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
 ```
 
 
@@ -85,11 +118,7 @@ If a large proportion of species current habitat become thermally inhospitable, 
 
 **Variable definitions**
 
-Time: Date EPU: EPU name Depth: Depth category 
-Var: Temperature Category 
-Value: Proportion of area above temp.threshold 
-Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  
-year: year Units: Proportion
+Time: Date EPU: EPU name Depth: Depth category Var: Temperature Category Value: Proportion of area above temp.threshold Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  year: year Units: Proportion
 
 ```{r vars_thermal_habitat_area}
 # Pull all var names
