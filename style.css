@@ -1,0 +1,12 @@
+/* from https://ianlunn.github.io/Hover/ */
+p, body {
+    color: black;
+}
+
+h1, a {
+    color: #00467e;
+}
+
+.text-light {
+    color: white;
+}
