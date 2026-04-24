@@ -49,108 +49,126 @@ Concentrations of chlorophyll _a_ (a proxy for biomass) were below average durin
 #### 2024
 Concentrations of chlorophyll _a_ (a proxy for biomass) were above average during the winter-spring and fall bloom periods in all regions. There was no evidence of a repeat of the widespread _Tripos muelleri_ [bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2023.html) observed in [2023](https://doi.org/10.25923/f8xc-hj17). There was, however, an atypical localized [coccolithophore bloom](https://noaa-edab.github.io/catalog/observation_synthesis_2024.html#key-results-and-visualizations-61) south of Long Island, New York in late June to early July. Mid-Atlantic primary production peaked in early summer in 2024 and was above average in late fall, which is attributed to the above average late fall bloom. Georges Bank fall productivity was also above average due to the abnormally large fall phytoplankton bloom. Conversely, the Gulf of Maine spring bloom accounted for the largest above average spike in that region. The 2024 phytoplankton size class distribution was near the seasonal climatology in all regions except during the above average phytoplankton bloom periods.
 
+**chl, weekly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticchlweeklyMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'weekly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**pp, weekly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticppweeklyMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'weekly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**size, weekly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticsizeweeklyMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'weekly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**chl, monthly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticchlmonthlyMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'monthly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**pp, monthly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticppmonthlyMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'monthly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**size, monthly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticsizemonthlyMAB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'monthly', EPU = 'MAB', n = 10)
 ggplotObject
 ```
 
+**chl, weekly, Georges Bank**
 ```{r plot_chl_ppNewEnglandchlweeklyGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**pp, weekly, Georges Bank**
 ```{r plot_chl_ppNewEnglandppweeklyGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**size, weekly, Georges Bank**
 ```{r plot_chl_ppNewEnglandsizeweeklyGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**chl, monthly, Georges Bank**
 ```{r plot_chl_ppNewEnglandchlmonthlyGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**pp, monthly, Georges Bank**
 ```{r plot_chl_ppNewEnglandppmonthlyGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**size, monthly, Georges Bank**
 ```{r plot_chl_ppNewEnglandsizemonthlyGB}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GB', n = 10)
 ggplotObject
 ```
 
+**chl, weekly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandchlweeklyGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
+**pp, weekly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandppweeklyGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
+**size, weekly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandsizeweeklyGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
+**chl, monthly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandchlmonthlyGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
+**pp, monthly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandppmonthlyGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GOM', n = 10)
 ggplotObject
 ```
 
+**size, monthly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandsizemonthlyGOM}
 # Plot indicator
 ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GOM', n = 10)

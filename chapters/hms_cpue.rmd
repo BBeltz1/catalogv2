@@ -39,24 +39,28 @@ POP CPUE data are reported by pelagic observer program for  reporting areas (See
 
 Updates from previous year: An additional year of data (2024) has been added. Blackfin tuna is not managed under the HMS FMP and has been removed from this year’s analyses.  The supplied graphs also correct the y-axis titles and only display CPUE data. Dusky and Oceanic Whitetip shark were previously listed as being part of the “Pelagic” management group - this is incorrect and they have been reclassified as part of the “Prohibited” shark group.
 
+**shark, Mid-Atlantic**
 ```{r plot_hms_cpuesharkMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'MidAtlantic')
 ggplotObject
 ```
 
+**tuna, Mid-Atlantic**
 ```{r plot_hms_cpuetunaMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'MidAtlantic')
 ggplotObject
 ```
 
+**shark, New England**
 ```{r plot_hms_cpuesharkNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'NewEngland')
 ggplotObject
 ```
 
+**tuna, New England**
 ```{r plot_hms_cpuetunaNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'NewEngland')

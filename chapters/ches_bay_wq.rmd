@@ -46,12 +46,14 @@ The multimetric indicator quantifies the fraction of segment-DU-criterion combin
 
 The indicator provides an integrated measure of Chesapeake Bay’s water quality condition (Figure 1). In 2021-2023, 29.4% of all tidal water segment-DU-criterion combinations are estimated to have met or exceeded applicable water quality criteria thresholds.
 
+**Mid-Atlantic**
 ```{r plot_ches_bay_wqMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_ches_bay_wq(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**New England**
 ```{r plot_ches_bay_wqNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_ches_bay_wq(report = 'NewEngland', n = 10)
@@ -86,7 +88,9 @@ Patterns of attainment are variable among designated uses. A Mann-Kendall trend 
 
 **Variable definitions**
 
-1. Period: Assessment period 2. Year One: Starting year of the assessment period 3. Year Two: Ending year of the assessment period 
+1. Period: Assessment period 
+2. Year One: Starting year of the assessment period 
+3. Year Two: Ending year of the assessment period 
 4. Total: The overall attainment indicator 
 5. MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 
 6. OW-DO: Estimated attainment of the dissolved oxygen criterion for the open water designated use 

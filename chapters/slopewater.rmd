@@ -37,12 +37,14 @@ Temperature and salinity measurements are examined to assess the composition of 
 ## Key Results and Visualizations
 _No response_
 
+**Mid-Atlantic**
 ```{r plot_slopewaterMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_slopewater(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**New England**
 ```{r plot_slopewaterNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_slopewater(report = 'NewEngland', n = 10)

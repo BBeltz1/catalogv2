@@ -37,12 +37,14 @@ Each species caught on the survey are organized into trophic groups including, "
 ## Key Results and Visualizations
 The average biomass of piscivores appears to be changing more drastically than those of the other trophic groups. There was a general increasing trend in both spring and fall from 2015-2024, but indices dropped considerably in 2025. General trends for planktivores have been similar for spring and fall surveys in the past, with indices showing an increase until 2010, followed by values lower than the time series mean in recent years. In 2025, both seasons showed increases in the biomass index, although the fall index rose only slightly while the spring index almost doubled. Trends for benthivores have also been similar between seasons, rising into the mid 2010s before declining slightly. Indices have been relatively stable since 2020. Bethos species are the least common tropic group caught on the survey, with indices less than 4 kg/tow for the majority of the timeseries except for two years in the spring when benthos species were prominent in catch.
 
+**Mid-Atlantic**
 ```{r plot_ne_inshore_surveyMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_ne_inshore_survey(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**New England**
 ```{r plot_ne_inshore_surveyNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_ne_inshore_survey(report = 'NewEngland', n = 10)

@@ -47,36 +47,42 @@ Here we show the seasonal temperature anomalies in the Mid Atlantic Bight (MAB),
 
 The MOM6 model hindcast does a good job at reproducing seasonal bottom temperature anomalies calculated from GLORYS12 reanalysis data. Because the 1959 through 1992 ROMS was biased corrected using the GLORYS12 dataset, calculating seasonal climatologies using primarily MOM6 data introduces a new, different bias. The differing ability of the model to accurately reproduce bottom temperature during different seasons also likely contributes to the discrepancies between the two time series in the annual bottom temperature plots.
 
+**Mid-Atlantic Bight, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomMABMidAtlanticseasonalGLORYS}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'seasonal', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
+**Georges Bank, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomGBNewEnglandseasonalGLORYS}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
+**Gulf of Maine, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomGOMNewEnglandseasonalGLORYS}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
+**Mid-Atlantic Bight, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomMABMidAtlanticannualGLORYS}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'annual', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
+**Georges Bank, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomGBNewEnglandannualGLORYS}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10)
 ggplotObject
 ```
 
+**Gulf of Maine, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomGOMNewEnglandannualGLORYS}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10)
@@ -109,9 +115,11 @@ Bottom temperature is an important driver for benthic and demersal species growt
 
 **Variable definitions**
 
-Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) Subarea: EPU name 
+Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) 
+Subarea: EPU name 
 Source:  ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
-bt_temp : mean bottom temperature for each year/season across entire EPU ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
+bt_temp : mean bottom temperature for each year/season across entire EPU 
+ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
 
 ```{r vars_bottom_temp_model_anom}
 # Pull all var names

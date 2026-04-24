@@ -38,12 +38,14 @@ Data for sea surface anomalies were derived from the National Oceanographic and 
 ## Key Results and Visualizations
 Despite record setting ocean temperatures in 2023, the Northeast US shelf had both warm and cool sea surface temperature anomalies in each season.
 
+**Mid-Atlantic**
 ```{r plot_seasonal_oisst_anom_griddedMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'MidAtlantic')
 ggplotObject
 ```
 
+**New England**
 ```{r plot_seasonal_oisst_anom_griddedNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'NewEngland')

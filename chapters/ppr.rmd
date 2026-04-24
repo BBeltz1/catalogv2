@@ -44,36 +44,42 @@ Compared to thresholds based on global estimates of primary production and catch
 
 Thresholds based on regional estimates of primary productivity, are not yet available. This work is ongoing
 
+**Mid-Atlantic, pp, global**
 ```{r plot_pprMidAtlanticppglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'pp', threshold = 'global')
 ggplotObject
 ```
 
+**New England, pp, global**
 ```{r plot_pprNewEnglandppglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'pp', threshold = 'global')
 ggplotObject
 ```
 
+**Mid-Atlantic, fogarty, global**
 ```{r plot_pprMidAtlanticfogartyglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'fogarty', threshold = 'global')
 ggplotObject
 ```
 
+**New England, fogarty, global**
 ```{r plot_pprNewEnglandfogartyglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'fogarty', threshold = 'global')
 ggplotObject
 ```
 
+**Mid-Atlantic, ryther, global**
 ```{r plot_pprMidAtlanticrytherglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'ryther', threshold = 'global')
 ggplotObject
 ```
 
+**New England, ryther, global**
 ```{r plot_pprNewEnglandrytherglobal}
 # Plot indicator
 ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'ryther', threshold = 'global')
@@ -108,7 +114,9 @@ There is insufficient evidence to determine whether ecosystem overfishing in occ
 
 **Variable definitions**
 
-1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 3. PP; Primary Production; mtC region^-1 year^-1
+1. Ryther; The Ryther index; mt km^-2 y^-1 
+2. Fogarty; The Fogarty Index; Parts per thousand 0/00 
+3. PP; Primary Production; mtC region^-1 year^-1
 
 ```{r vars_ppr}
 # Pull all var names

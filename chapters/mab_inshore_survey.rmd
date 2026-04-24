@@ -37,12 +37,14 @@ Indicators from these inshore surveys are analogous to those produced by the NEF
 ## Key Results and Visualizations
 Each survey shows trends by aggregate group.
 
+**Mid-Atlantic**
 ```{r plot_mab_inshore_surveyMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**New England**
 ```{r plot_mab_inshore_surveyNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'NewEngland', n = 10)

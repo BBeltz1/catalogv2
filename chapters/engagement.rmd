@@ -46,24 +46,28 @@ New England: Temporal comparisons of the new Port Commercial Fishing Activity In
 
 Mid-Atlantic: Temporal comparisons of the new Port Commercial Fishing Activity Indicator (PCFA) revealed notable trends across several top fishing ports. Six of the top 2024 communities experienced declines in PCFA scores from 15% - 35% compared to their average scores from 2007-2011 (from hereon, percentage changes are reported in this same format); Point Pleasant Beach, NJ; Ocean City, MD; Bronx, NY; Barnegat Light, NJ; Newport News, VA; Cape May, NJ. Of particular concern, the municipalities that house Bronx, NY and Newport News, VA both rank moderate or higher for all three socio-demographic CSVIs as well, suggesting that fishing industry participants that live in and/or utilize resources in this municipality may more vulnerable to change. Opposite trends (i.e., positive growth in fishing activity) were identified for the other four top communities, most notably Hampton Bays/Shinnecock, NY benefited from a 84% increase in PCFA scores over time.
 
+**Mid-Atlantic, Commercial**
 ```{r plot_engagementMidAtlanticCommercial}
 # Plot indicator
 ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Commercial')
 ggplotObject
 ```
 
+**New England, Commercial**
 ```{r plot_engagementNewEnglandCommercial}
 # Plot indicator
 ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Commercial')
 ggplotObject
 ```
 
+**Mid-Atlantic, Recreational**
 ```{r plot_engagementMidAtlanticRecreational}
 # Plot indicator
 ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Recreational')
 ggplotObject
 ```
 
+**New England, Recreational**
 ```{r plot_engagementNewEnglandRecreational}
 # Plot indicator
 ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Recreational')
@@ -105,8 +109,11 @@ By integrating the Community Social Vulnerability Indicators, we highlight munic
 6.	housing_characteristics_rank: CSVI housing characteristics factor score ranking. Low, moderate, moderate high, high 
 7.	housing_disrupt__rank: CSVI housing disruption factor score ranking. Low, moderate, moderate high, high 
 8.	retiree_migration_rank: CSVI retiree migration factor score ranking. Low, moderate, moderate high, high 
-9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 10.	PORT_NAME: fishing data port name 
-11.	STATE_ABB: fishing data port state abbreviation 12.	place_id: fishing data port and state abbreviation combined 13.	YEAR: the year of fishing data 
+9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 
+10.	PORT_NAME: fishing data port name 
+11.	STATE_ABB: fishing data port state abbreviation 
+12.	place_id: fishing data port and state abbreviation combined 
+13.	YEAR: the year of fishing data 
 14.	fishing_mean_score: composite Port Commercial Fishing Activity Indicator score (range between 0 and 1)
 
 ```{r vars_engagement}

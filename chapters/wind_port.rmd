@@ -50,12 +50,14 @@ Additionally, there are 4 New England ports that meet the reporting criteria whe
 
 The second set of figures shows ports where the majority of revenue within the wind lease areas was derived from species managed by the opposite regional Fisheries Management Council. The top figure shows the ports where the majority of the revenue within the wind lease areas that are under construction or operational is derived from species managed by the opposite region's Council. The bottom figure shows ports where the majority of the revenue from all wind lease areas is derived from species managed by the opposite region's Council. This analysis was conducted using only non-confidential revenues. This breakdown was produced in response to a request from the Councils to help them better understand the potential impacts of wind lease areas on Council-managed species.
 
+**Mid-Atlantic**
 ```{r plot_wind_portMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_port(report = 'MidAtlantic')
 ggplotObject
 ```
 
+**New England**
 ```{r plot_wind_portNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_port(report = 'NewEngland')
@@ -90,8 +92,10 @@ Offshore wind presents a new use of the ocean which is a permanent long term cha
 
 **Variable definitions**
 
-perc_MIN: minimum percent of port revenue derived from wind lease areas perc_MAX: maximum percent of port revenue derived from wind lease areas 
-perc_AVG: average percent of port revenue derived from wind lease areas MaxVal: maximum amount of revenue derived from wind lease areas (2024$) 
+perc_MIN: minimum percent of port revenue derived from wind lease areas 
+perc_MAX: maximum percent of port revenue derived from wind lease areas 
+perc_AVG: average percent of port revenue derived from wind lease areas 
+MaxVal: maximum amount of revenue derived from wind lease areas (2024$) 
 EJ: 1 = community scored Med-High or higher in at least one of the vulnerability indicators that address social vulnerability concerns (i.e., Poverty, Population Composition, Personal Disruption); 0 = community did not score Med-High or higher in at least one of the vulnerability indicators that address social vulnerability concerns 
 Gentrification: 1 = community scored Med-High or higher in one or more gentrification pressure indicators (i.e., Housing Disruption, Retiree Migration, Urban Sprawl); 0 = community did not score Med-High or higher in one or more gentrification pressure indicators 
 lease_status: 3 categories, whether the leases areas assessed were "All leases", "Leases, construction not in progress", or "Leases, construction in progress or complete"

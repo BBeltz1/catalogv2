@@ -38,48 +38,56 @@ Historic fishery landings and revenue from trips that occurred within operationa
 ## Key Results and Visualizations
 Figures illustrate annual fishery landings and revenue trends from trips operating within operational wind projects and those currently under construction along with the proportion of annual regional fishery landings and revenue that has historically been harvested from within these projects.
 
+**landing, Mid-Atlantic, facets**
 ```{r plot_wind_revenuelandingMidAtlanticfacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'facets', n = 10)
 ggplotObject
 ```
 
+**value, Mid-Atlantic, facets**
 ```{r plot_wind_revenuevalueMidAtlanticfacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'facets', n = 10)
 ggplotObject
 ```
 
+**landing, New England, facets**
 ```{r plot_wind_revenuelandingNewEnglandfacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'facets', n = 10)
 ggplotObject
 ```
 
+**value, New England, facets**
 ```{r plot_wind_revenuevalueNewEnglandfacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'facets', n = 10)
 ggplotObject
 ```
 
+**landing, Mid-Atlantic, nofacets**
 ```{r plot_wind_revenuelandingMidAtlanticnofacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'MidAtlantic', plottype = 'nofacets', n = 10)
 ggplotObject
 ```
 
+**value, Mid-Atlantic, nofacets**
 ```{r plot_wind_revenuevalueMidAtlanticnofacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'MidAtlantic', plottype = 'nofacets', n = 10)
 ggplotObject
 ```
 
+**landing, New England, nofacets**
 ```{r plot_wind_revenuelandingNewEnglandnofacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'landing', report = 'NewEngland', plottype = 'nofacets', n = 10)
 ggplotObject
 ```
 
+**value, New England, nofacets**
 ```{r plot_wind_revenuevalueNewEnglandnofacets}
 # Plot indicator
 ggplotObject <- ecodata::plot_wind_revenue(varName = 'value', report = 'NewEngland', plottype = 'nofacets', n = 10)

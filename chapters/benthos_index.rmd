@@ -49,48 +49,56 @@ Variables plotted are seasonal (Fall or Spring) Macrobenthos or Megabenthos Biom
 
 Eastward and Northward components of the Center of Gravity, along with the Center of Gravity SE, are plotted for Fall and Spring Macrobenthos or Megabenthos Biomass.
 
+**Mid-Atlantic, Megabenthos, index**
 ```{r plot_benthos_indexMidAtlanticMegabenthosindex}
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Megabenthos', plottype = 'index', n = 10)
 ggplotObject
 ```
 
+**New England, Megabenthos, index**
 ```{r plot_benthos_indexNewEnglandMegabenthosindex}
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Megabenthos', plottype = 'index', n = 10)
 ggplotObject
 ```
 
+**Mid-Atlantic, Macrobenthos, index**
 ```{r plot_benthos_indexMidAtlanticMacrobenthosindex}
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Macrobenthos', plottype = 'index', n = 10)
 ggplotObject
 ```
 
+**New England, Macrobenthos, index**
 ```{r plot_benthos_indexNewEnglandMacrobenthosindex}
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Macrobenthos', plottype = 'index', n = 10)
 ggplotObject
 ```
 
+**Mid-Atlantic, Megabenthos, cog**
 ```{r plot_benthos_indexMidAtlanticMegabenthoscog}
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Megabenthos', plottype = 'cog', n = 10)
 ggplotObject
 ```
 
+**New England, Megabenthos, cog**
 ```{r plot_benthos_indexNewEnglandMegabenthoscog}
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Megabenthos', plottype = 'cog', n = 10)
 ggplotObject
 ```
 
+**Mid-Atlantic, Macrobenthos, cog**
 ```{r plot_benthos_indexMidAtlanticMacrobenthoscog}
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'MidAtlantic', varName = 'Macrobenthos', plottype = 'cog', n = 10)
 ggplotObject
 ```
 
+**New England, Macrobenthos, cog**
 ```{r plot_benthos_indexNewEnglandMacrobenthoscog}
 # Plot indicator
 ggplotObject <- ecodata::plot_benthos_index(report = 'NewEngland', varName = 'Macrobenthos', plottype = 'cog', n = 10)

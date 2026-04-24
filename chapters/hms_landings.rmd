@@ -41,24 +41,28 @@ In the Mid-Atlantic region (Connecticut to North Carolina), the species or manag
 
 In the New England region (Massachusetts to Maine, and Canada), the species or management categories with the greatest amount of landings (in metric tons whole weight) include bluefin tuna, BAYS tunas, and swordfish.  The species producing the greatest commercial revenue (in thousands of dollars) in the northeast include the bluefin tuna, BAYS tunas, and swordfish.
 
+**Landings, Mid-Atlantic**
 ```{r plot_hms_landingsLandingsMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'MidAtlantic')
 ggplotObject
 ```
 
+**Revenue, Mid-Atlantic**
 ```{r plot_hms_landingsRevenueMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'MidAtlantic')
 ggplotObject
 ```
 
+**Landings, New England**
 ```{r plot_hms_landingsLandingsNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'NewEngland')
 ggplotObject
 ```
 
+**Revenue, New England**
 ```{r plot_hms_landingsRevenueNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'NewEngland')
@@ -93,8 +97,10 @@ In 2021 the International Commission for the Conservation of Atlantic Tunas (ICC
 
 **Variable definitions**
 
-1. Year: data are summarized/aggregated by year.  2. EPU: region, “Mid-Atlantic Bight” or “New England”.  
-3. HMS_Group: Management group for HMS, as defined below in “Data Processing”.  4. Var_wt: description of data (HMS Revenue or HMS Landings).  
+1. Year: data are summarized/aggregated by year.  
+2. EPU: region, “Mid-Atlantic Bight” or “New England”.  
+3. HMS_Group: Management group for HMS, as defined below in “Data Processing”.  
+4. Var_wt: description of data (HMS Revenue or HMS Landings).  
 5. Units_WT: description of unit of measure for data (metric tons whole weight of landings, or U.S. dollars).  
 6. Value: Represents either metric tons of landings (round weight) or dollar value of landings by year and region.
 

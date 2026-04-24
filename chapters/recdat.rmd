@@ -42,48 +42,56 @@ Recreational effort (angler trips) in New England increased during 1980-2010, bu
 
 In New England, recreational species catch diversity has been above the time series average since 2008 with a long-term positive trend. In the Mid-Atlantic, recreational species catch diversity has no long term trend so is considered stable, and has been at or above the long term average in 9 of the last 10 years.
 
+**landings, Mid-Atlantic**
 ```{r plot_recdatlandingsMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**effortdiversity, Mid-Atlantic**
 ```{r plot_recdateffortdiversityMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**catchdiversity, Mid-Atlantic**
 ```{r plot_recdatcatchdiversityMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**effort, Mid-Atlantic**
 ```{r plot_recdateffortMidAtlantic}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'MidAtlantic', n = 10)
 ggplotObject
 ```
 
+**landings, New England**
 ```{r plot_recdatlandingsNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
+**effortdiversity, New England**
 ```{r plot_recdateffortdiversityNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
+**catchdiversity, New England**
 ```{r plot_recdatcatchdiversityNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'NewEngland', n = 10)
 ggplotObject
 ```
 
+**effort, New England**
 ```{r plot_recdateffortNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'NewEngland', n = 10)
@@ -123,7 +131,8 @@ The increase in recreational species catch diversity in New England is due to re
 **Variable definitions**
 
 Ex: 1) Name: piscivore_biomass; Definition: Biomass of piscivores; Units: kg tow^-1. 2) Name: forage_biomass; Definition: Biomass of forage fish; Units: kg tow^-1. 
- 1) Name: Recreational Seafood; Definition: Recreational Harvest; Units: lbs 
+ 
+1) Name: Recreational Seafood; Definition: Recreational Harvest; Units: lbs 
 2) Name: Recreational Effort; Definition: Recreational Trips; Units: Angler Trips 
 3) Name: Recreational Effort Diversity; Definition: Recreational fleet effort diversity across modes; Units: Effective Shannon Metric 
 4) Name: Recreational Catch Diversity; Definition: Recreational Diversity of Catch across managed species; Units: Effective Shannon Metric
