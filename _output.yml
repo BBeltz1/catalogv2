@@ -1,8 +1,12 @@
 bookdown::bs4_book:
+    template: template.html
+    theme:
+      preset: spacelab
+      primary: "#00467e"
+      secondary: "#d55e00"
+    css: style.css
     repo: 
       base: https://github.com/BBeltz1/catalogv2
       branch: main
     footnotes_inline: false
     split_bib: true
-    sharing:
-      github: yes
