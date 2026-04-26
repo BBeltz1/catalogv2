@@ -90,7 +90,7 @@ rmd_files:
     -   "chapters/comdat.rmd"
     #-   "chapters/comdat_profit.rmd"
     #-   "chapters/commercial_div.rmd"
-    #-   "chapters/ppr.rmd"
+    -   "chapters/ppr.rmd"
     #-   "chapters/recdat.rmd"
     #-   "chapters/rec_hms.rmd"
     #-   "chapters/abc_acl.rmd"
