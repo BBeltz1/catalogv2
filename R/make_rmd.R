@@ -56,16 +56,37 @@ make_rmd <- function(listobject, n = 10){
     }
   }
 
-  ### DESCRIPTION, CONTRIBUTORS, AFFILIATION, FAMILY
+  ### DESCRIPTION, CONTRIBUTORS, AFFILIATION
   cat(paste0("**Description**: ",listobject$description),append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  cat("**Indicator family**: ",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  cat(listobject$family,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(paste0("**Contributor(s)**: ",listobject$contributors),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(paste0("**Affiliations**: ",listobject$affiliations),append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+
+  ### INDICATOR FAMILY
+  cat("**Indicator Family**: ",append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+  cat(listobject$family,append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+    
+  ### INDICATOR CATEGORY
+  cat("**Indicator Category**:",append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+  cat(listobject$indicatoryCategory,append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+  
+  if(!(listobject$other == "_No response_")) {
+    cat("**Indicator Category**:",append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+    cat(listobject$other,append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+  }
+
+  ### SYNTHESIS THEME
+  cat("**Synthesis Theme**:",append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+  cat(listobject$synthesisTheme,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
    
   ### Download dataset button
@@ -187,58 +208,34 @@ make_rmd <- function(listobject, n = 10){
     cat("silent = TRUE)",append=T,fill=T,file=con)
     # Close code chunk
     cat("```",append=T,fill=T,file=con)
+    # Add break after the button
+    cat("<br>",append=T,fill=T,file=con)
     # Add space after code chunk
     cat("",append=T,fill=T,file=con)
     }
   }
-          
-  ### SPATIAL + TEMPORAL SCALE
+    
+  ### IMPLICATIONS 
+  cat("## Implications",append=T,fill=T,file=con)
+  cat(listobject$implications,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
+
+  ### SPATIAL + TEMPORAL SCALE
   cat("## Indicator statistics ",append=T,fill=T,file=con)
   cat(paste0("Spatial scale: ",listobject$indicatorStatsSpatial),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(paste0("Temporal scale: ",listobject$indicatorStatsTemporal),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  ### SYNTHESIS THEME
-  cat("**Synthesis Theme**:",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  cat(listobject$synthesisTheme,append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  
-  # r chunk for autostats
-  cat(paste0("```{r autostats_",filename,"}"),append=T,fill=T,file=con)
-  cat("# Either from Contributor or ecodata",append=T,fill=T,file=con)
-  cat("```",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  
-  ### IMPLICATIONS 
-  cat("## Implications",append=T,fill=T,file=con)
-  cat(listobject$implications,append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  
-  cat("## Get the data",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  
-  ### CONTACT PERSON
-  cat(paste0("**Point of contact**: [",listobject$poc,"](mailto:",listobject$poc,"){.email}"),append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  
-  if (page_type == "ecodata") {
-    cat(paste0("**ecodata name**: `ecodata::",listobject$indicatorname,"`"),append=T,fill=T,file=con)
-    cat("",append=T,fill=T,file=con) # add space
-  } else {
-    cat(paste0("**ecodata name**: No dataset"),append=T,fill=T,file=con)
-    cat("",append=T,fill=T,file=con)
-  }
-
   ### VARIABLES FOUND IN DATA
   cat("**Variable definitions**",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
 
   # grabs the defined variables and writes out as an unordered list
-  cat(unlist(strsplit(listobject$defineVariables,"\\n")),append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
+  if (page_type == "independent") {
+    cat(unlist(strsplit(listobject$defineVariables,"\\n")),append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
+  }
 
   # check to see if data name exists. Some do not but need a catalog page
   if (page_type == "ecodata") {  
@@ -259,52 +256,40 @@ make_rmd <- function(listobject, n = 10){
       cat("DT::datatable(vars)",append=T,fill=T,file=con) # add space
       cat("```",append=T,fill=T,file=con)
     }
-  } else {
-    cat("",append=T,fill=T,file=con) # add space
-    cat("No Data",append=T,fill=T,file=con) # add space
-    cat("",append=T,fill=T,file=con) # add space
   }
   
-  ### INDICATOR CATEGORY
-  cat("**Indicator Category**:",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  cat(listobject$indicatoryCategory,append=T,fill=T,file=con)
+  cat("## Get the data",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  if(!(listobject$other == "_No response_")) {
-    cat("**Indicator Category**:",append=T,fill=T,file=con)
+  ### CONTACT PERSON
+  cat(paste0("**Point of contact**: [",listobject$poc,"](mailto:",listobject$poc,"){.email}"),append=T,fill=T,file=con)
+  cat("",append=T,fill=T,file=con) # add space
+  
+  if (page_type == "ecodata") {
+    # List ecodata dataset name
+    cat(paste0("**ecodata dataset**: `ecodata::",listobject$indicatorname,"`"),append=T,fill=T,file=con)
     cat("",append=T,fill=T,file=con) # add space
-    cat(listobject$other,append=T,fill=T,file=con)
+    # Provide tech doc link
+    cat(paste0("**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/",listobject$indicatorname,".html>"),append=T,fill=T,file=con)
     cat("",append=T,fill=T,file=con) # add space
   }
   
   ### PUBLIC AVAILABILITY + ACCESSIBILITY
-  cat("## Public Availability",append=T,fill=T,file=con)
+  cat("### Public Availability",append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   cat(listobject$publicAvailability,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
   
-  cat("## Accessibility and Constraints",append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  cat(listobject$accessibility,append=T,fill=T,file=con)
-  cat("",append=T,fill=T,file=con) # add space
-  
-  # write catalog link if ecodata data is present
-  if (page_type == "ecodata") {
-    cat("**tech-doc link**",append=T,fill=T,file=con)
-    
-    cat(paste0("<https://noaa-edab.github.io/tech-doc/",listobject$indicatorname,".html>"),append=T,fill=T,file=con)
+  if (listobject$publicAvailability == "Source data are NOT publicly available.") {
+    cat("### Accessibility Constraints",append=T,fill=T,file=con)
     cat("",append=T,fill=T,file=con) # add space
-    
-  } else {
-    # No link since this is a synthesis type of page
+    cat(listobject$accessibility,append=T,fill=T,file=con)
+    cat("",append=T,fill=T,file=con) # add space
   }
-  
+
   # References are generated automatically  
 
-  
   #close the connection
   close(con)
-  
- 
+
 }
