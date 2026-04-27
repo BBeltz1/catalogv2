@@ -33,7 +33,7 @@ library(downloadthis)
 
 ```{r download_gom_salmon}
 # Download dataset from ecodata
-downloadthis::download_this(
+try(downloadthis::download_this(
 ecodata::gom_salmon,
 output_name = 'gom_salmon',
 output_extension = '.csv',
@@ -42,7 +42,8 @@ button_type = 'default',
 has_icon = TRUE,
 icon = 'fa fa-save',
 class = 'hvr-sweep-to-left',
-csv2 = F)
+csv2 = F),
+silent = TRUE)
 ```
 
 ## Introduction to Indicator

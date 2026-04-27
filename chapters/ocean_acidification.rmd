@@ -108,10 +108,8 @@ Temporal scale: Seasonal surface and bottom pH and aragonite saturation state on
 
 **Variable definitions**
 
-1. depth_interpolated meters 2. temperature degrees Celsius 
-3. chlorophyll_a µg L-1 
-4. oxygen_concentration_shifted_mgL mg L-1 5. pH_shifted 
-6. aragonite_saturation_state
+1. depth_interpolated meters 2. temperature degrees Celsius 3. chlorophyll_a µg L-1 4. oxygen_concentration_shifted_mgL mg L-1 
+5. pH_shifted 6. aragonite_saturation_state
 
 ## Get the data
 

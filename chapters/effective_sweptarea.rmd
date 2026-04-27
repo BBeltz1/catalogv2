@@ -31,7 +31,7 @@ library(downloadthis)
 
 ```{r download_effective_sweptarea}
 # Download dataset from ecodata
-downloadthis::download_this(
+try(downloadthis::download_this(
 ecodata::effective_sweptarea,
 output_name = 'effective_sweptarea',
 output_extension = '.csv',
@@ -40,7 +40,8 @@ button_type = 'default',
 has_icon = TRUE,
 icon = 'fa fa-save',
 class = 'hvr-sweep-to-left',
-csv2 = F)
+csv2 = F),
+silent = TRUE)
 ```
 
 ## Introduction to Indicator

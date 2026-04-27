@@ -94,8 +94,7 @@ Temporal scale: Daily
 
 **Variable definitions**
 
-1. MCS maximum Intensity (detrended) = degrees C 
-2. MCS duration = days.
+1. MCS maximum Intensity (detrended) = degrees C 2. MCS duration = days.
 
 ## Get the data
 
