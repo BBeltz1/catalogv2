@@ -60,5 +60,10 @@ create_listobject <- function(parsedIssue) {
   listobject$primaryContact <- parsedIssue$`### Primary Contact`
   listobject$secondaryContact <- parsedIssue$`### Secondary Contact`
 
+  # Parse page status IF it exists
+  if (!is.null(parsedIssue$`### Page Status`)) {
+    listobject$page_status <- parsedIssue$`### Page Status`
+  }
+
   return(listobject)
 }
