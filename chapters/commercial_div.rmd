@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 02, 2026
+
 **Description**: Permit-level species diversity and Council-level fleet diversity.
 
 **Indicator family**: 
@@ -178,7 +180,8 @@ In the Mid-Atlantic, stability in commercial fleet diversity metrics suggests st
 
 **Variable definitions**
 
-1) Name: Permit revenue species diversity; Definition: Diversity of revenue across species averaged across permits; Units: effective Shannon.  2) Name: Fleet diversity in revenue; Definition: Diversity of revenue across fleet segments; Units: effective Shannon. 3) Name: Fleet count; Definition: Number of active fleets; Units: number of fleets.
+1) Name: Permit revenue species diversity; Definition: Diversity of revenue across species averaged across permits; Units: effective Shannon.  2) Name: Fleet diversity in revenue; Definition: Diversity of revenue across fleet segments; Units: effective Shannon. 
+3) Name: Fleet count; Definition: Number of active fleets; Units: number of fleets.
 
 ```{r vars_commercial_div}
 # Pull all var names

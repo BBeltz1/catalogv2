@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 10, 2026
+
 **Description**: Maps and variability of regional carbonate chemistry and other oceanographic properties
 
 **Indicator family**: 

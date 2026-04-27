@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: February 12, 2026
+
 **Description**: The data presented here represent the biomass time series for aggregate species groups from the Maine/New Hampshire inshore bottom trawl surveys conducted in Maine and New Hampshire state waters.
 
 **Indicator family**: 
@@ -99,8 +101,8 @@ Indices for each trophic group have varied over time but have, for the most part
 
 **Variable definitions**
 
-1)	Name: Apex Predator; Definition: Stratified mean biomass of apex predators; Units: kg tow^-1 2)	Name: Benthivore; Definition: Stratified mean biomass of benthivores; Units: kg tow^-1 3)	Name: Benthos; Definition: Stratified mean biomass of benthos species; Units: kg tow^-1 4)	Name: Piscivore; Definition: Stratified mean biomass of piscivores; Units: kg tow^-1 
-5)	Name: Planktivore; Definition: Stratified mean biomass of planktivores; Units: kg tow^-1 6)	Name: Other; Definition: Stratified mean biomass of species that did not fit into the other five categories; Units: kg tow^-1
+1)	Name: Apex Predator; Definition: Stratified mean biomass of apex predators; Units: kg tow^-1 2)	Name: Benthivore; Definition: Stratified mean biomass of benthivores; Units: kg tow^-1 3)	Name: Benthos; Definition: Stratified mean biomass of benthos species; Units: kg tow^-1 
+4)	Name: Piscivore; Definition: Stratified mean biomass of piscivores; Units: kg tow^-1 5)	Name: Planktivore; Definition: Stratified mean biomass of planktivores; Units: kg tow^-1 6)	Name: Other; Definition: Stratified mean biomass of species that did not fit into the other five categories; Units: kg tow^-1
 
 ```{r vars_ne_inshore_survey}
 # Pull all var names

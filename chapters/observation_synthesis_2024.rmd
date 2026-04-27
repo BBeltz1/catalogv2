@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: March 31, 2025
+
 **Description**: Synthesis of noteworthy observations reported in 2024 across the Northeast U.S region. To report a noteworthy observation please contact: northeast.ecosystem.highlights@noaa.gov
 
 **Indicator family**: 

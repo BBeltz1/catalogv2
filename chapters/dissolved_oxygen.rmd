@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 06, 2026
+
 **Description**: Coming soon
 
 **Indicator family**: 

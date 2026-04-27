@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 08, 2026
+
 **Description**: The data presented here are the seasonal (Spring and Fall) energy density (kJ/g wet weight) for eight important forage species: alewife, Atlantic herring, silver hake, northern sand lance, Atlantic mackerel, butterfish, northern shortfin squid, and inshore longfin squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed at the Woods Hole Laboratory to estimate energy density.
 
 **Indicator family**: 
@@ -94,7 +96,8 @@ It is important to note/caveat that some of the previous estimates of forage fis
 
 **Variable definitions**
 
-Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 2) Mean energy density (ED; kJ/g wet weight) 3) Mean catch per (representative) tow (kg) 4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
+Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 2) Mean energy density (ED; kJ/g wet weight) 3) Mean catch per (representative) tow (kg) 
+4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
 
 ```{r vars_energy_density}
 # Pull all var names

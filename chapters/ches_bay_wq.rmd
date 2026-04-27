@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 09, 2026
+
 **Description**: Chesapeake Bay Water Quality Attainment Indicator
 
 **Indicator family**: 
@@ -110,8 +112,9 @@ Patterns of attainment are variable among designated uses. A Mann-Kendall trend 
 
 **Variable definitions**
 
-1. Period: Assessment period 2. Year One: Starting year of the assessment period 3. Year Two: Ending year of the assessment period 4. Total: The overall attainment indicator 5. MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 6. OW-DO: Estimated attainment of the dissolved oxygen criterion for the open water designated use 
-7. DW-DO: Estimated attainment of the dissolved oxygen criterion for the deep water designated use 8. DC-DO: Estimated attainment of the dissolved oxygen criterion for the deep channel designated use 9. OW-CHLA: Estimated attainment of the chlorophyll-a criterion 10. SW-Clarity/SAV: Estimated attainment of the bay grasses / water clarity criterion for the shallow water designated use
+1. Period: Assessment period 2. Year One: Starting year of the assessment period 3. Year Two: Ending year of the assessment period 4. Total: The overall attainment indicator 5. MSN-DO: Estimated attainment of the dissolved oxygen criterion for the migratory spawning and nursery designated use 
+6. OW-DO: Estimated attainment of the dissolved oxygen criterion for the open water designated use 7. DW-DO: Estimated attainment of the dissolved oxygen criterion for the deep water designated use 8. DC-DO: Estimated attainment of the dissolved oxygen criterion for the deep channel designated use 
+9. OW-CHLA: Estimated attainment of the chlorophyll-a criterion 10. SW-Clarity/SAV: Estimated attainment of the bay grasses / water clarity criterion for the shallow water designated use
 
 ```{r vars_ches_bay_wq}
 # Pull all var names
