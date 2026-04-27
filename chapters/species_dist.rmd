@@ -6,19 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 12, 2025
+*Last updated February 12, 2025*
 
 **Description**: Species mean depth, along-shelf distance, and distance to coastline
 
-**Indicator family**: 
+**Contributor(s)**: Kevin Friedland, Brandon Beltz
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [X] Habitat
 - [X] Megafauna
 
 
-**Contributor(s)**: Kevin Friedland, Brandon Beltz
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [X] Published Methods
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_species_dist}
 # Download dataset from ecodata
@@ -71,6 +81,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **depth, Mid-Atlantic**
 ```{r plot_species_distdepthMidAtlantic}
@@ -89,6 +100,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **along, New England**
 ```{r plot_species_distalongNewEngland}
@@ -107,6 +119,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **depth, New England**
 ```{r plot_species_distdepthNewEngland}
@@ -125,21 +138,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: Shelfwide
-
-Temporal scale: Annual
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_species_dist}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Temperature change is a major driver of changing fish distributions [@friedland_event_2019]. Future projection modeling suggested potential loss in northwestern Atlantic / US EEZ abundance of bluefin tuna and bigeye tuna [@erauskin-extramiana_large-scale_2019; @dellapa_effects_2023].
@@ -148,15 +147,12 @@ Distribution shifts caused by changes in thermal habitat and ocean circulation a
 
 Long-term oceanographic projections forecast a temporary pause in warming over the next decade due to internal variability in circulation and a southward shift of the Gulf Stream [@koul_predicted_2024]. Near-term forecasts [@ross_dynamically_2024] are being evaluated to determine how well they are able to predict episodic and anomalous events that are outside of the long-term patterns.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Shelfwide
 
-**Point of contact**: [Kevin Friedland, kevin.friedland@noaa.gov](mailto:Kevin Friedland, kevin.friedland@noaa.gov){.email}
-
-**ecodata name**: `ecodata::species_dist`
+Temporal scale: Annual
 
 **Variable definitions**
-
-"along-shelf distance"  "depth"                 "distance to coast"     "Latitude"              "Longitude"
 
 ```{r vars_species_dist}
 # Pull all var names
@@ -166,19 +162,19 @@ vars <- ecodata::species_dist |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: [Kevin Friedland, kevin.friedland@noaa.gov](mailto:Kevin Friedland, kevin.friedland@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::species_dist`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/species_dist.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Contact Kevin Friedland, kevin.friedland@noaa.gov for data access
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/species_dist.html>
 

@@ -6,19 +6,32 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 12, 2026
+*Last updated February 12, 2026*
 
 **Description**: The advection data is an integrated mass transport through transects along the shelf break
 
-**Indicator family**: 
+**Contributor(s)**: Zhitao Yu and Laurel Smith
+
+**Affiliations**: NMFS
+
+**Indicator Family**: 
 
 - [x] Oceanographic
 - [x] Lower trophic levels
 
 
-**Contributor(s)**: Zhitao Yu and Laurel Smith
+**Indicator Category**:
 
-**Affiliations**: NMFS
+- [x] Extensive analysis, not yet published
+- [x] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
+
 
 ```{r download_advection}
 # Download dataset from ecodata
@@ -57,6 +70,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, 3**
 ```{r plot_advectionNewEngland3}
@@ -75,6 +89,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, 4**
 ```{r plot_advectionMidAtlantic4}
@@ -93,6 +108,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, 4**
 ```{r plot_advectionNewEngland4}
@@ -111,6 +127,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, 5**
 ```{r plot_advectionMidAtlantic5}
@@ -129,6 +146,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, 5**
 ```{r plot_advectionNewEngland5}
@@ -147,6 +165,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, 6**
 ```{r plot_advectionMidAtlantic6}
@@ -165,6 +184,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, 6**
 ```{r plot_advectionNewEngland6}
@@ -183,36 +203,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Different fish species inhabit different depth ranges of the water column for spawning and recruitment. In years where there is strong advection off of the shelf, we would expect lower retention of the recuits that use that depth layer. Fish that are advected off the shelf as recruits would likely have low survivorship.
 
 ## Indicator statistics 
 Spatial scale: Georges Bank/Gulf of Maine and Mid-Atlantic Bight
 
 Temporal scale: Advection indices are by month from March to June
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-- [x] Regime Shifts
-- [x] Ecosystem Reorganization
-
-
-```{r autostats_advection}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Different fish species inhabit different depth ranges of the water column for spawning and recruitment. In years where there is strong advection off of the shelf, we would expect lower retention of the recuits that use that depth layer. Fish that are advected off the shelf as recruits would likely have low survivorship.
-
-## Get the data
-
-**Point of contact**: [Zhitao Yu (Zhitao.Yu@noaa.gov)](mailto:Zhitao Yu (Zhitao.Yu@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::advection`
-
 **Variable definitions**
-
-1) Year  2) Month  3) Var: Transport in the top 15m  4) Value: Transport in the top 15m  5) Var: Transport 15m-40m  6) Value: Transport 15m-40m  7) Var: Transport 40m to sea floor  8) Value: Transport 40m to sea floor  9) EPU: GOMGB for Gulf of Maine/Georges Bank or MAB for Mid-Atlantic Bight  10) Units: 10^6 m^3/s
 
 ```{r vars_advection}
 # Pull all var names
@@ -222,20 +223,15 @@ vars <- ecodata::advection |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Extensive analysis, not yet published
-- [x] Database pull with analysis
+**Point of contact**: [Zhitao Yu (Zhitao.Yu@noaa.gov)](mailto:Zhitao Yu (Zhitao.Yu@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::advection`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/advection.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/advection.html>
 

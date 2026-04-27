@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: March 07, 2025
+*Last updated March 07, 2025*
 
 **Description**: The data presented here are the locations of the center of core habitat for cetaceans by season as documented in 2010 versus 2017.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Sam Chavez, Debra Palka
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+**Synthesis Theme**:
+
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
 
 ```{r download_cetacean_dist}
 # Download dataset from ecodata
@@ -59,6 +70,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_cetacean_distNewEngland}
@@ -77,35 +89,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Shifting species distributions alter both species interactions and fishery interactions. Those shifts affect the interaction of multiple system covariates and can result in ecosystem reorganization. In particular, shifting species distributions can alter expected management outcomes from spatial allocations and affect the efficacy of bycatch measures based on historical fish and protected species distributions. A UME for minke whales began in 2017 and is pending closure in [2024](https://www.fisheries.noaa.gov/national/marine-life-distress/active-and-closed-unusual-mortality-events).
 
 ## Indicator statistics 
 Spatial scale: All U.S. Atlantic waters north of Cape Hatteras, North Carolina. Thus including all EPU and beyond.
 
 Temporal scale: By each of the 4 seasons in 2010 and in 2017.
 
-**Synthesis Theme**:
-
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_cetacean_dist}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Shifting species distributions alter both species interactions and fishery interactions. Those shifts affect the interaction of multiple system covariates and can result in ecosystem reorganization. In particular, shifting species distributions can alter expected management outcomes from spatial allocations and affect the efficacy of bycatch measures based on historical fish and protected species distributions. A UME for minke whales began in 2017 and is pending closure in [2024](https://www.fisheries.noaa.gov/national/marine-life-distress/active-and-closed-unusual-mortality-events).
-
-## Get the data
-
-**Point of contact**: [Sam Chavez (samuel.chavez@noaa.gov); Debra Palka (debra.palka@noaa.gov)](mailto:Sam Chavez (samuel.chavez@noaa.gov); Debra Palka (debra.palka@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::cetacean_dist`
-
 **Variable definitions**
-
-1) Time=time period of centroid location.  2) species=cetacean species.  3) season.  4) wlat=latitude of centroid.  5) wlon=longitude of centroid.
 
 ```{r vars_cetacean_dist}
 # Pull all var names
@@ -115,19 +109,15 @@ vars <- ecodata::cetacean_dist |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: [Sam Chavez (samuel.chavez@noaa.gov); Debra Palka (debra.palka@noaa.gov)](mailto:Sam Chavez (samuel.chavez@noaa.gov); Debra Palka (debra.palka@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::cetacean_dist`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/cetacean_dist.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/cetacean_dist.html>
 

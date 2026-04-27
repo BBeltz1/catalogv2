@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 09, 2026
+*Last updated April 09, 2026*
 
 **Description**: The data provided here are the 1984-2024 area distribution and percent coverage of submerged aquatic vegetation in the Chesapeake Bay and its tributaries that area measured and calculated from photo-interpreted aerial imagery taken during surveys conducted in the growing season.
-
-**Indicator family**: 
-
-- [X] Lower trophic levels
-
 
 **Contributor(s)**: Christoper J. Patrick, David J. Wilcox, Jennifer R. Whiting, Anna K. Kenne, Erica R. Blue, Matthew J. Smith
 
 **Affiliations**: VIMS
+
+**Indicator Family**: 
+
+- [X] Lower trophic levels
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+
 
 ```{r download_SAV}
 # Download dataset from ecodata
@@ -56,6 +67,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_SAVNewEngland}
@@ -74,22 +86,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: The data covers the tidal Chesapeake Bay region.
-
-Temporal scale: 1984-2024, annual
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-
-
-```{r autostats_SAV}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Bay-wide: In 2024, 82,778 acres of SAV were mapped in the Chesapeake Bay.  This is 45% of the Bay SAV goal:
@@ -101,16 +98,12 @@ Bay-wide: In 2024, 82,778 acres of SAV were mapped in the Chesapeake Bay.  This 
 
 The outlook toward achieving the outcome goal is off course. Significant increases and simultaneous decreases in different regions of the Bay resulted in little net change in total SAV coverage between 2023 and 2024 (1% decline, -260 hectares, -641 acres). It is unlikely that we will meet the interim goal of 130,000 acres by 2025.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: The data covers the tidal Chesapeake Bay region.
 
-**Point of contact**: [Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)](mailto:Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)){.email}
-
-**ecodata name**: `ecodata::SAV`
+Temporal scale: 1984-2024, annual
 
 **Variable definitions**
-
-1) Name: Year; Definition: SAV growing season; year 2) Name: Tidal Fresh Total; Definition: SAV area in the Tidal Fresh Zone; Units: acres 3) Name: Oligohaline Total; Definition: SAV area in the Oligohaline Zone; Units: acres 4) Name: Mesohaline Total; Definition: SAV area in the Mesohaline Zone; Units: acres 
-5) Name: Polyhaline Total; Definition: SAV area in the Polyhaline Zone; Units: acres 6) Name: Baywide Total; Definition: Total SAV area in Chesapeake Bay; Units: acres
 
 ```{r vars_SAV}
 # Pull all var names
@@ -120,19 +113,15 @@ vars <- ecodata::SAV |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: [Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)](mailto:Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)){.email}
 
+**ecodata dataset**: `ecodata::SAV`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/SAV.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/SAV.html>
 

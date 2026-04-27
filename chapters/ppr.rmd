@@ -8,19 +8,31 @@ library(downloadthis)
 
 <a href="https://bbeltz1.github.io/catalogv2/page_status.html#in-development" class="btn btn-success button_small"><i class="fas fa-pencil-ruler"></i> In Development</a>
 
-**Last updated**: April 27, 2026
+*Last updated April 27, 2026*
 
 **Description**: Ecosystem overfishing is an ecological, and not legal, term that ultimately evaluates how much fish are caught in an ecosystem relative to how much can be produced. Several indices are used to evaluate ecosystem overfishing, the Ryther index, the Fogarty index, and primary production required.
 
-**Indicator family**: 
+**Contributor(s)**: Andrew Beet
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [X] Megafauna
 - [X] Economic
 
 
-**Contributor(s)**: Andrew Beet
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [X] Published Methods
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
 
 ```{r download_ppr}
 # Download dataset from ecodata
@@ -65,6 +77,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, pp, global**
 ```{r plot_pprNewEnglandppglobal}
@@ -83,6 +96,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, fogarty, global**
 ```{r plot_pprMidAtlanticfogartyglobal}
@@ -101,6 +115,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, fogarty, global**
 ```{r plot_pprNewEnglandfogartyglobal}
@@ -119,6 +134,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, ryther, global**
 ```{r plot_pprMidAtlanticrytherglobal}
@@ -137,6 +153,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, ryther, global**
 ```{r plot_pprNewEnglandrytherglobal}
@@ -155,36 +172,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+There is insufficient evidence to determine whether ecosystem overfishing in occuring in our region. However the overall amount  of ecosystem fishing has been declining over the past several years.
 
 ## Indicator statistics 
 Spatial scale: EPU
 
 Temporal scale: Annual
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_ppr}
-# Either from Contributor or ecodata
-```
-
-## Implications
-There is insufficient evidence to determine whether ecosystem overfishing in occuring in our region. However the overall amount  of ecosystem fishing has been declining over the past several years.
-
-## Get the data
-
-**Point of contact**: [andrew.beet@noaa.gov](mailto:andrew.beet@noaa.gov){.email}
-
-**ecodata name**: `ecodata::ppr`
-
 **Variable definitions**
-
-1. Ryther; The Ryther index; mt km^-2 y^-1 2. Fogarty; The Fogarty Index; Parts per thousand 0/00 3. PP; Primary Production; mtC region^-1 year^-1
 
 ```{r vars_ppr}
 # Pull all var names
@@ -194,19 +192,19 @@ vars <- ecodata::ppr |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: [andrew.beet@noaa.gov](mailto:andrew.beet@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::ppr`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/ppr.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Please email andrew.beet@noaa.gov for further information and queries of source data.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/ppr.html>
 

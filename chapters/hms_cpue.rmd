@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 08, 2026
+*Last updated April 08, 2026*
 
 **Description**: CPUE from pelagic observer program (POP) observed hauls, presented as number of fish per haul, by year and species from 1992-2024.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Tobey Curtis, Daniel Daye, Jennifer Cudney
 
 **Affiliations**: HMS
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Regime Shifts
+
 
 ```{r download_hms_cpue}
 # Download dataset from ecodata
@@ -58,6 +68,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **tuna, Mid-Atlantic**
 ```{r plot_hms_cpuetunaMidAtlantic}
@@ -76,6 +87,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **shark, New England**
 ```{r plot_hms_cpuesharkNewEngland}
@@ -94,6 +106,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **tuna, New England**
 ```{r plot_hms_cpuetunaNewEngland}
@@ -112,35 +125,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Pelagic observer data summarizes catch per unit effort information for a subset of total pelagic longline effort in the U.S. EEZ, and should not be interpreted as a census of total  interactions for the northeast region pelagic longline fleet. CPUE trends can be used to evaluate whether the observed catch rate has changed through time. We do not recommend using count data to depict changes through time, as this is not a census of total interactions with the pelagic longline fleet and would likely underestimate pelagic longline interactions occurring in the region.
 
 ## Indicator statistics 
 Spatial scale: Northeast region (shelf + high seas). Data contributions cover both the Northeast Coastal (NEC) and Mid-Atlantic Bight (MAB) pelagic longline reporting areas. Data for the two areas are combined.
 
 Temporal scale: Annually; data spans from 1992-2024
 
-**Synthesis Theme**:
-
-- [X] Regime Shifts
-
-
-```{r autostats_hms_cpue}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Pelagic observer data summarizes catch per unit effort information for a subset of total pelagic longline effort in the U.S. EEZ, and should not be interpreted as a census of total  interactions for the northeast region pelagic longline fleet. CPUE trends can be used to evaluate whether the observed catch rate has changed through time. We do not recommend using count data to depict changes through time, as this is not a census of total interactions with the pelagic longline fleet and would likely underestimate pelagic longline interactions occurring in the region.
-
-## Get the data
-
-**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::hms_cpue`
-
 **Variable definitions**
-
-1) Year: year in which observations were made. 
-2) CPUE per species or management group; total # fish caught / total # hauls; Includes Large Coastal Shark, Small Coastal Shark, Pelagic Shark, Prohibited Shark, Blue Marlin (BUM), Swordfish (SWO), White Marlin (WHM), Sailfish (SAI), Albacore Tuna (ALB), Skipjack Tuna (SKJ), Bigeye Tuna (BET), Bluefin Tuna (BFT), and Yellowfin Tuna (YFT).
 
 ```{r vars_hms_cpue}
 # Pull all var names
@@ -150,19 +145,19 @@ vars <- ecodata::hms_cpue |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull with analysis
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::hms_cpue`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/hms_cpue.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Pelagic observer data is considered confidential data, and must be screened to ensure that data meet requirements for "rule of three" at the set and vessel level before they can be distributed. For more information regarding the dataset please see the SEFSC POP InPort catalog entry. For data requests contact popobserver@noaa.gov
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/hms_cpue.html>
 

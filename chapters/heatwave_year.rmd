@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 02, 2026
+*Last updated April 02, 2026*
 
 **Description**: Surface and bottom marine heatwaves (MHWs) for 2025.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Vincent Saba, Joseph Caracappa
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_heatwave_year}
 # Download dataset from ecodata
@@ -84,6 +95,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Surface**
 ```{r plot_heatwave_yearNewEnglandSurface}
@@ -102,6 +114,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Bottom**
 ```{r plot_heatwave_yearMidAtlanticBottom}
@@ -120,6 +133,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Bottom**
 ```{r plot_heatwave_yearNewEnglandBottom}
@@ -138,34 +152,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Implications of MHWs on living marine resources in the U.S.NES are currently being investigated. The 2012 surface MHW events in the Gulf of Maine did have impacts on the lobster fishery in the summer and fall of 2012.
 
 ## Indicator statistics 
 Spatial scale: EPU
 
 Temporal scale: Daily
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_heatwave_year}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Implications of MHWs on living marine resources in the U.S.NES are currently being investigated. The 2012 surface MHW events in the Gulf of Maine did have impacts on the lobster fishery in the summer and fall of 2012.
-
-## Get the data
-
-**Point of contact**: [Vincent Saba (vincent.saba@noaa.gov)](mailto:Vincent Saba (vincent.saba@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::heatwave_year`
-
 **Variable definitions**
-
-1) MHW maximum Intensity (detrended) = degrees C 2) MHW duration = days.
 
 ```{r vars_heatwave_year}
 # Pull all var names
@@ -175,20 +172,15 @@ vars <- ecodata::heatwave_year |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Database pull with analysis
+**Point of contact**: [Vincent Saba (vincent.saba@noaa.gov)](mailto:Vincent Saba (vincent.saba@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::heatwave_year`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/heatwave_year.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/heatwave_year.html>
 

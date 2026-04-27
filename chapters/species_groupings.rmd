@@ -6,19 +6,31 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 02, 2026
+*Last updated April 02, 2026*
 
 **Description**: Classification of species guild membership by management bodies.
 
-**Indicator family**: 
+**Contributor(s)**: Sarah Gaichas, Sean Lucey
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [X] Megafauna
 - [X] Economic
 
 
-**Contributor(s)**: Sarah Gaichas, Sean Lucey
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
+
 
 ```{r download_species_groupings}
 # Download dataset from ecodata
@@ -59,6 +71,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, 2024**
 ```{r plot_species_groupingsNewEngland2024}
@@ -77,51 +90,27 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+We changed species groupings in response to comments over the years. The table shows feeding guilds used in the 2024-2025 reports.  In 2025 an FMP column was added in response to Council requests.
 
 ## Indicator statistics 
 Spatial scale: Coastwide
 
 Temporal scale: N/A
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-- [x] Regime Shifts
-- [x] Ecosystem Reorganization
-
-
-```{r autostats_species_groupings}
-# Either from Contributor or ecodata
-```
-
-## Implications
-We changed species groupings in response to comments over the years. The table shows feeding guilds used in the 2024-2025 reports.  In 2025 an FMP column was added in response to Council requests.
+**Variable definitions**
 
 ## Get the data
 
 **Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
-**ecodata name**: `ecodata::species_groupings`
+**ecodata dataset**: `ecodata::species_groupings`
 
-**Variable definitions**
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/species_groupings.html>
 
-1. SOE.24 = Feeding guild definitions for State of the Ecosystem report (2024-2025) 2. MAFMC = Mid Atlantic Fishery Management Council - list of managed species by feeding guild 3. NEFMC = New England Fishery Management Council - list of managed species by feeding guild 
-4. Joint = Jointly managed species by feeding guild 5. State or Other = Species managed by other bodies listed by feeding guild 6. FMP = Fishery Management Plan for Council managed species
-
-**Indicator Category**:
-
-- [X] Database pull with analysis
-
-
-## Public Availability
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/species_groupings.html>
 

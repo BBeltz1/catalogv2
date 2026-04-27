@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 13, 2026
+*Last updated February 13, 2026*
 
 **Description**: The data presented here are a time series of estimates of harbor porpoise bycatch from U.S. North Atlantic commercial fisheries.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Debra Palka, Kristin Precoda
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_harborporpoise}
 # Download dataset from ecodata
@@ -56,6 +66,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_harborporpoiseNewEngland}
@@ -74,35 +85,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+A bycatch reduction plan developed by the Take Reduction Team was needed to reduce the bycatch of harbor porpoises starting in 1997 (https://www.fisheries.noaa.gov/new-england-mid-atlantic/marine-mammal-protection/harbor-porpoise-take-reduction-plan; Fig. 1). The reduction in harbor porpoise bycatch since 2010 is probably related not only to the Take Reduction Team’s bycatch mitigation plan but also to a corresponding decrease in gillnet fishing effort and to seasonal shifts of harbor porpoise that appear to be related to climate changes.
 
 ## Indicator statistics 
 Spatial scale: US waters from North Carolina to Canada, from the U.S. coastline to the U.S. exclusive economic zone 200 nautical miles offshore, thus including all EPUs, the full shelf and beyond.
 
 Temporal scale: Annual from 1990 to 2023.
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_harborporpoise}
-# Either from Contributor or ecodata
-```
-
-## Implications
-A bycatch reduction plan developed by the Take Reduction Team was needed to reduce the bycatch of harbor porpoises starting in 1997 (https://www.fisheries.noaa.gov/new-england-mid-atlantic/marine-mammal-protection/harbor-porpoise-take-reduction-plan; Fig. 1). The reduction in harbor porpoise bycatch since 2010 is probably related not only to the Take Reduction Team’s bycatch mitigation plan but also to a corresponding decrease in gillnet fishing effort and to seasonal shifts of harbor porpoise that appear to be related to climate changes.
-
-## Get the data
-
-**Point of contact**: [Debra Palka (debra.palka@noaa.gov)](mailto:Debra Palka (debra.palka@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::harborporpoise`
-
 **Variable definitions**
-
-1. pbr = Potential Biological Removal level. Unit = n (number of animals) 2. totalest1y = Total bycatch estimate over all gear types per year 3. totalest5y = Total bycatch estimate over all gear types as a 5-year running average 4. total5yLCI = Lower 95% confidence interval of totalest5y. Unit = n (number of animals) 
-5. total5yUCI= Upper 95% confidence interval of totalest5y. Unit = n (number of animals)
 
 ```{r vars_harborporpoise}
 # Pull all var names
@@ -112,19 +105,15 @@ vars <- ecodata::harborporpoise |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
+**Point of contact**: [Debra Palka (debra.palka@noaa.gov)](mailto:Debra Palka (debra.palka@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::harborporpoise`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/harborporpoise.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-Source data are available in public [stock assessment reports](https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-stock-assessment-reports-region) and [CRDs](https://www.fisheries.noaa.gov/new-england-mid-atlantic/science-data/northeast-fisheries-science-center-publications).
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/harborporpoise.html>
 

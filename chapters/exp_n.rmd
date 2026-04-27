@@ -6,18 +6,30 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 08, 2026
+*Last updated April 08, 2026*
 
 **Description**: Diversity metric from the Northeast Fisheries Science Center (NEFSC) Bottom Trawl Surveys.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
 
 ```{r download_exp_n}
 # Download dataset from ecodata
@@ -57,6 +69,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **spring, Mid-Atlantic**
 ```{r plot_exp_nspringMidAtlantic}
@@ -75,6 +88,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **fall, New England**
 ```{r plot_exp_nfallNewEngland}
@@ -93,6 +107,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **spring, New England**
 ```{r plot_exp_nspringNewEngland}
@@ -111,37 +126,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Diversity is used as a proxy for stability. Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management [@friedland_changes_2020]. This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse. Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored. Recent declining adult diversity in the Mid-Atlantic should also be closely monitored for management implications.
 
 ## Indicator statistics 
 Spatial scale: By EPU
 
 Temporal scale: Spring (March-May) and Fall (September-November)
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_exp_n}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Diversity is used as a proxy for stability. Changes in ecological diversity over time may indicate altered ecosystem structure with implications for fishery productivity and management [@friedland_changes_2020]. This indicator shows that the underlying ecosystem is relatively stable with the possibility that the Gulf of Maine is becoming more diverse. Increasing adult diversity in the Gulf of Maine suggests an increase in warm-water species and should be closely monitored. Recent declining adult diversity in the Mid-Atlantic should also be closely monitored for management implications.
-
-## Get the data
-
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::exp_n`
-
 **Variable definitions**
-
-1) Name: Season Region Expected Number of Species - Vessel; Definition: The expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow.  For example "FALL GB Expected Number of Species - Albatross"; Units: n species per 1000 ind.  
-2) Name: Season Region Expected Number of Species Standard Deviation - Vessel; Definition: The variance around the expected number of species per 1000 randomly sampled individuals from a region for a given season on either the Albatross or Bigelow.  For example "FALL GB Expected Number of Species Standard Deviation - Albatross"; Units: n species per 1000 ind.
 
 ```{r vars_exp_n}
 # Pull all var names
@@ -151,19 +146,15 @@ vars <- ecodata::exp_n |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull with analysis
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::exp_n`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/exp_n.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/exp_n.html>
 

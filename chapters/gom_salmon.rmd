@@ -6,18 +6,30 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 03, 2026
+*Last updated April 03, 2026*
 
 **Description**: The data presented here are time series of documented Atlantic salmon returns to Gulf of Maine rivers since 1972 and return rates for two sea winter returns from hatchery smolt stocking in the Penobscot River during the same time frame.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: John Kocik, James Hawkes, Tim Sheehan. and Justin Stevens
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Syntheses of published information
+- [X] Database pull
+
+
+**Synthesis Theme**:
+
+- [X] Regime Shifts
+
 
 ```{r download_gom_salmon}
 # Download dataset from ecodata
@@ -56,6 +68,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_gom_salmonNewEngland}
@@ -74,34 +87,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Decreased productivity linked to a regime shift resulted in a cascading effect of ecosystem conditions driven by large-scale oceanic changes. These large-scale changes have impacted temperature, current patterns, and primary and secondary production dynamics throughout the Northwest Atlantic range of Atlantic salmon. Changes impacted the forage base overall and especially capelin where distribution, abundance, size and energy density changed rapidly. Although many ecosystem conditions in the Northwest Atlantic have reverted back to their pre-1990 conditions, a corresponding increase in U.S. Atlantic salmon marine productivity has not been noted. While abundance is relatively steady, it is at critically low levels and highly dependent upon conservation hatchery production levels.
 
 ## Indicator statistics 
 Spatial scale: EPU = Gulf of Maine
 
 Temporal scale: Annually 1972-2024
 
-**Synthesis Theme**:
-
-- [X] Regime Shifts
-
-
-```{r autostats_gom_salmon}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Decreased productivity linked to a regime shift resulted in a cascading effect of ecosystem conditions driven by large-scale oceanic changes. These large-scale changes have impacted temperature, current patterns, and primary and secondary production dynamics throughout the Northwest Atlantic range of Atlantic salmon. Changes impacted the forage base overall and especially capelin where distribution, abundance, size and energy density changed rapidly. Although many ecosystem conditions in the Northwest Atlantic have reverted back to their pre-1990 conditions, a corresponding increase in U.S. Atlantic salmon marine productivity has not been noted. While abundance is relatively steady, it is at critically low levels and highly dependent upon conservation hatchery production levels.
-
-## Get the data
-
-**Point of contact**: [Jon Kocik (john.kocik@noaa.gov); James Hawkes (james.hawkes@noaa.gov)](mailto:Jon Kocik (john.kocik@noaa.gov); James Hawkes (james.hawkes@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::gom_salmon`
-
 **Variable definitions**
-
-1) Name: Number of Salmon Definition: Trap Counts or Redd-Based Estimate of Adult returns 2) Name: Percent Return Rate Definition: Total Adult Hatchery Return to Penobscot River divided by Estimated Post-Smolts entering ocean 2 years earlier
 
 ```{r vars_gom_salmon}
 # Pull all var names
@@ -111,21 +107,15 @@ vars <- ecodata::gom_salmon |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Syntheses of published information
-- [X] Database pull
+**Point of contact**: [Jon Kocik (john.kocik@noaa.gov); James Hawkes (james.hawkes@noaa.gov)](mailto:Jon Kocik (john.kocik@noaa.gov); James Hawkes (james.hawkes@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::gom_salmon`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/gom_salmon.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/gom_salmon.html>
 

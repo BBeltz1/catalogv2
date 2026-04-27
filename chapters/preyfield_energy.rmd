@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: March 30, 2026
+*Last updated March 30, 2026*
 
 **Description**: Coming soon
-
-**Indicator family**: 
-
-
-
 
 **Contributor(s)**: Coming soon
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+
+
+
+**Indicator Category**:
+
+
+
+
+**Synthesis Theme**:
+
+
+
 
 ```{r download_preyfield_energy}
 # Download dataset from ecodata
@@ -39,33 +49,15 @@ Coming soon
 ## Key Results and Visualizations
 Coming soon
 
+## Implications
+Coming soon
 
 ## Indicator statistics 
 Spatial scale: Coming soon
 
 Temporal scale: Coming soon
 
-**Synthesis Theme**:
-
-
-
-
-```{r autostats_preyfield_energy}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Coming soon
-
-## Get the data
-
-**Point of contact**: [EDAB (edab.data@noaa.gov)](mailto:EDAB (edab.data@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::preyfield_energy`
-
 **Variable definitions**
-
-Coming soon
 
 ```{r vars_preyfield_energy}
 # Pull all var names
@@ -75,19 +67,15 @@ vars <- ecodata::preyfield_energy |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-
+**Point of contact**: [EDAB (edab.data@noaa.gov)](mailto:EDAB (edab.data@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::preyfield_energy`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/preyfield_energy.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/preyfield_energy.html>
 

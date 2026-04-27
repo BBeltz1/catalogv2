@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 10, 2026
+*Last updated April 10, 2026*
 
 **Description**: Biomass time series for aggregate species groups from the NEAMAP inshore bottom trawl surveys conducted from Cape Hatteras to Rhode Island.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: James Gartland, Matt Camisa, Rebecca Peters, Sean Lucey
 
 **Affiliations**: VIMS, Maine
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+- [X] Database pull
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_mab_inshore_survey}
 # Download dataset from ecodata
@@ -56,6 +67,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_mab_inshore_surveyNewEngland}
@@ -74,34 +86,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+The trends in the NEAMAP inshore survey vary compared to the NEFSC survey. This is driven by different species availability to surveys in time and space as well as the surveys sampling different habitats. Nearshore habitats are important to fish and fisheries so we monitor them as as well as trends from the larger EPUs.
 
 ## Indicator statistics 
 Spatial scale: Nearshore regions of the MAB
 
 Temporal scale: Spring and Fall
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_mab_inshore_survey}
-# Either from Contributor or ecodata
-```
-
-## Implications
-The trends in the NEAMAP inshore survey vary compared to the NEFSC survey. This is driven by different species availability to surveys in time and space as well as the surveys sampling different habitats. Nearshore habitats are important to fish and fisheries so we monitor them as as well as trends from the larger EPUs.
-
-## Get the data
-
-**Point of contact**: [James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov](mailto:James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov){.email}
-
-**ecodata name**: `ecodata::mab_inshore_survey`
-
 **Variable definitions**
-
-See variable definitions for `aggregate_biomass`
 
 ```{r vars_mab_inshore_survey}
 # Pull all var names
@@ -111,20 +106,15 @@ vars <- ecodata::mab_inshore_survey |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
-- [X] Database pull
+**Point of contact**: [James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov](mailto:James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov){.email}
 
+**ecodata dataset**: `ecodata::mab_inshore_survey`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/mab_inshore_survey.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/mab_inshore_survey.html>
 

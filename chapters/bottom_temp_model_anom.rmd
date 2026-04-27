@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 10, 2026
+*Last updated April 10, 2026*
 
 **Description**: The data presented here are seasonal bottom temperature anomalies. This includes seasonal bottom temperature anomalies by each EPU on the Northeast Continental Shelf from observation-based bottom temperature sources as well as the MOM6 ocean model.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Joseph Caracappa, Vincent Saba, Zhuomin Chen, Laura Gruenburg, Andrew Ross
 
 **Affiliations**: NEFSC, GFDL
+
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_bottom_temp_model_anom}
 # Download dataset from ecodata
@@ -66,6 +77,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Georges Bank, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomGBNewEnglandseasonalGLORYS}
@@ -84,6 +96,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Gulf of Maine, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomGOMNewEnglandseasonalGLORYS}
@@ -102,6 +115,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic Bight, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomMABMidAtlanticannualGLORYS}
@@ -120,6 +134,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Georges Bank, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomGBNewEnglandannualGLORYS}
@@ -138,6 +153,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Gulf of Maine, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomGOMNewEnglandannualGLORYS}
@@ -156,36 +172,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Bottom temperature is an important driver for benthic and demersal species growth, metabolism, and reproduction. Changes in seasonal bottom temperature have implications for species' phenology. Data from ocean models is an important tool that we can use to understand changes to the marine environment. The MOM6 regional model for the Northwest Atlantic hindcast can provide consistent data in space and time where gaps exist in observations. Model data can also be used to forecast future conditions. The ability of MOM6 to reproduce seasonal temperature anomalies in these EPUs increases confidence in the model.
 
 ## Indicator statistics 
 Spatial scale: EPU
 
 Temporal scale: annual-seasonal
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_bottom_temp_model_anom}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Bottom temperature is an important driver for benthic and demersal species growth, metabolism, and reproduction. Changes in seasonal bottom temperature have implications for species' phenology. Data from ocean models is an important tool that we can use to understand changes to the marine environment. The MOM6 regional model for the Northwest Atlantic hindcast can provide consistent data in space and time where gaps exist in observations. Model data can also be used to forecast future conditions. The ability of MOM6 to reproduce seasonal temperature anomalies in these EPUs increases confidence in the model.
-
-## Get the data
-
-**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
-
-**ecodata name**: `ecodata::bottom_temp_model_anom`
-
 **Variable definitions**
-
-Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) Subarea: EPU name 
-Source:  ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) bt_temp : mean bottom temperature for each year/season across entire EPU 
-ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
 
 ```{r vars_bottom_temp_model_anom}
 # Pull all var names
@@ -195,20 +192,15 @@ vars <- ecodata::bottom_temp_model_anom |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::bottom_temp_model_anom`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/bottom_temp_model_anom.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/bottom_temp_model_anom.html>
 

@@ -6,19 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 20, 2025
+*Last updated February 20, 2025*
 
 **Description**: Calculates the proportion of each EPU that exceeds temperature thresholds as a daily time series from 1993 – 2024
 
-**Indicator family**: 
+**Contributor(s)**: Joe Caracappa
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [X] Oceanographic
 - [X] Habitat
 
 
-**Contributor(s)**: Joe Caracappa
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [X] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_thermal_habitat_area}
 # Download dataset from ecodata
@@ -57,6 +67,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Georges Bank**
 ```{r plot_thermal_habitat_areaGBNewEngland}
@@ -75,6 +86,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Gulf of Maine**
 ```{r plot_thermal_habitat_areaGOMNewEngland}
@@ -93,34 +105,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+If a large proportion of species current habitat become thermally inhospitable, it can influence species' productivity and in, extreme cases, cause mortality.
 
 ## Indicator statistics 
 Spatial scale: EPU
 
 Temporal scale: daily
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_thermal_habitat_area}
-# Either from Contributor or ecodata
-```
-
-## Implications
-If a large proportion of species current habitat become thermally inhospitable, it can influence species' productivity and in, extreme cases, cause mortality.
-
-## Get the data
-
-**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
-
-**ecodata name**: `ecodata::thermal_habitat_area`
-
 **Variable definitions**
-
-Time: Date EPU: EPU name Depth: Depth category Var: Temperature Category Value: Proportion of area above temp.threshold Source: GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature)  year: year Units: Proportion
 
 ```{r vars_thermal_habitat_area}
 # Pull all var names
@@ -130,19 +125,15 @@ vars <- ecodata::thermal_habitat_area |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::thermal_habitat_area`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/thermal_habitat_area.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/thermal_habitat_area.html>
 

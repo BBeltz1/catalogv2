@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 08, 2026
+*Last updated April 08, 2026*
 
 **Description**: Amount of small fish produced per large fish biomass over time
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Maxwell Grezlik, Sarah Gaichas, Andy Beet, Kimberly Bastille, Sean Lucey, and Charles Perretti
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_productivity_anomaly}
 # Download dataset from ecodata
@@ -58,6 +68,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **assessment, Mid-Atlantic Bight, region**
 ```{r plot_productivity_anomalyMidAtlanticassessmentMABregion}
@@ -76,6 +87,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **anomaly, Georges Bank, region**
 ```{r plot_productivity_anomalyNewEnglandanomalyGBregion}
@@ -94,6 +106,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **assessment, Georges Bank, region**
 ```{r plot_productivity_anomalyNewEnglandassessmentGBregion}
@@ -112,6 +125,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **anomaly, Gulf of Maine, region**
 ```{r plot_productivity_anomalyNewEnglandanomalyGOMregion}
@@ -130,6 +144,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **assessment, Gulf of Maine, region**
 ```{r plot_productivity_anomalyNewEnglandassessmentGOMregion}
@@ -148,6 +163,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **anomaly, Mid-Atlantic Bight, council**
 ```{r plot_productivity_anomalyMidAtlanticanomalyMABcouncil}
@@ -166,6 +182,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **assessment, Mid-Atlantic Bight, council**
 ```{r plot_productivity_anomalyMidAtlanticassessmentMABcouncil}
@@ -184,6 +201,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **anomaly, Georges Bank, council**
 ```{r plot_productivity_anomalyNewEnglandanomalyGBcouncil}
@@ -202,6 +220,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **assessment, Georges Bank, council**
 ```{r plot_productivity_anomalyNewEnglandassessmentGBcouncil}
@@ -220,6 +239,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **anomaly, Gulf of Maine, council**
 ```{r plot_productivity_anomalyNewEnglandanomalyGOMcouncil}
@@ -238,6 +258,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **assessment, Gulf of Maine, council**
 ```{r plot_productivity_anomalyNewEnglandassessmentGOMcouncil}
@@ -256,36 +277,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+The apparent decline in productivity across multiple managed species in the MAB, along with generally poor fish conditions in 2024, also suggest changing ecosystem productivity at multiple levels. During the 1990s high relative abundance of smaller bodied copepods and a lower relative abundance of *Calanus finmarchicus* was associated with regime shifts to higher fish recruitment [@perretti_regime_2017]. The unprecedented climate signals along with the trends toward lower productivity across multiple managed species indicate a need to continually evaluate whether management reference points remain appropriate, and to evaluate if ecosystem regime shifts have occurred or reorganization is in progress.
 
 ## Indicator statistics 
 Spatial scale: _No response_
 
 Temporal scale: _No response_
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_productivity_anomaly}
-# Either from Contributor or ecodata
-```
-
-## Implications
-The apparent decline in productivity across multiple managed species in the MAB, along with generally poor fish conditions in 2024, also suggest changing ecosystem productivity at multiple levels. During the 1990s high relative abundance of smaller bodied copepods and a lower relative abundance of *Calanus finmarchicus* was associated with regime shifts to higher fish recruitment [@perretti_regime_2017]. The unprecedented climate signals along with the trends toward lower productivity across multiple managed species indicate a need to continually evaluate whether management reference points remain appropriate, and to evaluate if ecosystem regime shifts have occurred or reorganization is in progress.
-
-## Get the data
-
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::productivity_anomaly`
-
 **Variable definitions**
-
-1. Variable names are organized using this format: [region] stock name - variable type and source 3. Variables ending with "_Survey" are survey derived recruits/spawner anomalies 4. Variables ending with "-Assessment" are assessment derived quantities 5. Survey stock names are in ALL CAPS 
-6. NE LME prepended to a survey stock name means the anomalies are coastwide 7. Assessment stock names are in Sentence case 8. Units for survey variables are the Z score of (number of recruits in year+1/biomass of adults in year) 
-9. Units for plotted assessment variables are the Z score of (numbers of recruits per kg spawning biomass with recruits aligned to spawning biomass year using age at recruitment) 10. Other variables are available in the assessment derived dataset but are not plotted. To be added later.
 
 ```{r vars_productivity_anomaly}
 # Pull all var names
@@ -295,19 +297,15 @@ vars <- ecodata::productivity_anomaly |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::productivity_anomaly`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/productivity_anomaly.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/productivity_anomaly.html>
 

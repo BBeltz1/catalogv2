@@ -6,19 +6,30 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 10, 2026
+*Last updated April 10, 2026*
 
 **Description**: The dataset contains by year by community scores for community sensitivity to temperature, ocean acidification, stock size/status, total sensitivity, and total vulnerability based on Hare et al. 2016 [@hare_vulnerability_2016] and Loughran et al. 2025 [@loughran_climate_2025] species vulnerability and community dependency. Reciprocal Simpson's Diversity scores for each community, Regional Quotients, and Regional climate vulnerability scores are also included.
 
-**Indicator family**: 
+**Contributor(s)**: Tarsila Seara, Patricia Clay, Changhua Weng
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [x] Social
 - [x] Economic
 
 
-**Contributor(s)**: Tarsila Seara, Patricia Clay, Changhua Weng
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
 
 ```{r download_community_risks}
 # Download dataset from ecodata
@@ -57,6 +68,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, oaSum, propcomm**
 ```{r plot_community_risksNewEnglandoaSumpropcomm}
@@ -75,6 +87,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, tempSum, propcomm**
 ```{r plot_community_risksMidAtlantictempSumpropcomm}
@@ -93,6 +106,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, tempSum, propcomm**
 ```{r plot_community_risksNewEnglandtempSumpropcomm}
@@ -111,6 +125,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, stckSum, propcomm**
 ```{r plot_community_risksMidAtlanticstckSumpropcomm}
@@ -129,6 +144,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, stckSum, propcomm**
 ```{r plot_community_risksNewEnglandstckSumpropcomm}
@@ -147,6 +163,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, sensSum, propcomm**
 ```{r plot_community_risksMidAtlanticsensSumpropcomm}
@@ -165,6 +182,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, sensSum, propcomm**
 ```{r plot_community_risksNewEnglandsensSumpropcomm}
@@ -183,6 +201,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, vulnSum, propcomm**
 ```{r plot_community_risksMidAtlanticvulnSumpropcomm}
@@ -201,6 +220,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, vulnSum, propcomm**
 ```{r plot_community_risksNewEnglandvulnSumpropcomm}
@@ -219,6 +239,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, oaSum, regionrev**
 ```{r plot_community_risksMidAtlanticoaSumregionrev}
@@ -237,6 +258,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, oaSum, regionrev**
 ```{r plot_community_risksNewEnglandoaSumregionrev}
@@ -255,6 +277,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, tempSum, regionrev**
 ```{r plot_community_risksMidAtlantictempSumregionrev}
@@ -273,6 +296,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, tempSum, regionrev**
 ```{r plot_community_risksNewEnglandtempSumregionrev}
@@ -291,6 +315,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, stckSum, regionrev**
 ```{r plot_community_risksMidAtlanticstckSumregionrev}
@@ -309,6 +334,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, stckSum, regionrev**
 ```{r plot_community_risksNewEnglandstckSumregionrev}
@@ -327,6 +353,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, sensSum, regionrev**
 ```{r plot_community_risksMidAtlanticsensSumregionrev}
@@ -345,6 +372,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, sensSum, regionrev**
 ```{r plot_community_risksNewEnglandsensSumregionrev}
@@ -363,6 +391,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, vulnSum, regionrev**
 ```{r plot_community_risksMidAtlanticvulnSumregionrev}
@@ -381,6 +410,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, vulnSum, regionrev**
 ```{r plot_community_risksNewEnglandvulnSumregionrev}
@@ -399,6 +429,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, oaSum, regionland**
 ```{r plot_community_risksMidAtlanticoaSumregionland}
@@ -417,6 +448,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, oaSum, regionland**
 ```{r plot_community_risksNewEnglandoaSumregionland}
@@ -435,6 +467,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, tempSum, regionland**
 ```{r plot_community_risksMidAtlantictempSumregionland}
@@ -453,6 +486,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, tempSum, regionland**
 ```{r plot_community_risksNewEnglandtempSumregionland}
@@ -471,6 +505,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, stckSum, regionland**
 ```{r plot_community_risksMidAtlanticstckSumregionland}
@@ -489,6 +524,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, stckSum, regionland**
 ```{r plot_community_risksNewEnglandstckSumregionland}
@@ -507,6 +543,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, sensSum, regionland**
 ```{r plot_community_risksMidAtlanticsensSumregionland}
@@ -525,6 +562,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, sensSum, regionland**
 ```{r plot_community_risksNewEnglandsensSumregionland}
@@ -543,6 +581,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, vulnSum, regionland**
 ```{r plot_community_risksMidAtlanticvulnSumregionland}
@@ -561,6 +600,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, vulnSum, regionland**
 ```{r plot_community_risksNewEnglandvulnSumregionland}
@@ -579,34 +619,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Not included.
 
 ## Indicator statistics 
 Spatial scale: By community (not port) in all NE region
 
 Temporal scale: Yearly 2000-2022; Maps: 5year average 2018-2022
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-
-
-```{r autostats_community_risks}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Not included.
-
-## Get the data
-
-**Point of contact**: [Tarsila Seara (tarsila.seara@noaa.gov)](mailto:Tarsila Seara (tarsila.seara@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::community_risks`
-
 **Variable definitions**
-
-See codebook in dataset
 
 ```{r vars_community_risks}
 # Pull all var names
@@ -616,20 +639,19 @@ vars <- ecodata::community_risks |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Published Methods
-- [x] Extensive analysis, not yet published
+**Point of contact**: [Tarsila Seara (tarsila.seara@noaa.gov)](mailto:Tarsila Seara (tarsila.seara@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::community_risks`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/community_risks.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 _No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/community_risks.html>
 

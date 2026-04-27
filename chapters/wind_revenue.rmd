@@ -6,19 +6,30 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 12, 2026
+*Last updated February 12, 2026*
 
 **Description**: The data presented here are annual fishery landings and ex-vessel revenues of species managed by the New England and Mid-Atlantic Fishery Management Councils by vessels issued a NMFS Greater Atlantic Regional Fisheries Office permit when fishing in offshore wind projects that are operational or currently under construction (Coastal Virginia Offshore Wind, Sunrise Wind, Revolution Wind, Vineyard Wind 1, South Fork Wind, and Empire Wind).
 
-**Indicator family**: 
+**Contributor(s)**: Douglas Christel, Benjamin Galuardi
+
+**Affiliations**: GARFO
+
+**Indicator Family**: 
 
 - [X] Social
 - [X] Economic
 
 
-**Contributor(s)**: Douglas Christel, Benjamin Galuardi
+**Indicator Category**:
 
-**Affiliations**: GARFO
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_wind_revenue}
 # Download dataset from ecodata
@@ -57,6 +68,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **value, Mid-Atlantic, facets**
 ```{r plot_wind_revenuevalueMidAtlanticfacets}
@@ -75,6 +87,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **landing, New England, facets**
 ```{r plot_wind_revenuelandingNewEnglandfacets}
@@ -93,6 +106,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **value, New England, facets**
 ```{r plot_wind_revenuevalueNewEnglandfacets}
@@ -111,6 +125,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **landing, Mid-Atlantic, nofacets**
 ```{r plot_wind_revenuelandingMidAtlanticnofacets}
@@ -129,6 +144,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **value, Mid-Atlantic, nofacets**
 ```{r plot_wind_revenuevalueMidAtlanticnofacets}
@@ -147,6 +163,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **landing, New England, nofacets**
 ```{r plot_wind_revenuelandingNewEnglandnofacets}
@@ -165,6 +182,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **value, New England, nofacets**
 ```{r plot_wind_revenuevalueNewEnglandnofacets}
@@ -183,37 +201,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+The figures generally depict periodic fluctuations in fishery landings and revenue from withing active offshore wind projects with both parameters generally decreasing over time for most species. Fishery landings and revenue within active offshore wind projects represent a very low proportion of regional fishery landings and revenue for managed species, suggesting that fishery impacts may not be substantial and that effort displacement outside of active offshore wind project areas may not substantially affect fishing operations or resources in other areas.
 
 ## Indicator statistics 
 Spatial scale: Offshore wind lease areas throughout the Exclusive Economic Zone from Maine through North Carolina
 
 Temporal scale: Annual from 2008-2024
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_wind_revenue}
-# Either from Contributor or ecodata
-```
-
-## Implications
-The figures generally depict periodic fluctuations in fishery landings and revenue from withing active offshore wind projects with both parameters generally decreasing over time for most species. Fishery landings and revenue within active offshore wind projects represent a very low proportion of regional fishery landings and revenue for managed species, suggesting that fishery impacts may not be substantial and that effort displacement outside of active offshore wind project areas may not substantially affect fishing operations or resources in other areas.
-
-## Get the data
-
-**Point of contact**: [Douglas Christel (douglas.christel@noaa.gov)](mailto:Douglas Christel (douglas.christel@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::wind_revenue`
-
 **Variable definitions**
-
-1) Managed species; Definition: Fishery species managed by the New England and Mid-Atlantic Fishery Management Councils or the Atlantic States Marine Fisheries Commission 2) Year; Definition: Calendar year in which fishery landings occurred  
-3) Landings; Definition: Weight of each species landed, as reported in dealer reports; Units: pounds 4) Revenue; Definition: Total amount paid to the vessel for each species landed; Units: 2022 dollars 
-5) Percent GARFO Landings; Definition: Proportion of landings of each managed species from within existing/proposed offshore wind lease areas relative to the total landings of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage 
-6) Percent GARFO Revenue; Definition: Proportion of revenue of each managed species from within existing/proposed offshore wind lease areas relative to the total revenue of that species reported annually to the Greater Atlantic Regional Fisheries Office; Units: Percentage
 
 ```{r vars_wind_revenue}
 # Pull all var names
@@ -223,20 +221,19 @@ vars <- ecodata::wind_revenue |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+**Point of contact**: [Douglas Christel (douglas.christel@noaa.gov)](mailto:Douglas Christel (douglas.christel@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::wind_revenue`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/wind_revenue.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Please email douglas.christel@noaa.gov for further information or request supporting data from nmfs.gar.data.requests@noaa.gov.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/wind_revenue.html>
 

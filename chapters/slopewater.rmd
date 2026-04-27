@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 23, 2024
+*Last updated February 23, 2024*
 
 **Description**: This index gives the relative proportions of watermass type observed in the deep Northeast Channel (150-200 m water depth).
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Paula Fratantoni
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_slopewater}
 # Download dataset from ecodata
@@ -56,6 +66,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_slopewaterNewEngland}
@@ -74,34 +85,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+_No response_
 
 ## Indicator statistics 
 Spatial scale: Within the central Northeast Channel
 
 Temporal scale: Annual
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_slopewater}
-# Either from Contributor or ecodata
-```
-
-## Implications
-_No response_
-
-## Get the data
-
-**Point of contact**: [Paula Fratantoni (paula.fratantoni@noaa.gov)](mailto:Paula Fratantoni (paula.fratantoni@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::slopewater`
-
 **Variable definitions**
-
-Name: LSW; Definition: Percent total that is Labrador Slope Water; Units: percent; Name: WSW: Definition: Percent total that is Warm Slope Water; Units: percent
 
 ```{r vars_slopewater}
 # Pull all var names
@@ -111,19 +105,15 @@ vars <- ecodata::slopewater |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: [Paula Fratantoni (paula.fratantoni@noaa.gov)](mailto:Paula Fratantoni (paula.fratantoni@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::slopewater`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/slopewater.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/slopewater.html>
 

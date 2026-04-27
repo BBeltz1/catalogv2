@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 10, 2026
+*Last updated April 10, 2026*
 
 **Description**: Model-based abundance and annual center of gravity indices for zooplankton groups sampled by NEFSC surveys
-
-**Indicator family**: 
-
-- [X] Lower trophic levels
-
 
 **Contributor(s)**: Abigail Tyrell, Sarah Gaichas, Harvey Walsh
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Lower trophic levels
+
+
+**Indicator Category**:
+
+- [X] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_zooplankton_index}
 # Download dataset from ecodata
@@ -79,6 +89,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Calfin, index**
 ```{r plot_zooplankton_indexNewEnglandCalfinindex}
@@ -97,6 +108,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Euph, index**
 ```{r plot_zooplankton_indexMidAtlanticEuphindex}
@@ -115,6 +127,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Euph, index**
 ```{r plot_zooplankton_indexNewEnglandEuphindex}
@@ -133,6 +146,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Smallcopesoe, index**
 ```{r plot_zooplankton_indexMidAtlanticSmallcopesoeindex}
@@ -151,6 +165,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Smallcopesoe, index**
 ```{r plot_zooplankton_indexNewEnglandSmallcopesoeindex}
@@ -169,6 +184,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Lgcopeall, index**
 ```{r plot_zooplankton_indexMidAtlanticLgcopeallindex}
@@ -187,6 +203,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Lgcopeall, index**
 ```{r plot_zooplankton_indexNewEnglandLgcopeallindex}
@@ -205,6 +222,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Zoopvol, index**
 ```{r plot_zooplankton_indexMidAtlanticZoopvolindex}
@@ -223,6 +241,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Zoopvol, index**
 ```{r plot_zooplankton_indexNewEnglandZoopvolindex}
@@ -241,6 +260,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Smallcopeall, index**
 ```{r plot_zooplankton_indexMidAtlanticSmallcopeallindex}
@@ -259,6 +279,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Smallcopeall, index**
 ```{r plot_zooplankton_indexNewEnglandSmallcopeallindex}
@@ -277,6 +298,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Calfin, cog**
 ```{r plot_zooplankton_indexMidAtlanticCalfincog}
@@ -295,6 +317,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Calfin, cog**
 ```{r plot_zooplankton_indexNewEnglandCalfincog}
@@ -313,6 +336,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Euph, cog**
 ```{r plot_zooplankton_indexMidAtlanticEuphcog}
@@ -331,6 +355,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Euph, cog**
 ```{r plot_zooplankton_indexNewEnglandEuphcog}
@@ -349,6 +374,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Smallcopesoe, cog**
 ```{r plot_zooplankton_indexMidAtlanticSmallcopesoecog}
@@ -367,6 +393,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Smallcopesoe, cog**
 ```{r plot_zooplankton_indexNewEnglandSmallcopesoecog}
@@ -385,6 +412,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Lgcopeall, cog**
 ```{r plot_zooplankton_indexMidAtlanticLgcopeallcog}
@@ -403,6 +431,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Lgcopeall, cog**
 ```{r plot_zooplankton_indexNewEnglandLgcopeallcog}
@@ -421,6 +450,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Zoopvol, cog**
 ```{r plot_zooplankton_indexMidAtlanticZoopvolcog}
@@ -439,6 +469,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Zoopvol, cog**
 ```{r plot_zooplankton_indexNewEnglandZoopvolcog}
@@ -457,6 +488,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, Smallcopeall, cog**
 ```{r plot_zooplankton_indexMidAtlanticSmallcopeallcog}
@@ -475,6 +507,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, Smallcopeall, cog**
 ```{r plot_zooplankton_indexNewEnglandSmallcopeallcog}
@@ -493,21 +526,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: by EPU and full shelf
-
-Temporal scale: Spring (January-June), Fall (July-December)
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_zooplankton_index}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Fluctuations in zooplankton community composition can affect both the consumption of phytoplankton vs the export of energy to the benthos, as well as the availability of prey for zooplankton feeding forage fish, marine mammals, and seabirds. 
@@ -516,16 +535,12 @@ The relative dominance of large and small copepods in Northeast US ecosystems ha
 
 Distribution shifts for zooplankton may result in mismatches with zooplankton feeding fish, marine mammal, and seabirds.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: by EPU and full shelf
 
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::zooplankton_index`
+Temporal scale: Spring (January-June), Fall (July-December)
 
 **Variable definitions**
-
-Naming key:  1) *Calanus finmarchicus* (calfin_100m3) = “calfin” 2) Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL” 
-3) Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” 4) Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”
 
 ```{r vars_zooplankton_index}
 # Pull all var names
@@ -535,19 +550,19 @@ vars <- ecodata::zooplankton_index |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::zooplankton_index`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/zooplankton_index.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Request from Harvey Walsh, harvey.walsh@noaa.gov
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/zooplankton_index.html>
 

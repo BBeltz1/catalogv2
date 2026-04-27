@@ -6,18 +6,31 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 12, 2026
+*Last updated February 12, 2026*
 
 **Description**: Chesapeake Bay Seasonal Sea Surface Temperature Anomaly
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Ron Vogel, Bruce Vogt, Julie Reichert-Nguyen
 
 **Affiliations**: University of Maryland, Cooperative Institute for Satellite Earth System Studies, NOAA Chesapeake Bay Office
+
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+- [X] Ecosystem Reorganization
+
 
 ```{r download_ches_bay_sst}
 # Download dataset from ecodata
@@ -56,6 +69,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_ches_bay_sstNewEngland}
@@ -74,38 +88,19 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: Data from two satellite instruments, AVHRR at 1 km spatial resolution and VIIRS at 750 m spatial resolution, are co-gridded to an 830 m spatial grid. Overpasses from the two instruments on all current operational satellites are composited into a daily scene in order to maximize geographic coverage on a per-day basis, i.e. minimize data gaps from clouds. Seasonal averaging further increases geographic coverage.
-
-Temporal scale: Only nighttime satellite overpasses are used in the seasonal averages, i.e. the data do not represent daytime solar heating of the water surface. Seasons for Chesapeake Bay are Dec-Feb (winter), Mar-May (spring), Jun-Aug (summer), and Sep-Nov (fall).
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_ches_bay_sst}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Although winter 2025 experienced colder-than-average sea surface temperatures (which would benefit striped bass recruitment), the sporadic and lower flow observed in winter 2025 and at the beginning of spring 2025 may diminish striped bass spawning and recruitment success by altering the spatial coincidence of striped bass larvae and their preferred zooplankton prey. It is possible that the lower-than-average sea water temperatures in the winter (which dipped below the 38.12°F threshold) increased the overwintering mortality rate for blue crabs across the Chesapeake Bay.  
 
 Surface water temperatures exceeded suitable temperatures for juvenile summer flounder for most of the summer. Suitable thermal habitat for juvenile summer flounder is defined as waters with temperatures less than 25.9°C (78.6°F). Temperatures exceeding this threshold negatively affect growth of juvenile fish. Additionally information on the implications can be found in the [seasonal summaries webpage of the Chesapeake Bay Interpretive Buoy System’s website](https://buoybay.noaa.gov/explore/seasonal-summaries).
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Data from two satellite instruments, AVHRR at 1 km spatial resolution and VIIRS at 750 m spatial resolution, are co-gridded to an 830 m spatial grid. Overpasses from the two instruments on all current operational satellites are composited into a daily scene in order to maximize geographic coverage on a per-day basis, i.e. minimize data gaps from clouds. Seasonal averaging further increases geographic coverage.
 
-**Point of contact**: [Julie Reichert-Nguyen (julie.reichert-nguyen@noaa.gov)](mailto:Julie Reichert-Nguyen (julie.reichert-nguyen@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::ches_bay_sst`
+Temporal scale: Only nighttime satellite overpasses are used in the seasonal averages, i.e. the data do not represent daytime solar heating of the water surface. Seasons for Chesapeake Bay are Dec-Feb (winter), Mar-May (spring), Jun-Aug (summer), and Sep-Nov (fall).
 
 **Variable definitions**
-
-1) sst: sea surface temperature 2025, Celsius  2) sst_climatol: sea surface temperature climatology 2007-2024, Celsius  3) sst_anomaly: sea surface temperature anomaly 2025 minus 2007-2024, Celsius
 
 ```{r vars_ches_bay_sst}
 # Pull all var names
@@ -115,20 +110,19 @@ vars <- ecodata::ches_bay_sst |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Database pull with analysis
+**Point of contact**: [Julie Reichert-Nguyen (julie.reichert-nguyen@noaa.gov)](mailto:Julie Reichert-Nguyen (julie.reichert-nguyen@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::ches_bay_sst`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/ches_bay_sst.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 The seasonal SST anomaly data files (including the SST long-term climatology) are available from Julie Reichert-Nguyen at julie.reichert-nguyen@noaa.gov. The time series of daily SST, seasonal average SST, and other time intervals for 2007 – present, are available to the public at: https://www.star.nesdis.noaa.gov/pub/socd1/ecn/data/avhrr-viirs/sst-ngt. For more information about this SST data set, see: https://eastcoast.coastwatch.noaa.gov/cw_avhrr-viirs_sst.php. For other inquiries about this data set, contact Julie Reichert-Nguyen at julie.reichert-nguyen@noaa.gov.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/ches_bay_sst.html>
 

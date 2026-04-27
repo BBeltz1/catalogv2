@@ -6,19 +6,30 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 20, 2025
+*Last updated February 20, 2025*
 
 **Description**: Number of warm core rings produced annually by the Gulf Stream off the Northeast US
 
-**Indicator family**: 
+**Contributor(s)**: Avijit Gangopadhyay
+
+**Affiliations**: UMass
+
+**Indicator Family**: 
 
 - [X] Oceanographic
 - [X] Habitat
 
 
-**Contributor(s)**: Avijit Gangopadhyay
+**Indicator Category**:
 
-**Affiliations**: UMass
+- [X] Published Methods
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+
 
 ```{r download_wcr}
 # Download dataset from ecodata
@@ -57,6 +68,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_wcrNewEngland}
@@ -75,35 +87,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+The increased instability of the Gulf Stream position and warming of the Slope Sea may be connected to the regime shift increase in the number of warm core rings formed annually in the Northwest Atlantic [@gangopadhyay_observed_2019; @gangopadhyay_census_2020]. When warm core rings and eddies interact with the continental slope they can transport warm, salty water to the continental shelf [@chen_mesoscale_2022], which can alter the habitat and disrupt seasonal movements of fish [@gawarkiewicz_changing_2018]. Transport of offshore water onto the shelf is happening more frequently [@gawarkiewicz_changing_2018; @gawarkiewicz_increasing_nodate] and can contribute to marine heatwaves in the Mid-Atlantic Bight [@gawarkiewicz_characteristics_2019; @chen_mesoscale_2022] as well as the movement of shelf-break species inshore [@gawarkiewicz_changing_2018; @potter_horizontal_2011; @worm_predator_2003].
 
 ## Indicator statistics 
 Spatial scale: Full shelf
 
 Temporal scale: Annual
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-
-
-```{r autostats_wcr}
-# Either from Contributor or ecodata
-```
-
-## Implications
-The increased instability of the Gulf Stream position and warming of the Slope Sea may be connected to the regime shift increase in the number of warm core rings formed annually in the Northwest Atlantic [@gangopadhyay_observed_2019; @gangopadhyay_census_2020]. When warm core rings and eddies interact with the continental slope they can transport warm, salty water to the continental shelf [@chen_mesoscale_2022], which can alter the habitat and disrupt seasonal movements of fish [@gawarkiewicz_changing_2018]. Transport of offshore water onto the shelf is happening more frequently [@gawarkiewicz_changing_2018; @gawarkiewicz_increasing_nodate] and can contribute to marine heatwaves in the Mid-Atlantic Bight [@gawarkiewicz_characteristics_2019; @chen_mesoscale_2022] as well as the movement of shelf-break species inshore [@gawarkiewicz_changing_2018; @potter_horizontal_2011; @worm_predator_2003].
-
-## Get the data
-
-**Point of contact**: [Avijit Gangopadhyay avijit.gangopadhyay@umassd.edu](mailto:Avijit Gangopadhyay avijit.gangopadhyay@umassd.edu){.email}
-
-**ecodata name**: `ecodata::wcr`
-
 **Variable definitions**
-
-Warm Core Rings: number
 
 ```{r vars_wcr}
 # Pull all var names
@@ -113,19 +107,19 @@ vars <- ecodata::wcr |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: [Avijit Gangopadhyay avijit.gangopadhyay@umassd.edu](mailto:Avijit Gangopadhyay avijit.gangopadhyay@umassd.edu){.email}
 
+**ecodata dataset**: `ecodata::wcr`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/wcr.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Please contact Kimberly.Hyde@noaa.gov
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/wcr.html>
 

@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: March 07, 2025
+*Last updated March 07, 2025*
 
 **Description**: NEFSC fall bottom trawl survey relative condition
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: NOAA EDAB
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Regime Shifts
+
 
 ```{r download_condition}
 # Download dataset from ecodata
@@ -70,6 +81,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Georges Bank**
 ```{r plot_conditionGBNewEngland}
@@ -88,6 +100,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Gulf of Maine**
 ```{r plot_conditionGOMNewEngland}
@@ -106,35 +119,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+These changes in condition have direct implications for stock assessments, catch quotas and management, and may indirectly impact fish recruitment and mortality.
 
 ## Indicator statistics 
 Spatial scale: The spatial scale for relative condition was on the EPU level.
 
 Temporal scale: The temporal scale for relative condition was the fall NEFSC bottom trawl survey (Sept.-Nov.).
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Regime Shifts
-
-
-```{r autostats_condition}
-# Either from Contributor or ecodata
-```
-
-## Implications
-These changes in condition have direct implications for stock assessments, catch quotas and management, and may indirectly impact fish recruitment and mortality.
-
-## Get the data
-
-**Point of contact**: [nefsc.soe.leads@noaa.gov](mailto:nefsc.soe.leads@noaa.gov){.email}
-
-**ecodata name**: `ecodata::condition`
-
 **Variable definitions**
-
-Species: common name for fish species  EPU: Ecological Production Unit YEAR: year of condition data MeanCond: annual mean by EPU and species of relative condition (unitless)
 
 ```{r vars_condition}
 # Pull all var names
@@ -144,19 +139,15 @@ vars <- ecodata::condition |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull with analysis
+**Point of contact**: [nefsc.soe.leads@noaa.gov](mailto:nefsc.soe.leads@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::condition`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/condition.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/condition.html>
 

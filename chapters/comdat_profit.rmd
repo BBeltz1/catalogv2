@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: March 19, 2026
+*Last updated March 19, 2026*
 
 **Description**: Coming soon
-
-**Indicator family**: 
-
-- [x] Economic
-
 
 **Contributor(s)**: Coming soon
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [x] Economic
+
+
+**Indicator Category**:
+
+
+
+
+**Synthesis Theme**:
+
+
+
 
 ```{r download_comdat_profit}
 # Download dataset from ecodata
@@ -56,6 +66,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **profit_index, Mid-Atlantic Bight**
 ```{r plot_comdat_profitprofit_indexMidAtlanticMAB}
@@ -74,6 +85,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **cost_index, Mid-Atlantic Bight**
 ```{r plot_comdat_profitcost_indexMidAtlanticMAB}
@@ -92,6 +104,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **revenue_index, Mid-Atlantic Bight**
 ```{r plot_comdat_profitrevenue_indexMidAtlanticMAB}
@@ -110,6 +123,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **all, Georges Bank**
 ```{r plot_comdat_profitallNewEnglandGB}
@@ -128,6 +142,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **profit_index, Georges Bank**
 ```{r plot_comdat_profitprofit_indexNewEnglandGB}
@@ -146,6 +161,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **cost_index, Georges Bank**
 ```{r plot_comdat_profitcost_indexNewEnglandGB}
@@ -164,6 +180,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **revenue_index, Georges Bank**
 ```{r plot_comdat_profitrevenue_indexNewEnglandGB}
@@ -182,6 +199,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **all, Gulf of Maine**
 ```{r plot_comdat_profitallNewEnglandGOM}
@@ -200,6 +218,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **profit_index, Gulf of Maine**
 ```{r plot_comdat_profitprofit_indexNewEnglandGOM}
@@ -218,6 +237,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **cost_index, Gulf of Maine**
 ```{r plot_comdat_profitcost_indexNewEnglandGOM}
@@ -236,6 +256,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **revenue_index, Gulf of Maine**
 ```{r plot_comdat_profitrevenue_indexNewEnglandGOM}
@@ -254,34 +275,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Coming soon
 
 ## Indicator statistics 
 Spatial scale: Coming soon
 
 Temporal scale: Coming soon
 
-**Synthesis Theme**:
-
-
-
-
-```{r autostats_comdat_profit}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Coming soon
-
-## Get the data
-
-**Point of contact**: [EDAB (edab.data@noaa.gov)](mailto:EDAB (edab.data@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::comdat_profit`
-
 **Variable definitions**
-
-Coming soon
 
 ```{r vars_comdat_profit}
 # Pull all var names
@@ -291,19 +295,15 @@ vars <- ecodata::comdat_profit |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-
+**Point of contact**: [EDAB (edab.data@noaa.gov)](mailto:EDAB (edab.data@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::comdat_profit`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/comdat_profit.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/comdat_profit.html>
 

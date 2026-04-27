@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 08, 2026
+*Last updated April 08, 2026*
 
 **Description**: The data presented here are the seasonal (Spring and Fall) energy density (kJ/g wet weight) for eight important forage species: alewife, Atlantic herring, silver hake, northern sand lance, Atlantic mackerel, butterfish, northern shortfin squid, and inshore longfin squid. Samples are obtained from the NEFSC seasonal bottom trawl surveys and processed at the Woods Hole Laboratory to estimate energy density.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Mark Wuenschel, Joseph Warren
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+- [X] Ecosystem Reorganization
+
 
 ```{r download_energy_density}
 # Download dataset from ecodata
@@ -66,38 +77,19 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: Full shelf and by EPU
-
-Temporal scale: Spring and Fall Bottom Trawl Survey
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-- [X] Ecosystem Reorganization
-
-
-```{r autostats_energy_density}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 The nutritional content of forage fish changes seasonally in response to ecosystem conditions, with possible declines in energy density for Atlantic herring and Illex squid relative to the 1980s, but similar energy density for other forage species.
 
 It is important to note/caveat that some of the previous estimates of forage fish energy density (from 1980s and 1990s) were based on very small sample sizes (sometimes 4 individuals). Recent work on Atlantic herring [42] shows that herring energy density was higher in summer (in between the spring and fall surveys reported here) and some summer values from 2021-2023 overlap with previous estimates.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Full shelf and by EPU
 
-**Point of contact**: [Mark Wuenschel (mark.wuenschel@noaa.gov)](mailto:Mark Wuenschel (mark.wuenschel@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::energy_density`
+Temporal scale: Spring and Fall Bottom Trawl Survey
 
 **Variable definitions**
-
-Line plot:  1) By species-year-season: 2) Mean Energy Density (kJ/g)  Bubble Plot:  1) By species-year-season-EPU: 2) Mean energy density (ED; kJ/g wet weight) 3) Mean catch per (representative) tow (kg) 
-4) Ecological production unit (EPU): Mid-Atlantic Bight (MAB), Georges Bank (GB), Gulf of Maine (GOM), and Scotian Shelf (SS)
 
 ```{r vars_energy_density}
 # Pull all var names
@@ -107,19 +99,19 @@ vars <- ecodata::energy_density |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Extensive analysis, not yet published
+**Point of contact**: [Mark Wuenschel (mark.wuenschel@noaa.gov)](mailto:Mark Wuenschel (mark.wuenschel@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::energy_density`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/energy_density.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Email mark.wuenschel@noaa.gov for further information. Data tables are being created to make this readily available soon.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/energy_density.html>
 

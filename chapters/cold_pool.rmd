@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: March 07, 2025
+*Last updated March 07, 2025*
 
 **Description**: Three annual cold pool indices (and standard error) for 1959 through 2024
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Joe Caracappa, Vincent Saba, Zhuomin Chen
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Syntheses of published information
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_cold_pool}
 # Download dataset from ecodata
@@ -58,6 +69,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, cold_pool**
 ```{r plot_cold_poolNewEnglandcold_pool}
@@ -76,6 +88,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, persistence**
 ```{r plot_cold_poolMidAtlanticpersistence}
@@ -94,6 +107,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, persistence**
 ```{r plot_cold_poolNewEnglandpersistence}
@@ -112,6 +126,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, extent**
 ```{r plot_cold_poolMidAtlanticextent}
@@ -130,6 +145,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, extent**
 ```{r plot_cold_poolNewEnglandextent}
@@ -148,37 +164,19 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: MAB
-
-Temporal scale: annual
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_cold_pool}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Changes in cold pool indicators can be signs of changes in regional/seasonal oceanographic patterns. This may impact the recruitment and behavior of species dependent on the cold pool.
 
 Changes in the cold pool habitat can affect species distribution, recruitment, and migration timing for multiple federally managed species. Southern New England-Mid Atlantic yellowtail flounder recruitment and settlement are related to the strength of the cold pool [@miller_state-space_2016]. The settlement of pre-recruits during the cold pool event represents a bottleneck in yellowtail life history, during which a local and temporary increase in bottom temperature negatively impacts the survival of the settlers. Including the effect of cold pool variations on yellowtail recruitment reduced retrospective patterns and improved the skill of short-term forecasts in a stock assessment model [@dupontavice_ocean_2022; @miller_state-space_2016]. The cold pool also provides habitat for the ocean quahog [@powell_ocean_2020; @friedland_middle_2022]. Growth rates of ocean quahogs in the MAB (southern portion of their range) have increased over the last 200 years whereas little to no change has been documented in the northern portion of their range in southern New England, likely a response to a warming and shrinking cold pool [@pace_two-hundred_2018].
 
-## Get the data
+## Indicator statistics 
+Spatial scale: MAB
 
-**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
-
-**ecodata name**: `ecodata::cold_pool`
+Temporal scale: annual
 
 **Variable definitions**
-
-1) Source: ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 2) year 3) cold_pool_index: measure of mean temperature within cold pool 
-4) se_cold_pool_index: standard error of cold_pool_index 5) persistence_index: measure of duration of cold pool 6) se_persistence_index: standard error of persistence_index 7) extent_index: measure of spatial extent of cold pool 8) se_extent_index: standard error of extent_index
 
 ```{r vars_cold_pool}
 # Pull all var names
@@ -188,20 +186,15 @@ vars <- ecodata::cold_pool |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Syntheses of published information
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::cold_pool`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/cold_pool.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/cold_pool.html>
 

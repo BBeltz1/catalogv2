@@ -6,18 +6,30 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 20, 2025
+*Last updated February 20, 2025*
 
 **Description**: Common tern annual diet and productivity at seven Gulf of Maine colonies managed by the National Audubon Society’s Seabird Restoration Program
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Don Lyons, Steve Kress, Paula Shannon, Sue Schubel
 
 **Affiliations**: National Audubon Society
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_seabird_ne}
 # Download dataset from ecodata
@@ -56,6 +68,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, diversity**
 ```{r plot_seabird_neNewEnglanddiversity}
@@ -74,6 +87,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, productivity**
 ```{r plot_seabird_neMidAtlanticproductivity}
@@ -92,6 +106,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, productivity**
 ```{r plot_seabird_neNewEnglandproductivity}
@@ -110,6 +125,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Mid-Atlantic, prey**
 ```{r plot_seabird_neMidAtlanticprey}
@@ -128,6 +144,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England, prey**
 ```{r plot_seabird_neNewEnglandprey}
@@ -146,34 +163,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Declining productivity across multiple common tern colonies in the Gulf of Maine may indicate changes in the distribution, quality, and quantity of prey over time.
 
 ## Indicator statistics 
 Spatial scale: Gulf of Maine coastal areas
 
 Temporal scale: Spring and summer seabird breeding season
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_seabird_ne}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Declining productivity across multiple common tern colonies in the Gulf of Maine may indicate changes in the distribution, quality, and quantity of prey over time.
-
-## Get the data
-
-**Point of contact**: [Don Lyons, dlyons@audubon.org](mailto:Don Lyons, dlyons@audubon.org){.email}
-
-**ecodata name**: `ecodata::seabird_ne`
-
 **Variable definitions**
-
-Variable names include the code for the island, COTE (4 letter standard abbreviation for COmmon TErn), and either "Productivity" or a prey category.
 
 ```{r vars_seabird_ne}
 # Pull all var names
@@ -183,21 +183,19 @@ vars <- ecodata::seabird_ne |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+**Point of contact**: [Don Lyons, dlyons@audubon.org](mailto:Don Lyons, dlyons@audubon.org){.email}
 
+**ecodata dataset**: `ecodata::seabird_ne`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/seabird_ne.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Please email dlyons@audubon.org for further information and queries on this indicator source data.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/seabird_ne.html>
 

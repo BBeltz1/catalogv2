@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 12, 2026
+*Last updated February 12, 2026*
 
 **Description**: The data presented here represent the biomass time series for aggregate species groups from the Maine/New Hampshire inshore bottom trawl surveys conducted in Maine and New Hampshire state waters.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Robyn Linner
 
 **Affiliations**: Maine
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+- [X] Database pull
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_ne_inshore_survey}
 # Download dataset from ecodata
@@ -56,6 +67,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_ne_inshore_surveyNewEngland}
@@ -74,35 +86,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Indices for each trophic group have varied over time but have, for the most part, shown similar trends between seasons. This may suggest that although species composition varies from spring to fall, the relative biomass of each trophic group available to the survey remains fairly consistent throughout a given year, changing together from year to year. In the last decade, the general rise in piscivores and declines in several of the other categories may suggest an ecosystem change. With time, decreased biomass in the lower trophic levels could fail to support piscivores, leading to declines in their biomass as well. 2025 showed very different trends, with a sharp decrease in piscivores in both seasons and an increase in planktivores, particularly in the spring. This change may suggest that trophic levels are rebalancing but may also be reflective of the fact that ocean temperatures in the spring were the coldest they had been since 2019. These colder waters appear to have caused silver and red hake (two of our most dominant species in recent years) to delay entering our survey area, which likely contributed to the sharp decline in piscivores observed in 2025.
 
 ## Indicator statistics 
 Spatial scale: Waters off of Maine and New Hampshire out to the 12-mile line
 
 Temporal scale: Biannual survey in spring (late April-May), and fall (late September-October)
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_ne_inshore_survey}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Indices for each trophic group have varied over time but have, for the most part, shown similar trends between seasons. This may suggest that although species composition varies from spring to fall, the relative biomass of each trophic group available to the survey remains fairly consistent throughout a given year, changing together from year to year. In the last decade, the general rise in piscivores and declines in several of the other categories may suggest an ecosystem change. With time, decreased biomass in the lower trophic levels could fail to support piscivores, leading to declines in their biomass as well. 2025 showed very different trends, with a sharp decrease in piscivores in both seasons and an increase in planktivores, particularly in the spring. This change may suggest that trophic levels are rebalancing but may also be reflective of the fact that ocean temperatures in the spring were the coldest they had been since 2019. These colder waters appear to have caused silver and red hake (two of our most dominant species in recent years) to delay entering our survey area, which likely contributed to the sharp decline in piscivores observed in 2025.
-
-## Get the data
-
-**Point of contact**: [Robyn Linner (robyn.linner@maine.gov)](mailto:Robyn Linner (robyn.linner@maine.gov)){.email}
-
-**ecodata name**: `ecodata::ne_inshore_survey`
-
 **Variable definitions**
-
-1)	Name: Apex Predator; Definition: Stratified mean biomass of apex predators; Units: kg tow^-1 2)	Name: Benthivore; Definition: Stratified mean biomass of benthivores; Units: kg tow^-1 3)	Name: Benthos; Definition: Stratified mean biomass of benthos species; Units: kg tow^-1 
-4)	Name: Piscivore; Definition: Stratified mean biomass of piscivores; Units: kg tow^-1 5)	Name: Planktivore; Definition: Stratified mean biomass of planktivores; Units: kg tow^-1 6)	Name: Other; Definition: Stratified mean biomass of species that did not fit into the other five categories; Units: kg tow^-1
 
 ```{r vars_ne_inshore_survey}
 # Pull all var names
@@ -112,20 +106,15 @@ vars <- ecodata::ne_inshore_survey |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
-- [X] Database pull
+**Point of contact**: [Robyn Linner (robyn.linner@maine.gov)](mailto:Robyn Linner (robyn.linner@maine.gov)){.email}
 
+**ecodata dataset**: `ecodata::ne_inshore_survey`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/ne_inshore_survey.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/ne_inshore_survey.html>
 

@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: October 22, 2025
+*Last updated October 22, 2025*
 
 **Description**: Aggregate biomass from Northeast Fisheries Science Center (NEFSC) bottom trawl survey.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Sean Lucey, Andrew Beet, and Sarah Gaichas.
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Database pull
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_aggregate_biomass}
 # Download dataset from ecodata
@@ -56,6 +67,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Georges Bank**
 ```{r plot_aggregate_biomassGBNewEngland}
@@ -74,6 +86,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Gulf of Maine**
 ```{r plot_aggregate_biomassGOMNewEngland}
@@ -92,45 +105,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Aggregate biomass is a holistic indicator that reveals the underlying ecosystem that the fisheries operates within.  While there has been evidence of overfishing of key commercial species, the overall ecosystem is relatively stable.
 
 ## Indicator statistics 
 Spatial scale: By EPU
 
 Temporal scale: Spring (March-May) and Fall (September-November)
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_aggregate_biomass}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Aggregate biomass is a holistic indicator that reveals the underlying ecosystem that the fisheries operates within.  While there has been evidence of overfishing of key commercial species, the overall ecosystem is relatively stable.
-
-## Get the data
-
-**Point of contact**: [Andrew Beet (Andrew.Beet@NOAA.gov)](mailto:Andrew Beet (Andrew.Beet@NOAA.gov)){.email}
-
-**ecodata name**: `ecodata::aggregate_biomass`
-
 **Variable definitions**
-
-1) Name: Guild Season Biomass Index; Description: Stratified mean biomass index of an aggregate group of species.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. For example "Benthivore Spring Biomass Index"; Units: kg tow^-1 
-2) Name: Guild Season Biomass Index - inshore; Description: Stratified mean biomass index of an aggregate group of species using only strata designated as inshore.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. For example "Benthivore Spring Biomass Index - inshore"; Units: kg tow^-1 
-3) Name: Guild Season Biomass Index - offshore; Description: Stratified mean biomass index of an aggregate group of species using only strata designated as offshore.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. For example "Benthivore Spring Biomass Index - inshore"; Units: kg tow^-1 
-4) Name: Guild Management Body managed species - Season Biomass Index; Description: Stratified mean biomass index of an aggregate group of managed species.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species - Spring Biomass Index"; Units: kg tow^-1 
-5) Name: Guild Management Body managed species -  Season Biomass Index - inshore; Description: Stratified mean biomass index of an aggregate group of managed species using only strata designated as inshore.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species -  Spring Biomass Index - inshore"; Units: kg tow^-1 
-6) Name: Guild Management Body managed species -  Season Biomass Index - offshore; Description: Stratified mean biomass index of an aggregate group of managed species using only strata designated as offshore.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species -  Spring Biomass Index - inshore"; Units: kg tow^-1 
-7) Name: Guild Season Standard Error; Description: Variance associated with the stratified mean biomass index of an aggregate group of species.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. For example "Benthivore Spring Standard Error"; Units: kg tow^-1 
-8) Name: Guild Season Biomass Index - inshore; Description: Variance associated with the stratified mean biomass index of an aggregate group of species using only strata designated as inshore.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. For example "Benthivore Spring Standard Error - inshore"; Units: kg tow^-1 
-9) Name: Guild Season Biomass Index - offshore; Description: Variance associated with the stratified mean biomass index of an aggregate group of species using only strata designated as offshore.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. For example "Benthivore Spring Standard Error - inshore"; Units: kg tow^-1 
-10) Name: Guild Management Body managed species - Season Biomass Index; Description: Variance associated with the stratified mean biomass index of an aggregate group of managed species.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species - Spring Standard Error"; Units: kg tow^-1 
-11) Name: Guild Management Body managed species -  Season Biomass Index - inshore; Description: Variance associated with the stratified mean biomass index of an aggregate group of managed species using only strata designated as inshore.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species -  Spring Standard Error - inshore"; Units: kg tow^-1 
-12) Name: Guild Management Body managed species -  Season Biomass Index - offshore; Description: Variance associated with the stratified mean biomass index of an aggregate group of managed species using only strata designated as offshore.  Guilds include Benthivore, Benthos, Other, Piscivore, and Planktivore. Season is either Spring or Fall. Management bodies include Mid-Atlantic Fisheries Management Council (MAFMC), New England Fisheries Management Council (NEFMC), jointly managed by MAFMC and NEFMC (JOINT), and species managed by other entities (Other). For example "Benthivore MAFMC managed species -  Spring Standard Error - inshore"; Units: kg tow^-1
 
 ```{r vars_aggregate_biomass}
 # Pull all var names
@@ -140,20 +125,15 @@ vars <- ecodata::aggregate_biomass |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull
-- [X] Database pull with analysis
+**Point of contact**: [Andrew Beet (Andrew.Beet@NOAA.gov)](mailto:Andrew Beet (Andrew.Beet@NOAA.gov)){.email}
 
+**ecodata dataset**: `ecodata::aggregate_biomass`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/aggregate_biomass.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/aggregate_biomass.html>
 

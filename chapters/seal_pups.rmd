@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: March 07, 2025
+*Last updated March 07, 2025*
 
 **Description**: The data presented here are counts of gray seal pups at 4 U.S. haulout sites from 1988 to 2021.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Stephanie Wood
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_seal_pups}
 # Download dataset from ecodata
@@ -57,6 +67,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_seal_pupsNewEngland}
@@ -75,34 +86,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+These high rates of increase in gray seal pups born at US pupping sites provide further support for the hypothesis that seals from Canada are continually supplementing the breeding population in U.S. waters.
 
 ## Indicator statistics 
 Spatial scale: Haul out sites off New England (Maine to New York) that correspond roughly to EPU’s Gulf of Maine (GOM) and Mid-Atlantic Bight (MAB).
 
 Temporal scale: Annually 1988 to 2021. Survey is in January that corresponds to the gray seal pupping season.
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_seal_pups}
-# Either from Contributor or ecodata
-```
-
-## Implications
-These high rates of increase in gray seal pups born at US pupping sites provide further support for the hypothesis that seals from Canada are continually supplementing the breeding population in U.S. waters.
-
-## Get the data
-
-**Point of contact**: [Stephanie Wood (Stephanie.Wood@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)](mailto:Stephanie Wood (Stephanie.Wood@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::seal_pups`
-
 **Variable definitions**
-
-1) Name=Year. 2) Name=Count; Definition=count of gray seals on haulout site; unit=n=number. 3) Name=colony; Definition=name of haul site site.
 
 ```{r vars_seal_pups}
 # Pull all var names
@@ -112,19 +106,19 @@ vars <- ecodata::seal_pups |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
+**Point of contact**: [Stephanie Wood (Stephanie.Wood@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)](mailto:Stephanie Wood (Stephanie.Wood@noaa.gov), Kristin Precoda (Kristin.Precoda@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::seal_pups`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/seal_pups.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Reach out to Stephanie Wood (stephanie.wood@noaa.gov) for data.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/seal_pups.html>
 

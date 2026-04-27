@@ -8,20 +8,30 @@ library(downloadthis)
 
 <a href="https://bbeltz1.github.io/catalogv2/page_status.html#under-review" class="btn btn-danger button_small"><i class="fa fa-warning"></i> Under Review</a>
 
-**Last updated**: April 27, 2026
+*Last updated April 27, 2026*
 
 **Description**: Oyster production: number of oysters harvested from aquaculture.
 
-**Indicator family**: 
+**Contributor(s)**: Christopher Schillaci, Maine DMR, NH DES, MA DMF, RI CRMC, MD DNR
+
+**Affiliations**: NOAA
+
+**Indicator Family**: 
 
 - [X] Megafauna
 - [X] Social
 - [X] Economic
 
 
-**Contributor(s)**: Christopher Schillaci, Maine DMR, NH DES, MA DMF, RI CRMC, MD DNR
+**Indicator Category**:
 
-**Affiliations**: NOAA
+- [X] Syntheses of published information
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_aquaculture}
 # Download dataset from ecodata
@@ -60,6 +70,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_aquacultureNewEngland}
@@ -78,34 +89,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Aquaculture production contributes to overall seafood production in the Northeast US. This indicator provides only a portion of aquaculture production in the region, but increases in this portion are apparent across the whole time series. Recent decreases (since 2017) may indicate a downward change in this aquaculture portion; however, there is not enough data from years following 2017 to indicate any significant decreasing trends.
 
 ## Indicator statistics 
 Spatial scale: Mid Atlantic and New England
 
 Temporal scale: Annual
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_aquaculture}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Aquaculture production contributes to overall seafood production in the Northeast US. This indicator provides only a portion of aquaculture production in the region, but increases in this portion are apparent across the whole time series. Recent decreases (since 2017) may indicate a downward change in this aquaculture portion; however, there is not enough data from years following 2017 to indicate any significant decreasing trends.
-
-## Get the data
-
-**Point of contact**: [Chris Schillaci <christopher.schillaci@noaa.gov>](mailto:Chris Schillaci <christopher.schillaci@noaa.gov>){.email}
-
-**ecodata name**: `ecodata::aquaculture`
-
 **Variable definitions**
-
-Pieces: number of oysters produced (all regions)                 Shellfish lease Acres: area used for shellfish production (New England states only), acres  Production/Acre: Pieces divided by Shellfish lease acres (New England states only)
 
 ```{r vars_aquaculture}
 # Pull all var names
@@ -115,19 +109,15 @@ vars <- ecodata::aquaculture |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
+**Point of contact**: [Chris Schillaci <christopher.schillaci@noaa.gov>](mailto:Chris Schillaci <christopher.schillaci@noaa.gov>){.email}
 
+**ecodata dataset**: `ecodata::aquaculture`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/aquaculture.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/aquaculture.html>
 

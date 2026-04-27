@@ -6,19 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 08, 2026
+*Last updated April 08, 2026*
 
 **Description**: Mapped seasonal sea surface temperature anomaly
 
-**Indicator family**: 
+**Contributor(s)**: Brandon Beltz, Abigail Tyrell
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [X] Oceanographic
 - [X] Habitat
 
 
-**Contributor(s)**: Brandon Beltz, Abigail Tyrell
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_seasonal_oisst_anom_gridded}
 # Download dataset from ecodata
@@ -57,6 +67,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_seasonal_oisst_anom_griddedNewEngland}
@@ -75,48 +86,27 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Sea surface temperature is an indicator of thermal habitat for pelagic species. Long-term warming trends suggest wide-spread environmental change in the system. Warming trends can have potential impacts on species spatial distributions, the seasonal timing of species life history events, and the overall productivity of the system. Maps show how temperature change has been distributed in each EPU each year.
 
 ## Indicator statistics 
 Spatial scale: EPUs on full shelf map
 
 Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summer (July - September), Fall (October - December)
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_seasonal_oisst_anom_gridded}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Sea surface temperature is an indicator of thermal habitat for pelagic species. Long-term warming trends suggest wide-spread environmental change in the system. Warming trends can have potential impacts on species spatial distributions, the seasonal timing of species life history events, and the overall productivity of the system. Maps show how temperature change has been distributed in each EPU each year.
+**Variable definitions**
 
 ## Get the data
 
 **Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
-**ecodata name**: `ecodata::seasonal_oisst_anom_gridded`
+**ecodata dataset**: `ecodata::seasonal_oisst_anom_gridded`
 
-**Variable definitions**
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom_gridded.html>
 
-
-
-**Indicator Category**:
-
-- [X] Database pull with analysis
-
-
-## Public Availability
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom_gridded.html>
 

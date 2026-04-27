@@ -6,18 +6,31 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 10, 2026
+*Last updated April 10, 2026*
 
 **Description**: Effective Shannon diversity calculated using 42 zooplankton taxa collected from EcoMon cruises
-
-**Indicator family**: 
-
-- [X] Lower trophic levels
-
 
 **Contributor(s)**: Harvey Walsh, Ryan Morse, Kevin Friedland, Mike Jones
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Lower trophic levels
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Extensive analysis, not yet published
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_zoo_diversity}
 # Download dataset from ecodata
@@ -56,6 +69,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_zoo_diversityNewEngland}
@@ -74,36 +88,19 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: by EPU
-
-Temporal scale: Annual
-
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_zoo_diversity}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 Zooplankton community diversity varies with changes in dominance of taxa. Increasing zooplankton diversity in the Mid-Atlantic is due to increases in abundance of several taxa and stable or declining dominance of an important copepod species. This suggests a shift in the zooplankton community that warrants continued monitoring to determine if managed species are affected. 
 
 While still showing an overall increasing trend, the GB zooplankton community declined in diversity in 2021 due to the increase in abundance of the copepod *Centropages typicus* and salps. The GOM zooplankton community is usually dominated by *Calanus finmarchicus*, however their abundance decreased in 2021. This decrease plus an increase in abundance of other copepods (*C. typicus, Metridia lucens, Oithona spp.*), siphonophores, and pteropods resulted in high zooplankton diversity index in 2021.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: by EPU
 
-**Point of contact**: [Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov](mailto:Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov){.email}
-
-**ecodata name**: `ecodata::zoo_diversity`
+Temporal scale: Annual
 
 **Variable definitions**
-
-Zoo_Shannon-Wiener_Diversity_index, unitless
 
 ```{r vars_zoo_diversity}
 # Pull all var names
@@ -113,22 +110,19 @@ vars <- ecodata::zoo_diversity |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Extensive analysis, not yet published
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+**Point of contact**: [Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov](mailto:Harvey Walsh, harvey.walsh@noaa.gov; Ryan Morse, ryan.morse@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::zoo_diversity`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/zoo_diversity.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Request from Harvey Walsh, harvey.walsh@noaa.gov
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/zoo_diversity.html>
 

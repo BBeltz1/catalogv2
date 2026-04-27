@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 08, 2026
+*Last updated April 08, 2026*
 
 **Description**: Average annual sea-surface temperatures from the NOAA extended reconstructed sea surface temperature data set (ERSST V5) on the Northeast Continental Shelf.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Kevin Friedland, Brandon Beltz
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Database pull
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_long_term_sst}
 # Download dataset from ecodata
@@ -56,6 +66,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_long_term_sstNewEngland}
@@ -74,34 +85,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Long term SST demonstrates that the annual average sea surface temperatures observed during the most recent ten years are well above the historical average dating back to the 1860s.
 
 ## Indicator statistics 
 Spatial scale: Full shelf
 
 Temporal scale: Annual
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_long_term_sst}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Long term SST demonstrates that the annual average sea surface temperatures observed during the most recent ten years are well above the historical average dating back to the 1860s.
-
-## Get the data
-
-**Point of contact**: [Brandon.Beltz@noaa.gov](mailto:Brandon.Beltz@noaa.gov){.email}
-
-**ecodata name**: `ecodata::long_term_sst`
-
 **Variable definitions**
-
-1) time: units of year 2) long-term sst; units of degreesC
 
 ```{r vars_long_term_sst}
 # Pull all var names
@@ -111,19 +105,15 @@ vars <- ecodata::long_term_sst |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull
+**Point of contact**: [Brandon.Beltz@noaa.gov](mailto:Brandon.Beltz@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::long_term_sst`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/long_term_sst.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/long_term_sst.html>
 

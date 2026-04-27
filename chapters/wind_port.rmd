@@ -6,19 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 10, 2026
+*Last updated April 10, 2026*
 
 **Description**: Percent of port-level revenue from wind lease areas and Community Social Vulnerability Indicators
 
-**Indicator family**: 
+**Contributor(s)**: Angela Silva, Doug Christel, Benjamin Galuardi, Nicole Morgan, Bobby Murphy, Abigail Tyrell
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [X] Social
 - [X] Economic
 
 
-**Contributor(s)**: Angela Silva, Doug Christel, Benjamin Galuardi, Nicole Morgan, Bobby Murphy, Abigail Tyrell
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [x] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
 
 ```{r download_wind_port}
 # Download dataset from ecodata
@@ -69,6 +79,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_wind_portNewEngland}
@@ -87,39 +98,19 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
-
-
-## Indicator statistics 
-Spatial scale: Full Shelf, broken down into Mid-Atlantic and New England communities
-
-Temporal scale: 2008-2024
-
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-
-
-```{r autostats_wind_port}
-# Either from Contributor or ecodata
-```
+<br>
 
 ## Implications
 BOEM reports that cumulative offshore wind development (if all proposed projects are developed) could have moderate impacts on low-income members of socially vulnerable communities who work in the commercial fishing and for-hire fishing industry due to disruptions to fish populations, restrictions on navigation and increased vessel traffic as well as existing vulnerabilities of low-income workers to economic impacts [@boem_vineyard_2020]. Impacts of offshore wind development may unevenly affect individual operators, with permit-based revenue being much higher than the port-based mean for some permit holders.
 
 Offshore wind presents a new use of the ocean which is a permanent long term change compared to other stressors faced by the fishing industry that are mostly cyclical or temporary in nature (e.g., stock changes, temporary closures). The most immediate effect of offshore wind energy development is the loss of access to fishing grounds, which forces fishermen to adapt their decisions and businesses as a result of displacement of fishing effort. Displacement of effort often reduces profitability with increased fuel and labor costs or reduced catch per unit effort (CPUE) as new grounds may be less productive or see an increase in crowding. The heightened uncertainty around offshore wind may discourage new entrants or marginalize small-scale fisheries and communities which are often less resilient to displacement. The cascade of socioeconomic stressors can extend from the individual vessel operations to the supply chain, seafood support businesses, and the broader coastal communities. Applying standardized monitoring plans and methodologies would help identify realized impacts as the first projects undergo construction and operation.
 
-## Get the data
+## Indicator statistics 
+Spatial scale: Full Shelf, broken down into Mid-Atlantic and New England communities
 
-**Point of contact**: [Abby Tyrell (abigail.tyrell@noaa.gov)](mailto:Abby Tyrell (abigail.tyrell@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::wind_port`
+Temporal scale: 2008-2024
 
 **Variable definitions**
-
-perc_MIN: minimum percent of port revenue derived from wind lease areas perc_MAX: maximum percent of port revenue derived from wind lease areas perc_AVG: average percent of port revenue derived from wind lease areas MaxVal: maximum amount of revenue derived from wind lease areas (2024$) 
-EJ: 1 = community scored Med-High or higher in at least one of the vulnerability indicators that address social vulnerability concerns (i.e., Poverty, Population Composition, Personal Disruption); 0 = community did not score Med-High or higher in at least one of the vulnerability indicators that address social vulnerability concerns 
-Gentrification: 1 = community scored Med-High or higher in one or more gentrification pressure indicators (i.e., Housing Disruption, Retiree Migration, Urban Sprawl); 0 = community did not score Med-High or higher in one or more gentrification pressure indicators 
-lease_status: 3 categories, whether the leases areas assessed were "All leases", "Leases, construction not in progress", or "Leases, construction in progress or complete"
 
 ```{r vars_wind_port}
 # Pull all var names
@@ -129,19 +120,15 @@ vars <- ecodata::wind_port |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Extensive analysis, not yet published
+**Point of contact**: [Abby Tyrell (abigail.tyrell@noaa.gov)](mailto:Abby Tyrell (abigail.tyrell@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::wind_port`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/wind_port.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/wind_port.html>
 

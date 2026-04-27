@@ -6,18 +6,31 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 10, 2026
+*Last updated April 10, 2026*
 
 **Description**: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis.
-
-**Indicator family**: 
-
-- [x] Lower trophic levels
-
 
 **Contributor(s)**: Ryan Morse, Harvey Walsh
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [x] Lower trophic levels
+
+
+**Indicator Category**:
+
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
+
 
 ```{r download_zoo_community}
 # Download dataset from ecodata
@@ -374,6 +387,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_zoo_communityNewEngland}
@@ -392,36 +406,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+The recent switch in state of PC1 in the GOM and GB may indicate a restructuring of the zooplankton community is underway. These changes may be driven partly by changes in the abundance of Calanus finmarchicus, Centropages typicus, Psuedocalanus spp., and other taxa.
 
 ## Indicator statistics 
 Spatial scale: by EPU and full Northeast Shelf
 
 Temporal scale: Annual
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-- [x] Regime Shifts
-- [x] Ecosystem Reorganization
-
-
-```{r autostats_zoo_community}
-# Either from Contributor or ecodata
-```
-
-## Implications
-The recent switch in state of PC1 in the GOM and GB may indicate a restructuring of the zooplankton community is underway. These changes may be driven partly by changes in the abundance of Calanus finmarchicus, Centropages typicus, Psuedocalanus spp., and other taxa.
-
-## Get the data
-
-**Point of contact**: [Ryan Morse ryan.morse@noaa.gov](mailto:Ryan Morse ryan.morse@noaa.gov){.email}
-
-**ecodata name**: `ecodata::zoo_community`
-
 **Variable definitions**
-
-1) Name: Comp.1; Definition: Principal Component 1 score; Units: unitless. 2)  Name: Comp.2; Definition: Principal Component 2 score; Units: unitless.
 
 ```{r vars_zoo_community}
 # Pull all var names
@@ -431,20 +426,15 @@ vars <- ecodata::zoo_community |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Published Methods
-- [x] Extensive analysis, not yet published
+**Point of contact**: [Ryan Morse ryan.morse@noaa.gov](mailto:Ryan Morse ryan.morse@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::zoo_community`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/zoo_community.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/zoo_community.html>
 

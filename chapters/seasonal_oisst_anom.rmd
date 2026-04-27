@@ -6,19 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 20, 2025
+*Last updated February 20, 2025*
 
 **Description**: Seasonal sea surface temperature anomaly
 
-**Indicator family**: 
+**Contributor(s)**: Brandon Beltz, Abigail Tyrell
+
+**Affiliations**: NEFSC
+
+**Indicator Family**: 
 
 - [X] Oceanographic
 - [X] Habitat
 
 
-**Contributor(s)**: Brandon Beltz, Abigail Tyrell
+**Indicator Category**:
 
-**Affiliations**: NEFSC
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_seasonal_oisst_anom}
 # Download dataset from ecodata
@@ -57,6 +67,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Georges Bank**
 ```{r plot_seasonal_oisst_anomGBNewEngland}
@@ -75,6 +86,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **Gulf of Maine**
 ```{r plot_seasonal_oisst_anomGOMNewEngland}
@@ -93,34 +105,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Sea surface temperature is an indicator of thermal habitat for pelagic species. Long-term warming trends suggest wide-spread environmental change in the system. Warming trends can have potential impacts on species spatial distributions, the seasonal timing of species life history events, and the overall productivity of the system.
 
 ## Indicator statistics 
 Spatial scale: EPU
 
 Temporal scale: Seasonal: Winter (January - March), Spring (April - June), Summer (July - September), Fall (October - December)
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_seasonal_oisst_anom}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Sea surface temperature is an indicator of thermal habitat for pelagic species. Long-term warming trends suggest wide-spread environmental change in the system. Warming trends can have potential impacts on species spatial distributions, the seasonal timing of species life history events, and the overall productivity of the system.
-
-## Get the data
-
-**Point of contact**: [brandon.beltz@noaa.gov](mailto:brandon.beltz@noaa.gov){.email}
-
-**ecodata name**: `ecodata::seasonal_oisst_anom`
-
 **Variable definitions**
-
-Time: year, Var: season, Value: temperature anomaly (degrees Celcius), EPU
 
 ```{r vars_seasonal_oisst_anom}
 # Pull all var names
@@ -130,19 +125,15 @@ vars <- ecodata::seasonal_oisst_anom |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull with analysis
+**Point of contact**: [brandon.beltz@noaa.gov](mailto:brandon.beltz@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::seasonal_oisst_anom`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/seasonal_oisst_anom.html>
 

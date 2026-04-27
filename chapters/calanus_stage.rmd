@@ -6,18 +6,31 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: March 03, 2026
+*Last updated March 03, 2026*
 
 **Description**: The data presented here are average annual abundance anomalies for different life stages of the copepod Calanus finmarcicus. Abundance anomaly data are presented for total, adult, and copepodite stages C1-C5. Also presented here are annual anomalies of surface and bottom salinity and temperature collected in situ.
-
-**Indicator family**: 
-
-- [x] Lower trophic levels
-
 
 **Contributor(s)**: Ryan Morse, Harvey Walsh
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [x] Lower trophic levels
+
+
+**Indicator Category**:
+
+- [x] Published Methods
+- [x] Extensive analysis, not yet published
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+- [x] Regime Shifts
+- [x] Ecosystem Reorganization
+
 
 ```{r download_calanus_stage}
 # Download dataset from ecodata
@@ -56,6 +69,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_calanus_stageNewEngland}
@@ -74,36 +88,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Despite the recent trend of high bottom temperature anomalies and low Calanus abundance, values for the most recent year (2023) show positive values for both adult and stage C5 copepodites, the largest copepodite stage before maturity. Higher Calanus abundance should be beneficial to right whales and other organisms that graze on Calanus.
 
 ## Indicator statistics 
 Spatial scale: By EPU and full shelf
 
 Temporal scale: Annual
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-- [x] Regime Shifts
-- [x] Ecosystem Reorganization
-
-
-```{r autostats_calanus_stage}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Despite the recent trend of high bottom temperature anomalies and low Calanus abundance, values for the most recent year (2023) show positive values for both adult and stage C5 copepodites, the largest copepodite stage before maturity. Higher Calanus abundance should be beneficial to right whales and other organisms that graze on Calanus.
-
-## Get the data
-
-**Point of contact**: [Ryan Morse (ryan.morse@noaa.gov)](mailto:Ryan Morse (ryan.morse@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::calanus_stage`
-
 **Variable definitions**
-
-Units and definitions are included in the data set under 'Units'
 
 ```{r vars_calanus_stage}
 # Pull all var names
@@ -113,20 +108,19 @@ vars <- ecodata::calanus_stage |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [x] Published Methods
-- [x] Extensive analysis, not yet published
+**Point of contact**: [Ryan Morse (ryan.morse@noaa.gov)](mailto:Ryan Morse (ryan.morse@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::calanus_stage`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/calanus_stage.html>
+
+### Public Availability
 
 Source data are NOT publicly available.
 
-## Accessibility and Constraints
+### Accessibility Constraints
 
 Please email Harvey.Walsh@noaa.gov for further information and queries of copepod staged abundance data
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/calanus_stage.html>
 

@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 08, 2026
+*Last updated April 08, 2026*
 
 **Description**: The date that cool winter conditions transition to warm stratified summer conditions.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Brandon Beltz, Kimberly Bastille, Kevin Friedland
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Database pull
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_trans_dates}
 # Download dataset from ecodata
@@ -56,6 +66,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **length, Mid-Atlantic**
 ```{r plot_trans_dateslengthMidAtlantic}
@@ -74,6 +85,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **timing, New England**
 ```{r plot_trans_datestimingNewEngland}
@@ -92,6 +104,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **length, New England**
 ```{r plot_trans_dateslengthNewEngland}
@@ -110,34 +123,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Prolonged fall temperatures have been linked to the increased number of cold-stunned Kemp’s ridley sea turtles found in Cape Cod Bay @griffin_warming_2019
 
 ## Indicator statistics 
 Spatial scale: by EPU
 
 Temporal scale: Annual time series (1982 to present)
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_trans_dates}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Prolonged fall temperatures have been linked to the increased number of cold-stunned Kemp’s ridley sea turtles found in Cape Cod Bay @griffin_warming_2019
-
-## Get the data
-
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::trans_dates`
-
 **Variable definitions**
-
-1. falltrans: fall transition day 2. sprtrans: spring transition day 3. maxday: max sst day
 
 ```{r vars_trans_dates}
 # Pull all var names
@@ -147,19 +143,15 @@ vars <- ecodata::trans_dates |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::trans_dates`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/trans_dates.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/trans_dates.html>
 

@@ -6,19 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 06, 2026
+*Last updated April 06, 2026*
 
 **Description**: Coming soon
 
-**Indicator family**: 
+**Contributor(s)**: Coming soon
+
+**Affiliations**: Coming soon
+
+**Indicator Family**: 
 
 - [x] Oceanographic
 - [x] Habitat
 
 
-**Contributor(s)**: Coming soon
+**Indicator Category**:
 
-**Affiliations**: Coming soon
+
+
+
+**Synthesis Theme**:
+
+- [x] Multiple System Drivers
+
 
 ```{r download_dissolved_oxygen}
 # Download dataset from ecodata
@@ -57,34 +67,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+Coming soon
 
 ## Indicator statistics 
 Spatial scale: Coming soon
 
 Temporal scale: Coming soon
 
-**Synthesis Theme**:
-
-- [x] Multiple System Drivers
-
-
-```{r autostats_dissolved_oxygen}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Coming soon
-
-## Get the data
-
-**Point of contact**: [Coming soon](mailto:Coming soon){.email}
-
-**ecodata name**: `ecodata::dissolved_oxygen`
-
 **Variable definitions**
-
-Coming soon
 
 ```{r vars_dissolved_oxygen}
 # Pull all var names
@@ -94,19 +87,15 @@ vars <- ecodata::dissolved_oxygen |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-
+**Point of contact**: [Coming soon](mailto:Coming soon){.email}
 
+**ecodata dataset**: `ecodata::dissolved_oxygen`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/dissolved_oxygen.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/dissolved_oxygen.html>
 

@@ -6,18 +6,28 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: February 12, 2026
+*Last updated February 12, 2026*
 
 **Description**: Recreational shark landings estimates by management group (large coastal, small coastal, prohibited, pelagic) in numbers of sharks (x1000) by year.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Jennifer Cudney (OSF/HMS), Cliff Hutt (OSF/HMS)
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Database pull
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_rec_hms}
 # Download dataset from ecodata
@@ -60,6 +70,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_rec_hmsNewEngland}
@@ -78,38 +89,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+The number of recreationally landed large coastal sharks has declined since recreational fisheries surveys have been initiated. Decreases in landings of the prohibited shark species group, which was established in the FMP in 1997, are to be expected as  retention bans on popular species were enforced (i.e., high landings early in the time series dropped off through the late 1990s). A recent peak in 2018 of New England prohibited shark landings was driven by an unusually high landings estimate for sand tiger sharks; otherwise there have been little to no landings for prohibited sharks in recent years. Additional species have been added through time to the prohibited shark management unit, including dusky shark and oceanic whitetip. Minimal landings of small coastal sharks are not surprising, as most of these species are distributed south of the Northeast and Mid-Atlantic sample frame analyzed for this report. Pelagic shark landings (LPS) are largely driven by fishing for shortfin mako through time, however retention bans were implemented in 2018 to comply with ICCAT recommendations.
 
 ## Indicator statistics 
 Spatial scale: “Northeast”, “New England, or “NE” is data collected by Marine Recreational Information Program (MRIP) or Large Pelagic Survey (LPS) samplers from Maine to Connecticut. “MidAtlantic” or “MAB” is data collected by MRIP or LPS samplers from New York to Virginia.
 
 Temporal scale: MRIP sampling is year-round. LPS Sampling is conducted from June through October.
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_rec_hms}
-# Either from Contributor or ecodata
-```
-
-## Implications
-The number of recreationally landed large coastal sharks has declined since recreational fisheries surveys have been initiated. Decreases in landings of the prohibited shark species group, which was established in the FMP in 1997, are to be expected as  retention bans on popular species were enforced (i.e., high landings early in the time series dropped off through the late 1990s). A recent peak in 2018 of New England prohibited shark landings was driven by an unusually high landings estimate for sand tiger sharks; otherwise there have been little to no landings for prohibited sharks in recent years. Additional species have been added through time to the prohibited shark management unit, including dusky shark and oceanic whitetip. Minimal landings of small coastal sharks are not surprising, as most of these species are distributed south of the Northeast and Mid-Atlantic sample frame analyzed for this report. Pelagic shark landings (LPS) are largely driven by fishing for shortfin mako through time, however retention bans were implemented in 2018 to comply with ICCAT recommendations.
-
-## Get the data
-
-**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
-
-**ecodata name**: `ecodata::rec_hms`
-
 **Variable definitions**
-
-Year = estimates of shark landings are calculated on a yearly basis. Data Columns = MRIP and LPS landings data (# sharks x 1000) are summarized by region. 
- Large Coastal = summed MRIP estimates of annual landings of large coastal sharks, which include blacktip, bull, hammerheads (scalloped, great, and smooth), lemon, nurse, sandbar, silky, spinner, and tiger sharks. 
-Small Coastal = summed MRIP estimates of annual landings of large coastal sharks, which include blacknose, finetooth, Atlantic sharpnose, and bonnethead sharks. 
-Prohibited = summed MRIP estimates of annual landings of prohibited sharks, which include Atlantic angel, basking, bigeye sand tiger, bigeye sixgill, bigeye thresher, bignose, Caribbean reef, Caribbean sharpnose, dusky, Galapagos, longfin mako, narrowtooth, night, oceanic whitetip, sand tiger, sevengill, shortfin mako, sixgill, smalltail, whale and white sharks.  
-Pelagic = summed LPS estimates of annual landings of pelagic sharks, which include blue, porbeagle, shortfin mako, and common thresher sharks.
 
 ```{r vars_rec_hms}
 # Pull all var names
@@ -119,19 +109,15 @@ vars <- ecodata::rec_hms |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Database pull
+**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
 
+**ecodata dataset**: `ecodata::rec_hms`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/rec_hms.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-MRIP cautions use of the estimate in fisheries management when the PSE is over 30, and does not support use of the estimate when the PSE exceeds 50. Many of the PSEs for Atlantic sharks are high due to the rare-event nature of the fishery.
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/rec_hms.html>
 

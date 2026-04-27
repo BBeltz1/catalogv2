@@ -6,18 +6,29 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: April 10, 2026
+*Last updated April 10, 2026*
 
 **Description**: Biomass time series for aggregate species groups from the Massachusetts inshore bottom trawl surveys conducted in Massachusetts state waters.
-
-**Indicator family**: 
-
-- [X] Megafauna
-
 
 **Contributor(s)**: Sean Lucey
 
 **Affiliations**: NEFSC
+
+**Indicator Family**: 
+
+- [X] Megafauna
+
+
+**Indicator Category**:
+
+- [X] Syntheses of published information
+- [X] Database pull
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ```{r download_mass_inshore_survey}
 # Download dataset from ecodata
@@ -56,6 +67,7 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_mass_inshore_surveyNewEngland}
@@ -74,34 +86,17 @@ class = 'hvr-sweep-to-left',
 csv2 = F),
 silent = TRUE)
 ```
+<br>
 
+## Implications
+The trends in the Massachusetts inshore survey vary compared to the NEFSC survey. This is driven by different species availability to surveys in time and space as well as the surveys sampling different habitats. Nearshore habitats are important to fish and fisheries so we monitor them as as well as trends from the larger EPUs.
 
 ## Indicator statistics 
 Spatial scale: Nearshore regions of Massachusetts
 
 Temporal scale: Spring and Fall
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_mass_inshore_survey}
-# Either from Contributor or ecodata
-```
-
-## Implications
-The trends in the Massachusetts inshore survey vary compared to the NEFSC survey. This is driven by different species availability to surveys in time and space as well as the surveys sampling different habitats. Nearshore habitats are important to fish and fisheries so we monitor them as as well as trends from the larger EPUs.
-
-## Get the data
-
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
-
-**ecodata name**: `ecodata::mass_inshore_survey`
-
 **Variable definitions**
-
-See variable definitions for `aggregate_biomass`
 
 ```{r vars_mass_inshore_survey}
 # Pull all var names
@@ -111,20 +106,15 @@ vars <- ecodata::mass_inshore_survey |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Syntheses of published information
-- [X] Database pull
+**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::mass_inshore_survey`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/mass_inshore_survey.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/mass_inshore_survey.html>
 
