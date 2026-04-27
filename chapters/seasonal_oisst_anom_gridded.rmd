@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 08, 2026
+
 **Description**: Mapped seasonal sea surface temperature anomaly
 
 **Indicator family**: 

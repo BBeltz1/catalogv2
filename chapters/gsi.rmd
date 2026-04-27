@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 03, 2026
+
 **Description**: The monthly Gulf Stream North Wall Index presented here are based on the gridded EN.4.2.2 analyses dataset from Jan. 1954 to Nov. 2024 (https://www.metoffice.gov.uk/hadobs/en4/), calculated following @chen_seasonal_2021 and @joyce_relationship_2009.
 
 **Indicator family**: 

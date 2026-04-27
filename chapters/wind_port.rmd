@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 10, 2026
+
 **Description**: Percent of port-level revenue from wind lease areas and Community Social Vulnerability Indicators
 
 **Indicator family**: 

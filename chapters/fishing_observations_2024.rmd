@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: March 03, 2026
+
 **Description**: The information presented here were provided by members of the fishing community in response to the question "what unusual conditions or events did you observe during 2024?". Submissions were provided by 11 different fishermen ranging from Maine to Virginia.
 
 **Indicator family**: 

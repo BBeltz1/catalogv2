@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: February 20, 2025
+
 **Description**: Calculates the proportion of each EPU that exceeds temperature thresholds as a daily time series from 1993 – 2024
 
 **Indicator family**: 

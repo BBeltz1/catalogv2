@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 10, 2026
+
 **Description**: Biomass time series for aggregate species groups from the NEAMAP inshore bottom trawl surveys conducted from Cape Hatteras to Rhode Island.
 
 **Indicator family**: 

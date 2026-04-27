@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: May 14, 2025
+
 **Description**: Synthesis of multiple anomalous and extreme conditions observed in 2023 that should be noted and considered in future analyses.
 
 **Indicator family**: 

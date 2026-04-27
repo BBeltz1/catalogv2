@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: March 07, 2025
+
 **Description**: Species richness is the number of unique species predicted to be captured in NEFSC bottom trawl survey tows, conducted within each of four ecological production units (EPUs) in each year between 2000 and 2019. This is based on simulations from a joint-species distribution model fitted to presence-absence data for 55 species routinely collected by spring and fall surveys during the corresponding time period. Vessel-specific differences in capture efficiency are estimated by the model, and then predictions are generated at the Albatross IV scale. See SOE Tech Doc for details of the model, species considered, and environmental covariates included.
 
 **Indicator family**: 

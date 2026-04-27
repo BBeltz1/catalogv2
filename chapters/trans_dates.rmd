@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 08, 2026
+
 **Description**: The date that cool winter conditions transition to warm stratified summer conditions.
 
 **Indicator family**: 

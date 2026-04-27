@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: February 12, 2026
+
 **Description**: The data here consist of two sources; 1) Port Commercial Fishing Activity Indicator scores which is comprised of commercial fishing landings and permit data from 2007 through 2024 summarized to indicate port-level activity in commercial fishing. 2) Community Social Vulnerability Indicators (CSVI) generated from 2023 American Community Survey 5-yr estimates Dataset in the U.S. Census American Community Survey (ACS) for coastal communities at the Census Designated Place or County Subdivision level.
 
 Note, the Mid-Atlantic analysis for the PCFA Indicator does not include data from North Carolina (NC) given delays in receiving data from the Southeast region. NC ports land a significant portion of fish from Southeast managed species and thus, we elected to not include NC to avoid the risk of underestimation.
@@ -145,10 +147,10 @@ By integrating the Community Social Vulnerability Indicators, we highlight munic
 
 **Variable definitions**
 
-1.	Community: name of the municipality identified as a community in the CSVIs. 2.	personal_disruption_rank: CSVI personal disruption factor score ranking. Low, moderate, moderate high, high 3.	pop_composition_rank: CSVI population composition factor score ranking. Low, moderate, moderate high, high 4.	poverty_rank: CSVI poverty factor score ranking. Low, moderate, moderate high, high 
-5.	labor_force_str_rank: CSVI labor force structure factor score ranking. Low, moderate, moderate high, high 6.	housing_characteristics_rank: CSVI housing characteristics factor score ranking. Low, moderate, moderate high, high 7.	housing_disrupt__rank: CSVI housing disruption factor score ranking. Low, moderate, moderate high, high 
-8.	retiree_migration_rank: CSVI retiree migration factor score ranking. Low, moderate, moderate high, high 9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 10.	PORT_NAME: fishing data port name 11.	STATE_ABB: fishing data port state abbreviation 12.	place_id: fishing data port and state abbreviation combined 13.	YEAR: the year of fishing data 
-14.	fishing_mean_score: composite Port Commercial Fishing Activity Indicator score (range between 0 and 1)
+1.	Community: name of the municipality identified as a community in the CSVIs. 2.	personal_disruption_rank: CSVI personal disruption factor score ranking. Low, moderate, moderate high, high 3.	pop_composition_rank: CSVI population composition factor score ranking. Low, moderate, moderate high, high 
+4.	poverty_rank: CSVI poverty factor score ranking. Low, moderate, moderate high, high 5.	labor_force_str_rank: CSVI labor force structure factor score ranking. Low, moderate, moderate high, high 6.	housing_characteristics_rank: CSVI housing characteristics factor score ranking. Low, moderate, moderate high, high 
+7.	housing_disrupt__rank: CSVI housing disruption factor score ranking. Low, moderate, moderate high, high 8.	retiree_migration_rank: CSVI retiree migration factor score ranking. Low, moderate, moderate high, high 9.	urban_sprawl_rank: CSVI urban sprawl factor score ranking. Low, moderate, moderate high, high 
+10.	PORT_NAME: fishing data port name 11.	STATE_ABB: fishing data port state abbreviation 12.	place_id: fishing data port and state abbreviation combined 13.	YEAR: the year of fishing data 14.	fishing_mean_score: composite Port Commercial Fishing Activity Indicator score (range between 0 and 1)
 
 ```{r vars_engagement}
 # Pull all var names

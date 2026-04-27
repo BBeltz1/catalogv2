@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 10, 2026
+
 **Description**: Biomass time series for aggregate species groups from the Massachusetts inshore bottom trawl surveys conducted in Massachusetts state waters.
 
 **Indicator family**: 

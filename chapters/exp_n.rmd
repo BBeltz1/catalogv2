@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 08, 2026
+
 **Description**: Diversity metric from the Northeast Fisheries Science Center (NEFSC) Bottom Trawl Surveys.
 
 **Indicator family**: 

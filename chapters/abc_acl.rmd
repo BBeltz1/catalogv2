@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: November 12, 2025
+
 **Description**: Mid-Atlantic Council catch limits (e.g., ABC or ACL) and associated total catch estimate by year for each species and sector (commercial or recreational, as appropriate).
 
 **Indicator family**: 

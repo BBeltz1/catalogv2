@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: February 12, 2026
+
 **Description**: Chesapeake Bay Seasonal Sea Surface Temperature Anomaly
 
 **Indicator family**: 

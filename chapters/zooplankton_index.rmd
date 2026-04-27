@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 10, 2026
+
 **Description**: Model-based abundance and annual center of gravity indices for zooplankton groups sampled by NEFSC surveys
 
 **Indicator family**: 
@@ -522,8 +524,8 @@ Distribution shifts for zooplankton may result in mismatches with zooplankton fe
 
 **Variable definitions**
 
-Naming key:  1) *Calanus finmarchicus* (calfin_100m3) = “calfin” 2) Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL” 3) Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” 
-4) Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”
+Naming key:  1) *Calanus finmarchicus* (calfin_100m3) = “calfin” 2) Large copepods (calfin_100m3, mlucens_100m3, calminor_100m3, euc_100m3, calspp_100m3) = “lgcopeALL” 
+3) Small copepods (all) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3, para_100m3, acarspp_100m3, clauso, acarlong_100m3, fur_100m3, ost_100m3, temspp_100m3, tort_100m3, paraspp_100m3) = “smallcopeALL” 4) Small copepods (SOE) (ctyp_100m3, pseudo_100m3, tlong_100m3, cham_100m3) = “smallcopeSOE”
 
 ```{r vars_zooplankton_index}
 # Pull all var names

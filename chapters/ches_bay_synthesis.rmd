@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: February 01, 2024
+
 **Description**: Synthesis of Chesapeake Bay 2023 habitat conditions with implications for managed species
 
 **Indicator family**: 
