@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 09, 2026
+
 **Description**: The data provided here are the 1984-2024 area distribution and percent coverage of submerged aquatic vegetation in the Chesapeake Bay and its tributaries that area measured and calculated from photo-interpreted aerial imagery taken during surveys conducted in the growing season.
 
 **Indicator family**: 
@@ -107,8 +109,8 @@ The outlook toward achieving the outcome goal is off course. Significant increas
 
 **Variable definitions**
 
-1) Name: Year; Definition: SAV growing season; year 2) Name: Tidal Fresh Total; Definition: SAV area in the Tidal Fresh Zone; Units: acres 3) Name: Oligohaline Total; Definition: SAV area in the Oligohaline Zone; Units: acres 4) Name: Mesohaline Total; Definition: SAV area in the Mesohaline Zone; Units: acres 5) Name: Polyhaline Total; Definition: SAV area in the Polyhaline Zone; Units: acres 
-6) Name: Baywide Total; Definition: Total SAV area in Chesapeake Bay; Units: acres
+1) Name: Year; Definition: SAV growing season; year 2) Name: Tidal Fresh Total; Definition: SAV area in the Tidal Fresh Zone; Units: acres 3) Name: Oligohaline Total; Definition: SAV area in the Oligohaline Zone; Units: acres 4) Name: Mesohaline Total; Definition: SAV area in the Mesohaline Zone; Units: acres 
+5) Name: Polyhaline Total; Definition: SAV area in the Polyhaline Zone; Units: acres 6) Name: Baywide Total; Definition: Total SAV area in Chesapeake Bay; Units: acres
 
 ```{r vars_SAV}
 # Pull all var names

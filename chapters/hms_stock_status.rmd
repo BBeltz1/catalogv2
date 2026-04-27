@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 08, 2026
+
 **Description**: Summary of stock assessment results for each assessed HMS species as of December 2023.
 
 **Indicator family**: 
@@ -103,9 +105,10 @@ This summarizes information in the HMS SAFE Report, which itself is intended to 
 
 **Variable definitions**
 
-1. Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  2. Bmsy = biomass at maximum sustainable yield  3. Threshold = the threshold identified in respective assessments to indicate status (e.g., overfished, not overfished, overfishing is occurring, overfishing is not occurring) 4. Stock status,  
-5. Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  6. Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  7. Stock = the name of the stock assessed  8. Last Assessment Year = the year in which the latest assessment was finalized  
-9. Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  10. Notes = additional information.  11. Shark Stock = the name of the stock assessed
+1. Current Relative Biomass level = finalized biomass estimate provided in latest stock assessments  2. Bmsy = biomass at maximum sustainable yield  
+3. Threshold = the threshold identified in respective assessments to indicate status (e.g., overfished, not overfished, overfishing is occurring, overfishing is not occurring) 4. Stock status,  5. Current Relative Fishing Mortality Rate = finalized mortality rates provided in latest stock assessment  
+6. Maximum Fishing Mortality Threshold = reference point identified in latest stock assessment  7. Stock = the name of the stock assessed  8. Last Assessment Year = the year in which the latest assessment was finalized  9. Upcoming Assessment = Year that the next assessment is anticipated (if scheduled)  
+10. Notes = additional information.  11. Shark Stock = the name of the stock assessed
 
 ```{r vars_hms_stock_status}
 # Pull all var names

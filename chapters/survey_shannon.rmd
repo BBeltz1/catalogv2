@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: February 11, 2025
+
 **Description**: Diversity metric for the bottom trawl survey data
 
 **Indicator family**: 

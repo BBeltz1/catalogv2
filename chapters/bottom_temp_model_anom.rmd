@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 10, 2026
+
 **Description**: The data presented here are seasonal bottom temperature anomalies. This includes seasonal bottom temperature anomalies by each EPU on the Northeast Continental Shelf from observation-based bottom temperature sources as well as the MOM6 ocean model.
 
 **Indicator family**: 
@@ -181,8 +183,9 @@ Bottom temperature is an important driver for benthic and demersal species growt
 
 **Variable definitions**
 
-Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) Subarea: EPU name Source:  ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) 
-bt_temp : mean bottom temperature for each year/season across entire EPU ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
+Season: 1 = winter (January – March), 2 = spring (April – June), 3 = summer (July – September), 4 = fall (October – December) Subarea: EPU name 
+Source:  ROMS (bias-corrected ROMS-NWA bottom temperature [@dupontavice_ocean_2022]), GLORYS (CMEM’s GLORYS12V1 global reanalysis bottom temperature), PSY (CMEM’s PSY global forecast bottom temperature) bt_temp : mean bottom temperature for each year/season across entire EPU 
+ref_bt: bottom temperature climatology for season/EPU based on 1990-2020
 
 ```{r vars_bottom_temp_model_anom}
 # Pull all var names

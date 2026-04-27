@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: March 03, 2026
+
 **Description**: The data presented here are average annual abundance anomalies for different life stages of the copepod Calanus finmarcicus. Abundance anomaly data are presented for total, adult, and copepodite stages C1-C5. Also presented here are annual anomalies of surface and bottom salinity and temperature collected in situ.
 
 **Indicator family**: 

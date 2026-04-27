@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 10, 2026
+
 **Description**: The presented data are weekly averages of the partial pressure of carbon dioxide (pCO2) and the saturation state of calcium carbonate as aragonite (Omega-a), measured by the Gulf of Maine coastal buoy cooperatively operated by NOAA’s Pacific Marine Ecological Laboratory (PMEL) and the University of New Hampshire’s Ocean Process Analysis Laboratory. The buoy is located at 43.02 degrees North and 70.54 degrees West. pCO2 was measured directly, while Omega-a was calculated from observed pCO2, water temperature, salinity, and total alkalinity (modeled from temperature, salinity and month, similar to McGarry et al. 2021[@mcgarry_multiple_2021]). The weekly averages from 2025 are depicted against the climatological bounds from observations at this site between 2006-2024.
 
 **Indicator family**: 

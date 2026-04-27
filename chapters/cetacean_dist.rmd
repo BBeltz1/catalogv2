@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: March 07, 2025
+
 **Description**: The data presented here are the locations of the center of core habitat for cetaceans by season as documented in 2010 versus 2017.
 
 **Indicator family**: 

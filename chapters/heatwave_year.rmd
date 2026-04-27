@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 02, 2026
+
 **Description**: Surface and bottom marine heatwaves (MHWs) for 2025.
 
 **Indicator family**: 

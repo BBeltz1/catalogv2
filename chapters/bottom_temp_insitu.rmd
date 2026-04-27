@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: November 13, 2024
+
 **Description**: The data presented here are time series of regional average bottom temperature anomalies from ship-based measurements made on the Northeast Continental Shelf.
 
 **Indicator family**: 

@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: February 12, 2025
+
 **Description**: Species mean depth, along-shelf distance, and distance to coastline
 
 **Indicator family**: 

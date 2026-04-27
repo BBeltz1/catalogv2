@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: October 22, 2025
+
 **Description**: Aggregate biomass from Northeast Fisheries Science Center (NEFSC) bottom trawl survey.
 
 **Indicator family**: 

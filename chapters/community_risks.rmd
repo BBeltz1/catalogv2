@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 10, 2026
+
 **Description**: The dataset contains by year by community scores for community sensitivity to temperature, ocean acidification, stock size/status, total sensitivity, and total vulnerability based on Hare et al. 2016 [@hare_vulnerability_2016] and Loughran et al. 2025 [@loughran_climate_2025] species vulnerability and community dependency. Reciprocal Simpson's Diversity scores for each community, Regional Quotients, and Regional climate vulnerability scores are also included.
 
 **Indicator family**: 

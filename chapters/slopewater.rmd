@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: February 23, 2024
+
 **Description**: This index gives the relative proportions of watermass type observed in the deep Northeast Channel (150-200 m water depth).
 
 **Indicator family**: 

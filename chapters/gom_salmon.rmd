@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 03, 2026
+
 **Description**: The data presented here are time series of documented Atlantic salmon returns to Gulf of Maine rivers since 1972 and return rates for two sea winter returns from hatchery smolt stocking in the Penobscot River during the same time frame.
 
 **Indicator family**: 

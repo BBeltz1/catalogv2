@@ -8,6 +8,8 @@ library(downloadthis)
 
 <a href="https://bbeltz1.github.io/catalogv2/page_status.html#under-construction" class="btn btn-warning button_small"><i class="fas fa-hard-hat"></i> Under Construction</a>
 
+**Last updated**: April 27, 2026
+
 **Description**: Passive acoustic monitoring (PAM) simultaneously captures the biological, anthropogenic, climatological, and geological sounds occurring in an area. PAM provides continuous sampling effort in areas that are otherwise difficult to access, resulting in long-term, robust datasets. Ambient sound (soundscape) metrics show the distribution of acoustic energy across frequencies. Peaks in sound levels within particular frequency bins indicate louder sounds at those frequencies, with frequencies below 1000 Hz typically representing contributions from baleen whales, vessel traffic, and noise-generating fishes. Therefore, soundscapes can be used as an indicator of ecosystem health and to identify changes to sound sources, which could be indicative of changes in phenology, species distributions, storm activity, and human activity.
 
 **Indicator family**: 

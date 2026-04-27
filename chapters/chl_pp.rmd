@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: March 24, 2026
+
 **Description**: Satellite derived phytoplankton data including chlorophyll concentration, primary production, and phytoplankton size class for the Northeast Continental Shelf and ecological production units.
 
 **Indicator family**: 
@@ -399,9 +401,11 @@ Phytoplankton abundance, productivity, diversity, cell size, phenology, and carb
 
 **Variable definitions**
 
-1) Chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters; mg m^-3 2) Chlorophyll anomaly; Ratio of chlorophyll _a_ concentration to the long-term (1998 to present year) climatology; unitless (ratio) 3) Primary productivity; Daily net primary production of biomass expressed as carbon per unit volume in seawater per day; gCarbon m^-2 d^-1 
-4) Primary productivity anomaly;  Ratio of net primary production to the long-term (1998 to present year) climatology; unitless (ratio) 5) Microplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the microplankton (20-200 µm) fraction; mg m^-3 
-6) Nanoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the nanoplankton (2-20 µm) fraction; mg m^-3 7) Picoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the picoplankton (0.2-2 µm) fraction; mg m^-3 8) Annual summed primary production - TBD
+1) Chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters; mg m^-3 2) Chlorophyll anomaly; Ratio of chlorophyll _a_ concentration to the long-term (1998 to present year) climatology; unitless (ratio) 
+3) Primary productivity; Daily net primary production of biomass expressed as carbon per unit volume in seawater per day; gCarbon m^-2 d^-1 4) Primary productivity anomaly;  Ratio of net primary production to the long-term (1998 to present year) climatology; unitless (ratio) 
+5) Microplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the microplankton (20-200 µm) fraction; mg m^-3 
+6) Nanoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the nanoplankton (2-20 µm) fraction; mg m^-3 
+7) Picoplankton chlorophyll; Concentration of chlorophyll _a_ in the near surface (first euphotic depth) waters from the picoplankton (0.2-2 µm) fraction; mg m^-3 8) Annual summed primary production - TBD
 
 ```{r vars_chl_pp}
 # Pull all var names

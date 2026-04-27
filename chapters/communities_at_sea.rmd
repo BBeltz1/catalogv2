@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 08, 2026
+
 **Description**: The following information was developed using the Communities at Sea (CaS) database developed at Rutgers University. CaS is derived from Vessel Trip Reports and Permit data for the period 1996-2023.
 
 **Indicator family**: 

@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: March 07, 2025
+
 **Description**: Seasonal mean bottom temperatures on the Northeast Continental Shelf between 1959 and 2024 in a 1/12° grid.
 
 **Indicator family**: 

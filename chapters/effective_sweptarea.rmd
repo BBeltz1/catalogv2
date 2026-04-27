@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: April 02, 2026
+
 **Description**: Data presented here represent a summary of total area swept derived from VTR information, e.g. gear type, gear sweep, vessel size, number of tows, etc. and represents a complete census of commercial fishing trips reported by dealers, either from VTR or imputed data.  Assumptions about the effect on habitat by gear components (sweeps, cables, doors, dredges, traps, gillnets, and longlines) are made and documented.
 
 **Indicator family**: 

@@ -6,6 +6,8 @@ library(ecodata)
 library(downloadthis)
 ```
 
+**Last updated**: February 20, 2025
+
 **Description**: Common tern annual diet and productivity at seven Gulf of Maine colonies managed by the National Audubon Society’s Seabird Restoration Program
 
 **Indicator family**: 
