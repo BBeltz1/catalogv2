@@ -100,7 +100,7 @@ make_rmd <- function(listobject, n = 10){
     # Write header to .Rmd  
     cat("# Download dataset from ecodata",append=T,fill=T,file=con)
     # Call download_this function
-    cat("downloadthis::download_this(",append=T,fill=T,file=con)
+    cat("try(downloadthis::download_this(",append=T,fill=T,file=con)
     # Paste ecodata dataset name
     cat(paste0("ecodata::", listobject$indicatorname, ","),append=T,fill=T,file=con)
     # Name output file using ecodata dataset name
@@ -118,7 +118,9 @@ make_rmd <- function(listobject, n = 10){
     # Define button class
     cat("class = 'hvr-sweep-to-left',",append=T,fill=T,file=con)
     # Set output mode to csv2
-    cat("csv2 = F)",append=T,fill=T,file=con)
+    cat("csv2 = F),",append=T,fill=T,file=con)
+    ## Suppress warnings and errors
+    cat("silent = TRUE)",append=T,fill=T,file=con)
     # Close code chunk
     cat("```",append=T,fill=T,file=con)
     # Add space after code chunk
@@ -208,7 +210,7 @@ make_rmd <- function(listobject, n = 10){
     cat("class = 'hvr-sweep-to-left',",append=T,fill=T,file=con)
     ## Set output mode to csv2
     cat("csv2 = F),",append=T,fill=T,file=con)
-    ##
+    ## Suppress warnings and errors
     cat("silent = TRUE)",append=T,fill=T,file=con)
     # Close code chunk
     cat("```",append=T,fill=T,file=con)
