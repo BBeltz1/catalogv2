@@ -4,6 +4,9 @@ bookdown::bs4_book:
       preset: spacelab
       primary: "#00467e"
       secondary: "#d55e00"
+      success: "#93d501"
+      warning: "#ffc904"
+      danger: "#ca0b00"
     css: style.css
     repo: 
       base: https://github.com/BBeltz1/catalogv2
