@@ -57,7 +57,7 @@ make_rmd <- function(listobject, n = 10){
   }
 
   ### ISSUE LAST MODIFIED
-  cat(paste0("**Last updated**: ",listobject$last_updated),append=T,fill=T,file=con)
+  cat(paste0("*Last updated ",listobject$last_updated,"*"),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
 
   ### DESCRIPTION, CONTRIBUTORS, AFFILIATION
