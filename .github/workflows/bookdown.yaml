@@ -34,8 +34,7 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
 
       - name: Build book
-        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = FALSE)'
-        timeout-minutes: 120
+        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = FALSE, output_options = list(pandoc_args = c("+RTS", "-K1024m", "-RTS")))'
         
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
