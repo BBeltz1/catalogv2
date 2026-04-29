@@ -13,3 +13,4 @@ bookdown::bs4_book:
       branch: main
     footnotes_inline: false
     split_bib: true
+    pandoc_args: ["--trace"]
