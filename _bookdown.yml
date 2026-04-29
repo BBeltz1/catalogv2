@@ -21,7 +21,7 @@ rmd_files:
 #
 # #################### MEGAFAUNA ##################
     -   "chapters/sectionHeaders/megafauna.rmd"
-    -   "chapters/aggregate_biomass.rmd"
+    #-   "chapters/aggregate_biomass.rmd"
     -   "chapters/mab_inshore_survey.rmd"
     -   "chapters/mass_inshore_survey.rmd"
     -   "chapters/ne_inshore_survey.rmd"
