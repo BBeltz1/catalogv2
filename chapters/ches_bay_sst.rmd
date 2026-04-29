@@ -32,21 +32,6 @@ library(downloadthis)
 - [X] Ecosystem Reorganization
 
 
-```{r download_ches_bay_sst}
-# Download dataset from ecodata
-try(downloadthis::download_this(
-ecodata::ches_bay_sst,
-output_name = 'ches_bay_sst',
-output_extension = '.csv',
-button_label = 'Download dataset from `ecodata`',
-button_type = 'default',
-has_icon = TRUE,
-icon = 'fa fa-save',
-class = 'hvr-sweep-to-left',
-csv2 = F),
-silent = TRUE)
-```
-
 ## Introduction to Indicator
 Seasonal spatial anomaly maps represent the difference between a seasonal average sea surface temperature (SST) and a long-term average SST for that season. For the Chesapeake Bay, the long-term average is derived from the SST time series from 2007 to the year immediately prior to the current year (max(Year) - 1). This reference period serves as a benchmark for comparing current observations. Hence, the anomaly represents the degree to which the current seasonal average departs from historical average, either colder or warmer, indicating whether the current temperature conditions may be favorable or unfavorable for marine species.
 
@@ -58,17 +43,6 @@ For 2025, winter sea surface temperatures showed conditions to be generally cool
 # Plot indicator
 ggplotObject <- ecodata::plot_ches_bay_sst(report = 'MidAtlantic')
 ggplotObject
-try(downloadthis::download_this(
-ggplotObject$data,
-output_name = 'ches_bay_sstMidAtlantic',
-output_extension = '.csv',
-button_label = 'Download the data plotted above',
-button_type = 'default',
-has_icon = TRUE,
-icon = 'fa fa-save',
-class = 'hvr-sweep-to-left',
-csv2 = F),
-silent = TRUE)
 ```
 <br>
 
@@ -77,17 +51,6 @@ silent = TRUE)
 # Plot indicator
 ggplotObject <- ecodata::plot_ches_bay_sst(report = 'NewEngland')
 ggplotObject
-try(downloadthis::download_this(
-ggplotObject$data,
-output_name = 'ches_bay_sstNewEngland',
-output_extension = '.csv',
-button_label = 'Download the data plotted above',
-button_type = 'default',
-has_icon = TRUE,
-icon = 'fa fa-save',
-class = 'hvr-sweep-to-left',
-csv2 = F),
-silent = TRUE)
 ```
 <br>
 

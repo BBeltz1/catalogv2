@@ -30,21 +30,6 @@ library(downloadthis)
 - [X] Multiple System Drivers
 
 
-```{r download_thermal_habitat_gridded}
-# Download dataset from ecodata
-try(downloadthis::download_this(
-ecodata::thermal_habitat_gridded,
-output_name = 'thermal_habitat_gridded',
-output_extension = '.csv',
-button_label = 'Download dataset from `ecodata`',
-button_type = 'default',
-has_icon = TRUE,
-icon = 'fa fa-save',
-class = 'hvr-sweep-to-left',
-csv2 = F),
-silent = TRUE)
-```
-
 ## Introduction to Indicator
 Many deep water benthic and demersal species exhibit thermal preferences for metabolic, reproductive, and growth processes. Temperatures above these thermal presences may impair these processes. Data originate from GLORYS12V1 global reanalysis for 1993-01-01 to 2023-08-29, and from PSY forecasts from 2021-01-01 to 2023-12-31. Cells are mapped to 3 depth bins: 0-25m, 25-100m, and >100m. Two temperature thresholds are used, representing a temperature where moderate (15C) and extreme (24C) thermal stresses are likely to occur across several species. GLORYS and PSY 1/12 degree grid is mapped to EPU_NOESTUARIES shape files by the center point of each grid cell.
 
@@ -56,17 +41,6 @@ Maps of full NE shelf with cell shading gradient showing number of days exceedin
 # Plot indicator
 ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'MidAtlantic')
 ggplotObject
-try(downloadthis::download_this(
-ggplotObject$data,
-output_name = 'thermal_habitat_griddedMidAtlantic',
-output_extension = '.csv',
-button_label = 'Download the data plotted above',
-button_type = 'default',
-has_icon = TRUE,
-icon = 'fa fa-save',
-class = 'hvr-sweep-to-left',
-csv2 = F),
-silent = TRUE)
 ```
 <br>
 
@@ -75,17 +49,6 @@ silent = TRUE)
 # Plot indicator
 ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'NewEngland')
 ggplotObject
-try(downloadthis::download_this(
-ggplotObject$data,
-output_name = 'thermal_habitat_griddedNewEngland',
-output_extension = '.csv',
-button_label = 'Download the data plotted above',
-button_type = 'default',
-has_icon = TRUE,
-icon = 'fa fa-save',
-class = 'hvr-sweep-to-left',
-csv2 = F),
-silent = TRUE)
 ```
 <br>
 
