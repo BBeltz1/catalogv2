@@ -27,6 +27,8 @@ make_rmd <- function(listobject, n = 10){
   # Assign spatial subtype to prevent extremely downloads
   if (listobject$indicatorname %in% c("bottom_temp_model_gridded", "thermal_habitat_gridded", "ches_bay_sst")) {
     page_subtype <- "spatial"
+  } else {
+    page_subtype <- "standard"
   }
 
   # create rmd with name of indicator
