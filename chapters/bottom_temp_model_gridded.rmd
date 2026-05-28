@@ -6,32 +6,30 @@ library(ecodata)
 library(downloadthis)
 ```
 
-**Last updated**: March 07, 2025
+*Last updated March 07, 2025*
 
 **Description**: Seasonal mean bottom temperatures on the Northeast Continental Shelf between 1959 and 2024 in a 1/12° grid.
-
-**Indicator family**: 
-
-- [X] Oceanographic
-
 
 **Contributor(s)**: Joseph Caracappa, Vincent Saba, Zhuomin Chen
 
 **Affiliations**: NEFSC
 
-```{r download_bottom_temp_model_gridded}
-# Download dataset from ecodata
-downloadthis::download_this(
-ecodata::bottom_temp_model_gridded,
-output_name = 'bottom_temp_model_gridded',
-output_extension = '.csv',
-button_label = 'Download dataset from `ecodata`',
-button_type = 'default',
-has_icon = TRUE,
-icon = 'fa fa-save',
-class = 'hvr-sweep-to-left',
-csv2 = F)
-```
+**Indicator Family**: 
+
+- [X] Oceanographic
+
+
+**Indicator Category**:
+
+- [X] Published Methods
+- [X] Syntheses of published information
+- [X] Database pull with analysis
+
+
+**Synthesis Theme**:
+
+- [X] Multiple System Drivers
+
 
 ## Introduction to Indicator
 The bottom temperature product is in a horizontal 1/12 degree grid between 1959 and 2024 and is made of daily bottom temperature estimates from:
@@ -46,64 +44,26 @@ Maps of seasonal mean bottom temperature across NE shelf.
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'MidAtlantic')
 ggplotObject
-try(downloadthis::download_this(
-ggplotObject$data,
-output_name = 'bottom_temp_model_griddedMidAtlantic',
-output_extension = '.csv',
-button_label = 'Download the data plotted above',
-button_type = 'default',
-has_icon = TRUE,
-icon = 'fa fa-save',
-class = 'hvr-sweep-to-left',
-csv2 = F),
-silent = TRUE)
 ```
+<br>
 
 **New England**
 ```{r plot_bottom_temp_model_griddedNewEngland}
 # Plot indicator
 ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'NewEngland')
 ggplotObject
-try(downloadthis::download_this(
-ggplotObject$data,
-output_name = 'bottom_temp_model_griddedNewEngland',
-output_extension = '.csv',
-button_label = 'Download the data plotted above',
-button_type = 'default',
-has_icon = TRUE,
-icon = 'fa fa-save',
-class = 'hvr-sweep-to-left',
-csv2 = F),
-silent = TRUE)
 ```
+<br>
 
+## Implications
+Bottom temperature is a key environmental parameter in defining the habitat and metabolic conditions of demersal and benthic species. Interannual and seasonal changes in bottom temperature can provide significant indicators of species productivity, spatial distributions, or mortality.  Long-term trends in bottom temperature are indicators of regional implications of global climate change and may be used in evaluating climate risk for fisheries management.
 
 ## Indicator statistics 
 Spatial scale: Whole shelf
 
 Temporal scale: Winter (Jan-Mar), Spring (April-June), Summer (July-Sept), Fall (Oct - Dec) from 1959-2024
 
-**Synthesis Theme**:
-
-- [X] Multiple System Drivers
-
-
-```{r autostats_bottom_temp_model_gridded}
-# Either from Contributor or ecodata
-```
-
-## Implications
-Bottom temperature is a key environmental parameter in defining the habitat and metabolic conditions of demersal and benthic species. Interannual and seasonal changes in bottom temperature can provide significant indicators of species productivity, spatial distributions, or mortality.  Long-term trends in bottom temperature are indicators of regional implications of global climate change and may be used in evaluating climate risk for fisheries management.
-
-## Get the data
-
-**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
-
-**ecodata name**: `ecodata::bottom_temp_model_gridded`
-
 **Variable definitions**
-
-- Time: year - Lat: latitude - Lon: longitude - Variable: season - Value: bottom temperature (degrees Celcius)
 
 ```{r vars_bottom_temp_model_gridded}
 # Pull all var names
@@ -113,21 +73,15 @@ vars <- ecodata::bottom_temp_model_gridded |>
 
 DT::datatable(vars)
 ```
-**Indicator Category**:
+## Get the data
 
-- [X] Published Methods
-- [X] Syntheses of published information
-- [X] Database pull with analysis
+**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
 
+**ecodata dataset**: `ecodata::bottom_temp_model_gridded`
 
-## Public Availability
+**Tech Doc link**: <https://noaa-edab.github.io/tech-doc/bottom_temp_model_gridded.html>
+
+### Public Availability
 
 Source data are publicly available.
-
-## Accessibility and Constraints
-
-_No response_
-
-**tech-doc link**
-<https://noaa-edab.github.io/tech-doc/bottom_temp_model_gridded.html>
 
