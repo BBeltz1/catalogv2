@@ -24,6 +24,13 @@ make_rmd <- function(listobject, n = 10){
     page_type <- "independent"
   }
 
+  # Assign spatial subtype to prevent extremely downloads
+  if (listobject$indicatorname %in% c("bottom_temp_model_gridded", "thermal_habitat_gridded", "ches_bay_sst")) {
+    page_subtype <- "spatial"
+  } else {
+    page_subtype <- "standard"
+  }
+
   # create rmd with name of indicator
   con <- file(here::here("chapters",paste0(filename,".rmd")),open="w")
      
@@ -57,7 +64,7 @@ make_rmd <- function(listobject, n = 10){
   }
 
   ### ISSUE LAST MODIFIED
-  cat(paste0("**Last updated**: ",listobject$last_updated),append=T,fill=T,file=con)
+  cat(paste0("*Last updated ",listobject$last_updated,"*"),append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
 
   ### DESCRIPTION, CONTRIBUTORS, AFFILIATION
@@ -93,14 +100,14 @@ make_rmd <- function(listobject, n = 10){
   cat(listobject$synthesisTheme,append=T,fill=T,file=con)
   cat("",append=T,fill=T,file=con) # add space
    
-  ### Download dataset button
-  if (page_type == "ecodata"){
+  ### Download dataset button if page type is ecodata but not spatial
+  if (page_type == "ecodata" & page_subtype != "spatial"){
     # Open and name code chunk
     cat(paste0("```{r download_", listobject$indicatorname, "}"),append=T,fill=T,file=con)
     # Write header to .Rmd  
     cat("# Download dataset from ecodata",append=T,fill=T,file=con)
     # Call download_this function
-    cat("downloadthis::download_this(",append=T,fill=T,file=con)
+    cat("try(downloadthis::download_this(",append=T,fill=T,file=con)
     # Paste ecodata dataset name
     cat(paste0("ecodata::", listobject$indicatorname, ","),append=T,fill=T,file=con)
     # Name output file using ecodata dataset name
@@ -118,7 +125,9 @@ make_rmd <- function(listobject, n = 10){
     # Define button class
     cat("class = 'hvr-sweep-to-left',",append=T,fill=T,file=con)
     # Set output mode to csv2
-    cat("csv2 = F)",append=T,fill=T,file=con)
+    cat("csv2 = F),",append=T,fill=T,file=con)
+    ## Suppress warnings and errors
+    cat("silent = TRUE)",append=T,fill=T,file=con)
     # Close code chunk
     cat("```",append=T,fill=T,file=con)
     # Add space after code chunk
@@ -188,28 +197,31 @@ make_rmd <- function(listobject, n = 10){
     # Print plot to .Rmd
     cat("ggplotObject",append=T,fill=T,file=con)
     # Create button to download plotted data
-    ## Call download_this function
-    cat("try(downloadthis::download_this(",append=T,fill=T,file=con)
-    ## Paste ecodata dataset name
-    cat(paste0("ggplotObject$data,"),append=T,fill=T,file=con)
-    ## Name output file using ecodata dataset name
-    cat(paste0("output_name = '", listobject$indicatorname, chunk_name, "',"),append=T,fill=T,file=con)
-    ## Set output extension to .csv
-    cat("output_extension = '.csv',",append=T,fill=T,file=con)
-    ## Define button label
-    cat("button_label = 'Download the data plotted above',",append=T,fill=T,file=con)
-    ## Define button type
-    cat("button_type = 'default',",append=T,fill=T,file=con)
-    ## Toggle on icon
-    cat("has_icon = TRUE,",append=T,fill=T,file=con)
-    ## Define which icon to use
-    cat("icon = 'fa fa-save',",append=T,fill=T,file=con)
-    ## Define button class
-    cat("class = 'hvr-sweep-to-left',",append=T,fill=T,file=con)
-    ## Set output mode to csv2
-    cat("csv2 = F),",append=T,fill=T,file=con)
-    ##
-    cat("silent = TRUE)",append=T,fill=T,file=con)
+    ## Exclude pages with subtype spatial
+    if (page_subtype != "spatial"){
+      ## Call download_this function
+      cat("try(downloadthis::download_this(",append=T,fill=T,file=con)
+      ## Paste ecodata dataset name
+      cat(paste0("ggplotObject$data,"),append=T,fill=T,file=con)
+      ## Name output file using ecodata dataset name
+      cat(paste0("output_name = '", listobject$indicatorname, chunk_name, "',"),append=T,fill=T,file=con)
+      ## Set output extension to .csv
+      cat("output_extension = '.csv',",append=T,fill=T,file=con)
+      ## Define button label
+      cat("button_label = 'Download the data plotted above',",append=T,fill=T,file=con)
+      ## Define button type
+      cat("button_type = 'default',",append=T,fill=T,file=con)
+      ## Toggle on icon
+      cat("has_icon = TRUE,",append=T,fill=T,file=con)
+      ## Define which icon to use
+      cat("icon = 'fa fa-save',",append=T,fill=T,file=con)
+      ## Define button class
+      cat("class = 'hvr-sweep-to-left',",append=T,fill=T,file=con)
+      ## Set output mode to csv2
+      cat("csv2 = F),",append=T,fill=T,file=con)
+      ## Suppress warnings and errors
+      cat("silent = TRUE)",append=T,fill=T,file=con)
+    }
     # Close code chunk
     cat("```",append=T,fill=T,file=con)
     # Add break after the button
