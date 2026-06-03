@@ -59,7 +59,7 @@ rmd_files:
     -   "chapters/bottom_temp_insitu.rmd"
     -   "chapters/bottom_temp_model_anom.rmd"
     -   "chapters/bottom_temp_model_gridded.rmd"
-    -   "chapters/seasonal_oisst_anom_gridded.rmd"
+    #-   "chapters/seasonal_oisst_anom_gridded.rmd"
     -   "chapters/seasonal_oisst_anom.rmd"
     -   "chapters/surface_temp_mom6.rmd"
     -   "chapters/trans_dates.rmd"
