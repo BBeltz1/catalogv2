@@ -27,7 +27,7 @@ rmd_files:
     -   "chapters/ne_inshore_survey.rmd"
     -   "chapters/osw_survey_impact.rmd"
     -   "chapters/condition.rmd"
-    -   "chapters/finfish_traits.rmd"
+    #-   "chapters/finfish_traits.rmd"
     -   "chapters/habitat_diversity.rmd"
     -   "chapters/species_dist.rmd"
     -   "chapters/energy_density.rmd"
