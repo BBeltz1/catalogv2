@@ -61,14 +61,14 @@ Compared to thresholds based on global estimates of primary production and catch
 
 Thresholds based on regional estimates of primary productivity, are not yet available. This work is ongoing
 
-**Mid-Atlantic, pp, global**
-```{r plot_pprMidAtlanticppglobal}
+**Mid-Atlantic Bight, pp, global**
+```{r plot_pprMidAtlanticMABppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'pp', threshold = 'global')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
-output_name = 'pprMidAtlanticppglobal',
+output_name = 'pprMidAtlanticMABppglobal',
 output_extension = '.csv',
 button_label = 'Download the data plotted above',
 button_type = 'default',
@@ -80,14 +80,14 @@ silent = TRUE)
 ```
 <br>
 
-**New England, pp, global**
-```{r plot_pprNewEnglandppglobal}
+**Georges Bank, pp, global**
+```{r plot_pprNewEnglandGBppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'pp', threshold = 'global')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
-output_name = 'pprNewEnglandppglobal',
+output_name = 'pprNewEnglandGBppglobal',
 output_extension = '.csv',
 button_label = 'Download the data plotted above',
 button_type = 'default',
@@ -99,14 +99,14 @@ silent = TRUE)
 ```
 <br>
 
-**Mid-Atlantic, fogarty, global**
-```{r plot_pprMidAtlanticfogartyglobal}
+**Gulf of Maine, pp, global**
+```{r plot_pprNewEnglandGOMppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'pp', threshold = 'global')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
-output_name = 'pprMidAtlanticfogartyglobal',
+output_name = 'pprNewEnglandGOMppglobal',
 output_extension = '.csv',
 button_label = 'Download the data plotted above',
 button_type = 'default',
@@ -118,14 +118,14 @@ silent = TRUE)
 ```
 <br>
 
-**New England, fogarty, global**
-```{r plot_pprNewEnglandfogartyglobal}
+**Mid-Atlantic Bight, fogarty, global**
+```{r plot_pprMidAtlanticMABfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'fogarty', threshold = 'global')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
-output_name = 'pprNewEnglandfogartyglobal',
+output_name = 'pprMidAtlanticMABfogartyglobal',
 output_extension = '.csv',
 button_label = 'Download the data plotted above',
 button_type = 'default',
@@ -137,14 +137,14 @@ silent = TRUE)
 ```
 <br>
 
-**Mid-Atlantic, ryther, global**
-```{r plot_pprMidAtlanticrytherglobal}
+**Georges Bank, fogarty, global**
+```{r plot_pprNewEnglandGBfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'fogarty', threshold = 'global')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
-output_name = 'pprMidAtlanticrytherglobal',
+output_name = 'pprNewEnglandGBfogartyglobal',
 output_extension = '.csv',
 button_label = 'Download the data plotted above',
 button_type = 'default',
@@ -156,14 +156,185 @@ silent = TRUE)
 ```
 <br>
 
-**New England, ryther, global**
-```{r plot_pprNewEnglandrytherglobal}
+**Gulf of Maine, fogarty, global**
+```{r plot_pprNewEnglandGOMfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'fogarty', threshold = 'global')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
-output_name = 'pprNewEnglandrytherglobal',
+output_name = 'pprNewEnglandGOMfogartyglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Mid-Atlantic Bight, ryther, global**
+```{r plot_pprMidAtlanticMABrytherglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ryther', threshold = 'global')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticMABrytherglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Georges Bank, ryther, global**
+```{r plot_pprNewEnglandGBrytherglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ryther', threshold = 'global')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGBrytherglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Gulf of Maine, ryther, global**
+```{r plot_pprNewEnglandGOMrytherglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ryther', threshold = 'global')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGOMrytherglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Mid-Atlantic Bight, ppr, global**
+```{r plot_pprMidAtlanticMABpprglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ppr', threshold = 'global')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticMABpprglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Georges Bank, ppr, global**
+```{r plot_pprNewEnglandGBpprglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ppr', threshold = 'global')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGBpprglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Gulf of Maine, ppr, global**
+```{r plot_pprNewEnglandGOMpprglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ppr', threshold = 'global')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGOMpprglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Mid-Atlantic Bight, mtl, global**
+```{r plot_pprMidAtlanticMABmtlglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'mtl', threshold = 'global')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprMidAtlanticMABmtlglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Georges Bank, mtl, global**
+```{r plot_pprNewEnglandGBmtlglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'mtl', threshold = 'global')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGBmtlglobal',
+output_extension = '.csv',
+button_label = 'Download the data plotted above',
+button_type = 'default',
+has_icon = TRUE,
+icon = 'fa fa-save',
+class = 'hvr-sweep-to-left',
+csv2 = F),
+silent = TRUE)
+```
+<br>
+
+**Gulf of Maine, mtl, global**
+```{r plot_pprNewEnglandGOMmtlglobal}
+# Plot indicator
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'mtl', threshold = 'global')
+ggplotObject
+try(downloadthis::download_this(
+ggplotObject$data,
+output_name = 'pprNewEnglandGOMmtlglobal',
 output_extension = '.csv',
 button_label = 'Download the data plotted above',
 button_type = 'default',
