@@ -429,7 +429,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Ryan Morse ryan.morse@noaa.gov](mailto:Ryan Morse ryan.morse@noaa.gov){.email}
+**Point of contact**: Ryan Morse ryan.morse@noaa.gov
 
 **ecodata dataset**: `ecodata::zoo_community`
 

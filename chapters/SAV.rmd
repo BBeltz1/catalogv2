@@ -97,7 +97,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)](mailto:Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)){.email}
+**Point of contact**: Christoper J. Patrick (cpatrick@vims.edu), David J. Wilcox (dwilcox@vims.edu)
 
 **ecodata dataset**: `ecodata::SAV`
 

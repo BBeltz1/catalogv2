@@ -56,7 +56,7 @@ Synthesis of indicators Chesapeake Bay Salinity, Temperature, and Seasonal Sea S
 
 ## Get the data
 
-**Point of contact**: [Bruce Vogt, bruce.vogt@noaa.gov](mailto:Bruce Vogt, bruce.vogt@noaa.gov){.email}
+**Point of contact**: Bruce Vogt, bruce.vogt@noaa.gov
 
 ### Public Availability
 

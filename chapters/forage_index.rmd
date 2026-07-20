@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated October 22, 2025*
+*Last updated July 15, 2026*
 
 **Description**: Aggregate forage fish biomass index from fish stomach contents
 
@@ -50,7 +50,7 @@ The amount of forage fish available in the ecosystem combined with the energy co
 In addition to an index of forage abundance in each EPU, the coastwide center of gravity for the combined forage biomass was estimated. Consistent movement of the center of gravity towards the north or east indicates a distribution shift for combined forage fish.
 
 ## Key Results and Visualizations
-Variables plotted are Fall Forage Fish Biomass Estimate and Spring Forage Fish Biomass Estimate with error bands from Fall Forage Fish Biomass Estimate SE and Spring Forage Fish Biomass Estimate SE, respectively. Time series were extended back to 1982 and forward to 2023 in this update, but this did not change the trends reported previously for 1982-2022.
+The plots below show spring and fall forage biomass, with standard errors. Long-term trends show that forage biomass is declining in the MAB in the fall and increasing in the GOM in the spring.
 
 **Mid-Atlantic, index**
 ```{r plot_forage_indexMidAtlanticindex}
@@ -152,7 +152,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Sarah Gaichas (Sarah.Gaichas@noaa.gov)](mailto:Sarah Gaichas (Sarah.Gaichas@noaa.gov)){.email}
+**Point of contact**: Abigail Tyrell (abigail.tyrell@noaa.gov)
 
 **ecodata dataset**: `ecodata::forage_index`
 
@@ -160,5 +160,7 @@ DT::datatable(vars)
 
 ### Public Availability
 
-Source data are publicly available. All data and code are available at https://github.com/NOAA-EDAB/forageindex
+Source data are publicly available.
+Initial model development (used in the SOE published in 2023-2025) is available at: https://github.com/NOAA-EDAB/forageindex
+Code for data updates (used in the SOE published in 2026-present) is available at: https://github.com/NEFSC/READ-EDAB-VAST_indices/tree/main/forage
 

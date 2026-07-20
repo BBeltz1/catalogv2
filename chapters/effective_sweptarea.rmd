@@ -94,7 +94,7 @@ Temporal scale: Annual, 1996 to 2024
 
 ## Get the data
 
-**Point of contact**: [Andrew Applegate (aapplegate@nefmc.org)](mailto:Andrew Applegate (aapplegate@nefmc.org)){.email}
+**Point of contact**: Andrew Applegate (aapplegate@nefmc.org)
 
 **ecodata dataset**: `ecodata::effective_sweptarea`
 

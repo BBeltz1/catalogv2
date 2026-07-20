@@ -52,7 +52,7 @@ Persistence probability.
 
 ## Get the data
 
-**Point of contact**: [Timothy White (timothy.white@boem.gov)](mailto:Timothy White (timothy.white@boem.gov)){.email}
+**Point of contact**: Timothy White (timothy.white@boem.gov)
 
 ### Public Availability
 

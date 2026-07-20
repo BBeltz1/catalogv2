@@ -76,7 +76,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Julie Reichert-Nguyen (julie.reichert-nguyen@noaa.gov)](mailto:Julie Reichert-Nguyen (julie.reichert-nguyen@noaa.gov)){.email}
+**Point of contact**: Julie Reichert-Nguyen (julie.reichert-nguyen@noaa.gov)
 
 **ecodata dataset**: `ecodata::ches_bay_sst`
 

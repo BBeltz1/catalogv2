@@ -109,7 +109,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Robyn Linner (robyn.linner@maine.gov)](mailto:Robyn Linner (robyn.linner@maine.gov)){.email}
+**Point of contact**: Robyn Linner (robyn.linner@maine.gov)
 
 **ecodata dataset**: `ecodata::ne_inshore_survey`
 

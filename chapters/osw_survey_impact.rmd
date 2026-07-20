@@ -55,7 +55,7 @@ No Data
 
 ## Get the data
 
-**Point of contact**: [douglas.christel@noaa.gov](mailto:douglas.christel@noaa.gov){.email}
+**Point of contact**: douglas.christel@noaa.gov
 
 ### Public Availability
 

@@ -94,7 +94,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Sofie Van Parijs (sofie.vanparijs@noaa.gov)](mailto:Sofie Van Parijs (sofie.vanparijs@noaa.gov)){.email}
+**Point of contact**: Sofie Van Parijs (sofie.vanparijs@noaa.gov)
 
 **ecodata dataset**: `ecodata::cetacean_acoustic`
 

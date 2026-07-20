@@ -253,7 +253,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [John Walden (john.walden@noaa.gov); Geret DePiper (geret.depiper@noaa.gov)](mailto:John Walden (john.walden@noaa.gov); Geret DePiper (geret.depiper@noaa.gov)){.email}
+**Point of contact**: John Walden (john.walden@noaa.gov); Geret DePiper (geret.depiper@noaa.gov)
 
 **ecodata dataset**: `ecodata::bennet`
 

@@ -84,7 +84,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Kiera Morrill (kiera.morrill@noaa.gov)](mailto:Kiera Morrill (kiera.morrill@noaa.gov)){.email}
+**Point of contact**: Kiera Morrill (kiera.morrill@noaa.gov)
 
 **ecodata dataset**: `ecodata::crew_survey`
 

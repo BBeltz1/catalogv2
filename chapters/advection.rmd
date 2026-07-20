@@ -226,7 +226,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Zhitao Yu (Zhitao.Yu@noaa.gov)](mailto:Zhitao Yu (Zhitao.Yu@noaa.gov)){.email}
+**Point of contact**: Zhitao Yu (Zhitao.Yu@noaa.gov)
 
 **ecodata dataset**: `ecodata::advection`
 

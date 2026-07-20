@@ -111,7 +111,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Angela Silva (angela.silva@noaa.gov)](mailto:Angela Silva (angela.silva@noaa.gov)){.email}
+**Point of contact**: Angela Silva (angela.silva@noaa.gov)
 
 **ecodata dataset**: `ecodata::wind_dev_speed`
 

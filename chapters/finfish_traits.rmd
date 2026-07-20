@@ -496,7 +496,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Bart DiFiore (bartholomew.p.difiore@mass.gov)](mailto:Bart DiFiore (bartholomew.p.difiore@mass.gov)){.email}
+**Point of contact**: Bart DiFiore (bartholomew.p.difiore@mass.gov)
 
 **ecodata dataset**: `ecodata::finfish_traits`
 

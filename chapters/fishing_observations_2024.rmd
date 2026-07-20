@@ -104,7 +104,7 @@ NA
 
 ## Get the data
 
-**Point of contact**: [anna.mercer@noaa.gov](mailto:anna.mercer@noaa.gov){.email}
+**Point of contact**: anna.mercer@noaa.gov
 
 ### Public Availability
 

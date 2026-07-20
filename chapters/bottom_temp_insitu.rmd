@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated November 13, 2024*
+*Last updated July 20, 2026*
 
 **Description**: The data presented here are time series of regional average bottom temperature anomalies from ship-based measurements made on the Northeast Continental Shelf.
 
@@ -108,7 +108,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Paula.Fratantoni@noaa.gov](mailto:Paula.Fratantoni@noaa.gov){.email}
+**Point of contact**: paula.fratantoni@noaa.gov
 
 **ecodata dataset**: `ecodata::bottom_temp_insitu`
 

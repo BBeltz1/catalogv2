@@ -101,7 +101,7 @@ NA
 
 ## Get the data
 
-**Point of contact**: [kimberly.hyde@noaa.gov](mailto:kimberly.hyde@noaa.gov){.email}
+**Point of contact**: kimberly.hyde@noaa.gov
 
 ### Public Availability
 

@@ -165,7 +165,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Kevin Friedland, kevin.friedland@noaa.gov](mailto:Kevin Friedland, kevin.friedland@noaa.gov){.email}
+**Point of contact**: Kevin Friedland, kevin.friedland@noaa.gov
 
 **ecodata dataset**: `ecodata::species_dist`
 

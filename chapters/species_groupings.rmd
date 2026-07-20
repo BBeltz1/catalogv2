@@ -105,7 +105,7 @@ Temporal scale: N/A
 
 ## Get the data
 
-**Point of contact**: [EDAB, edab.data@noaa.gov](mailto:EDAB, edab.data@noaa.gov){.email}
+**Point of contact**: EDAB, edab.data@noaa.gov
 
 **ecodata dataset**: `ecodata::species_groupings`
 

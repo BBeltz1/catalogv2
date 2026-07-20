@@ -128,7 +128,7 @@ Temporal scale: Spring, summer, fall, winter: 2005-2025
 
 ## Get the data
 
-**Point of contact**: [Cameron Thompson (cameron@neracoos.org)](mailto:Cameron Thompson (cameron@neracoos.org)){.email}
+**Point of contact**: Cameron Thompson (cameron@neracoos.org)
 
 **ecodata dataset**: `ecodata::wbts_zoo`
 
