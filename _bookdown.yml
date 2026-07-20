@@ -14,7 +14,7 @@ rmd_files:
     -   "chapters/zooplankton_index.rmd"
     -   "chapters/wbts_zoo.rmd"
     -   "chapters/preyfield_energy.rmd"
-    #-   "chapters/zoo_abundance_anom.rmd"
+    -   "chapters/zoo_abundance_anom.rmd"
     -   "chapters/zoo_community.rmd"
     -   "chapters/zoo_diversity.rmd"
 #
