@@ -51,11 +51,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: site
+          path: _book
         
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: 'site' # The folder the action should deploy.
+          FOLDER: _book # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch
