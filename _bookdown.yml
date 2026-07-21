@@ -12,7 +12,7 @@ rmd_files:
     -   "chapters/habs.rmd"
     -   "chapters/SAV.rmd"
     -   "chapters/zooplankton_index.rmd"
-    #-   "chapters/wbts_zoo.rmd"
+    -   "chapters/wbts_zoo.rmd"
     -   "chapters/preyfield_energy.rmd"
     -   "chapters/zoo_abundance_anom.rmd"
     -   "chapters/zoo_community.rmd"
