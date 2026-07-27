@@ -10,10 +10,11 @@ Depends:
   bookdown, 
   rmarkdown,
   tidyverse,
+  downloadthis,
   DT,
   ecodata
 Suggests:
   downlit
 Remotes: 
-  NOAA-EDAB/ecodata@pre-production
-  
+  NOAA-EDAB/ecodata
+
