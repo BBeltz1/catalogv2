@@ -186,7 +186,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Don Lyons, dlyons@audubon.org](mailto:Don Lyons, dlyons@audubon.org){.email}
+**Point of contact**: Don Lyons, dlyons@audubon.org
 
 **ecodata dataset**: `ecodata::seabird_ne`
 

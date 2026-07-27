@@ -152,7 +152,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Jennifer Cudney (jennifer.cudney@noaa.gov)](mailto:Jennifer Cudney (jennifer.cudney@noaa.gov)){.email}
+**Point of contact**: Jennifer Cudney (jennifer.cudney@noaa.gov)
 
 **ecodata dataset**: `ecodata::hms_landings`
 

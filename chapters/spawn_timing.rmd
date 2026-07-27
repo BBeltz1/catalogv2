@@ -376,7 +376,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Mark Wuenschel mark.wuenschel@noaa.gov](mailto:Mark Wuenschel mark.wuenschel@noaa.gov){.email}
+**Point of contact**: Mark Wuenschel mark.wuenschel@noaa.gov
 
 **ecodata dataset**: `ecodata::spawn_timing`
 

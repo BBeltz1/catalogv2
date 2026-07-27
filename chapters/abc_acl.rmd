@@ -155,7 +155,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Brandon Muffley (bmuffley@mafmc.org)](mailto:Brandon Muffley (bmuffley@mafmc.org)){.email}
+**Point of contact**: Brandon Muffley (bmuffley@mafmc.org)
 
 **ecodata dataset**: `ecodata::abc_acl`
 

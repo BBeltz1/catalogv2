@@ -118,7 +118,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Sarah.Gaichas@noaa.gov](mailto:Sarah.Gaichas@noaa.gov){.email}
+**Point of contact**: Sarah.Gaichas@noaa.gov
 
 **ecodata dataset**: `ecodata::stock_status`
 

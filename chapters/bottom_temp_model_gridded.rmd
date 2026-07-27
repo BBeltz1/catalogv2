@@ -75,7 +75,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [joseph.caracappa@noaa.gov](mailto:joseph.caracappa@noaa.gov){.email}
+**Point of contact**: joseph.caracappa@noaa.gov
 
 **ecodata dataset**: `ecodata::bottom_temp_model_gridded`
 

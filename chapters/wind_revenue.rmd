@@ -224,7 +224,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Douglas Christel (douglas.christel@noaa.gov)](mailto:Douglas Christel (douglas.christel@noaa.gov)){.email}
+**Point of contact**: Douglas Christel (douglas.christel@noaa.gov)
 
 **ecodata dataset**: `ecodata::wind_revenue`
 

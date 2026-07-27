@@ -89,7 +89,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Debra Palka (debra.palka@noaa.gov)](mailto:Debra Palka (debra.palka@noaa.gov)){.email}
+**Point of contact**: Debra Palka (debra.palka@noaa.gov)
 
 **ecodata dataset**: `ecodata::grayseal`
 

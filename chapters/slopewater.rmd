@@ -108,7 +108,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Paula Fratantoni (paula.fratantoni@noaa.gov)](mailto:Paula Fratantoni (paula.fratantoni@noaa.gov)){.email}
+**Point of contact**: Paula Fratantoni (paula.fratantoni@noaa.gov)
 
 **ecodata dataset**: `ecodata::slopewater`
 

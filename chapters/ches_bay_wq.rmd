@@ -100,7 +100,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Qian Zhang, qzhang@chesapeakebay.net](mailto:Qian Zhang, qzhang@chesapeakebay.net){.email}
+**Point of contact**: Qian Zhang, qzhang@chesapeakebay.net
 
 **ecodata dataset**: `ecodata::ches_bay_wq`
 

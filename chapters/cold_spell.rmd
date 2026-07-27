@@ -98,7 +98,7 @@ Temporal scale: Daily
 
 ## Get the data
 
-**Point of contact**: [Vincent Saba (vincent.saba@noaa.gov)](mailto:Vincent Saba (vincent.saba@noaa.gov)){.email}
+**Point of contact**: Vincent Saba (vincent.saba@noaa.gov)
 
 ### Public Availability
 

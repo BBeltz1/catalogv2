@@ -109,7 +109,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Chris Haak (chrishaak@gmail.com)](mailto:Chris Haak (chrishaak@gmail.com)){.email}
+**Point of contact**: Chris Haak (chrishaak@gmail.com)
 
 **ecodata dataset**: `ecodata::habitat_diversity`
 

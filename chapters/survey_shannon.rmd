@@ -112,7 +112,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [andrew.beet@noaa.gov](mailto:andrew.beet@noaa.gov){.email}
+**Point of contact**: andrew.beet@noaa.gov
 
 **ecodata dataset**: `ecodata::survey_shannon`
 

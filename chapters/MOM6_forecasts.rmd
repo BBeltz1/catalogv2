@@ -56,7 +56,7 @@ Name: tob_anom; Definition: Bottom temperature anomaly; Units: °C
 
 ## Get the data
 
-**Point of contact**: [Andrew Ross (andrew.c.ross@noaa.gov)](mailto:Andrew Ross (andrew.c.ross@noaa.gov)){.email}
+**Point of contact**: Andrew Ross (andrew.c.ross@noaa.gov)
 
 ### Public Availability
 

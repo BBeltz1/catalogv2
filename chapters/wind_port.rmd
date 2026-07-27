@@ -123,7 +123,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Abby Tyrell (abigail.tyrell@noaa.gov)](mailto:Abby Tyrell (abigail.tyrell@noaa.gov)){.email}
+**Point of contact**: Abby Tyrell (abigail.tyrell@noaa.gov)
 
 **ecodata dataset**: `ecodata::wind_port`
 

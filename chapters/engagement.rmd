@@ -157,7 +157,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [Robert Murphy (robert.murphy@noaa.gov)](mailto:Robert Murphy (robert.murphy@noaa.gov)){.email}
+**Point of contact**: Robert Murphy (robert.murphy@noaa.gov)
 
 **ecodata dataset**: `ecodata::engagement`
 

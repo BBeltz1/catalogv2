@@ -63,7 +63,7 @@ NA
 
 ## Get the data
 
-**Point of contact**: [nefsc.soe.leads@noaa.gov](mailto:nefsc.soe.leads@noaa.gov){.email}
+**Point of contact**: nefsc.soe.leads@noaa.gov
 
 ### Public Availability
 

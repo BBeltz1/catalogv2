@@ -109,7 +109,7 @@ DT::datatable(vars)
 ```
 ## Get the data
 
-**Point of contact**: [James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov](mailto:James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov){.email}
+**Point of contact**: James Gartland (NEAMAP), jgartlan@vims.edu; Rebecca Peters (ME/NH survey), rebecca.j.peters@maine.gov
 
 **ecodata dataset**: `ecodata::mab_inshore_survey`
 
