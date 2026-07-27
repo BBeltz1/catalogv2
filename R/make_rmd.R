@@ -193,7 +193,9 @@ make_rmd <- function(listobject, n = 10){
     # Write header to .Rmd  
     cat("# Plot indicator",append=T,fill=T,file=con)
     # Write plot code to .Rmd
-    cat(paste0("ggplotObject <- ", plot_code_strings[i]),append=T,fill=T,file=con)
+    cat(paste0("ggplotObject <- ", plot_code_strings[i], " +"),append=T,fill=T,file=con)
+    # Replace plot title with empty text
+    cat(paste0("ggplot2::ggtitle('')"),append=T,fill=T,file=con)  
     # Print plot to .Rmd
     cat("ggplotObject",append=T,fill=T,file=con)
     # Create button to download plotted data
