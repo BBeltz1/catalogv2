@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Aggregated Atlantic Highly Migratory Species (HMS) landings and revenue data prepared for the Fisheries of the United States (FUS) report, spanning 2015-2024.
 
@@ -57,7 +57,8 @@ In the New England region (Massachusetts to Maine, and Canada), the species or m
 **Landings, Mid-Atlantic**
 ```{r plot_hms_landingsLandingsMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -76,7 +77,8 @@ silent = TRUE)
 **Revenue, Mid-Atlantic**
 ```{r plot_hms_landingsRevenueMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -95,7 +97,8 @@ silent = TRUE)
 **Landings, New England**
 ```{r plot_hms_landingsLandingsNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'NewEngland')
+ggplotObject <- ecodata::plot_hms_landings(varName = 'Landings', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -114,7 +117,8 @@ silent = TRUE)
 **Revenue, New England**
 ```{r plot_hms_landingsRevenueNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'NewEngland')
+ggplotObject <- ecodata::plot_hms_landings(varName = 'Revenue', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

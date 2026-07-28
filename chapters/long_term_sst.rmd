@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Average annual sea-surface temperatures from the NOAA extended reconstructed sea surface temperature data set (ERSST V5) on the Northeast Continental Shelf.
 
@@ -53,7 +53,8 @@ Since the 1860’s, the Northeast US shelf sea surface temperature (SST) has exh
 **Mid-Atlantic**
 ```{r plot_long_term_sstMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_long_term_sst(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_long_term_sst(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

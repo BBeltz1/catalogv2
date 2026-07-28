@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated March 07, 2025*
+*Last updated July 23, 2026*
 
 **Description**: Species richness is the number of unique species predicted to be captured in NEFSC bottom trawl survey tows, conducted within each of four ecological production units (EPUs) in each year between 2000 and 2019. This is based on simulations from a joint-species distribution model fitted to presence-absence data for 55 species routinely collected by spring and fall surveys during the corresponding time period. Vessel-specific differences in capture efficiency are estimated by the model, and then predictions are generated at the Albatross IV scale. See SOE Tech Doc for details of the model, species considered, and environmental covariates included.
 
@@ -54,7 +54,8 @@ An overall trend of declining richness can be seen in the more southerly Mid-Atl
 **Richness, Mid-Atlantic**
 ```{r plot_habitat_diversityRichnessMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_habitat_diversity(varName = 'Richness', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_habitat_diversity(varName = 'Richness', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -73,7 +74,8 @@ silent = TRUE)
 **Richness, New England**
 ```{r plot_habitat_diversityRichnessNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_habitat_diversity(varName = 'Richness', report = 'NewEngland')
+ggplotObject <- ecodata::plot_habitat_diversity(varName = 'Richness', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

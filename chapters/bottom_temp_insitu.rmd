@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated July 20, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data presented here are time series of regional average bottom temperature anomalies from ship-based measurements made on the Northeast Continental Shelf.
 
@@ -53,7 +53,8 @@ _No response_
 **Mid-Atlantic**
 ```{r plot_bottom_temp_insituMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -72,7 +73,8 @@ silent = TRUE)
 **New England**
 ```{r plot_bottom_temp_insituNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_insitu(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

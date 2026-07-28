@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated March 24, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Satellite derived phytoplankton data including chlorophyll concentration, primary production, and phytoplankton size class for the Northeast Continental Shelf and ecological production units.
 
@@ -70,7 +70,8 @@ Concentrations of chlorophyll _a_ (a proxy for biomass) were above average durin
 **chl, weekly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticchlweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'weekly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'weekly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -89,7 +90,8 @@ silent = TRUE)
 **pp, weekly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticppweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'weekly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'weekly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -108,7 +110,8 @@ silent = TRUE)
 **size, weekly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticsizeweeklyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'weekly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'weekly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -127,7 +130,8 @@ silent = TRUE)
 **chl, monthly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticchlmonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'monthly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'chl', plottype = 'monthly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -146,7 +150,8 @@ silent = TRUE)
 **pp, monthly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticppmonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'monthly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'pp', plottype = 'monthly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -165,7 +170,8 @@ silent = TRUE)
 **size, monthly, Mid-Atlantic Bight**
 ```{r plot_chl_ppMidAtlanticsizemonthlyMAB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'monthly', EPU = 'MAB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'MidAtlantic', varName = 'size', plottype = 'monthly', EPU = 'MAB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -184,7 +190,8 @@ silent = TRUE)
 **chl, weekly, Georges Bank**
 ```{r plot_chl_ppNewEnglandchlweeklyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -203,7 +210,8 @@ silent = TRUE)
 **pp, weekly, Georges Bank**
 ```{r plot_chl_ppNewEnglandppweeklyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -222,7 +230,8 @@ silent = TRUE)
 **size, weekly, Georges Bank**
 ```{r plot_chl_ppNewEnglandsizeweeklyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -241,7 +250,8 @@ silent = TRUE)
 **chl, monthly, Georges Bank**
 ```{r plot_chl_ppNewEnglandchlmonthlyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -260,7 +270,8 @@ silent = TRUE)
 **pp, monthly, Georges Bank**
 ```{r plot_chl_ppNewEnglandppmonthlyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -279,7 +290,8 @@ silent = TRUE)
 **size, monthly, Georges Bank**
 ```{r plot_chl_ppNewEnglandsizemonthlyGB}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GB', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GB', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -298,7 +310,8 @@ silent = TRUE)
 **chl, weekly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandchlweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'weekly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -317,7 +330,8 @@ silent = TRUE)
 **pp, weekly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandppweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'weekly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -336,7 +350,8 @@ silent = TRUE)
 **size, weekly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandsizeweeklyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'weekly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -355,7 +370,8 @@ silent = TRUE)
 **chl, monthly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandchlmonthlyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'chl', plottype = 'monthly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -374,7 +390,8 @@ silent = TRUE)
 **pp, monthly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandppmonthlyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'pp', plottype = 'monthly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -393,7 +410,8 @@ silent = TRUE)
 **size, monthly, Gulf of Maine**
 ```{r plot_chl_ppNewEnglandsizemonthlyGOM}
 # Plot indicator
-ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GOM', n = 10)
+ggplotObject <- ecodata::plot_chl_pp(report = 'NewEngland', varName = 'size', plottype = 'monthly', EPU = 'GOM', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

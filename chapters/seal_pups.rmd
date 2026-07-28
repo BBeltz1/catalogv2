@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated March 07, 2025*
+*Last updated July 23, 2026*
 
 **Description**: The data presented here are counts of gray seal pups at 4 U.S. haulout sites from 1988 to 2021.
 
@@ -54,7 +54,8 @@ Mean rates of increase in the number of pups born at various times since 1988 at
 **Mid-Atlantic**
 ```{r plot_seal_pupsMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_seal_pups(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_seal_pups(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

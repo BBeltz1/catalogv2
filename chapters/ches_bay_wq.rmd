@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 09, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Chesapeake Bay Water Quality Attainment Indicator
 
@@ -62,7 +62,8 @@ The indicator provides an integrated measure of Chesapeake Bay’s water quality
 **Mid-Atlantic**
 ```{r plot_ches_bay_wqMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_ches_bay_wq(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_ches_bay_wq(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

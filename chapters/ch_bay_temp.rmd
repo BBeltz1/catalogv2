@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: This data is collected from the CBIBS buoy system.
 
@@ -53,7 +53,8 @@ Surface water temperatures at Gooses Reef show a distinct seasonal pattern. The 
 **Mid-Atlantic**
 ```{r plot_ch_bay_tempMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_ch_bay_temp(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_ch_bay_temp(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

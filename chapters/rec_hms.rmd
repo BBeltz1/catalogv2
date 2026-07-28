@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated February 12, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Recreational shark landings estimates by management group (large coastal, small coastal, prohibited, pelagic) in numbers of sharks (x1000) by year.
 
@@ -57,7 +57,8 @@ Graphs plot the estimated number of shark landings by year. Due to the large ran
 **Mid-Atlantic**
 ```{r plot_rec_hmsMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_rec_hms(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_rec_hms(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -76,7 +77,8 @@ silent = TRUE)
 **New England**
 ```{r plot_rec_hmsNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_rec_hms(report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_rec_hms(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 10, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data presented here are seasonal bottom temperature anomalies. This includes seasonal bottom temperature anomalies by each EPU on the Northeast Continental Shelf from observation-based bottom temperature sources as well as the MOM6 ocean model.
 
@@ -64,7 +64,8 @@ The MOM6 model hindcast does a good job at reproducing seasonal bottom temperatu
 **Mid-Atlantic Bight, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomMABMidAtlanticseasonalGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'seasonal', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'seasonal', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -83,7 +84,8 @@ silent = TRUE)
 **Georges Bank, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomGBNewEnglandseasonalGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -102,7 +104,8 @@ silent = TRUE)
 **Gulf of Maine, seasonal, GLORYS**
 ```{r plot_bottom_temp_model_anomGOMNewEnglandseasonalGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'seasonal', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -121,7 +124,8 @@ silent = TRUE)
 **Mid-Atlantic Bight, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomMABMidAtlanticannualGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'annual', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'MAB', report = 'MidAtlantic', varName = 'annual', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -140,7 +144,8 @@ silent = TRUE)
 **Georges Bank, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomGBNewEnglandannualGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GB', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -159,7 +164,8 @@ silent = TRUE)
 **Gulf of Maine, annual, GLORYS**
 ```{r plot_bottom_temp_model_anomGOMNewEnglandannualGLORYS}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10)
+ggplotObject <- ecodata::plot_bottom_temp_model_anom(EPU = 'GOM', report = 'NewEngland', varName = 'annual', plottype = 'GLORYS', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

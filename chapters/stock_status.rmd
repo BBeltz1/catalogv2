@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated October 22, 2025*
+*Last updated July 23, 2026*
 
 **Description**: Summary of the most recent stock status results for each assessed species
 
@@ -59,7 +59,8 @@ Single species management objectives (1. maintaining biomass above minimum thres
 **Mid-Atlantic**
 ```{r plot_stock_statusMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_stock_status(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_stock_status(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -78,7 +79,8 @@ silent = TRUE)
 **New England**
 ```{r plot_stock_statusNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_stock_status(report = 'NewEngland')
+ggplotObject <- ecodata::plot_stock_status(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

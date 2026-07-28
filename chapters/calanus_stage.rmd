@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated March 03, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data presented here are average annual abundance anomalies for different life stages of the copepod Calanus finmarcicus. Abundance anomaly data are presented for total, adult, and copepodite stages C1-C5. Also presented here are annual anomalies of surface and bottom salinity and temperature collected in situ.
 
@@ -56,7 +56,8 @@ Abundance anomalies for Calanus finmarchicus adult and stage C5 copepodite in th
 **Mid-Atlantic**
 ```{r plot_calanus_stageMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_calanus_stage(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_calanus_stage(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -75,7 +76,8 @@ silent = TRUE)
 **New England**
 ```{r plot_calanus_stageNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_calanus_stage(report = 'NewEngland')
+ggplotObject <- ecodata::plot_calanus_stage(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

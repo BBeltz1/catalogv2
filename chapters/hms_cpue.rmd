@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: CPUE from pelagic observer program (POP) observed hauls, presented as number of fish per haul, by year and species from 1992-2024.
 
@@ -55,7 +55,8 @@ Updates from previous year: An additional year of data (2024) has been added. Bl
 **shark, Mid-Atlantic**
 ```{r plot_hms_cpuesharkMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -74,7 +75,8 @@ silent = TRUE)
 **tuna, Mid-Atlantic**
 ```{r plot_hms_cpuetunaMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -93,7 +95,8 @@ silent = TRUE)
 **shark, New England**
 ```{r plot_hms_cpuesharkNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'NewEngland')
+ggplotObject <- ecodata::plot_hms_cpue(varName = 'shark', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -112,7 +115,8 @@ silent = TRUE)
 **tuna, New England**
 ```{r plot_hms_cpuetunaNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'NewEngland')
+ggplotObject <- ecodata::plot_hms_cpue(varName = 'tuna', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

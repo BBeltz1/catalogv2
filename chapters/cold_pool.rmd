@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated March 07, 2025*
+*Last updated July 23, 2026*
 
 **Description**: Three annual cold pool indices (and standard error) for 1959 through 2024
 
@@ -56,7 +56,8 @@ Time series plots of the three cold pool indices. Cold pool index shows the mean
 **Mid-Atlantic, cold_pool**
 ```{r plot_cold_poolMidAtlanticcold_pool}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'cold_pool', n = 10)
+ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'cold_pool', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -75,7 +76,8 @@ silent = TRUE)
 **Mid-Atlantic, persistence**
 ```{r plot_cold_poolMidAtlanticpersistence}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'persistence', n = 10)
+ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'persistence', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -94,7 +96,8 @@ silent = TRUE)
 **Mid-Atlantic, extent**
 ```{r plot_cold_poolMidAtlanticextent}
 # Plot indicator
-ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'extent', n = 10)
+ggplotObject <- ecodata::plot_cold_pool(report = 'MidAtlantic', varName = 'extent', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

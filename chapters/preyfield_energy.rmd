@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated July 15, 2026*
+*Last updated July 23, 2026*
 
 **Description**: These data show the estimated average preyfield energy available to foraging North Atlantic Right Whales on the shelf waters of the US northeast coast.
 

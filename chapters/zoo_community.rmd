@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 10, 2026*
+*Last updated July 23, 2026*
 
 **Description**: These data represent an ecosystem-level look at zooplankton community composition using the dimension reduction technique of principal component analysis.
 
@@ -374,7 +374,8 @@ pseudo_100m3 | 0.25 |   | mlucens_100m3 | 0.40
 **Mid-Atlantic**
 ```{r plot_zoo_communityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_community(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_zoo_community(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -393,7 +394,8 @@ silent = TRUE)
 **New England**
 ```{r plot_zoo_communityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_community(report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_zoo_community(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

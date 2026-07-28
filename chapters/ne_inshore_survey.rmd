@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated February 12, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data presented here represent the biomass time series for aggregate species groups from the Maine/New Hampshire inshore bottom trawl surveys conducted in Maine and New Hampshire state waters.
 
@@ -54,7 +54,8 @@ The average biomass of piscivores appears to be changing more drastically than t
 **Mid-Atlantic**
 ```{r plot_ne_inshore_surveyMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_ne_inshore_survey(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_ne_inshore_survey(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -73,7 +74,8 @@ silent = TRUE)
 **New England**
 ```{r plot_ne_inshore_surveyNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_ne_inshore_survey(report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_ne_inshore_survey(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

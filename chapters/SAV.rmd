@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 09, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data provided here are the 1984-2024 area distribution and percent coverage of submerged aquatic vegetation in the Chesapeake Bay and its tributaries that area measured and calculated from photo-interpreted aerial imagery taken during surveys conducted in the growing season.
 
@@ -54,7 +54,8 @@ Significant increases and simultaneous decreases in different regions of the bay
 **Mid-Atlantic**
 ```{r plot_SAVMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_SAV(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_SAV(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

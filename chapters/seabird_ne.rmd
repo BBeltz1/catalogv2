@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated February 20, 2025*
+*Last updated July 23, 2026*
 
 **Description**: Common tern annual diet and productivity at seven Gulf of Maine colonies managed by the National Audubon Society’s Seabird Restoration Program
 
@@ -55,7 +55,8 @@ GOM common tern average productivity (fledglings per nest) across 7 colonies has
 **Mid-Atlantic, diversity**
 ```{r plot_seabird_neMidAtlanticdiversity}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'diversity', n = 10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'diversity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -74,7 +75,8 @@ silent = TRUE)
 **New England, diversity**
 ```{r plot_seabird_neNewEnglanddiversity}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'diversity', n = 10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'diversity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -93,7 +95,8 @@ silent = TRUE)
 **Mid-Atlantic, productivity**
 ```{r plot_seabird_neMidAtlanticproductivity}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'productivity', n = 10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'productivity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -112,7 +115,8 @@ silent = TRUE)
 **New England, productivity**
 ```{r plot_seabird_neNewEnglandproductivity}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'productivity', n = 10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'productivity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -131,7 +135,8 @@ silent = TRUE)
 **Mid-Atlantic, prey**
 ```{r plot_seabird_neMidAtlanticprey}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'prey', n = 10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'MidAtlantic', varName = 'prey', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -150,7 +155,8 @@ silent = TRUE)
 **New England, prey**
 ```{r plot_seabird_neNewEnglandprey}
 # Plot indicator
-ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'prey', n = 10)
+ggplotObject <- ecodata::plot_seabird_ne(report = 'NewEngland', varName = 'prey', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

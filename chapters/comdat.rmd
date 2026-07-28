@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 02, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Commercial landings and revenue from dealer reports
 
@@ -56,7 +56,8 @@ Commercial revenue by managed species has generally been down.  The exception is
 **Mid-Atlantic, landings, total, 2019**
 ```{r plot_comdatMidAtlanticlandingstotal2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'landings', plottype = 'total', NAFOyear = '2019', n = 10)
+ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'landings', plottype = 'total', NAFOyear = '2019', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -75,7 +76,8 @@ silent = TRUE)
 **New England, landings, total, 2019**
 ```{r plot_comdatNewEnglandlandingstotal2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'landings', plottype = 'total', NAFOyear = '2019', n = 10)
+ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'landings', plottype = 'total', NAFOyear = '2019', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -94,7 +96,8 @@ silent = TRUE)
 **Mid-Atlantic, revenue, total, 2019**
 ```{r plot_comdatMidAtlanticrevenuetotal2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'revenue', plottype = 'total', NAFOyear = '2019', n = 10)
+ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'revenue', plottype = 'total', NAFOyear = '2019', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -113,7 +116,8 @@ silent = TRUE)
 **New England, revenue, total, 2019**
 ```{r plot_comdatNewEnglandrevenuetotal2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'revenue', plottype = 'total', NAFOyear = '2019', n = 10)
+ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'revenue', plottype = 'total', NAFOyear = '2019', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -132,7 +136,8 @@ silent = TRUE)
 **Mid-Atlantic, landings, guild, 2019**
 ```{r plot_comdatMidAtlanticlandingsguild2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'landings', plottype = 'guild', NAFOyear = '2019', n = 10)
+ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'landings', plottype = 'guild', NAFOyear = '2019', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -151,7 +156,8 @@ silent = TRUE)
 **New England, landings, guild, 2019**
 ```{r plot_comdatNewEnglandlandingsguild2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'landings', plottype = 'guild', NAFOyear = '2019', n = 10)
+ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'landings', plottype = 'guild', NAFOyear = '2019', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -170,7 +176,8 @@ silent = TRUE)
 **Mid-Atlantic, revenue, guild, 2019**
 ```{r plot_comdatMidAtlanticrevenueguild2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'revenue', plottype = 'guild', NAFOyear = '2019', n = 10)
+ggplotObject <- ecodata::plot_comdat(report = 'MidAtlantic', varName = 'revenue', plottype = 'guild', NAFOyear = '2019', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -189,7 +196,8 @@ silent = TRUE)
 **New England, revenue, guild, 2019**
 ```{r plot_comdatNewEnglandrevenueguild2019}
 # Plot indicator
-ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'revenue', plottype = 'guild', NAFOyear = '2019', n = 10)
+ggplotObject <- ecodata::plot_comdat(report = 'NewEngland', varName = 'revenue', plottype = 'guild', NAFOyear = '2019', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
