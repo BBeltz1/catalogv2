@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Mapped seasonal sea surface temperature anomaly
 
@@ -54,7 +54,8 @@ Despite record setting ocean temperatures in 2023, the Northeast US shelf had bo
 **Mid-Atlantic**
 ```{r plot_seasonal_oisst_anom_griddedMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -73,7 +74,8 @@ silent = TRUE)
 **New England**
 ```{r plot_seasonal_oisst_anom_griddedNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'NewEngland')
+ggplotObject <- ecodata::plot_seasonal_oisst_anom_gridded(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

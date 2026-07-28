@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated June 03, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The number of days per year per 1/12 degree cell that exceeds a temperature threshold.
 
@@ -39,7 +39,8 @@ Maps of full NE shelf with cell shading gradient showing number of days exceedin
 **Mid-Atlantic**
 ```{r plot_thermal_habitat_griddedMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 ```
 <br>
@@ -47,7 +48,8 @@ ggplotObject
 **New England**
 ```{r plot_thermal_habitat_griddedNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'NewEngland')
+ggplotObject <- ecodata::plot_thermal_habitat_gridded(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 ```
 <br>

@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 02, 2026*
+*Last updated July 23, 2026*
 
 **Description**: A variety of indicators derived from MRIP Recreational Fisheries Statistics, including total recreational catch, total angler trips by region, annual diversity of recreational fleet effort, and annual diversity of managed species.
 
@@ -61,7 +61,8 @@ In New England, recreational species catch diversity has been above the time ser
 **landings, Mid-Atlantic**
 ```{r plot_recdatlandingsMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -80,7 +81,8 @@ silent = TRUE)
 **effortdiversity, Mid-Atlantic**
 ```{r plot_recdateffortdiversityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -99,7 +101,8 @@ silent = TRUE)
 **catchdiversity, Mid-Atlantic**
 ```{r plot_recdatcatchdiversityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -118,7 +121,8 @@ silent = TRUE)
 **effort, Mid-Atlantic**
 ```{r plot_recdateffortMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -137,7 +141,8 @@ silent = TRUE)
 **landings, New England**
 ```{r plot_recdatlandingsNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'landings', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -156,7 +161,8 @@ silent = TRUE)
 **effortdiversity, New England**
 ```{r plot_recdateffortdiversityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effortdiversity', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -175,7 +181,8 @@ silent = TRUE)
 **catchdiversity, New England**
 ```{r plot_recdatcatchdiversityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'catchdiversity', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -194,7 +201,8 @@ silent = TRUE)
 **effort, New England**
 ```{r plot_recdateffortNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_recdat(varName = 'effort', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

@@ -8,7 +8,7 @@ library(downloadthis)
 
 <a href="https://bbeltz1.github.io/catalogv2/page_status.html#in-development" class="btn btn-success button_small"><i class="fas fa-pencil-ruler"></i> In Development</a>
 
-*Last updated April 27, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Ecosystem overfishing is an ecological, and not legal, term that ultimately evaluates how much fish are caught in an ecosystem relative to how much can be produced. Several indices are used to evaluate ecosystem overfishing, the Ryther index, the Fogarty index, and primary production required.
 
@@ -64,7 +64,8 @@ Thresholds based on regional estimates of primary productivity, are not yet avai
 **Mid-Atlantic Bight, pp, global**
 ```{r plot_pprMidAtlanticMABppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'pp', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -83,7 +84,8 @@ silent = TRUE)
 **Georges Bank, pp, global**
 ```{r plot_pprNewEnglandGBppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'pp', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -102,7 +104,8 @@ silent = TRUE)
 **Gulf of Maine, pp, global**
 ```{r plot_pprNewEnglandGOMppglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'pp', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'pp', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -121,7 +124,8 @@ silent = TRUE)
 **Mid-Atlantic Bight, fogarty, global**
 ```{r plot_pprMidAtlanticMABfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'fogarty', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -140,7 +144,8 @@ silent = TRUE)
 **Georges Bank, fogarty, global**
 ```{r plot_pprNewEnglandGBfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'fogarty', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -159,7 +164,8 @@ silent = TRUE)
 **Gulf of Maine, fogarty, global**
 ```{r plot_pprNewEnglandGOMfogartyglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'fogarty', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'fogarty', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -178,7 +184,8 @@ silent = TRUE)
 **Mid-Atlantic Bight, ryther, global**
 ```{r plot_pprMidAtlanticMABrytherglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ryther', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -197,7 +204,8 @@ silent = TRUE)
 **Georges Bank, ryther, global**
 ```{r plot_pprNewEnglandGBrytherglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ryther', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -216,7 +224,8 @@ silent = TRUE)
 **Gulf of Maine, ryther, global**
 ```{r plot_pprNewEnglandGOMrytherglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ryther', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ryther', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -235,7 +244,8 @@ silent = TRUE)
 **Mid-Atlantic Bight, ppr, global**
 ```{r plot_pprMidAtlanticMABpprglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ppr', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'ppr', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -254,7 +264,8 @@ silent = TRUE)
 **Georges Bank, ppr, global**
 ```{r plot_pprNewEnglandGBpprglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ppr', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'ppr', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -273,7 +284,8 @@ silent = TRUE)
 **Gulf of Maine, ppr, global**
 ```{r plot_pprNewEnglandGOMpprglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ppr', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'ppr', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -292,7 +304,8 @@ silent = TRUE)
 **Mid-Atlantic Bight, mtl, global**
 ```{r plot_pprMidAtlanticMABmtlglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'mtl', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'MidAtlantic', EPU = 'MAB', varName = 'mtl', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -311,7 +324,8 @@ silent = TRUE)
 **Georges Bank, mtl, global**
 ```{r plot_pprNewEnglandGBmtlglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'mtl', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GB', varName = 'mtl', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -330,7 +344,8 @@ silent = TRUE)
 **Gulf of Maine, mtl, global**
 ```{r plot_pprNewEnglandGOMmtlglobal}
 # Plot indicator
-ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'mtl', threshold = 'global')
+ggplotObject <- ecodata::plot_ppr(report = 'NewEngland', EPU = 'GOM', varName = 'mtl', threshold = 'global') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

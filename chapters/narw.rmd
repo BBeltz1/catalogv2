@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 10, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data presented here are time series of the North Atlantic right whale population abundance estimates and calf abundance estimates.
 
@@ -71,7 +71,8 @@ The primary cause of death is "human interaction" from entanglements or vessel s
 **adult, Mid-Atlantic**
 ```{r plot_narwadultMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -90,7 +91,8 @@ silent = TRUE)
 **calf, Mid-Atlantic**
 ```{r plot_narwcalfMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -109,7 +111,8 @@ silent = TRUE)
 **adult, New England**
 ```{r plot_narwadultNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_narw(varName = 'adult', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -128,7 +131,8 @@ silent = TRUE)
 **calf, New England**
 ```{r plot_narwcalfNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_narw(varName = 'calf', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

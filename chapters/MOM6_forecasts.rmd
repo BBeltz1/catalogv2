@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated May 28, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Seasonal and decadal bottom temperature predictions for the Northeast US shelf.
 

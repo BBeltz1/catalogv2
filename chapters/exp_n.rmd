@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Diversity metric from the Northeast Fisheries Science Center (NEFSC) Bottom Trawl Surveys.
 
@@ -56,7 +56,8 @@ Due to the shift to the NOAA vessel Henry B. Bigelow in 2009 and the inability t
 **fall, Mid-Atlantic**
 ```{r plot_exp_nfallMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -75,7 +76,8 @@ silent = TRUE)
 **spring, Mid-Atlantic**
 ```{r plot_exp_nspringMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -94,7 +96,8 @@ silent = TRUE)
 **fall, New England**
 ```{r plot_exp_nfallNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_exp_n(varName = 'fall', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -113,7 +116,8 @@ silent = TRUE)
 **spring, New England**
 ```{r plot_exp_nspringNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_exp_n(varName = 'spring', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

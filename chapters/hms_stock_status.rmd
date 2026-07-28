@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Summary of stock assessment results for each assessed HMS species as of December 2023.
 
@@ -57,7 +57,8 @@ Based on the thresholds identifying whether a stock is experiencing “overfishi
 **Mid-Atlantic**
 ```{r plot_hms_stock_statusMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_stock_status(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_hms_stock_status(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -76,7 +77,8 @@ silent = TRUE)
 **New England**
 ```{r plot_hms_stock_statusNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_hms_stock_status(report = 'NewEngland')
+ggplotObject <- ecodata::plot_hms_stock_status(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

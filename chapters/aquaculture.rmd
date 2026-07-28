@@ -8,7 +8,7 @@ library(downloadthis)
 
 <a href="https://bbeltz1.github.io/catalogv2/page_status.html#under-review" class="btn btn-danger button_small"><i class="fa fa-warning"></i> Under Review</a>
 
-*Last updated April 27, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Oyster production: number of oysters harvested from aquaculture.
 
@@ -57,7 +57,8 @@ Overall, oyster production has generally increased and production per area has a
 **Mid-Atlantic**
 ```{r plot_aquacultureMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_aquaculture(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_aquaculture(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -76,7 +77,8 @@ silent = TRUE)
 **New England**
 ```{r plot_aquacultureNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_aquaculture(report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_aquaculture(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

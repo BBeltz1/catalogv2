@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated November 12, 2025*
+*Last updated July 23, 2026*
 
 **Description**: Mid-Atlantic Council catch limits (e.g., ABC or ACL) and associated total catch estimate by year for each species and sector (commercial or recreational, as appropriate).
 
@@ -60,7 +60,8 @@ High points in the catch divided by ABC/ACL are recreational black sea bass (up 
 **Mid-Atlantic, Stacked**
 ```{r plot_abc_aclMidAtlanticStacked}
 # Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Stacked')
+ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Stacked') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -79,7 +80,8 @@ silent = TRUE)
 **New England, Stacked**
 ```{r plot_abc_aclNewEnglandStacked}
 # Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Stacked')
+ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Stacked') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -98,7 +100,8 @@ silent = TRUE)
 **Mid-Atlantic, Catch**
 ```{r plot_abc_aclMidAtlanticCatch}
 # Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Catch')
+ggplotObject <- ecodata::plot_abc_acl(report = 'MidAtlantic', plottype = 'Catch') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -117,7 +120,8 @@ silent = TRUE)
 **New England, Catch**
 ```{r plot_abc_aclNewEnglandCatch}
 # Plot indicator
-ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Catch')
+ggplotObject <- ecodata::plot_abc_acl(report = 'NewEngland', plottype = 'Catch') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

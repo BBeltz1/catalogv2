@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 02, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Classification of species guild membership by management bodies.
 
@@ -58,7 +58,8 @@ Each management body (MAFMC, NEFSC, State etc) has its managed species associate
 **Mid-Atlantic, 2024**
 ```{r plot_species_groupingsMidAtlantic2024}
 # Plot indicator
-ggplotObject <- ecodata::plot_species_groupings(report = 'MidAtlantic', varName = '2024')
+ggplotObject <- ecodata::plot_species_groupings(report = 'MidAtlantic', varName = '2024') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -77,7 +78,8 @@ silent = TRUE)
 **New England, 2024**
 ```{r plot_species_groupingsNewEngland2024}
 # Plot indicator
-ggplotObject <- ecodata::plot_species_groupings(report = 'NewEngland', varName = '2024')
+ggplotObject <- ecodata::plot_species_groupings(report = 'NewEngland', varName = '2024') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
