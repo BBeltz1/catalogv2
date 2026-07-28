@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated July 15, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Aggregate forage fish biomass index from fish stomach contents
 
@@ -55,7 +55,8 @@ The plots below show spring and fall forage biomass, with standard errors. Long-
 **Mid-Atlantic, index**
 ```{r plot_forage_indexMidAtlanticindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report = 'MidAtlantic', varName = 'index', n = 10)
+ggplotObject <- ecodata::plot_forage_index(report = 'MidAtlantic', varName = 'index', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -74,7 +75,8 @@ silent = TRUE)
 **New England, index**
 ```{r plot_forage_indexNewEnglandindex}
 # Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report = 'NewEngland', varName = 'index', n = 10)
+ggplotObject <- ecodata::plot_forage_index(report = 'NewEngland', varName = 'index', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -93,7 +95,8 @@ silent = TRUE)
 **Mid-Atlantic, cog**
 ```{r plot_forage_indexMidAtlanticcog}
 # Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report = 'MidAtlantic', varName = 'cog', n = 10)
+ggplotObject <- ecodata::plot_forage_index(report = 'MidAtlantic', varName = 'cog', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -112,7 +115,8 @@ silent = TRUE)
 **New England, cog**
 ```{r plot_forage_indexNewEnglandcog}
 # Plot indicator
-ggplotObject <- ecodata::plot_forage_index(report = 'NewEngland', varName = 'cog', n = 10)
+ggplotObject <- ecodata::plot_forage_index(report = 'NewEngland', varName = 'cog', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

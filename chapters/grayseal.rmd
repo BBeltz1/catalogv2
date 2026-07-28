@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 03, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data presented here are time series of the species specific estimates of bycatch from U.S. North Atlantic commercial fisheries.
 
@@ -53,7 +53,8 @@ For gray seals in U.S. waters, the total estimated annual bycatch and 5-year rol
 **Mid-Atlantic**
 ```{r plot_graysealMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_grayseal(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_grayseal(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

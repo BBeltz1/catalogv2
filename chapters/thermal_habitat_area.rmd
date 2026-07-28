@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated June 03, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Calculates the proportion of each EPU that exceeds temperature thresholds as a daily time series from 1993 – 2025
 
@@ -54,7 +54,8 @@ For each EPU, bottom temperature data were separated by depth bin (0-25m; 25m-10
 **Mid-Atlantic Bight**
 ```{r plot_thermal_habitat_areaMABMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'MAB', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'MAB', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -73,7 +74,8 @@ silent = TRUE)
 **Georges Bank**
 ```{r plot_thermal_habitat_areaGBNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GB', report = 'NewEngland')
+ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GB', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -92,7 +94,8 @@ silent = TRUE)
 **Gulf of Maine**
 ```{r plot_thermal_habitat_areaGOMNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GOM', report = 'NewEngland')
+ggplotObject <- ecodata::plot_thermal_habitat_area(EPU = 'GOM', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

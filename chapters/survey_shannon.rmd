@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated February 11, 2025*
+*Last updated July 23, 2026*
 
 **Description**: Diversity metric for the bottom trawl survey data
 
@@ -55,7 +55,8 @@ A significant long term decline in the diversity metric is apparent in Georges B
 **Mid-Atlantic**
 ```{r plot_survey_shannonMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_survey_shannon(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_survey_shannon(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -74,7 +75,8 @@ silent = TRUE)
 **New England**
 ```{r plot_survey_shannonNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_survey_shannon(report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_survey_shannon(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

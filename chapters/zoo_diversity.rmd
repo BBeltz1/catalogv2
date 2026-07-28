@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 10, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Effective Shannon diversity calculated using 42 zooplankton taxa collected from EcoMon cruises
 
@@ -56,7 +56,8 @@ Zooplankton diversity is increasing in the Mid-Atlantic and on Georges Bank, but
 **Mid-Atlantic**
 ```{r plot_zoo_diversityMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_diversity(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_zoo_diversity(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -75,7 +76,8 @@ silent = TRUE)
 **New England**
 ```{r plot_zoo_diversityNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_zoo_diversity(report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_zoo_diversity(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated May 01, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Maturity information for groundfish is used to evaluate changes in spawning seasonality. Haddock and yellowtail flounder are included in this indicator.
 
@@ -87,7 +87,8 @@ The multinomial model indicated significant effects of bottom temperature, week 
 **Mid-Atlantic, Resting**
 ```{r plot_spawn_timingMidAtlanticResting}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Resting', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Resting', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -106,7 +107,8 @@ silent = TRUE)
 **New England, Resting**
 ```{r plot_spawn_timingNewEnglandResting}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Resting', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Resting', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -125,7 +127,8 @@ silent = TRUE)
 **Mid-Atlantic, Ripe**
 ```{r plot_spawn_timingMidAtlanticRipe}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Ripe', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Ripe', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -144,7 +147,8 @@ silent = TRUE)
 **New England, Ripe**
 ```{r plot_spawn_timingNewEnglandRipe}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Ripe', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Ripe', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -163,7 +167,8 @@ silent = TRUE)
 **Mid-Atlantic, Spent**
 ```{r plot_spawn_timingMidAtlanticSpent}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Spent', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Spent', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -182,7 +187,8 @@ silent = TRUE)
 **New England, Spent**
 ```{r plot_spawn_timingNewEnglandSpent}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Spent', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Spent', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -201,7 +207,8 @@ silent = TRUE)
 **Mid-Atlantic, Developing**
 ```{r plot_spawn_timingMidAtlanticDeveloping}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Developing', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'Developing', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -220,7 +227,8 @@ silent = TRUE)
 **New England, Developing**
 ```{r plot_spawn_timingNewEnglandDeveloping}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Developing', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'Developing', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -239,7 +247,8 @@ silent = TRUE)
 **Mid-Atlantic, MF**
 ```{r plot_spawn_timingMidAtlanticMF}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'MF', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'MF', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -258,7 +267,8 @@ silent = TRUE)
 **New England, MF**
 ```{r plot_spawn_timingNewEnglandMF}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'MF', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'MF', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -277,7 +287,8 @@ silent = TRUE)
 **Mid-Atlantic, meanTEMP**
 ```{r plot_spawn_timingMidAtlanticmeanTEMP}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'meanTEMP', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'meanTEMP', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -296,7 +307,8 @@ silent = TRUE)
 **New England, meanTEMP**
 ```{r plot_spawn_timingNewEnglandmeanTEMP}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'meanTEMP', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'meanTEMP', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -315,7 +327,8 @@ silent = TRUE)
 **Mid-Atlantic, meanJDAY**
 ```{r plot_spawn_timingMidAtlanticmeanJDAY}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'meanJDAY', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'MidAtlantic', varName = 'meanJDAY', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -334,7 +347,8 @@ silent = TRUE)
 **New England, meanJDAY**
 ```{r plot_spawn_timingNewEnglandmeanJDAY}
 # Plot indicator
-ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'meanJDAY', n = 10)
+ggplotObject <- ecodata::plot_spawn_timing(report = 'NewEngland', varName = 'meanJDAY', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

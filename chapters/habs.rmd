@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: These data represent annual estimated abundance of Alexandrium catanella cysts in the Gulf of Maine from 2003 to 2023.
 
@@ -54,7 +54,8 @@ Visualizations of the data include an annual time series plot of estimated cyst 
 **Alexandrium, Mid-Atlantic**
 ```{r plot_habsAlexandriumMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_habs(varName = 'Alexandrium', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_habs(varName = 'Alexandrium', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -73,7 +74,8 @@ silent = TRUE)
 **PSP, Mid-Atlantic**
 ```{r plot_habsPSPMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_habs(varName = 'PSP', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_habs(varName = 'PSP', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -92,7 +94,8 @@ silent = TRUE)
 **Alexandrium, New England**
 ```{r plot_habsAlexandriumNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_habs(varName = 'Alexandrium', report = 'NewEngland')
+ggplotObject <- ecodata::plot_habs(varName = 'Alexandrium', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -111,7 +114,8 @@ silent = TRUE)
 **PSP, New England**
 ```{r plot_habsPSPNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_habs(varName = 'PSP', report = 'NewEngland')
+ggplotObject <- ecodata::plot_habs(varName = 'PSP', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

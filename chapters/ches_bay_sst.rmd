@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated February 12, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Chesapeake Bay Seasonal Sea Surface Temperature Anomaly
 
@@ -41,7 +41,8 @@ For 2025, winter sea surface temperatures showed conditions to be generally cool
 **Mid-Atlantic**
 ```{r plot_ches_bay_sstMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_ches_bay_sst(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_ches_bay_sst(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 ```
 <br>
@@ -49,7 +50,8 @@ ggplotObject
 **New England**
 ```{r plot_ches_bay_sstNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_ches_bay_sst(report = 'NewEngland')
+ggplotObject <- ecodata::plot_ches_bay_sst(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 ```
 <br>

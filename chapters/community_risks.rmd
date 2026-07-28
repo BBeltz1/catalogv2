@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 10, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The dataset contains by year by community scores for community sensitivity to temperature, ocean acidification, stock size/status, total sensitivity, and total vulnerability based on Hare et al. 2016 [@hare_vulnerability_2016] and Loughran et al. 2025 [@loughran_climate_2025] species vulnerability and community dependency. Reciprocal Simpson's Diversity scores for each community, Regional Quotients, and Regional climate vulnerability scores are also included.
 
@@ -55,7 +55,8 @@ Regional level analyses (maps); Community level analysis (community profiles)
 **Mid-Atlantic, oaSum, propcomm**
 ```{r plot_community_risksMidAtlanticoaSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -74,7 +75,8 @@ silent = TRUE)
 **New England, oaSum, propcomm**
 ```{r plot_community_risksNewEnglandoaSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -93,7 +95,8 @@ silent = TRUE)
 **Mid-Atlantic, tempSum, propcomm**
 ```{r plot_community_risksMidAtlantictempSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -112,7 +115,8 @@ silent = TRUE)
 **New England, tempSum, propcomm**
 ```{r plot_community_risksNewEnglandtempSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -131,7 +135,8 @@ silent = TRUE)
 **Mid-Atlantic, stckSum, propcomm**
 ```{r plot_community_risksMidAtlanticstckSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -150,7 +155,8 @@ silent = TRUE)
 **New England, stckSum, propcomm**
 ```{r plot_community_risksNewEnglandstckSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -169,7 +175,8 @@ silent = TRUE)
 **Mid-Atlantic, sensSum, propcomm**
 ```{r plot_community_risksMidAtlanticsensSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -188,7 +195,8 @@ silent = TRUE)
 **New England, sensSum, propcomm**
 ```{r plot_community_risksNewEnglandsensSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -207,7 +215,8 @@ silent = TRUE)
 **Mid-Atlantic, vulnSum, propcomm**
 ```{r plot_community_risksMidAtlanticvulnSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -226,7 +235,8 @@ silent = TRUE)
 **New England, vulnSum, propcomm**
 ```{r plot_community_risksNewEnglandvulnSumpropcomm}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'propcomm', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'propcomm', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -245,7 +255,8 @@ silent = TRUE)
 **Mid-Atlantic, oaSum, regionrev**
 ```{r plot_community_risksMidAtlanticoaSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -264,7 +275,8 @@ silent = TRUE)
 **New England, oaSum, regionrev**
 ```{r plot_community_risksNewEnglandoaSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -283,7 +295,8 @@ silent = TRUE)
 **Mid-Atlantic, tempSum, regionrev**
 ```{r plot_community_risksMidAtlantictempSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -302,7 +315,8 @@ silent = TRUE)
 **New England, tempSum, regionrev**
 ```{r plot_community_risksNewEnglandtempSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -321,7 +335,8 @@ silent = TRUE)
 **Mid-Atlantic, stckSum, regionrev**
 ```{r plot_community_risksMidAtlanticstckSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -340,7 +355,8 @@ silent = TRUE)
 **New England, stckSum, regionrev**
 ```{r plot_community_risksNewEnglandstckSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -359,7 +375,8 @@ silent = TRUE)
 **Mid-Atlantic, sensSum, regionrev**
 ```{r plot_community_risksMidAtlanticsensSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -378,7 +395,8 @@ silent = TRUE)
 **New England, sensSum, regionrev**
 ```{r plot_community_risksNewEnglandsensSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -397,7 +415,8 @@ silent = TRUE)
 **Mid-Atlantic, vulnSum, regionrev**
 ```{r plot_community_risksMidAtlanticvulnSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -416,7 +435,8 @@ silent = TRUE)
 **New England, vulnSum, regionrev**
 ```{r plot_community_risksNewEnglandvulnSumregionrev}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'regionrev', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'regionrev', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -435,7 +455,8 @@ silent = TRUE)
 **Mid-Atlantic, oaSum, regionland**
 ```{r plot_community_risksMidAtlanticoaSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'oaSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -454,7 +475,8 @@ silent = TRUE)
 **New England, oaSum, regionland**
 ```{r plot_community_risksNewEnglandoaSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'oaSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -473,7 +495,8 @@ silent = TRUE)
 **Mid-Atlantic, tempSum, regionland**
 ```{r plot_community_risksMidAtlantictempSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'tempSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -492,7 +515,8 @@ silent = TRUE)
 **New England, tempSum, regionland**
 ```{r plot_community_risksNewEnglandtempSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'tempSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -511,7 +535,8 @@ silent = TRUE)
 **Mid-Atlantic, stckSum, regionland**
 ```{r plot_community_risksMidAtlanticstckSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'stckSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -530,7 +555,8 @@ silent = TRUE)
 **New England, stckSum, regionland**
 ```{r plot_community_risksNewEnglandstckSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'stckSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -549,7 +575,8 @@ silent = TRUE)
 **Mid-Atlantic, sensSum, regionland**
 ```{r plot_community_risksMidAtlanticsensSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'sensSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -568,7 +595,8 @@ silent = TRUE)
 **New England, sensSum, regionland**
 ```{r plot_community_risksNewEnglandsensSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'sensSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -587,7 +615,8 @@ silent = TRUE)
 **Mid-Atlantic, vulnSum, regionland**
 ```{r plot_community_risksMidAtlanticvulnSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'MidAtlantic', varName = 'vulnSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -606,7 +635,8 @@ silent = TRUE)
 **New England, vulnSum, regionland**
 ```{r plot_community_risksNewEnglandvulnSumregionland}
 # Plot indicator
-ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'regionland', n = 10)
+ggplotObject <- ecodata::plot_community_risks(report = 'NewEngland', varName = 'vulnSum', plottype = 'regionland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

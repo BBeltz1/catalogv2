@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 10, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Biomass time series for aggregate species groups from the NEAMAP inshore bottom trawl surveys conducted from Cape Hatteras to Rhode Island.
 
@@ -54,7 +54,8 @@ Each survey shows trends by aggregate group.
 **Mid-Atlantic**
 ```{r plot_mab_inshore_surveyMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -73,7 +74,8 @@ silent = TRUE)
 **New England**
 ```{r plot_mab_inshore_surveyNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_mab_inshore_survey(report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

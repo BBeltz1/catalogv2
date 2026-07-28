@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated February 12, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data here consist of two sources; 1) Port Commercial Fishing Activity Indicator scores which is comprised of commercial fishing landings and permit data from 2007 through 2024 summarized to indicate port-level activity in commercial fishing. 2) Community Social Vulnerability Indicators (CSVI) generated from 2023 American Community Survey 5-yr estimates Dataset in the U.S. Census American Community Survey (ACS) for coastal communities at the Census Designated Place or County Subdivision level.
 
@@ -63,7 +63,8 @@ Mid-Atlantic: Temporal comparisons of the new Port Commercial Fishing Activity I
 **Mid-Atlantic, Commercial**
 ```{r plot_engagementMidAtlanticCommercial}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Commercial')
+ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Commercial') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -82,7 +83,8 @@ silent = TRUE)
 **New England, Commercial**
 ```{r plot_engagementNewEnglandCommercial}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Commercial')
+ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Commercial') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -101,7 +103,8 @@ silent = TRUE)
 **Mid-Atlantic, Recreational**
 ```{r plot_engagementMidAtlanticRecreational}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Recreational')
+ggplotObject <- ecodata::plot_engagement(report = 'MidAtlantic', varName = 'Recreational') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -120,7 +123,8 @@ silent = TRUE)
 **New England, Recreational**
 ```{r plot_engagementNewEnglandRecreational}
 # Plot indicator
-ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Recreational')
+ggplotObject <- ecodata::plot_engagement(report = 'NewEngland', varName = 'Recreational') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

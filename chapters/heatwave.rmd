@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Surface and bottom marine heatwaves (MHWs) for 2023.
 
@@ -76,7 +76,8 @@ In 2024, the Mid-Atlantic Bight did not experience any bottom MHWs. The stronges
 **Surface, Mid-Atlantic**
 ```{r plot_heatwaveSurfaceMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave(varName = 'Surface', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_heatwave(varName = 'Surface', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -95,7 +96,8 @@ silent = TRUE)
 **Bottom, Mid-Atlantic**
 ```{r plot_heatwaveBottomMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave(varName = 'Bottom', report = 'MidAtlantic', n = 10)
+ggplotObject <- ecodata::plot_heatwave(varName = 'Bottom', report = 'MidAtlantic', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -114,7 +116,8 @@ silent = TRUE)
 **Surface, New England**
 ```{r plot_heatwaveSurfaceNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave(varName = 'Surface', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_heatwave(varName = 'Surface', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -133,7 +136,8 @@ silent = TRUE)
 **Bottom, New England**
 ```{r plot_heatwaveBottomNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_heatwave(varName = 'Bottom', report = 'NewEngland', n = 10)
+ggplotObject <- ecodata::plot_heatwave(varName = 'Bottom', report = 'NewEngland', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

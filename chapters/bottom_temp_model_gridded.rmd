@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated March 07, 2025*
+*Last updated July 23, 2026*
 
 **Description**: Seasonal mean bottom temperatures on the Northeast Continental Shelf between 1959 and 2024 in a 1/12° grid.
 
@@ -42,7 +42,8 @@ Maps of seasonal mean bottom temperature across NE shelf.
 **Mid-Atlantic**
 ```{r plot_bottom_temp_model_griddedMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 ```
 <br>
@@ -50,7 +51,8 @@ ggplotObject
 **New England**
 ```{r plot_bottom_temp_model_griddedNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'NewEngland')
+ggplotObject <- ecodata::plot_bottom_temp_model_gridded(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 ```
 <br>

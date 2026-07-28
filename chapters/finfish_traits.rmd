@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated February 13, 2026*
+*Last updated July 23, 2026*
 
 **Description**: These data represent estimates of trait distributions for key functional traits amongst finfish species at each EPU on the Northeast Continental Shelf.
 
@@ -59,7 +59,8 @@ I'm happy to share the code used to produce these figures from the data linked a
 **Mid-Atlantic, trophic_level**
 ```{r plot_finfish_traitsMidAtlantictrophic_level}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'trophic_level', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'trophic_level', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -78,7 +79,8 @@ silent = TRUE)
 **New England, trophic_level**
 ```{r plot_finfish_traitsNewEnglandtrophic_level}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'trophic_level', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'trophic_level', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -97,7 +99,8 @@ silent = TRUE)
 **Mid-Atlantic, offspring_size**
 ```{r plot_finfish_traitsMidAtlanticoffspring_size}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'offspring_size', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'offspring_size', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -116,7 +119,8 @@ silent = TRUE)
 **New England, offspring_size**
 ```{r plot_finfish_traitsNewEnglandoffspring_size}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'offspring_size', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'offspring_size', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -135,7 +139,8 @@ silent = TRUE)
 **Mid-Atlantic, age_maturity**
 ```{r plot_finfish_traitsMidAtlanticage_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'age_maturity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'age_maturity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -154,7 +159,8 @@ silent = TRUE)
 **New England, age_maturity**
 ```{r plot_finfish_traitsNewEnglandage_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'age_maturity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'age_maturity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -173,7 +179,8 @@ silent = TRUE)
 **Mid-Atlantic, length_maturity**
 ```{r plot_finfish_traitsMidAtlanticlength_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'length_maturity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'length_maturity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -192,7 +199,8 @@ silent = TRUE)
 **New England, length_maturity**
 ```{r plot_finfish_traitsNewEnglandlength_maturity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'length_maturity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'length_maturity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -211,7 +219,8 @@ silent = TRUE)
 **Mid-Atlantic, fecundity**
 ```{r plot_finfish_traitsMidAtlanticfecundity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'fecundity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'fecundity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -230,7 +239,8 @@ silent = TRUE)
 **New England, fecundity**
 ```{r plot_finfish_traitsNewEnglandfecundity}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'fecundity', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'fecundity', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -249,7 +259,8 @@ silent = TRUE)
 **Mid-Atlantic, l_inf**
 ```{r plot_finfish_traitsMidAtlanticl_inf}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'l_inf', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'l_inf', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -268,7 +279,8 @@ silent = TRUE)
 **New England, l_inf**
 ```{r plot_finfish_traitsNewEnglandl_inf}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'l_inf', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'l_inf', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -287,7 +299,8 @@ silent = TRUE)
 **Mid-Atlantic, k**
 ```{r plot_finfish_traitsMidAtlantick}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'k', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'k', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -306,7 +319,8 @@ silent = TRUE)
 **New England, k**
 ```{r plot_finfish_traitsNewEnglandk}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'k', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'k', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -325,7 +339,8 @@ silent = TRUE)
 **Mid-Atlantic, max_obs_length**
 ```{r plot_finfish_traitsMidAtlanticmax_obs_length}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'max_obs_length', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'max_obs_length', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -344,7 +359,8 @@ silent = TRUE)
 **New England, max_obs_length**
 ```{r plot_finfish_traitsNewEnglandmax_obs_length}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'max_obs_length', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'max_obs_length', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -363,7 +379,8 @@ silent = TRUE)
 **Mid-Atlantic, PC1**
 ```{r plot_finfish_traitsMidAtlanticPC1}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC1', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC1', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -382,7 +399,8 @@ silent = TRUE)
 **New England, PC1**
 ```{r plot_finfish_traitsNewEnglandPC1}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC1', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC1', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -401,7 +419,8 @@ silent = TRUE)
 **Mid-Atlantic, PC2**
 ```{r plot_finfish_traitsMidAtlanticPC2}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC2', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC2', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -420,7 +439,8 @@ silent = TRUE)
 **New England, PC2**
 ```{r plot_finfish_traitsNewEnglandPC2}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC2', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC2', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -439,7 +459,8 @@ silent = TRUE)
 **Mid-Atlantic, PC3**
 ```{r plot_finfish_traitsMidAtlanticPC3}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC3', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'MidAtlantic', varName = 'PC3', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -458,7 +479,8 @@ silent = TRUE)
 **New England, PC3**
 ```{r plot_finfish_traitsNewEnglandPC3}
 # Plot indicator
-ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC3', n = 10)
+ggplotObject <- ecodata::plot_finfish_traits(report = 'NewEngland', varName = 'PC3', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

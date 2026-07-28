@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated March 07, 2025*
+*Last updated July 23, 2026*
 
 **Description**: NEFSC fall bottom trawl survey relative condition
 
@@ -68,7 +68,8 @@ Preliminary General Additive Models show that for many species, temperature and 
 **Mid-Atlantic Bight**
 ```{r plot_conditionMABMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(EPU = 'MAB', report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_condition(EPU = 'MAB', report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -87,7 +88,8 @@ silent = TRUE)
 **Georges Bank**
 ```{r plot_conditionGBNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(EPU = 'GB', report = 'NewEngland')
+ggplotObject <- ecodata::plot_condition(EPU = 'GB', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -106,7 +108,8 @@ silent = TRUE)
 **Gulf of Maine**
 ```{r plot_conditionGOMNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_condition(EPU = 'GOM', report = 'NewEngland')
+ggplotObject <- ecodata::plot_condition(EPU = 'GOM', report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

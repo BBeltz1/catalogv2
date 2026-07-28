@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data presented here are seasonal sea surface temperature anomalies for the period 1993-2019 from the MOM6 hindcast ocean model for the Northwest Atlantic.  Also shown here are 10-year forecasts of sea surface temperature anomalies (2023-2033) from the MOM6 decadal forecast ocean model for the Northwest Atlantic.
 

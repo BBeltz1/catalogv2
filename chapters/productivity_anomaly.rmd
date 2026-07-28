@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 08, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Amount of small fish produced per large fish biomass over time
 
@@ -55,7 +55,8 @@ The small fish per large fish anomaly indicator, derived from NEFSC bottom trawl
 **anomaly, Mid-Atlantic Bight, region**
 ```{r plot_productivity_anomalyMidAtlanticanomalyMABregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'anomaly', EPU = 'MAB', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'anomaly', EPU = 'MAB', plottype = 'region') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -74,7 +75,8 @@ silent = TRUE)
 **assessment, Mid-Atlantic Bight, region**
 ```{r plot_productivity_anomalyMidAtlanticassessmentMABregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'assessment', EPU = 'MAB', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'assessment', EPU = 'MAB', plottype = 'region') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -93,7 +95,8 @@ silent = TRUE)
 **anomaly, Georges Bank, region**
 ```{r plot_productivity_anomalyNewEnglandanomalyGBregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GB', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GB', plottype = 'region') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -112,7 +115,8 @@ silent = TRUE)
 **assessment, Georges Bank, region**
 ```{r plot_productivity_anomalyNewEnglandassessmentGBregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GB', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GB', plottype = 'region') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -131,7 +135,8 @@ silent = TRUE)
 **anomaly, Gulf of Maine, region**
 ```{r plot_productivity_anomalyNewEnglandanomalyGOMregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GOM', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GOM', plottype = 'region') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -150,7 +155,8 @@ silent = TRUE)
 **assessment, Gulf of Maine, region**
 ```{r plot_productivity_anomalyNewEnglandassessmentGOMregion}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GOM', plottype = 'region')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GOM', plottype = 'region') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -169,7 +175,8 @@ silent = TRUE)
 **anomaly, Mid-Atlantic Bight, council**
 ```{r plot_productivity_anomalyMidAtlanticanomalyMABcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'anomaly', EPU = 'MAB', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'anomaly', EPU = 'MAB', plottype = 'council') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -188,7 +195,8 @@ silent = TRUE)
 **assessment, Mid-Atlantic Bight, council**
 ```{r plot_productivity_anomalyMidAtlanticassessmentMABcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'assessment', EPU = 'MAB', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'MidAtlantic', varName = 'assessment', EPU = 'MAB', plottype = 'council') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -207,7 +215,8 @@ silent = TRUE)
 **anomaly, Georges Bank, council**
 ```{r plot_productivity_anomalyNewEnglandanomalyGBcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GB', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GB', plottype = 'council') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -226,7 +235,8 @@ silent = TRUE)
 **assessment, Georges Bank, council**
 ```{r plot_productivity_anomalyNewEnglandassessmentGBcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GB', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GB', plottype = 'council') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -245,7 +255,8 @@ silent = TRUE)
 **anomaly, Gulf of Maine, council**
 ```{r plot_productivity_anomalyNewEnglandanomalyGOMcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GOM', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'anomaly', EPU = 'GOM', plottype = 'council') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -264,7 +275,8 @@ silent = TRUE)
 **assessment, Gulf of Maine, council**
 ```{r plot_productivity_anomalyNewEnglandassessmentGOMcouncil}
 # Plot indicator
-ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GOM', plottype = 'council')
+ggplotObject <- ecodata::plot_productivity_anomaly(report = 'NewEngland', varName = 'assessment', EPU = 'GOM', plottype = 'council') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 03, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The monthly Gulf Stream North Wall Index presented here are based on the gridded EN.4.2.2 analyses dataset from Jan. 1954 to Nov. 2024 (https://www.metoffice.gov.uk/hadobs/en4/), calculated following @chen_seasonal_2021 and @joyce_relationship_2009.
 
@@ -55,7 +55,8 @@ The Gulf Stream Index suggests that recent years (2021-2022) the GS almost maint
 **Mid-Atlantic, gsi**
 ```{r plot_gsiMidAtlanticgsi}
 # Plot indicator
-ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'gsi', n = 10)
+ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'gsi', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -74,7 +75,8 @@ silent = TRUE)
 **New England, gsi**
 ```{r plot_gsiNewEnglandgsi}
 # Plot indicator
-ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'gsi', n = 10)
+ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'gsi', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -93,7 +95,8 @@ silent = TRUE)
 **Mid-Atlantic, westgsi**
 ```{r plot_gsiMidAtlanticwestgsi}
 # Plot indicator
-ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'westgsi', n = 10)
+ggplotObject <- ecodata::plot_gsi(report = 'MidAtlantic', varName = 'westgsi', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -112,7 +115,8 @@ silent = TRUE)
 **New England, westgsi**
 ```{r plot_gsiNewEnglandwestgsi}
 # Plot indicator
-ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'westgsi', n = 10)
+ggplotObject <- ecodata::plot_gsi(report = 'NewEngland', varName = 'westgsi', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

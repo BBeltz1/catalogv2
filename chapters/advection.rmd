@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated February 12, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The advection data is an integrated mass transport through transects along the shelf break
 
@@ -57,7 +57,8 @@ Advection indices are presented monthly (March-June) by three depth ranges (less
 **Mid-Atlantic, 3**
 ```{r plot_advectionMidAtlantic3}
 # Plot indicator
-ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '3', n = 10)
+ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '3', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -76,7 +77,8 @@ silent = TRUE)
 **New England, 3**
 ```{r plot_advectionNewEngland3}
 # Plot indicator
-ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '3', n = 10)
+ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '3', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -95,7 +97,8 @@ silent = TRUE)
 **Mid-Atlantic, 4**
 ```{r plot_advectionMidAtlantic4}
 # Plot indicator
-ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '4', n = 10)
+ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '4', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -114,7 +117,8 @@ silent = TRUE)
 **New England, 4**
 ```{r plot_advectionNewEngland4}
 # Plot indicator
-ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '4', n = 10)
+ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '4', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -133,7 +137,8 @@ silent = TRUE)
 **Mid-Atlantic, 5**
 ```{r plot_advectionMidAtlantic5}
 # Plot indicator
-ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '5', n = 10)
+ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '5', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -152,7 +157,8 @@ silent = TRUE)
 **New England, 5**
 ```{r plot_advectionNewEngland5}
 # Plot indicator
-ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '5', n = 10)
+ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '5', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -171,7 +177,8 @@ silent = TRUE)
 **Mid-Atlantic, 6**
 ```{r plot_advectionMidAtlantic6}
 # Plot indicator
-ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '6', n = 10)
+ggplotObject <- ecodata::plot_advection(report = 'MidAtlantic', varName = '6', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -190,7 +197,8 @@ silent = TRUE)
 **New England, 6**
 ```{r plot_advectionNewEngland6}
 # Plot indicator
-ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '6', n = 10)
+ggplotObject <- ecodata::plot_advection(report = 'NewEngland', varName = '6', n = 10) +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

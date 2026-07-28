@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated April 10, 2026*
+*Last updated July 23, 2026*
 
 **Description**: Percent of port-level revenue from wind lease areas and Community Social Vulnerability Indicators
 
@@ -66,7 +66,8 @@ The second set of figures shows ports where the majority of revenue within the w
 **Mid-Atlantic**
 ```{r plot_wind_portMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_port(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_wind_port(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -85,7 +86,8 @@ silent = TRUE)
 **New England**
 ```{r plot_wind_portNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_wind_port(report = 'NewEngland')
+ggplotObject <- ecodata::plot_wind_port(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,

@@ -6,7 +6,7 @@ library(ecodata)
 library(downloadthis)
 ```
 
-*Last updated February 13, 2026*
+*Last updated July 23, 2026*
 
 **Description**: The data presented here are a time series of estimates of harbor porpoise bycatch from U.S. North Atlantic commercial fisheries.
 
@@ -53,7 +53,8 @@ The total estimated bycatch from all U.S. North Atlantic commercial fisheries is
 **Mid-Atlantic**
 ```{r plot_harborporpoiseMidAtlantic}
 # Plot indicator
-ggplotObject <- ecodata::plot_harborporpoise(report = 'MidAtlantic')
+ggplotObject <- ecodata::plot_harborporpoise(report = 'MidAtlantic') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
@@ -72,7 +73,8 @@ silent = TRUE)
 **New England**
 ```{r plot_harborporpoiseNewEngland}
 # Plot indicator
-ggplotObject <- ecodata::plot_harborporpoise(report = 'NewEngland')
+ggplotObject <- ecodata::plot_harborporpoise(report = 'NewEngland') +
+ggplot2::ggtitle('')
 ggplotObject
 try(downloadthis::download_this(
 ggplotObject$data,
